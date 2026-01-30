@@ -70,7 +70,7 @@ I believe in **System 2 AI**—building loops where agents plan, reflect, and ve
 ---
 
 <div align="center">
-  <a href="https://github.com/pypi-ahmad/ahmad.github.io">
+  <a href="https://pypi-ahmad.github.io/">
     <img src="https://img.shields.io/badge/Check_Out_My_Portfolio-FF5722?style=for-the-badge&logo=github" alt="Portfolio" />
   </a>
 </div>
