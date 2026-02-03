@@ -24,6 +24,9 @@ My work focuses on **Agentic AI**, **Model Context Protocol (MCP)**, and **Eval-
   - **Autonomous Computer-Using Agents (CUA):** Orchestrating agents that navigate business UIs with **80% reliability** using Milvus-backed SOP injection.
   - **Reasoning-Driven IDP:** a 99% accurate document extraction pipeline using **Gemini-3-Pro** and **PaddleOCR** with self-correcting validation loops.
   - **MCP Tooling:** Custom servers connecting LLMs to **Playwright** for efficient web automation.
+  - **Safety Vision Pro (HSE):** A real-time compliance monitoring system using fine-tuned **YOLO26** to detect PPE violations with edge-ready inference.
+  - **OmniDetect AI:** A containerized, universal object detection engine optimized for **NVIDIA RTX** hardware and deployed via Docker.
+  - **Explainable ML Command Centers:** Production-grade tabular prediction systems utilizing **AutoML (FLAML)** and **SHAP** for transparent, bank-grade risk scoring.
 
 - 🌱 **I’m deep-diving into:**
   - **Multi-Agent Orchestration** (LangGraph & AutoGen).
@@ -43,6 +46,14 @@ My work focuses on **Agentic AI**, **Model Context Protocol (MCP)**, and **Eval-
 ![Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=flat&logo=google&logoColor=white)
 ![Milvus](https://img.shields.io/badge/Milvus-Vector_DB-00a1ea?style=flat)
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-MCP-green?style=flat)
+
+**Computer Vision & XAI**
+<br>
+![YOLO](https://img.shields.io/badge/Ultralytics_YOLO26-000000?style=flat&logo=ultralytics&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-Explainable_AI-FF5722?style=flat)
 
 **Data Engineering & Cloud**
 <br>
