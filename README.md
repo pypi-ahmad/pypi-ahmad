@@ -6,7 +6,7 @@
   
   *Building autonomous agents that don't just chat—they execute.*
   
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ahmad-iiitk/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ahmad-mle/)
   [![Telegram](https://img.shields.io/badge/Telegram-Message-blue?style=flat&logo=telegram)](https://t.me/dataintuitionist)
   [![Discord](https://img.shields.io/badge/Discord-Chat-7289da?style=flat&logo=discord)](https://discord.com/users/dataintuitionist)
   
