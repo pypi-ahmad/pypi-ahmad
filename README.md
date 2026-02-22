@@ -1,6 +1,6 @@
 <!-- ======================= HEADER ======================= -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=80&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20System-2%20Architect&descSize=18&descAlignY=55" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=80&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20System-2%20Architect&descSize=18&descAlignY=55&descAlign=50&descColor=CCCCCC" width="100%" />
 
   <h2>Hi, I'm Ahmad 👋</h2>
 
