@@ -181,7 +181,7 @@ I focus on the **hardest problem in GenAI today**: turning LLMs into **reliable,
 
 <!-- ======================= SNAKE ======================= -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
 <br/>
