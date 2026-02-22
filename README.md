@@ -250,7 +250,7 @@ Agent that converts natural language into safe, executable SQL
 <!-- ======================= STATS ======================= -->
 <h2 align="center">⚡ Activity</h2>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&timestamp=1708600000" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" height="170"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=pypi-ahmad&theme=radical&hide_border=true&background=0D1117" height="170"/>
   <br/>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pypi-ahmad&theme=radical" />
