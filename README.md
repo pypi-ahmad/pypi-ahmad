@@ -160,7 +160,7 @@ I focus on the **hardest problem in GenAI today**: turning LLMs into **reliable,
 <!-- ======================= STATS ======================= -->
 <h2 align="center">⚡ Activity</h2>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&timestamp=1708600000" height="170"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=pypi-ahmad&theme=radical&hide_border=true&background=0D1117" height="170"/>
 </div>
 
@@ -181,7 +181,7 @@ I focus on the **hardest problem in GenAI today**: turning LLMs into **reliable,
 
 <!-- ======================= SNAKE ======================= -->
 <div align="center">
-  <img src="https://github.com/pypi-ahmad/pypi-ahmad/blob/output/github-contribution-grid-snake.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake.svg" width="100%" />
 </div>
 
 <br/>
