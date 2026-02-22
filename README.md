@@ -27,19 +27,37 @@
 <!-- ======================= SUMMARY ======================= -->
 ## 🚀 What I Do
 
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=00FFAA&center=true&vCenter=true&width=700&lines=Currently+Building%3A+Reliable+Agentic+AI+Systems;Focus%3A+Evaluation+%2B+Observability;Exploring%3A+UI+Agents+%2B+MCP+%2B+System-2+AI" />
+</div>
+
 I focus on the **hardest problem in GenAI today**: turning LLMs into **reliable, production-grade systems**.
+
+<div align="center">
+
+```text
+LLM ≠ Product
+
+System = LLM + Tools + Memory + Verification + Observability
+```
+
+</div>
 
 - Designing **System-2 AI architectures** (plan → reflect → verify → execute)
 - Building **agentic workflows with tool use + memory**
 - Solving **last-mile reliability, evals, and observability**
 - Moving from **"demo intelligence" → "production intelligence"**
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= PROJECTS ======================= -->
 ## 🔥 Flagship Systems
 
 ### 🧠 Autonomous Research Agent (System-2 AI)
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Multi-Agent+Reasoning+System;Plan+→+Execute+→+Verify;Grounded+RAG+Loop" />
+</div>
 
 <p>
   <img src="https://img.shields.io/badge/Architecture-Multi--Agent-blue"/>
@@ -62,7 +80,7 @@ Autonomous multi-agent system for deep research and report generation
 - 3–5× faster research workflows
 - Strong hallucination reduction via grounding
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 ### 🤖 Computer-Using Agent (CUA)
 
@@ -173,7 +191,7 @@ Agent that converts natural language into safe, executable SQL
 - **Face Recognition System** (vector DB identity matching)
 - **AutoML Pipelines** (FLAML-based production ML systems)
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= TECH STACK ======================= -->
 <h2 align="center">🛠️ Technical Arsenal</h2>
@@ -227,21 +245,23 @@ Agent that converts natural language into safe, executable SQL
   </tr>
 </table>
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= STATS ======================= -->
 <h2 align="center">⚡ Activity</h2>
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&timestamp=1708600000" height="170"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=pypi-ahmad&theme=radical&hide_border=true&background=0D1117" height="170"/>
+  <br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pypi-ahmad&theme=radical" />
 </div>
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= PHILOSOPHY ======================= -->
 <h2 align="center">🧠 Engineering Philosophy</h2>
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=18&pause=1000&color=27FF00&center=true&vCenter=true&width=600&lines=Orchestration+%3E+Model+Power;Plan+%E2%86%92+Reflect+%E2%86%92+Verify+%E2%86%92+Execute" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=18&pause=1000&color=00FFAA&center=true&vCenter=true&width=700&lines=Orchestration+%3E+Model+Power;Reliability+%3E+Raw+Intelligence;Systems+%3E+Prompts" />
 </div>
 
 <p align="center">
@@ -249,14 +269,14 @@ Agent that converts natural language into safe, executable SQL
   <b>verification, observability, and deterministic behavior</b>.
 </p>
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= SNAKE ======================= -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= CASE STUDIES ======================= -->
 # 📚 Deep Dive Case Studies
@@ -273,13 +293,23 @@ Traditional invoice/document pipelines rely on:
 ### 🏗️ System Architecture
 
 ```mermaid
-graph TD;
-    A[Input PDF/Image] --> B[VLM Extraction Llama Vision];
-    B --> C[Structured JSON];
-    C --> D[Semantic Normalization];
-    D --> E[Validation Engine Rules];
-    E --> F[AI Auditor LLM Reasoning];
-    F --> G[Final Decision / Output];
+flowchart LR
+    A[📄 Raw Documents] --> B[🧠 VLM Extraction]
+    B --> C[📦 Structured JSON]
+
+    C --> D1[🔍 Semantic Matching]
+    C --> D2[⚙️ Rule Validation]
+    C --> D3[🧠 AI Auditor]
+
+    D1 --> E[🔗 Unified Entity Layer]
+    D2 --> E
+    D3 --> E
+
+    E --> F[✅ Final Decision Engine]
+
+    style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
+    style D3 fill:#16213e,stroke:#36BCF7,color:#fff
+    style F fill:#0f3460,stroke:#00FFAA,color:#fff
 ```
 
 ### ⚙️ Key Components
@@ -400,13 +430,23 @@ Healthcare systems struggle with:
 ### 🏗️ System Architecture
 
 ```mermaid
-graph TD;
-    A[Medical Documents] --> B[Local VLM OCR Ollama];
-    B --> C[Structured Patient Data];
-    C --> D[Patient History DB SQLite];
-    D --> E[Logic Engine Rules];
-    E --> F[LLM Reasoning Layer];
-    F --> G[Clinical Insights / Alerts];
+flowchart LR
+    A[📑 Medical Docs] --> B[🧠 Local VLM OCR]
+
+    B --> C[📊 Patient Data]
+    C --> D[🗄 Patient History DB]
+
+    D --> E1[⚙️ Rule Engine]
+    D --> E2[🧠 LLM Reasoning]
+
+    E1 --> F[🧩 Decision Layer]
+    E2 --> F
+
+    F --> G[🚨 Alerts / Insights]
+
+    style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
+    style E2 fill:#16213e,stroke:#36BCF7,color:#fff
+    style G fill:#0f3460,stroke:#00FFAA,color:#fff
 ```
 
 ### ⚙️ Key Components
