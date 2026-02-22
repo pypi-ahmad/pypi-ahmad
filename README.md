@@ -1,12 +1,11 @@
 <!-- ======================= HEADER ======================= -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20Data%20Scientist&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20Production%20AI%20Systems&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
 
   <h2>Hi, I'm Ahmad 👋</h2>
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Building+Agentic+AI+Systems;Orchestrating+LLMs+into+Reliable+Workflows;System-2+AI+%7C+RAG+%7C+MCP;From+Prototype+%E2%86%92+Production" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Building+Reliable+AI+Systems;From+LLMs+to+Production+Systems;Agentic+AI+%7C+System-2+AI+%7C+RAG" />
+
   <br/><br/>
 
   <p>
@@ -24,177 +23,127 @@
 
 <br/>
 
-<!-- ======================= SUMMARY ======================= -->
+<!-- ======================= CORE MESSAGE ======================= -->
 ## 🚀 What I Do
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=00FFAA&center=true&vCenter=true&width=700&lines=Currently+Building%3A+Reliable+Agentic+AI+Systems;Focus%3A+Evaluation+%2B+Observability;Exploring%3A+UI+Agents+%2B+MCP+%2B+System-2+AI" />
-</div>
+I build **reliable, production-grade AI systems** — not demos.
 
-I focus on the **hardest problem in GenAI today**: turning LLMs into **reliable, production-grade systems**.
-
-<div align="center">
-
-```text
-LLM ≠ Product
-
-System = LLM + Tools + Memory + Verification + Observability
+```diff
+- LLM ≠ Product
++ System = LLM + Tools + Memory + Verification + Observability
 ```
 
-</div>
-
-- Designing **System-2 AI architectures** (plan → reflect → verify → execute)
-- Building **agentic workflows with tool use + memory**
-- Solving **last-mile reliability, evals, and observability**
-- Moving from **"demo intelligence" → "production intelligence"**
+* System-2 AI (plan → reason → verify → execute)
+* Agentic workflows with tools + memory
+* Reliability: validation, evals, observability
+* From **unstructured data → production systems**
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
-<!-- ======================= PROJECTS ======================= -->
-## 🔥 Flagship Systems
+<!-- ======================= SYSTEMS ======================= -->
 
-### 🧠 Autonomous Research Agent (System-2 AI)
+## 🔥 Production-Grade AI Systems
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Multi-Agent+Reasoning+System;Plan+→+Execute+→+Verify;Grounded+RAG+Loop" />
-</div>
-
-<p>
-  <img src="https://img.shields.io/badge/Architecture-Multi--Agent-blue"/>
-  <img src="https://img.shields.io/badge/Pattern-Plan→Execute→Verify-purple"/>
-  <img src="https://img.shields.io/badge/Reliability-Low%20Hallucination-green"/>
-</p>
-
-Autonomous multi-agent system for deep research and report generation
-
-- LangGraph-based plan-and-execute architecture
-- Iterative web scraping + grounded summarization
-- Context management to prevent token overflow
-- Final synthesis into structured reports
-
-**Why it’s strong**
-- Moves beyond RAG → true reasoning system
-- Mimics human research loops
-
-**Impact**
-- 3–5× faster research workflows
-- Strong hallucination reduction via grounding
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
-
-### 🤖 Computer-Using Agent (CUA)
-
-<p>
-  <img src="https://img.shields.io/badge/Agents-UI%20Execution-blue"/>
-  <img src="https://img.shields.io/badge/Stack-Playwright%20%2B%20MCP-purple"/>
-  <img src="https://img.shields.io/badge/Reliability-~80%25-success"/>
-</p>
-
-Agents that operate real-world UIs using reasoning + vision
-
-- Playwright + MCP tool abstraction
-- SOP injection via vector DB (Milvus)
-- Vision-guided UI navigation
-
-**Why it’s strong**
-- Real-world execution → not sandbox agents
-- Foundation for enterprise automation systems
-
-**Impact**
-- ~80% success rate in semi-structured UI tasks
-- Replaces manual operational workflows
-
-👉 **[Read Case Study Below](#-case-study-2--computer-using-agent-cua)**
+<p align="center"><i>Systems designed for reliability, evaluation, and real-world deployment — not demos.</i></p>
 
 ---
 
-### 📄 Intelligent Document Processing (IDP AI)
+### 📄 Intelligent Document Processing (Enterprise IDP)
 
-<p>
-  <img src="https://img.shields.io/badge/Accuracy-~99%25-success"/>
-  <img src="https://img.shields.io/badge/Pattern-VLM%20%2B%20Validation-blue"/>
-  <img src="https://img.shields.io/badge/Usecase-Financial%20AI-purple"/>
-</p>
+```text
+OCR → LLM Extraction → Structured JSON → Validation → Final Output
+```
 
-VLM-powered pipeline for invoice and document intelligence
+* PaddleOCR with layout grounding (bounding boxes)
+* LLM reasoning across fragmented policy clauses
+* Schema-aligned structured outputs
+* Canonical document validation layer
 
-- Llama Vision for single-pass structured extraction
-- Semantic vendor normalization (fuzzy + vector)
-- Hybrid validation: deterministic + LLM reasoning
+**Insight:** Never trust raw LLM output → always validate
 
-**Why it’s strong**
-- Combines rules + reasoning (rare and powerful)
-- Handles real-world noisy documents
-
-**Impact**
-- ~99% extraction accuracy
-- Fraud detection via AI auditing
+**Impact:** ~90% → ~99% accuracy, production-ready pipeline
 
 👉 **[Read Case Study Below](#-case-study-1--intelligent-document-processing-idp-ai)**
 
 ---
 
-### 🎥 Multimodal Video RAG System
+### 🤖 Computer-Using Agent (CUA + RAG)
 
-<p>
-  <img src="https://img.shields.io/badge/Modality-Text%20%2B%20Vision-blue"/>
-  <img src="https://img.shields.io/badge/Search-Zero--Shot-purple"/>
-  <img src="https://img.shields.io/badge/Latency-Optimized-success"/>
-</p>
+```text
+User → RAG (SOPs) → Structured Plan → CUA → UI Execution
+```
 
-Semantic search across video frames using text and image queries
+* Milvus-based RAG over internal documentation
+* LLM converts prompts → executable workflows
+* AWS deployment + Dockerized runtime
 
-- Frame-level embedding pipeline
-- Cross-modal retrieval (text ↔ image)
-- GPU-aware dynamic batching
+**Insight:** Agents fail due to poor instructions, not models
 
-**Why it’s strong**
-- Eliminates manual tagging
-- Enables natural language video search
+**Impact:** ~38% → ~80% success rate
 
-**Impact**
-- Massive reduction in video analysis time
-- Works on raw, unstructured footage
+👉 **[Read Case Study Below](#-case-study-2--computer-using-agent-cua)**
+
+---
+
+### 🧠 Autonomous Research Agent (System-2 AI)
+
+```text
+Planner → Parallel Retrieval → Synthesizer → Critic → Refiner
+```
+
+* Multi-agent LangGraph system
+* Parallel tool-based retrieval
+* Critic-driven evaluation loop
+
+**Insight:** Reliability comes from evaluation loops
+
+**Impact:** grounded, high-quality research outputs
 
 ---
 
 ### 🧠 Self-Healing Text-to-SQL Agent
 
-<p>
-  <img src="https://img.shields.io/badge/Pattern-Self--Correction-blue"/>
-  <img src="https://img.shields.io/badge/Safety-Guardrails-critical"/>
-  <img src="https://img.shields.io/badge/System-LangGraph-purple"/>
-</p>
+```text
+Schema → Generate → Validate → Execute → Retry
+```
 
-Agent that converts natural language into safe, executable SQL
+* Schema-aware SQL generation
+* Guardrails for safe execution
+* Error-aware retry loop
 
-- Dynamic schema injection
-- SQL guardrails (destructive query blocking)
-- Retry loop with error-aware correction
+**Insight:** AI must be closed-loop systems
 
-**Why it’s strong**
-- Not just generation → self-healing system
-- Separation of concerns (writer / guardian / executor)
-
-**Impact**
-- Enables non-technical users to query databases
-- Prevents destructive operations
+**Impact:** safe and reliable NL → SQL
 
 ---
 
-## 🧠 Other Notable Systems
+### 📊 Data Systems (Databricks)
 
-- **Clinical Decision Support System** (HIPAA-ready local VLM pipeline) 👉 **[Case Study](#-case-study-3--clinical-decision-support-system-mediscan)**
-- **Digital Second Brain** (multimodal RAG + knowledge graph)
-- **Nexus Agent** (task + memory orchestration system)
-- **Traffic Violation Detection** (real-time CV + tracking)
-- **Face Recognition System** (vector DB identity matching)
-- **AutoML Pipelines** (FLAML-based production ML systems)
+```text
+Ingestion → Standardization → Joins → Unified Dataset
+```
+
+* Pandas + PySpark hybrid pipelines
+* Schema normalization and joins
+
+**Insight:** Data reliability > model performance
+
+**Impact:** analytics-ready, consistent datasets
+
+---
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
-<!-- ======================= TECH STACK ======================= -->
+<!-- ======================= STACK ======================= -->
+
 <h2 align="center">🛠️ Technical Arsenal</h2>
+
+<p align="center">
+  <b>GenAI:</b> LangGraph, LangChain, OpenAI, Gemini, Ollama<br/>
+  <b>Data:</b> Databricks, PySpark, Pandas, Milvus<br/>
+  <b>Backend:</b> FastAPI, Docker, AWS<br/>
+  <b>ML/CV:</b> PyTorch, OpenCV, PaddleOCR
+</p>
 
 <table align="center" width="100%">
   <tr>
