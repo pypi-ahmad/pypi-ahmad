@@ -35,7 +35,7 @@ I build **reliable, production-grade AI systems** — not demos.
 
 * System-2 AI (plan → reason → verify → execute)
 * Agentic workflows with tools + memory
-* Reliability: validation, evals, observability
+* Reliability: validation, evaluation, observability
 * From **unstructured data → production systems**
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
@@ -54,10 +54,9 @@ I build **reliable, production-grade AI systems** — not demos.
 OCR → LLM Extraction → Structured JSON → Validation → Final Output
 ```
 
-* PaddleOCR with layout grounding (bounding boxes)
-* LLM reasoning across fragmented policy clauses
+* Layout-aware OCR + reasoning-based extraction
 * Schema-aligned structured outputs
-* Canonical document validation layer
+* Post-extraction validation against canonical documents
 
 **Insight:** Never trust raw LLM output → always validate
 
@@ -145,6 +144,8 @@ Ingestion → Standardization → Joins → Unified Dataset
   <b>ML/CV:</b> PyTorch, OpenCV, PaddleOCR
 </p>
 
+<p align="center"><sub>Expanded stack for implementation depth</sub></p>
+
 <table align="center" width="100%">
   <tr>
     <td align="center" width="20%"><b>🤖 Generative AI</b></td>
@@ -201,10 +202,7 @@ Ingestion → Standardization → Joins → Unified Dataset
 
 <div align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170"/>
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=pypi-ahmad&theme=radical&hide_border=true&v=1" height="170"/>
+  <img src="https://streak-stats.demolab.com/?user=pypi-ahmad&theme=radical&hide_border=true&v=2" height="170"/>
 </div>
 
 <div align="center">
@@ -215,9 +213,14 @@ Ingestion → Standardization → Joins → Unified Dataset
 
 <!-- ======================= PHILOSOPHY ======================= -->
 <h2 align="center">🧠 Engineering Philosophy</h2>
+
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=18&pause=1000&color=00FFAA&center=true&vCenter=true&width=700&lines=Orchestration+%3E+Model+Power;Reliability+%3E+Raw+Intelligence;Systems+%3E+Prompts" />
+  <b>Orchestration > Model Power</b><br>
+  <b>Reliability > Raw Intelligence</b><br>
+  <b>Systems > Prompts</b>
 </div>
+
+<br/>
 
 <p align="center">
   I treat LLMs as <b>unreliable components</b> and build systems that enforce  
@@ -234,7 +237,7 @@ Ingestion → Standardization → Joins → Unified Dataset
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= CASE STUDIES ======================= -->
-# 📚 Deep Dive Case Studies
+# 📚 System Design Deep Dives
 
 ## 🧠 CASE STUDY 1 — Intelligent Document Processing (IDP AI)
 
