@@ -9,22 +9,19 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  # JOB 1: Generate the Snake and push to 'output' branch
+  generate-snake:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-
-      # Snake Animation
+      
       - uses: Platane/snk@v3
         with:
           github_user_name: pypi-ahmad
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
-
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
@@ -32,13 +29,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3D Contribution Graph
+  # JOB 2: Generate the 3D Graph and push to 'main' branch
+  generate-3d-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: pypi-ahmad
-
-      - name: Commit & Push
+          
+      - name: Commit & Push 3D Graph
         run: |
           git config user.name pypi-ahmad
           git config user.email pypi.ahmad@gmail.com
