@@ -1,140 +1,166 @@
-<!-- HEADER & TYPING ANIMATION -->
+<!-- HEADER WITH TYPEWRITER ANIMATION -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=250&section=header&text=&fontSize=90" />
-  
-  <h1 align="center">Hi there, I'm Ahmad! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"></h1>
-  
-  <!-- DYNAMIC TYPING SVG -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=300&section=header&text=Ahmad%20Mujtaba&fontSize=90&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20Orchestrator%20%7C%20RAG%20Architect&descSize=20&descAlignY=55&descAlign=50" width="100%" />
+
+  <!-- TYPING SVG -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=36BCF7&background=00000000&center=true&vCenter=true&width=500&lines=GenAI+Engineer+%7C+Agentic+AI+Specialist;Architecting+Reasoning-Driven+Systems;Building+Agents+That+Execute;Expert+in+RAG+%26+Model+Context+Protocol" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=20C20E&center=true&vCenter=true&width=600&lines=System.init(Agentic_Workflows);Orchestrating+Gemini+Pro+%26+GPT-5;Building+Autonomous+Computer-Using+Agents;Executing+Reasoning-Driven+IDP+Pipelines" alt="Typing SVG" />
   </a>
 
   <br/>
-  
-  <!-- SOCIAL BADGES -->
+
+  <!-- SOCIAL BADGES WITH GLOW EFFECT -->
   <p align="center">
     <a href="https://www.linkedin.com/in/ahmad-mle/">
-      <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+      <img src="https://img.shields.io/badge/LinkedIn-Connect_on_Professional_Network-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="30"/>
     </a>
     <a href="https://t.me/dataintuitionist">
-      <img src="https://img.shields.io/badge/Telegram-Message-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+      <img src="https://img.shields.io/badge/Telegram-Direct_Message-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" height="30"/>
     </a>
     <a href="https://pypi-ahmad.github.io/">
-      <img src="https://img.shields.io/badge/Portfolio-Visit_Site-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" />
+      <img src="https://img.shields.io/badge/Portfolio-Live_Demo-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" height="30"/>
     </a>
   </p>
 </div>
 
 <br/>
 
-<!-- INTRO SECTION -->
-<h2 align="center">🚀 Mission Control</h2>
-
-<div align="center">
-  <p>
-    I am a **GenAI Engineer** at <b>Deloitte</b>, specializing in the "Last Mile" of AI engineering. 
-    I move LLMs from experimental demos to reliable, enterprise-grade production systems.
-  </p>
-  <p>
-    <i>"I architect systems where agents can reason, use tools, and interact with complex UIs to automate business workflows."</i>
-  </p>
-</div>
-
-<br/>
-
-<!-- CURRENT WORK - GRID LAYOUT -->
-<h3 align="center">🔭 Current Operations & Research</h3>
-
-<table align="center">
+<!-- HERO SECTION GRID -->
+<table align="center" width="100%" style="border: none;">
   <tr>
-    <td width="50%">
-      <h4 align="center">🤖 Agentic AI & MCP</h4>
-      <ul>
-        <li><b>Autonomous Computer-Using Agents (CUA):</b> Orchestrating agents that navigate business UIs with <b>80% reliability</b> using Milvus-backed SOP injection.</li>
-        <li><b>MCP Tooling:</b> Custom servers connecting LLMs to <b>Playwright</b> for efficient web automation.</li>
-        <li><b>Vision-Language Actions (VLA):</b> Deep-diving into UI navigation agents.</li>
-      </ul>
+    <td width="55%" valign="top">
+      <h2>🚀 Mission Critical</h2>
+      <p>
+        I specialize in the <b>"Last Mile"</b> of AI engineering—moving LLMs from experimental demos to reliable, enterprise-grade production systems.
+      </p>
+      <p>
+        Currently architecting <b>System 2 AI</b>: loops where agents plan, reflect, and verify their own work before taking action.
+      </p>
+      <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=20C20E&icon_color=FF5722" width="100%" />
     </td>
-    <td width="50%">
-      <h4 align="center">🧠 Reasoning & RAG</h4>
-      <ul>
-        <li><b>Reasoning-Driven IDP:</b> A 99% accurate extraction pipeline using <b>Gemini-3-Pro</b> + <b>PaddleOCR</b> with self-correcting loops.</li>
-        <li><b>Explainable ML:</b> Production-grade prediction utilizing <b>AutoML (FLAML)</b> and <b>SHAP</b> for bank-grade risk scoring.</li>
-        <li><b>Eval-Driven Development:</b> Moving beyond "vibes" based testing.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <h4 align="center">👁️ Computer Vision</h4>
-      <ul>
-        <li><b>Safety Vision Pro (HSE):</b> Real-time PPE violation detection using fine-tuned <b>YOLO</b> with edge-ready inference.</li>
-        <li><b>OmniDetect AI:</b> Containerized object detection engine optimized for <b>NVIDIA RTX</b> hardware.</li>
-      </ul>
+    <td width="45%" valign="top">
+      <h3 align="center">⚡ Recent Activity</h3>
+      <div align="center">
+        <!-- 3D CONTRIB GRAPH (Requires Action Setup) -->
+        <img src="https://github.com/pypi-ahmad/pypi-ahmad/blob/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
+      </div>
+      <br/>
+      <div align="center">
+         <img src="https://github-readme-streak-stats.herokuapp.com/?user=pypi-ahmad&theme=radical&hide_border=true&background=0D1117" width="100%" />
+      </div>
     </td>
   </tr>
 </table>
 
 <br/>
 
-<!-- TECH STACK SECTION -->
+<!-- CURRENT PROJECTS - TERMINAL STYLE -->
+<h2>🔭 Active Deployments</h2>
+
+```mermaid
+mindmap
+  root((Ahmad's Ecosystem))
+    Agentic AI
+      Autonomous CUA
+        ::icon(fa fa-robot)
+        [80% Reliability / Milvus SOPs]
+      MCP Tooling
+        ::icon(fa fa-tools)
+        [Playwright Web Automation]
+    Reasoning Engines
+      IDP Pipeline
+        ::icon(fa fa-file-contract)
+        [99% Accuracy / Gemini-3-Pro]
+    Computer Vision
+      Safety Vision Pro
+        ::icon(fa fa-eye)
+        [YOLO26 / Edge Inference]
+      OmniDetect
+        ::icon(fa fa-cube)
+        [NVIDIA RTX Optimization]
+```
+
+<br/>
+
+<!-- TECH STACK - EXPANDED -->
 <h2 align="center">🛠️ Technical Arsenal</h2>
 
-<div align="center">
-  
-  <!-- GenAI Row -->
-  <b>Generative AI & Orchestration</b><br/>
-  <img src="https://img.shields.io/badge/Azure_OpenAI-0078D4?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white" />
-  <img src="https://img.shields.io/badge/Milvus_DB-00a1ea?style=for-the-badge&logo=milvus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Model_Context_Protocol-000000?style=for-the-badge&logo=json&logoColor=white" />
-  
-  <br/><br/>
-  
-  <!-- Data & Cloud Row -->
-  <b>Cloud & Data Engineering</b><br/>
-  <img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" />
-  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" />
-  
-  <br/><br/>
-  
-  <!-- CV & Core Row -->
-  <b>Computer Vision & Core Stack</b><br/>
-  <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=ultralytics&logoColor=black" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="20%"><b>🤖 Generative AI</b></td>
+    <td align="center" width="20%"><b>🧠 Machine Learning</b></td>
+    <td align="center" width="20%"><b>🌩️ Cloud & DevOps</b></td>
+    <td align="center" width="20%"><b>📊 Data Engineering</b></td>
+    <td align="center" width="20%"><b>💻 Core & Web</b></td>
+  </tr>
+  <tr>
+    <!-- GEN AI -->
+    <td align="center" valign="top">
+      <img src="https://skillicons.dev/icons?i=openai" height="40" alt="OpenAI" />
+      <img src="https://skillicons.dev/icons?i=tensorflow" height="40" alt="LangChain (TensorFlow icon placeholder)" />
+      <br/>
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/LlamaIndex-121212?style=flat-square&logo=llamaindex&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Gemini_Pro-8E75B2?style=flat-square&logo=google&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" />
+    </td>
 
-</div>
+    <!-- ML & CV -->
+    <td align="center" valign="top">
+      <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="40" alt="PyTorch/TF" />
+      <br/>
+      <img src="https://skillicons.dev/icons?i=opencv,scikitlearn" height="40" alt="OpenCV/Sklearn" />
+      <br/>
+      <img src="https://img.shields.io/badge/YOLO_v8-00FFFF?style=flat-square&logo=yolo&logoColor=black" /><br/>
+      <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" /><br/>
+      <img src="https://img.shields.io/badge/PaddleOCR-000000?style=flat-square&logo=paddlepaddle&logoColor=white" />
+    </td>
+
+    <!-- CLOUD & DEVOPS -->
+    <td align="center" valign="top">
+      <img src="https://skillicons.dev/icons?i=azure,aws,gcp" height="40" alt="Cloud" />
+      <br/>
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions" height="40" alt="DevOps" />
+      <br/>
+      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Linux_Admin-FCC624?style=flat-square&logo=linux&logoColor=black" /><br/>
+      <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white" />
+    </td>
+
+    <!-- DATA ENG -->
+    <td align="center" valign="top">
+      <img src="https://skillicons.dev/icons?i=python,scala" height="40" alt="Languages" />
+      <br/>
+      <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Milvus_DB-00a1ea?style=flat-square&logo=milvus&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Pinecone-000000?style=flat-square&logo=pinecone&logoColor=white" /><br/>
+      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" height="40" alt="Databases" />
+    </td>
+
+    <!-- CORE & WEB -->
+    <td align="center" valign="top">
+      <img src="https://skillicons.dev/icons?i=fastapi,flask,django" height="40" alt="Backend" />
+      <br/>
+      <img src="https://skillicons.dev/icons?i=react,nextjs,ts" height="40" alt="Frontend" />
+      <br/>
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" /><br/>
+      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" /><br/>
+      <img src="https://skillicons.dev/icons?i=git,vscode,bash" height="40" alt="Tools" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-<!-- ENGINEERING PHILOSOPHY - TERMINAL STYLE -->
-<h2 align="center">🧠 Engineering Philosophy</h2>
+<!-- SNAKE ANIMATION SECTION -->
 <div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=500&size=18&duration=4000&pause=1000&color=27FF00&background=0D1117&center=true&vCenter=true&width=600&lines=%3E+%22The+challenge+isn't+accessing+a+model%3B+it's+orchestration.%22;System+2+AI+%3A+Plan+-%3E+Reflect+-%3E+Verify+-%3E+Execute" alt="Philosophy" />
-</div>
-<div align="center">
-  <i>I solve the "black box" problem by implementing strict <b>Canonical Reconciliation</b> and <b>Human-in-the-Loop</b> observability.</i>
-</div>
-
-<br/>
-
-<!-- GITHUB STATS -->
-<h2 align="center">⚡ Stats & Activity</h2>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" height="180" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pypi-ahmad&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" height="180" alt="languages graph" />
+  <img src="https://github.com/pypi-ahmad/pypi-ahmad/blob/output/github-contribution-grid-snake.svg" width="100%" alt="snake animation" />
 </div>
 
 <br/>
 
 <!-- FOOTER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=100&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=20C20E&height=100&section=footer" />
 </div>
