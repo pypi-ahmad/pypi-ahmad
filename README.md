@@ -251,7 +251,7 @@ Agent that converts natural language into safe, executable SQL
 <h2 align="center">⚡ Activity</h2>
 
 <div align="center">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170"/>
 </div>
 
 <div align="center">
