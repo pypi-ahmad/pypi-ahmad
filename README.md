@@ -1,6 +1,6 @@
 <!-- ======================= HEADER ======================= -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20System-2%20Architect&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20Data%20Scientist&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
 
   <h2>Hi, I'm Ahmad 👋</h2>
 
@@ -123,53 +123,53 @@ turning LLMs into **reliable, production-grade systems**.
   </tr>
   <tr>
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=openai" height="40" />
-      <img src="https://skillicons.dev/icons?i=tensorflow" height="40" />
+      <img src="https://skillicons.dev/icons?i=openai" height="40" style="margin:4px" />
+      <img src="https://skillicons.dev/icons?i=tensorflow" height="40" style="margin:4px" />
       <br/>
-      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/LlamaIndex-121212?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Gemini_Pro-8E75B2?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/LlamaIndex-121212?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Gemini_Pro-8E75B2?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" style="margin:4px" />
     </td>
 
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="40" />
+      <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="40" style="margin:4px" />
       <br/>
-      <img src="https://skillicons.dev/icons?i=opencv,scikitlearn" height="40" />
+      <img src="https://skillicons.dev/icons?i=opencv,scikitlearn" height="40" style="margin:4px" />
       <br/>
-      <img src="https://img.shields.io/badge/YOLO_v8-00FFFF?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/PaddleOCR-000000?style=flat-square" />
+      <img src="https://img.shields.io/badge/YOLO_v8-00FFFF?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/PaddleOCR-000000?style=flat-square" style="margin:4px" />
     </td>
 
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=azure,aws,gcp" height="40" />
+      <img src="https://skillicons.dev/icons?i=azure,aws,gcp" height="40" style="margin:4px" />
       <br/>
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions" height="40" />
+      <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions" height="40" style="margin:4px" />
       <br/>
-      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square" />
+      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square" style="margin:4px" />
     </td>
 
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=python,scala" height="40" />
+      <img src="https://skillicons.dev/icons?i=python,scala" height="40" style="margin:4px" />
       <br/>
-      <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Milvus-00a1ea?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Pinecone-black?style=flat-square" /><br/>
-      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" height="40" />
+      <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Milvus-00a1ea?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Pinecone-black?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" height="40" style="margin:4px" />
     </td>
 
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=fastapi,flask,django" height="40" />
+      <img src="https://skillicons.dev/icons?i=fastapi,flask,django" height="40" style="margin:4px" />
       <br/>
-      <img src="https://skillicons.dev/icons?i=react,nextjs,ts" height="40" />
+      <img src="https://skillicons.dev/icons?i=react,nextjs,ts" height="40" style="margin:4px" />
       <br/>
-      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" /><br/>
-      <img src="https://skillicons.dev/icons?i=git,vscode,bash" height="40" />
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=git,vscode,bash" height="40" style="margin:4px" />
     </td>
   </tr>
 </table>
