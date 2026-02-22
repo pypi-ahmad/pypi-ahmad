@@ -370,12 +370,14 @@ Most automation systems:
 
 ```mermaid
 graph TD;
-    A[User Goal] --> B[Planner Agent];
-    B --> C[Action Executor Playwright];
-    C --> D[UI State Observation];
-    D --> E[Reasoning Loop LLM];
-    E --> F[Next Action Decision];
-    F --> B;
+    A[User Intent] --> B[RAG Milvus];
+    B --> C[Retrieve SOP Knowledge];
+    C --> D[LLM Planner];
+    D --> E[Step-by-Step Execution Plan];
+    E --> F[CUA Agent];
+    F --> G[UI Actions];
+    G --> H[Observation];
+    H --> F;
 ```
 
 ### ⚙️ Key Components
