@@ -23,8 +23,20 @@
 
 <br/>
 
+<!-- ======================= IMPACT SNAPSHOT ======================= -->
+## 📊 Impact Snapshot
+
+- **99% accuracy** — Document intelligence pipeline (insurance)
+- **80% success rate** — Agentic automation (CUA + RAG)
+- **40% token reduction** — MCP + AX Tree optimization
+- **4+ production systems** — deployed across healthcare & enterprise workflows
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
+
 <!-- ======================= CORE MESSAGE ======================= -->
 ## 🚀 What I Do
+
+I build AI systems that actually work in production — especially where accuracy, reliability, and real-world constraints matter (healthcare, insurance, enterprise workflows).
 
 I build **reliable, production-grade AI systems** — not demos.
 
@@ -37,6 +49,25 @@ I build **reliable, production-grade AI systems** — not demos.
 * Agentic workflows with tools + memory
 * Reliability: validation, evaluation, observability
 * From **unstructured data → production systems**
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
+
+<!-- ======================= CURRENTLY BUILDING ======================= -->
+## 🧪 Currently Building
+
+- 🏥 Healthcare AI pipelines on Azure — medical fax parsing using OCR + LLM reasoning (Document Intelligence + Databricks)
+- 🤖 Agentic automation systems using CUA + MCP for UI-driven enterprise workflows
+- ⚡ Reliability-first LLM systems — structured outputs, validation loops, and evaluation pipelines
+
+> Focus: Making LLM systems **trustworthy, measurable, and production-ready**
+
+<!-- ======================= DIFFERENTIATORS ======================= -->
+## ⚙️ Engineering Differentiators
+
+- 🧠 **Validation-first AI** — LLM outputs are treated as untrusted until verified
+- 🔁 **Closed-loop systems** — every pipeline includes feedback, retry, and evaluation
+- 📊 **Measurable AI** — accuracy, success rate, and reliability tracked explicitly
+- 🧩 **System-2 architectures** — planning → reasoning → validation → execution
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
@@ -57,6 +88,7 @@ OCR → LLM Extraction → Structured JSON → Validation → Final Output
 * Layout-aware OCR + reasoning-based extraction
 * Schema-aligned structured outputs
 * Post-extraction validation against canonical documents
+* Healthcare-ready pipelines — extended to medical fax parsing using Azure Document Intelligence
 
 **Insight:** Never trust raw LLM output → always validate
 
@@ -75,6 +107,8 @@ User → RAG (SOPs) → Structured Plan → CUA → UI Execution
 * Milvus-based RAG over internal documentation
 * LLM converts prompts → executable workflows
 * AWS deployment + Dockerized runtime
+* MCP-based tool layer with Playwright integration
+* AX Tree parsing instead of DOM → ~40% token reduction + improved UI understanding
 
 **Insight:** Agents fail due to poor instructions, not models
 
@@ -128,6 +162,22 @@ Ingestion → Standardization → Joins → Unified Dataset
 **Insight:** Data reliability > model performance
 
 **Impact:** analytics-ready, consistent datasets
+
+---
+
+### 🏥 Healthcare Document Intelligence (Fax Automation)
+
+```text
+Medical Fax → OCR → Structured Extraction → Validation → Workflow Automation
+```
+
+* Azure Document Intelligence + layout-aware parsing
+* Extraction of clinical + insurance data from noisy scanned faxes
+* Integrated with downstream insurance workflows
+
+**Insight:** Healthcare AI requires both accuracy + compliance
+
+**Impact:** Automating manual fax-based workflows in insurance operations
 
 ---
 
@@ -226,6 +276,17 @@ Ingestion → Standardization → Joins → Unified Dataset
   I treat LLMs as <b>unreliable components</b> and build systems that enforce  
   <b>verification, observability, and deterministic behavior</b>.
 </p>
+
+<!-- ======================= HOW I THINK ======================= -->
+## 🧭 How I Approach AI Systems
+
+1. Start with **failure modes**, not models  
+2. Design **validation before generation**  
+3. Convert ambiguity → **structured plans**  
+4. Measure everything (accuracy, latency, cost)  
+5. Iterate with feedback loops  
+
+> Systems fail silently. Good engineers design for that.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
