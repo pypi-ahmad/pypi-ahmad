@@ -1,10 +1,8 @@
 <!-- ======================= HEADER ======================= -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI%20%7C%20Production%20AI%20Systems&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,1a1a2e,16213e&height=280&section=header&text=Ahmad%20Mujtaba&fontSize=70&fontColor=00FFAA&animation=fadeIn&fontAlignY=38&desc=GenAI%20Engineer%20%7C%20Agentic%20AI&descSize=18&descAlignY=55&descAlign=50&descColor=AAAAAA" width="100%" />
 
-  <h2>Hi, I'm Ahmad 👋</h2>
-
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Building+Reliable+AI+Systems;From+LLMs+to+Production+Systems;Agentic+AI+%7C+System-2+AI+%7C+RAG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Document+Intelligence+%7C+RAG+%7C+LLM+Systems" />
 
   <br/><br/>
 
@@ -23,224 +21,132 @@
 
 <br/>
 
-<!-- ======================= IMPACT SNAPSHOT ======================= -->
-## 📊 Impact Snapshot
+<!-- ======================= ABOUT ======================= -->
+## About
 
-- **99% accuracy** — Document intelligence pipeline (insurance)
-- **80% success rate** — Agentic automation (CUA + RAG)
-- **40% token reduction** — MCP + AX Tree optimization
-- **4+ production systems** — deployed across healthcare & enterprise workflows
+GenAI Engineer at **Deloitte** (July 2025 — present), building document intelligence pipelines, agentic automation systems, and healthcare AI on Azure. Previously **Associate Data Scientist at Cognizant** (Sep 2022 — May 2025), working on warranty analytics, conversational AI, and data pipelines.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
+**M.Tech** in Data Analytics & Decision Sciences — IIIT Kurnool · **B.Tech** in Computer Science Engineering — MANUU
 
-<!-- ======================= CORE MESSAGE ======================= -->
-## 🚀 What I Do
-
-I build AI systems that actually work in production — especially where accuracy, reliability, and real-world constraints matter (healthcare, insurance, enterprise workflows).
-
-I build **reliable, production-grade AI systems** — not demos.
-
-```diff
-- LLM ≠ Product
-+ System = LLM + Tools + Memory + Verification + Observability
-```
-
-* System-2 AI (plan → reason → verify → execute)
-* Agentic workflows with tools + memory
-* Reliability: validation, evaluation, observability
-* From **unstructured data → production systems**
+I treat LLM outputs as unverified signals. Every system I build wraps model calls in structured validation, evaluation loops, and deterministic guardrails.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
-<!-- ======================= CURRENTLY BUILDING ======================= -->
-## 🧪 Currently Building
+<!-- ======================= NOTABLE SYSTEMS ======================= -->
+## Notable Systems
 
-- 🏥 Healthcare AI pipelines on Azure — medical fax parsing using OCR + LLM reasoning (Document Intelligence + Databricks)
-- 🤖 Agentic automation systems using CUA + MCP for UI-driven enterprise workflows
-- ⚡ Reliability-first LLM systems — structured outputs, validation loops, and evaluation pipelines
+### Intelligent Document Processing
 
-> Focus: Making LLM systems **trustworthy, measurable, and production-ready**
+OCR + LLM extraction pipeline for scanned insurance documents. Layout-aware parsing, schema-aligned structured outputs, and multi-stage validation against canonical documents.
 
-<!-- ======================= DIFFERENTIATORS ======================= -->
-## ⚙️ Engineering Differentiators
+**Stack:** Python, PaddleOCR, GPT-5.1, Gemini, Pydantic · **Result:** ~90% → ~99% extraction accuracy
 
-- 🧠 **Validation-first AI** — LLM outputs are treated as untrusted until verified
-- 🔁 **Closed-loop systems** — every pipeline includes feedback, retry, and evaluation
-- 📊 **Measurable AI** — accuracy, success rate, and reliability tracked explicitly
-- 🧩 **System-2 architectures** — planning → reasoning → validation → execution
+---
+
+### Computer-Using Agent
+
+RAG-grounded agent for UI automation. Retrieves SOPs from Milvus, generates structured execution plans, and acts through an MCP-based tool layer with Playwright and AX Tree parsing.
+
+**Stack:** Python, OpenAI CUA, Milvus, MCP, Playwright, AWS, Docker, FastAPI · **Result:** ~38% → ~80% task success rate · ~40% token reduction via AX Tree optimization
+
+---
+
+### Clinical Decision Support System
+
+Privacy-first medical document processing. Local-first execution with Ollama as the default model path, structured extraction of clinical and insurance data, and hybrid rule + LLM reasoning with optional cloud model adapters when permitted.
+
+**Stack:** Python, FastAPI, Streamlit, SQLite, Ollama, Pydantic
+
+---
+
+### Autonomous Research Agent
+
+Multi-agent LangGraph system with parallel tool-based retrieval, a critic-driven evaluation loop, and quality-scored synthesis.
+
+**Stack:** Python, LangGraph, LangChain, Gemini, FastAPI, Streamlit, FAISS
+
+---
+
+### Healthcare Document Intelligence *(current)*
+
+Medical fax parsing on Azure. Layout-aware extraction from noisy scanned documents, integrated with downstream insurance workflows.
+
+**Stack:** Azure Document Intelligence, Azure Databricks, Python
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
-<!-- ======================= SYSTEMS ======================= -->
+<!-- ======================= OPEN SOURCE ======================= -->
+## Open Source
 
-## 🔥 Production-Grade AI Systems
+### [GenAI Systems Lab](https://github.com/pypi-ahmad/genai-systems-lab)
 
-<p align="center"><i>Systems designed for reliability, evaluation, and real-world deployment — not demos.</i></p>
+Shared execution platform for 20 AI systems — 10 generative AI pipelines, 5 LangGraph state machines, 5 CrewAI multi-agent teams — unified behind a single API, frontend, and runtime.
 
----
-
-### 📄 Intelligent Document Processing (Enterprise IDP)
-
-```text
-OCR → LLM Extraction → Structured JSON → Validation → Final Output
-```
-
-* Layout-aware OCR + reasoning-based extraction
-* Schema-aligned structured outputs
-* Post-extraction validation against canonical documents
-* Healthcare-ready pipelines — extended to medical fax parsing using Azure Document Intelligence
-
-**Insight:** Never trust raw LLM output → always validate
-
-**Impact:** ~90% → ~99% accuracy, production-ready pipeline
-
-👉 **[Read Case Study Below](#-case-study-1--intelligent-document-processing-idp-ai)**
+- **Backend:** Python 3.13, FastAPI, JWT auth, input validation, rate limiting, SSE streaming
+- **LLM dispatch:** Gemini, OpenAI, Anthropic, Ollama — BYOK per request
+- **Frontend:** Next.js 16, React 19, TypeScript, Tailwind CSS v4
+- **Runtime:** per-run confidence scoring, session memory, benchmark evaluation (15 projects), explainability
+- **Contract:** all 20 projects implement `run(input, api_key) → dict` and inherit the full platform stack
 
 ---
 
-### 🤖 Computer-Using Agent (CUA + RAG)
+### [Portfolio](https://github.com/pypi-ahmad/pypi-ahmad.github.io)
 
-```text
-User → RAG (SOPs) → Structured Plan → CUA → UI Execution
-```
+React SPA presenting work history, 8 system case studies, and a 20-system platform catalog. 147 automated tests covering rendering, behavior, navigation, accessibility, and contrast compliance. 32 theme families with WCAG 4.5:1 contrast enforcement.
 
-* Milvus-based RAG over internal documentation
-* LLM converts prompts → executable workflows
-* AWS deployment + Dockerized runtime
-* MCP-based tool layer with Playwright integration
-* AX Tree parsing instead of DOM → ~40% token reduction + improved UI understanding
-
-**Insight:** Agents fail due to poor instructions, not models
-
-**Impact:** ~38% → ~80% success rate
-
-👉 **[Read Case Study Below](#-case-study-2--computer-using-agent-cua)**
-
----
-
-### 🧠 Autonomous Research Agent (System-2 AI)
-
-```text
-Planner → Parallel Retrieval → Synthesizer → Critic → Refiner
-```
-
-* Multi-agent LangGraph system
-* Parallel tool-based retrieval
-* Critic-driven evaluation loop
-
-**Insight:** Reliability comes from evaluation loops
-
-**Impact:** grounded, high-quality research outputs
-
----
-
-### 🧠 Self-Healing Text-to-SQL Agent
-
-```text
-Schema → Generate → Validate → Execute → Retry
-```
-
-* Schema-aware SQL generation
-* Guardrails for safe execution
-* Error-aware retry loop
-
-**Insight:** AI must be closed-loop systems
-
-**Impact:** safe and reliable NL → SQL
-
----
-
-### 📊 Data Systems (Databricks)
-
-```text
-Ingestion → Standardization → Joins → Unified Dataset
-```
-
-* Pandas + PySpark hybrid pipelines
-* Schema normalization and joins
-
-**Insight:** Data reliability > model performance
-
-**Impact:** analytics-ready, consistent datasets
-
----
-
-### 🏥 Healthcare Document Intelligence (Fax Automation)
-
-```text
-Medical Fax → OCR → Structured Extraction → Validation → Workflow Automation
-```
-
-* Azure Document Intelligence + layout-aware parsing
-* Extraction of clinical + insurance data from noisy scanned faxes
-* Integrated with downstream insurance workflows
-
-**Insight:** Healthcare AI requires both accuracy + compliance
-
-**Impact:** Automating manual fax-based workflows in insurance operations
-
----
+**Live:** [pypi-ahmad.github.io](https://pypi-ahmad.github.io) · **Stack:** React 18, Vite, styled-components, Framer Motion
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= STACK ======================= -->
 
-<h2 align="center">🛠️ Technical Arsenal</h2>
-
-<p align="center">
-  <b>GenAI:</b> LangGraph, LangChain, OpenAI, Gemini, Ollama<br/>
-  <b>Data:</b> Databricks, PySpark, Pandas, Milvus<br/>
-  <b>Backend:</b> FastAPI, Docker, AWS<br/>
-  <b>ML/CV:</b> PyTorch, OpenCV, PaddleOCR
-</p>
-
-<p align="center"><sub>Expanded stack for implementation depth</sub></p>
+<h2 align="center">Tech Stack</h2>
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="20%"><b>🤖 Generative AI</b></td>
-    <td align="center" width="20%"><b>🧠 Machine Learning</b></td>
-    <td align="center" width="20%"><b>🌩️ Cloud & DevOps</b></td>
-    <td align="center" width="20%"><b>📊 Data Engineering</b></td>
-    <td align="center" width="20%"><b>💻 Core & Web</b></td>
+    <td align="center" width="20%"><b>GenAI / LLM</b></td>
+    <td align="center" width="20%"><b>ML / CV</b></td>
+    <td align="center" width="20%"><b>Cloud & DevOps</b></td>
+    <td align="center" width="20%"><b>Data</b></td>
+    <td align="center" width="20%"><b>Backend & Web</b></td>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=openai" height="40" style="margin:4px" />
-      <img src="https://skillicons.dev/icons?i=tensorflow" height="40" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=openai" height="40" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/LlamaIndex-121212?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Gemini_Pro-8E75B2?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" style="margin:4px" />
+      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/CrewAI-FF5A50?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/MCP-000000?style=flat-square" style="margin:4px" />
     </td>
     <td align="center" valign="top">
       <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="40" style="margin:4px" /><br/>
       <img src="https://skillicons.dev/icons?i=opencv,scikitlearn" height="40" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/YOLO_v8-00FFFF?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/PaddleOCR-000000?style=flat-square" style="margin:4px" />
     </td>
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=azure,aws,gcp" height="40" style="margin:4px" /><br/>
-      <img src="https://skillicons.dev/icons?i=docker,kubernetes,githubactions" height="40" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Bicep-0078D4?style=flat-square" style="margin:4px" />
+      <img src="https://skillicons.dev/icons?i=azure,aws" height="40" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=docker,githubactions" height="40" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square" style="margin:4px" />
     </td>
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=python,scala" height="40" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=python" height="40" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/Milvus-00a1ea?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://img.shields.io/badge/Pinecone-black?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/FAISS-000000?style=flat-square" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/DuckDB-FFF000?style=flat-square" style="margin:4px" /><br/>
       <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" height="40" style="margin:4px" />
     </td>
     <td align="center" valign="top">
-      <img src="https://skillicons.dev/icons?i=fastapi,flask,django" height="40" style="margin:4px" /><br/>
+      <img src="https://skillicons.dev/icons?i=fastapi,flask" height="40" style="margin:4px" /><br/>
       <img src="https://skillicons.dev/icons?i=react,nextjs,ts" height="40" style="margin:4px" /><br/>
+      <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square" style="margin:4px" /><br/>
       <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" style="margin:4px" /><br/>
-      <img src="https://skillicons.dev/icons?i=git,vscode,bash" height="40" style="margin:4px" />
+      <img src="https://skillicons.dev/icons?i=git,vscode" height="40" style="margin:4px" />
     </td>
   </tr>
 </table>
@@ -248,7 +154,7 @@ Medical Fax → OCR → Structured Extraction → Validation → Workflow Automa
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
 <!-- ======================= STATS ======================= -->
-<h2 align="center">⚡ Activity</h2>
+<h2 align="center">Activity</h2>
 
 <div align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170"/>
@@ -259,137 +165,65 @@ Medical Fax → OCR → Structured Extraction → Validation → Workflow Automa
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pypi-ahmad&theme=radical" />
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
-
-<!-- ======================= PHILOSOPHY ======================= -->
-<h2 align="center">🧠 Engineering Philosophy</h2>
-
-<div align="center">
-  <b>Orchestration > Model Power</b><br>
-  <b>Reliability > Raw Intelligence</b><br>
-  <b>Systems > Prompts</b>
-</div>
-
-<br/>
-
-<p align="center">
-  I treat LLMs as <b>unreliable components</b> and build systems that enforce  
-  <b>verification, observability, and deterministic behavior</b>.
-</p>
-
-<!-- ======================= HOW I THINK ======================= -->
-## 🧭 How I Approach AI Systems
-
-1. Start with **failure modes**, not models  
-2. Design **validation before generation**  
-3. Convert ambiguity → **structured plans**  
-4. Measure everything (accuracy, latency, cost)  
-5. Iterate with feedback loops  
-
-> Systems fail silently. Good engineers design for that.
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
-
-<!-- ======================= SNAKE ======================= -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
+<!-- ======================= DEEP DIVES ======================= -->
+## System Design Deep Dives
 
-<!-- ======================= CASE STUDIES ======================= -->
-# 📚 System Design Deep Dives
+<details>
+<summary><b>Intelligent Document Processing (IDP)</b></summary>
 
-## 🧠 CASE STUDY 1 — Intelligent Document Processing (IDP AI)
+<br/>
 
-### 📌 Problem
-Traditional invoice/document pipelines rely on:
-- **OCR + regex** → brittle and error-prone
-- **Template-based extraction** → fails on real-world variation
+**Problem:** Traditional OCR + regex pipelines are brittle and fail on real-world document variation. Template-based extraction does not generalize across layout differences.
 
-**Goal:** Build a system that can handle noisy, unstructured, real-world financial documents with high accuracy + fraud awareness.
-
-### 🏗️ System Architecture
+**Architecture:**
 
 ```mermaid
 flowchart LR
-    A[📄 Raw Documents] --> B[🧠 VLM Extraction]
-    B --> C[📦 Structured JSON]
+    A[Raw Documents] --> B[VLM Extraction]
+    B --> C[Structured JSON]
 
-    C --> D1[🔍 Semantic Matching]
-    C --> D2[⚙️ Rule Validation]
-    C --> D3[🧠 AI Auditor]
+    C --> D1[Semantic Matching]
+    C --> D2[Rule Validation]
+    C --> D3[AI Auditor]
 
-    D1 --> E[🔗 Unified Entity Layer]
+    D1 --> E[Unified Entity Layer]
     D2 --> E
     D3 --> E
 
-    E --> F[✅ Final Decision Engine]
+    E --> F[Final Decision Engine]
 
     style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
     style D3 fill:#16213e,stroke:#36BCF7,color:#fff
     style F fill:#0f3460,stroke:#00FFAA,color:#fff
 ```
 
-### ⚙️ Key Components
+**Key components:**
+- **VLM-based extraction** — single-pass structured extraction replacing the OCR → parsing → mapping chain, handling layout variance naturally
+- **Semantic entity resolution** — fuzzy + vector matching for vendor names instead of brittle string matching
+- **Hybrid validation** — deterministic rules (required fields, thresholds) combined with LLM-based reasoning (fraud signals, anomalies)
+- **AI auditor** — detects suspicious patterns (vendor emails, inconsistent tax logic) beyond basic extraction
 
-#### 1. Generative OCR (VLM-based)
-- **Replaces:** OCR → parsing → mapping
-- **With:** Single-pass structured extraction
-- **Why it matters:** Removes 3 failure points & handles layout variance naturally.
+**Result:** ~99% structured extraction accuracy
 
-#### 2. Semantic Entity Resolution
-- **Vendor names:** Fuzzy + vector matching
-- **Design choice:** Avoid strict string matching (too fragile) → use semantic similarity.
+</details>
 
-#### 3. Hybrid Validation Layer
-| Type | Role |
-| :--- | :--- |
-| **Deterministic** | Required fields, thresholds |
-| **Probabilistic (LLM)** | Fraud signals, anomalies |
+<details>
+<summary><b>Computer-Using Agent (CUA)</b></summary>
 
-> **Key Idea:** Combine rules (precision) + LLM (reasoning).
+<br/>
 
-#### 4. AI Auditor (Forensic Layer)
-- Detects suspicious vendor emails, inconsistent tax logic, and unusual patterns.
-- **Result:** Beyond extraction → decision intelligence.
+**Problem:** Most UI automation relies on hardcoded selectors that break on UI changes and cannot reason about tasks.
 
-### 🚀 Key Innovations
-- Single-pass VLM extraction (no OCR pipeline fragmentation)
-- Hybrid guardrails (rules + reasoning)
-- Semantic normalization instead of string matching
-
-### ⚖️ Tradeoffs
-| Decision | Tradeoff |
-| :--- | :--- |
-| **VLM over OCR** | Higher cost per request |
-| **LLM auditing** | Non-deterministic outputs |
-| **Fuzzy matching** | Potential false positives |
-
-### 📊 Impact
-- **~99% structured extraction accuracy**
-- Near zero manual intervention
-- Detects fraud patterns missed by rule-based systems
-
-> **Takeaway:** This system transforms IDP from “data extraction” → decision intelligence pipeline.
-
----
-
-## 🤖 CASE STUDY 2 — Computer-Using Agent (CUA)
-
-### 📌 Problem
-Most automation systems:
-- Break on UI changes
-- Require hardcoded selectors
-- Cannot reason about tasks
-
-**Goal:** Build an agent that can understand UI state, execute tasks dynamically, and adapt like a human operator.
-
-### 🏗️ System Architecture
+**Architecture:**
 
 ```mermaid
 graph TD;
-    A[User Intent] --> B[RAG Milvus];
+    A[User Intent] --> B[RAG — Milvus];
     B --> C[Retrieve SOP Knowledge];
     C --> D[LLM Planner];
     D --> E[Step-by-Step Execution Plan];
@@ -399,112 +233,53 @@ graph TD;
     H --> F;
 ```
 
-### ⚙️ Key Components
+**Key components:**
+- **MCP tool layer** — abstracts UI actions (click, type, navigate); LLM uses structured tools, not direct browser control
+- **SOP injection via Milvus** — stores prior workflows and execution patterns, adding memory and consistency
+- **AX Tree parsing** — reasons about UI structure instead of CSS selectors, ~40% token reduction over DOM-based approaches
+- **Feedback loop** — action → observe → evaluate → retry for adaptive execution
 
-#### 1. MCP Tool Layer
-- Abstracts UI actions: `click`, `type`, `navigate`.
-- **Note:** LLM doesn’t control browser directly; it uses structured tools.
+**Result:** ~38% → ~80% task success rate
 
-#### 2. SOP Injection (Milvus)
-- **Stores:** Prior workflows & execution patterns.
-- **Why it matters:** Adds memory + consistency, reduces exploration cost.
+</details>
 
-#### 3. Vision-Guided Interaction
-- Uses UI context instead of brittle selectors.
-- **Moves from:** “click #btn-123” → **To:** “click submit button near form”.
+<details>
+<summary><b>Clinical Decision Support System</b></summary>
 
-#### 4. Feedback Loop
-`Action → Observe → Evaluate → Retry`
-- Enables adaptive execution & handles partial failures.
+<br/>
 
-### 🚀 Key Innovations
-- Tool-based abstraction (MCP)
-- UI reasoning instead of hardcoded automation
-- Memory-driven execution (SOP retrieval)
+**Problem:** Healthcare systems rely on manual data entry from PDFs and faxes, with fragmented patient records and high error risk.
 
-### ⚖️ Tradeoffs
-| Decision | Tradeoff |
-| :--- | :--- |
-| **LLM control loop** | Latency |
-| **Vision grounding** | Higher compute |
-| **SOP memory** | Maintenance overhead |
-
-### 📊 Impact
-- **~80% reliability** in semi-structured UIs
-- Automates workflows previously requiring humans
-- Foundation for enterprise agent automation
-
-> **Takeaway:** This system moves automation from scripts → intelligent agents.
-
----
-
-## 🏥 CASE STUDY 3 — Clinical Decision Support System (MediScan)
-
-### 📌 Problem
-Healthcare systems struggle with:
-- Manual data entry from PDFs/faxes
-- Fragmented patient records
-- High risk of prescription or claim errors
-
-**Goal:** Build a privacy-first AI system that processes medical documents locally, extracts structured data, and assists in clinical + insurance decisions.
-
-### 🏗️ System Architecture
+**Architecture:**
 
 ```mermaid
 flowchart LR
-    A[📑 Medical Docs] --> B[🧠 Local VLM OCR]
+    A[Medical Docs] --> B[Local VLM OCR]
 
-    B --> C[📊 Patient Data]
-    C --> D[🗄 Patient History DB]
+    B --> C[Patient Data]
+    C --> D[Patient History DB]
 
-    D --> E1[⚙️ Rule Engine]
-    D --> E2[🧠 LLM Reasoning]
+    D --> E1[Rule Engine]
+    D --> E2[LLM Reasoning]
 
-    E1 --> F[🧩 Decision Layer]
+    E1 --> F[Decision Layer]
     E2 --> F
 
-    F --> G[🚨 Alerts / Insights]
+    F --> G[Alerts / Insights]
 
     style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
     style E2 fill:#16213e,stroke:#36BCF7,color:#fff
     style G fill:#0f3460,stroke:#00FFAA,color:#fff
 ```
 
-### ⚙️ Key Components
+**Key components:**
+- **Local-first execution** — Ollama is the default path for privacy-sensitive workflows
+- **Hybrid inference** — optional cloud fallback is supported when permitted
+- **Clinical + insurance logic** — validates prescriptions, eligibility, and risk signals
 
-#### 1. Local-First OCR (Privacy Layer)
-- Runs fully offline using **Ollama** / **DeepSeek**.
-- **Result:** No PHI leaves system (Critical for HIPAA compliance).
+**Stack:** Python, FastAPI, Streamlit, SQLite, Ollama, Pydantic
 
-#### 2. Longitudinal Patient Analysis
-- Cross-references medications, diagnoses, and history.
-- **Result:** Enables context-aware decisions.
-
-#### 3. BYOK LLM Adapter
-- Local model → fallback to cloud.
-- **Why it matters:** Balances privacy, performance, and cost.
-
-#### 4. Insurance + Clinical Logic Engine
-- Validates prescriptions, eligibility, and risk signals.
-
-### 🚀 Key Innovations
-- **Air-gapped AI pipeline** (rare)
-- Hybrid local + cloud inference strategy
-- Combines medical + insurance reasoning
-
-### ⚖️ Tradeoffs
-| Decision | Tradeoff |
-| :--- | :--- |
-| **Local models** | Lower accuracy vs cloud |
-| **SQLite** | Limited scalability |
-| **Rule-based checks** | Maintenance overhead |
-
-### 📊 Impact
-- Eliminates manual medical data entry
-- Reduces prescription + claim errors
-- Enables privacy-compliant AI deployment
-
-> **Takeaway:** This system shows how AI can be deployed in regulated environments without compromising privacy.
+</details>
 
 <br/>
 
