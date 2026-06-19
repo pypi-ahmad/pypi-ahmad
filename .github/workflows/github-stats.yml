@@ -1,0 +1,86 @@
+name: Update GitHub Stats Images
+
+on:
+  schedule:
+    - cron: "20 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-github-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate required secret
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+        run: |
+          if [ -z "${GH_STATS_TOKEN}" ]; then
+            echo "::error::Missing required secret GH_STATS_TOKEN."
+            echo "::error::Create it at Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+      - name: Setup Zig
+        uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29
+        with:
+          version: 0.16.0
+
+      - name: Clone pinned stats generator
+        run: |
+          rm -rf /tmp/github-stats-src
+          git clone --depth 1 https://github.com/jstrieb/github-stats.git /tmp/github-stats-src
+          cd /tmp/github-stats-src
+          git fetch --depth 1 origin ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
+          git checkout ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
+
+      - name: Build generator
+        working-directory: /tmp/github-stats-src
+        run: zig build
+
+      - name: Generate stats images (public-only)
+        working-directory: /tmp/github-stats-src
+        env:
+          ACCESS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          EXCLUDE_PRIVATE: "true"
+          EXCLUDE_REPOS: ${{ secrets.GH_STATS_EXCLUDE_REPOS }}
+          EXCLUDE_LANGS: ${{ secrets.GH_STATS_EXCLUDE_LANGS }}
+          SILENT: "true"
+          MAX_RETRIES: "5"
+        run: ./zig-out/bin/github-stats
+
+      - name: Publish images to generated branch
+        run: |
+          set -euo pipefail
+
+          test -f /tmp/github-stats-src/generated/overview.svg
+          test -f /tmp/github-stats-src/generated/languages.svg
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin generated >/dev/null 2>&1; then
+            git fetch origin generated
+            git checkout -B generated origin/generated
+          else
+            git checkout --orphan generated
+          fi
+
+          git rm -rf . >/dev/null 2>&1 || true
+          cp /tmp/github-stats-src/generated/overview.svg ./overview.svg
+          cp /tmp/github-stats-src/generated/languages.svg ./languages.svg
+          git add overview.svg languages.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes in generated stats images."
+            exit 0
+          fi
+
+          git commit -m "Update GitHub stats images"
+          git push --set-upstream origin generated
