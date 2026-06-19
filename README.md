@@ -32,69 +32,61 @@ I treat LLM outputs as unverified signals. Every system I build wraps model call
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
-<!-- ======================= NOTABLE SYSTEMS ======================= -->
-## Notable Systems
+<!-- ======================= FEATURED REPOSITORIES ======================= -->
+## Featured Repositories
 
-### Intelligent Document Processing
+### [genai-systems-lab](https://github.com/pypi-ahmad/genai-systems-lab)
 
-OCR + LLM extraction pipeline for scanned insurance documents. Layout-aware parsing, schema-aligned structured outputs, and multi-stage validation against canonical documents.
+Shared execution platform for 20 AI systems (generative pipelines, LangGraph state machines, and CrewAI multi-agent teams) organized behind one repository contract.
 
-**Stack:** Python, PaddleOCR, GPT-5.1, Gemini, Pydantic · **Result:** ~90% → ~99% extraction accuracy
-
----
-
-### Computer-Using Agent
-
-RAG-grounded agent for UI automation. Retrieves SOPs from Milvus, generates structured execution plans, and acts through an MCP-based tool layer with Playwright and AX Tree parsing.
-
-**Stack:** Python, OpenAI CUA, Milvus, MCP, Playwright, AWS, Docker, FastAPI · **Result:** ~38% → ~80% task success rate · ~40% token reduction via AX Tree optimization
+**Stack:** Python (`pyproject`/`uv`), Docker · **Signals:** `ARCHITECTURE.md`, `benchmarks/`, `uv run pytest`
 
 ---
 
-### Clinical Decision Support System
+### [computer-use](https://github.com/pypi-ahmad/computer-use)
 
-Privacy-first medical document processing. Local-first execution with Ollama as the default model path, structured extraction of clinical and insurance data, and hybrid rule + LLM reasoning with optional cloud model adapters when permitted.
+Provider-native Computer Use workbench that runs model-driven desktop actions inside an isolated Docker Ubuntu/XFCE sandbox with FastAPI + React.
 
-**Stack:** Python, FastAPI, Streamlit, SQLite, Ollama, Pydantic
-
----
-
-### Autonomous Research Agent
-
-Multi-agent LangGraph system with parallel tool-based retrieval, a critic-driven evaluation loop, and quality-scored synthesis.
-
-**Stack:** Python, LangGraph, LangChain, Gemini, FastAPI, Streamlit, FAISS
+**Providers in repo:** OpenAI, Anthropic, Gemini · **Signals:** CI badge, API reference, architecture docs, tests badge (`482 passing`)
 
 ---
 
-### Healthcare Document Intelligence *(current)*
+### [agentic-rag-arxiv-research-assistant](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant)
 
-Medical fax parsing on Azure. Layout-aware extraction from noisy scanned documents, integrated with downstream insurance workflows.
+End-to-end Agentic RAG tutorial over ArXiv ML/AI papers, progressing from naive FAISS retrieval to advanced hybrid reranking and LangGraph CRAG.
 
-**Stack:** Azure Document Intelligence, Azure Databricks, Python
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
-
-<!-- ======================= OPEN SOURCE ======================= -->
-## Open Source
-
-### [GenAI Systems Lab](https://github.com/pypi-ahmad/genai-systems-lab)
-
-Shared execution platform for 20 AI systems — 10 generative AI pipelines, 5 LangGraph state machines, 5 CrewAI multi-agent teams — unified behind a single API, frontend, and runtime.
-
-- **Backend:** Python 3.13, FastAPI, JWT auth, input validation, rate limiting, SSE streaming
-- **LLM dispatch:** Gemini, OpenAI, Anthropic, Ollama — BYOK per request
-- **Frontend:** Next.js 16, React 19, TypeScript, Tailwind CSS v4
-- **Runtime:** per-run confidence scoring, session memory, benchmark evaluation (15 projects), explainability
-- **Contract:** all 20 projects implement `run(input, api_key) → dict` and inherit the full platform stack
+**Corpus in repo docs:** 600 papers (`cs.CL`, `cs.AI`, `cs.LG`) · **Pipeline:** Naive RAG -> Advanced RAG -> Agentic RAG
 
 ---
 
-### [Portfolio](https://github.com/pypi-ahmad/pypi-ahmad.github.io)
+### [ollama-rag-platforms](https://github.com/pypi-ahmad/ollama-rag-platforms)
 
-React SPA presenting work history, 8 system case studies, and a 20-system platform catalog. 147 automated tests covering rendering, behavior, navigation, accessibility, and contrast compliance. 32 theme families with WCAG 4.5:1 contrast enforcement.
+Consolidated multi-project repository for local LLM and RAG platform experiments built around Ollama-centric workflows.
 
-**Live:** [pypi-ahmad.github.io](https://pypi-ahmad.github.io) · **Stack:** React 18, Vite, styled-components, Framer Motion
+**Included modules:** `offline-ollama-rag-app`, `production-rag-ask-my-docs`, `multi-agent-system-ollama`, `local-slm-ollama-benchmark`, `rag-telemetry-evals-ollama`, `duckdb-analytics-mcp`
+
+---
+
+### [granite-lora-qlora-text-classification](https://github.com/pypi-ahmad/granite-lora-qlora-text-classification)
+
+LoRA/QLoRA fine-tuning walkthrough for IBM Granite 4.1 3B on AG News with explicit memory/accuracy tradeoff analysis for consumer GPUs.
+
+**Reported in repo:** baseline `89.15%`, LoRA `95.15%`, QLoRA `94.2%` with lower peak VRAM
+
+---
+
+### [natural-language-to-sql-agent](https://github.com/pypi-ahmad/natural-language-to-sql-agent)
+
+LangGraph + Streamlit application that translates natural-language questions into SQL, executes against SQLite, and returns natural-language answers.
+
+**Stack:** Python, LangGraph, Streamlit, SQLite · **Signals:** test report + repo governance docs
+
+---
+
+### Portfolio
+
+- **Code:** [pypi-ahmad.github.io](https://github.com/pypi-ahmad/pypi-ahmad.github.io)
+- **Live:** [pypi-ahmad.github.io](https://pypi-ahmad.github.io)
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=1a1a2e&height=2" width="100%"/>
 
@@ -185,110 +177,99 @@ React SPA presenting work history, 8 system case studies, and a 20-system platfo
 ## System Design Deep Dives
 
 <details>
-<summary><b>Intelligent Document Processing (IDP)</b></summary>
+<summary><b>Agentic RAG over ArXiv (LangGraph CRAG)</b></summary>
 
 <br/>
 
-**Problem:** Traditional OCR + regex pipelines are brittle and fail on real-world document variation. Template-based extraction does not generalize across layout differences.
+**Problem:** Naive RAG pipelines over technical corpora often return weak context and hallucinated answers when retrieval quality degrades.
 
 **Architecture:**
 
 ```mermaid
-flowchart LR
-    A[Raw Documents] --> B[VLM Extraction]
-    B --> C[Structured JSON]
-
-    C --> D1[Semantic Matching]
-    C --> D2[Rule Validation]
-    C --> D3[AI Auditor]
-
-    D1 --> E[Unified Entity Layer]
-    D2 --> E
-    D3 --> E
-
-    E --> F[Final Decision Engine]
-
-    style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
-    style D3 fill:#16213e,stroke:#36BCF7,color:#fff
-    style F fill:#0f3460,stroke:#00FFAA,color:#fff
+flowchart TD
+    A[ArXiv Corpus 600 Papers] --> B[Naive RAG FAISS]
+    B --> C[Advanced RAG Hybrid + Rerank]
+    C --> D[LangGraph CRAG State Machine]
+    D --> E[Document Grading]
+    E --> F[Web Search Fallback]
+    F --> G[Answer Generation]
+    G --> H[Hallucination Grading]
+    H --> I[Final Answer]
 ```
 
 **Key components:**
-- **VLM-based extraction** — single-pass structured extraction replacing the OCR → parsing → mapping chain, handling layout variance naturally
-- **Semantic entity resolution** — fuzzy + vector matching for vendor names instead of brittle string matching
-- **Hybrid validation** — deterministic rules (required fields, thresholds) combined with LLM-based reasoning (fraud signals, anomalies)
-- **AI auditor** — detects suspicious patterns (vendor emails, inconsistent tax logic) beyond basic extraction
+- **Three-stage progression** — naive FAISS baseline, advanced hybrid retrieval, then agentic CRAG orchestration
+- **LangGraph state machine** — retrieval, document grading, web-search fallback, generation, hallucination checks
+- **Local model stack** — Ollama-hosted embedding + generation models documented in repo setup
+- **Evaluation framing** — explicit retrieval comparison and reproducible notebook pipeline
 
-**Result:** ~99% structured extraction accuracy
+**Repository:** [agentic-rag-arxiv-research-assistant](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant)
 
 </details>
 
 <details>
-<summary><b>Computer-Using Agent (CUA)</b></summary>
+<summary><b>Ollama RAG Platforms (Consolidated Portfolio)</b></summary>
 
 <br/>
 
-**Problem:** Most UI automation relies on hardcoded selectors that break on UI changes and cannot reason about tasks.
+**Problem:** Local-first RAG and agent projects are often scattered across separate repositories, making comparison and reuse difficult.
 
 **Architecture:**
 
 ```mermaid
 graph TD;
-    A[User Intent] --> B[RAG — Milvus];
-    B --> C[Retrieve SOP Knowledge];
-    C --> D[LLM Planner];
-    D --> E[Step-by-Step Execution Plan];
-    E --> F[CUA Agent];
-    F --> G[UI Actions];
-    G --> H[Observation];
-    H --> F;
+    A[ollama-rag-platforms] --> B[offline-ollama-rag-app]
+    A --> C[production-rag-ask-my-docs]
+    A --> D[multi-agent-system-ollama]
+    A --> E[local-slm-ollama-benchmark]
+    A --> F[rag-telemetry-evals-ollama]
+    A --> G[duckdb-analytics-mcp]
+    B --> H[Local LLM + Retrieval Patterns]
+    C --> H
+    D --> H
+    E --> H
+    F --> H
+    G --> H
 ```
 
 **Key components:**
-- **MCP tool layer** — abstracts UI actions (click, type, navigate); LLM uses structured tools, not direct browser control
-- **SOP injection via Milvus** — stores prior workflows and execution patterns, adding memory and consistency
-- **AX Tree parsing** — reasons about UI structure instead of CSS selectors, ~40% token reduction over DOM-based approaches
-- **Feedback loop** — action → observe → evaluate → retry for adaptive execution
+- **Consolidated structure** — multiple Ollama-centric systems grouped under one repo
+- **Coverage breadth** — offline RAG app, production-style docs QA, multi-agent workflows, telemetry/evaluation tooling
+- **MCP integration surface** — dedicated DuckDB analytics MCP module in the same portfolio
+- **Portfolio orientation** — fast comparison of local LLM architecture patterns across related projects
 
-**Result:** ~38% → ~80% task success rate
+**Repository:** [ollama-rag-platforms](https://github.com/pypi-ahmad/ollama-rag-platforms)
 
 </details>
 
 <details>
-<summary><b>Clinical Decision Support System</b></summary>
+<summary><b>Granite LoRA vs QLoRA on 8 GB VRAM</b></summary>
 
 <br/>
 
-**Problem:** Healthcare systems rely on manual data entry from PDFs and faxes, with fragmented patient records and high error risk.
+**Problem:** Fine-tuning LLMs on consumer hardware requires tight memory optimization while maintaining classification quality.
 
 **Architecture:**
 
 ```mermaid
 flowchart LR
-    A[Medical Docs] --> B[Local VLM OCR]
-
-    B --> C[Patient Data]
-    C --> D[Patient History DB]
-
-    D --> E1[Rule Engine]
-    D --> E2[LLM Reasoning]
-
-    E1 --> F[Decision Layer]
-    E2 --> F
-
-    F --> G[Alerts / Insights]
-
-    style B fill:#1a1a2e,stroke:#00FFAA,color:#fff
-    style E2 fill:#16213e,stroke:#36BCF7,color:#fff
-    style G fill:#0f3460,stroke:#00FFAA,color:#fff
+    A[AG News Dataset] --> B[Granite 4.1 3B Base]
+    B --> C[Zero-shot Baseline]
+    B --> D[LoRA Fine-tuning]
+    B --> E[QLoRA Fine-tuning]
+    D --> F[Eval: Accuracy / Macro F1 / VRAM]
+    E --> F
+    C --> F
+    F --> G[Tradeoff Analysis]
 ```
 
 **Key components:**
-- **Local-first execution** — Ollama is the default path for privacy-sensitive workflows
-- **Hybrid inference** — optional cloud fallback is supported when permitted
-- **Clinical + insurance logic** — validates prescriptions, eligibility, and risk signals
+- **PEFT pipeline** — LoRA and QLoRA adapters over Granite 4.1 3B
+- **Quantization path** — 4-bit NF4 QLoRA to reduce VRAM pressure
+- **Consumer-GPU target** — documented execution on RTX 4060 8 GB VRAM
+- **Reported results in repo** — baseline `89.15%`, LoRA `95.15%`, QLoRA `94.2%`
 
-**Stack:** Python, FastAPI, Streamlit, SQLite, Ollama, Pydantic
+**Repository:** [granite-lora-qlora-text-classification](https://github.com/pypi-ahmad/granite-lora-qlora-text-classification)
 
 </details>
 
