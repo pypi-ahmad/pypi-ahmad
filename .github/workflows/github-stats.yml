@@ -27,40 +27,38 @@ jobs:
             exit 1
           fi
 
-      - name: Setup Zig
-        uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29
-        with:
-          version: 0.16.0
-
       - name: Clone pinned stats generator
         run: |
-          rm -rf /tmp/github-stats-src
-          git clone --depth 1 https://github.com/jstrieb/github-stats.git /tmp/github-stats-src
-          cd /tmp/github-stats-src
-          git fetch --depth 1 origin ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
-          git checkout ef574fae2ce8311f3e1ebb43e07c0c0fae0a41b6
+          rm -rf /tmp/github-language-stats-src
+          git clone --depth 1 https://github.com/Connor9994/GitHub-Language-Stats.git /tmp/github-language-stats-src
+          cd /tmp/github-language-stats-src
+          git fetch --depth 1 origin 30192046390884d003729121a02e755a68498441
+          git checkout 30192046390884d003729121a02e755a68498441
 
-      - name: Build generator
-        working-directory: /tmp/github-stats-src
-        run: zig build
+      - name: Install generator dependencies
+        working-directory: /tmp/github-language-stats-src
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
 
       - name: Generate stats images (public-only)
-        working-directory: /tmp/github-stats-src
+        working-directory: /tmp/github-language-stats-src
         env:
           ACCESS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
-          EXCLUDE_PRIVATE: "true"
-          EXCLUDE_REPOS: ${{ secrets.GH_STATS_EXCLUDE_REPOS }}
-          EXCLUDE_LANGS: ${{ secrets.GH_STATS_EXCLUDE_LANGS }}
-          SILENT: "true"
-          MAX_RETRIES: "5"
-        run: ./zig-out/bin/github-stats
+          GITHUB_ACTOR: pypi-ahmad
+          EXCLUDED: ${{ secrets.GH_STATS_EXCLUDE_REPOS }}
+          EXCLUDED_LANGS: ${{ secrets.GH_STATS_EXCLUDE_LANGS }}
+          EXCLUDE_FORKED_REPOS: "true"
+        run: |
+          python3 --version
+          python3 generate_images.py
 
       - name: Publish images to generated branch
         run: |
           set -euo pipefail
 
-          test -f /tmp/github-stats-src/generated/overview.svg
-          test -f /tmp/github-stats-src/generated/languages.svg
+          test -f /tmp/github-language-stats-src/generated/overview.svg
+          test -f /tmp/github-language-stats-src/generated/languages.svg
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -73,8 +71,8 @@ jobs:
           fi
 
           git rm -rf . >/dev/null 2>&1 || true
-          cp /tmp/github-stats-src/generated/overview.svg ./overview.svg
-          cp /tmp/github-stats-src/generated/languages.svg ./languages.svg
+          cp /tmp/github-language-stats-src/generated/overview.svg ./overview.svg
+          cp /tmp/github-language-stats-src/generated/languages.svg ./languages.svg
           git add overview.svg languages.svg
 
           if git diff --cached --quiet; then
