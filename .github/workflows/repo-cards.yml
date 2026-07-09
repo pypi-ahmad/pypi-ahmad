@@ -1,0 +1,60 @@
+name: Update Repo Cards
+
+on:
+  schedule:
+    - cron: "10 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-repo-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate repo cards
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_repo_cards.py --owner pypi-ahmad --repos-file .github/pinned_repos.txt --out-dir /tmp/repo-cards
+
+          test -d /tmp/repo-cards
+          ls -la /tmp/repo-cards
+
+      - name: Publish cards to cards branch
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin cards >/dev/null 2>&1; then
+            git fetch origin cards
+            git checkout -B cards origin/cards
+          else
+            git checkout --orphan cards
+          fi
+
+          git rm -rf . >/dev/null 2>&1 || true
+          mkdir -p cards
+          cp -a /tmp/repo-cards/. cards/
+
+          git add cards
+
+          if git diff --cached --quiet; then
+            echo "No changes in repo cards."
+            exit 0
+          fi
+
+          git commit -m "Update repo cards"
+          git push --set-upstream origin cards
+
