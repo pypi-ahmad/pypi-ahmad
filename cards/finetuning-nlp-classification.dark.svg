@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140" role="img" aria-label="finetuning-nlp-classification">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="0.5" y="0.5" rx="16" ry="16" width="519" height="139" fill="url(#bg)" stroke="#1F2937" filter="url(#shadow)"/>
+
+  <circle cx="24" cy="26" r="5.5" fill="#38BDF8" opacity="0.95"/>
+  <text x="38" y="32" fill="#E2E8F0" font-size="18" font-weight="700"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    finetuning-nlp-classification
+  </text>
+
+  <text x="16" y="60" fill="#94A3B8" font-size="13.5"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    Consolidated portfolio repository:
+  </text>
+  <text x="16" y="80" fill="#94A3B8" font-size="13.5"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    finetuning-nlp-classification
+  </text>
+
+  <text x="16" y="124" fill="#64748B" font-size="12.5"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    ★ 0   ⑂ 0   Jupyter Notebook
+  </text>
+
+  <text x="504" y="124" text-anchor="end" fill="#64748B" font-size="12.5"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
+    2026-06-30
+  </text>
+</svg>
