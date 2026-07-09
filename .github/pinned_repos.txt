@@ -1,0 +1,9 @@
+# Pinned repositories to showcase in the profile README (one per line).
+# Accepts either "repo" or "owner/repo".
+agentic-rag-arxiv-research-assistant
+computer-use
+finetuning-nlp-classification
+local-agentic-enterprise-platform
+medical-document-intelligence-assistant
+risk-fraud-aml-systems
+

@@ -2,6 +2,11 @@
   <h1>Ahmad Mujtaba</h1>
   <p><b>Applied AI / GenAI Engineer</b> — Document AI, RAG systems, agentic automation (Python, FastAPI, LangGraph)</p>
 
+  <img
+    alt="Typing: focus areas"
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Document+Intelligence+%E2%80%A2+RAG+%E2%80%A2+Agentic+Systems+%E2%80%A2+Eval+%26+Guardrails"
+  />
+
   <p>
     <a href="https://www.linkedin.com/in/ahmad-mle/">
       <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -14,11 +19,21 @@
     </a>
   </p>
 
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,0F172A,111827&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=E2E8F0&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=94A3B8"
-    width="100%"
-    alt="Header"
-  />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://capsule-render.vercel.app/api?type=waving&color=0D1117,0F172A,111827&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=E2E8F0&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=94A3B8"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://capsule-render.vercel.app/api?type=waving&color=FFFFFF,EFF6FF,DBEAFE&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=0F172A&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=334155"
+    />
+    <img
+      src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,0F172A,111827&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=E2E8F0&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=94A3B8"
+      width="100%"
+      alt="Header"
+    />
+  </picture>
 </div>
 
 <p align="center">
@@ -45,14 +60,70 @@ I treat LLM outputs as **unverified signals**. Systems ship with structured vali
 
 These are the repos I recommend pinning (recruiter-first, “proof in the repo”).
 
-| Project | What it is | Signal |
-|---|---|---|
-| [`agentic-rag-arxiv-research-assistant`](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant) | End-to-end agentic RAG tutorial (Naive → Advanced → CRAG with LangGraph) over ArXiv papers | Clear progression + reproducible pipeline narrative |
-| [`computer-use`](https://github.com/pypi-ahmad/computer-use) | Provider-native computer-use workbench running inside an isolated Docker desktop sandbox | CI + docs + API surface |
-| [`finetuning-nlp-classification`](https://github.com/pypi-ahmad/finetuning-nlp-classification) | Consolidated portfolio repo covering multiple finetuning systems and eval-heavy notebooks | Portfolio index + multiple end-to-end artifacts |
-| [`local-agentic-enterprise-platform`](https://github.com/pypi-ahmad/local-agentic-enterprise-platform) | Local AI business automation platform with approvals, reporting exports, and full web UI | Real e2e run + generated artifacts |
-| [`medical-document-intelligence-assistant`](https://github.com/pypi-ahmad/medical-document-intelligence-assistant) | Local-first medical document understanding platform (OCR, extraction, retrieval, citations) | Verified end-to-end run, artifacts, large test suite |
-| [`risk-fraud-aml-systems`](https://github.com/pypi-ahmad/risk-fraud-aml-systems) | Consolidated portfolio repo for risk/fraud/AML applied ML systems | Project index + consistent structure |
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <a href="https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.light.svg" />
+            <img alt="agentic-rag-arxiv-research-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
+          </picture>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/pypi-ahmad/computer-use">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" />
+            <img alt="computer-use" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/pypi-ahmad/finetuning-nlp-classification">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.light.svg" />
+            <img alt="finetuning-nlp-classification" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
+          </picture>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/pypi-ahmad/local-agentic-enterprise-platform">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.light.svg" />
+            <img alt="local-agentic-enterprise-platform" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/pypi-ahmad/medical-document-intelligence-assistant">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.light.svg" />
+            <img alt="medical-document-intelligence-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.dark.svg" />
+          </picture>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/pypi-ahmad/risk-fraud-aml-systems">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.light.svg" />
+            <img alt="risk-fraud-aml-systems" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 Other highlights:
 - [`genai-systems-lab`](https://github.com/pypi-ahmad/genai-systems-lab) (collection of production-grade GenAI systems behind one repo contract)
@@ -96,6 +167,10 @@ Other highlights:
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution snake" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contributions" />
 </div>
 </details>
 
