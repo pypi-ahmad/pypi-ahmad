@@ -50,12 +50,12 @@ These are the repos I recommend pinning (recruiter-first, “proof in the repo�
 
 | Project | What it is | Signal |
 |---|---|---|
-| [`medical-document-intelligence-assistant`](https://github.com/pypi-ahmad/medical-document-intelligence-assistant) | Local-first medical document understanding platform (OCR, extraction, retrieval, citations) | Verified end-to-end run, artifacts, large test suite |
-| [`local-agentic-enterprise-platform`](https://github.com/pypi-ahmad/local-agentic-enterprise-platform) | Local AI business automation platform with approvals, reporting exports, and full web UI | Real e2e run + generated artifacts |
-| [`legal-graphrag`](https://github.com/pypi-ahmad/legal-graphrag) | Legal GraphRAG stack with dense/sparse/graph/agentic/multimodal retrieval + eval | Metrics backed by artifact JSON outputs |
+| [`agentic-rag-arxiv-research-assistant`](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant) | End-to-end agentic RAG tutorial (Naive → Advanced → CRAG with LangGraph) over ArXiv papers | Clear progression + reproducible pipeline narrative |
 | [`computer-use`](https://github.com/pypi-ahmad/computer-use) | Provider-native computer-use workbench running inside an isolated Docker desktop sandbox | CI + docs + API surface |
-| [`ai-ats-latex-resume-builder`](https://github.com/pypi-ahmad/ai-ats-latex-resume-builder) | AI resume builder: OCR/vision extraction + market snippets + LaTeX generation + PDF compile | Tests + end-to-end workflow doc |
-| [`invoiceflow-ai`](https://github.com/pypi-ahmad/invoiceflow-ai) | Invoice processing pipeline with vision extraction, validation, semantic matching, and review UI | Clear module architecture + tests |
+| [`finetuning-nlp-classification`](https://github.com/pypi-ahmad/finetuning-nlp-classification) | Consolidated portfolio repo covering multiple finetuning systems and eval-heavy notebooks | Portfolio index + multiple end-to-end artifacts |
+| [`local-agentic-enterprise-platform`](https://github.com/pypi-ahmad/local-agentic-enterprise-platform) | Local AI business automation platform with approvals, reporting exports, and full web UI | Real e2e run + generated artifacts |
+| [`medical-document-intelligence-assistant`](https://github.com/pypi-ahmad/medical-document-intelligence-assistant) | Local-first medical document understanding platform (OCR, extraction, retrieval, citations) | Verified end-to-end run, artifacts, large test suite |
+| [`risk-fraud-aml-systems`](https://github.com/pypi-ahmad/risk-fraud-aml-systems) | Consolidated portfolio repo for risk/fraud/AML applied ML systems | Project index + consistent structure |
 
 Other highlights:
 - [`genai-systems-lab`](https://github.com/pypi-ahmad/genai-systems-lab) (collection of production-grade GenAI systems behind one repo contract)
@@ -131,4 +131,3 @@ If you want concrete, reproducible examples, see:
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=90&section=footer" alt="Footer" />
 </div>
-
