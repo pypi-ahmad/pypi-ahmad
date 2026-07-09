@@ -12,9 +12,6 @@
     <a href="mailto:ahmad.iiitk@gmail.com">
       <img alt="Email" src="https://img.shields.io/badge/Email-ahmad.iiitk%40gmail.com-334155?style=for-the-badge&logo=gmail&logoColor=white" />
     </a>
-    <a href="https://github.com/pypi-ahmad/pypi-ahmad/blob/main/resume.pdf">
-      <img alt="Resume" src="https://img.shields.io/badge/Resume-PDF-1F2937?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
-    </a>
   </p>
 
   <img
