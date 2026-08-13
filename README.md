@@ -26,9 +26,9 @@
 
 ## About
 
-GenAI Engineer at **Deloitte** (Jul 2025–present), building production document intelligence pipelines, agentic automation, and healthcare AI on Azure. Previously **Associate Data Scientist at Cognizant** (Sep 2022–May 2025) across warranty analytics, conversational AI, and data pipelines.
+GenAI Engineer at **Deloitte** (Jul 2025–present). I build document intelligence pipelines on Azure. I develop healthcare AI systems on Azure. I automate browser-based tasks with computer-use agents. Previously, I worked as an **Associate Data Scientist at Cognizant** (Sep 2022–May 2025). I developed warranty analytics, conversational AI, and data pipelines.
 
-I treat LLM outputs as **unverified signals**. Systems ship with structured validation, evaluation loops, and deterministic guardrails.
+I treat LLM outputs as **unverified signals**. I validate them with schemas, evaluation datasets, deterministic checks, and review routing.
 
 ## Selected Outcomes
 
@@ -39,53 +39,53 @@ I treat LLM outputs as **unverified signals**. Systems ship with structured vali
 
 ## Featured Work
 
-Four projects that demonstrate local model training, computer-use agents, multi-provider AI workspaces, and grounded document extraction.
+Selected systems demonstrating production-oriented AI engineering.
 
 ### LoRA Fine-tune Studio
 
-**Problem.** Local adapter training is fragmented across hardware checks, dataset preparation, recipe configuration, checkpoint recovery, and evaluation.
+**Problem.** Local adapter training requires separate hardware checks, dataset preparation, recipe configuration, checkpoint recovery, and evaluation steps.
 
-**Built.** A guided Windows/Linux studio that validates datasets, detects CUDA and VRAM, runs isolated training jobs with cancellation and checkpoint resume, compares adapters with base models, and optionally publishes adapters to Hugging Face Hub.
+**Built.** I built a guided Windows/Linux studio for local adapter training. It validates datasets before training. It checks CUDA and VRAM. It runs each job in an isolated worker with cancellation and checkpoint resume. It compares adapters with base models. It can publish adapters to the Hugging Face Hub.
 
 **Stack.** `Python · Streamlit · PyTorch · Transformers · TRL · PEFT · Unsloth`
 
-**Evidence.** Supports five training approaches—SFT, Reward, DPO, KTO, and ORPO—across LoRA, QLoRA, OFT, and QOFT, with eight focused workflow pages, eight test modules, and CI.
+**Evidence.** The studio supports five training approaches: SFT, Reward, DPO, KTO, and ORPO. Each approach supports LoRA, QLoRA, OFT, and QOFT. The interface contains eight workflow pages. The repository contains eight test modules. CI runs formatting, linting, type checks, and tests.
 
 [Code](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Screenshot](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/docs/images/training-studio.png) · [Setup](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app#install-from-github) · [Architecture](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/tree/main/tests)
 
 ### Computer Use Workbench
 
-**Problem.** Provider-native computer-use agents expose different tool contracts, execution loops, and safety controls, making them difficult to compare and operate consistently.
+**Problem.** Provider-native computer-use agents expose different tool contracts and execution loops. These differences complicate consistent operation and comparison.
 
-**Built.** A local workbench with explicit OpenAI, Anthropic, and Google execution routes, a sandboxed Ubuntu/XFCE desktop, controlled fallback behavior, short-lived credentials, and retained audit frames.
+**Built.** I built a local workbench with explicit OpenAI, Anthropic, and Google execution routes. It runs agents inside a sandboxed Ubuntu/XFCE desktop. It defines primary and fallback routes. It uses short-lived credentials. It retains audit frames.
 
 **Stack.** `Python · FastAPI · React 19 · SQLite · Docker · OpenAI · Anthropic · Gemini`
 
-**Evidence.** Implements three direct provider routes, limits credentials to eight hours, bounds audit retention to seven days or 1 GiB, and gates releases with backend/frontend tests, dependency audits, sandbox builds, and high/critical image scanning.
+**Evidence.** The workbench implements three direct provider routes. Credentials expire within eight hours. Audit retention stops after seven days or 1 GiB. CI runs backend and frontend tests, dependency audits, sandbox builds, and high/critical image scanning.
 
 [Code](https://github.com/pypi-ahmad/computer-use) · [Screenshot](https://github.com/pypi-ahmad/computer-use/blob/main/assets/screenshot.png) · [Setup](https://github.com/pypi-ahmad/computer-use#quick-start) · [Architecture](https://github.com/pypi-ahmad/computer-use/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/computer-use/tree/main/tests)
 
 ### Local AI Chat Studio
 
-**Problem.** Local and hosted models usually require separate clients, making side-by-side comparison, provenance, and context control difficult.
+**Problem.** Local and hosted models usually require separate clients. Separate clients complicate comparison, provenance tracking, and context control.
 
-**Built.** A local-first workspace with streaming chat, compare/replay/diff workflows, context-budget pruning, provenance receipts, prompt-injection quarantine, secret and PII warnings, and local memory/RAG.
+**Built.** I built a local-first workspace with streaming chat. It supports model comparison, replay, and response diffs. It prunes context to a defined token budget. It records provenance receipts. It quarantines prompt-injection attempts. It warns about secrets and PII. It provides local memory and RAG.
 
 **Stack.** `Python · FastAPI · React 19 · SQLite · ChromaDB · Ollama`
 
-**Evidence.** Runs Ollama locally and supports optional OpenAI, Anthropic, Gemini, OpenRouter, xAI, OpenCode, and compatible gateway routes, with CI covering provider/API contracts, workspace behavior, frontend tests, linting, and production builds.
+**Evidence.** The workspace runs Ollama locally. It supports optional OpenAI, Anthropic, Gemini, OpenRouter, xAI, OpenCode, and compatible gateway routes. CI verifies provider and API contracts, workspace behavior, frontend tests, linting, and production builds.
 
 [Code](https://github.com/pypi-ahmad/local-ai-chat-studio) · [Screenshot](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/docs/screenshot-chat.png) · [Setup](https://github.com/pypi-ahmad/local-ai-chat-studio#install-and-run) · [Architecture](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/local-ai-chat-studio/tree/main/tests)
 
 ### Grounded Document Parser
 
-**Problem.** Extracting structured data from complex PDFs requires page-level grounding, stable ordering, review routing, and recoverable failures—not untraceable free-form generation.
+**Problem.** Complex PDFs require page-level grounding and stable output order. Low-confidence classifications require review. A failed page should not invalidate successful work.
 
-**Built.** A grounded parser that renders every page to pixels, analyzes pages concurrently, produces ordered Markdown/JSON, routes custom forms by confidence, and preserves isolated failures as warnings.
+**Built.** I built a grounded document parser. It renders every page to pixels. It analyzes pages concurrently. It produces ordered Markdown and JSON. It routes custom forms by confidence. It records isolated failures as warnings.
 
 **Stack.** `Python · Streamlit · Pydantic · OpenAI · GLM-OCR`
 
-**Evidence.** Processes ordered 16-page windows with up to eight page workers, routes classifications below 85% confidence for review, and verifies extraction, routing, recovery, evaluation, and UI contracts across 22 test modules.
+**Evidence.** The parser processes ordered 16-page windows with up to eight page workers. It routes classifications below 85% confidence for review. The repository tests extraction, routing, recovery, evaluation, and UI contracts across 22 test modules.
 
 [Code](https://github.com/pypi-ahmad/grounded-docparse) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/main/tests)
 
@@ -132,13 +132,13 @@ Four projects that demonstrate local model training, computer-use agents, multi-
 </div>
 </details>
 
-## One Deep Dive (Optional)
+## RAG Architecture
 
 <details>
-<summary><b>How I build RAG systems that don’t lie by default</b></summary>
+<summary><b>Grounded RAG systems with explicit validation</b></summary>
 <br/>
 
-I structure RAG as an engineering system: retrieval quality + grounded generation + evaluation + guardrails.
+I build RAG pipelines with retrieval evaluation, grounded generation, schema validation, citation checks, and review routing.
 
 ```mermaid
 flowchart TD
@@ -150,10 +150,10 @@ flowchart TD
   F --> G[Grounding + schema validation]
   G --> H{Pass?}
   H -->|No| I[Retry / route / human review]
-  H -->|Yes| J[Ship response + citations + logs]
+  H -->|Yes| J[Return response + citations + logs]
 ```
 
-If you want concrete, reproducible examples, see:
+Reference implementations:
 - [`legal-graphrag`](https://github.com/pypi-ahmad/legal-graphrag)
 - [`agentic-rag-arxiv-research-assistant`](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant)
 </details>
