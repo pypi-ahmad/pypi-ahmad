@@ -64,11 +64,11 @@ These are the repos I recommend pinning (recruiter-first, â€œproof in the repoâ€
   <table>
     <tr>
       <td>
-        <a href="https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant">
+        <a href="https://github.com/pypi-ahmad/fine-tuning-app">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.light.svg" />
-            <img alt="agentic-rag-arxiv-research-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/fine-tuning-app.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/fine-tuning-app.light.svg" />
+            <img alt="fine-tuning-app" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/fine-tuning-app.dark.svg" />
           </picture>
         </a>
       </td>
@@ -84,20 +84,20 @@ These are the repos I recommend pinning (recruiter-first, â€œproof in the repoâ€
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/pypi-ahmad/finetuning-nlp-classification">
+        <a href="https://github.com/pypi-ahmad/local-ai-chat-studio">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.light.svg" />
-            <img alt="finetuning-nlp-classification" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" />
+            <img alt="local-ai-chat-studio" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.dark.svg" />
           </picture>
         </a>
       </td>
       <td>
-        <a href="https://github.com/pypi-ahmad/local-agentic-enterprise-platform">
+        <a href="https://github.com/pypi-ahmad/grounded-docparse">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.light.svg" />
-            <img alt="local-agentic-enterprise-platform" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" />
+            <img alt="grounded-docparse" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.dark.svg" />
           </picture>
         </a>
       </td>
@@ -113,11 +113,11 @@ These are the repos I recommend pinning (recruiter-first, â€œproof in the repoâ€
         </a>
       </td>
       <td>
-        <a href="https://github.com/pypi-ahmad/risk-fraud-aml-systems">
+        <a href="https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.light.svg" />
-            <img alt="risk-fraud-aml-systems" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.light.svg" />
+            <img alt="agentic-rag-arxiv-research-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
           </picture>
         </a>
       </td>
@@ -146,12 +146,7 @@ Other highlights:
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170" alt="GitHub stats"/>
-  <img src="https://streak-stats.demolab.com/?user=pypi-ahmad&theme=radical&hide_border=true&v=2" height="170" alt="GitHub streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pypi-ahmad&theme=radical" alt="Profile details"/>
+  <img src="assets/github-contributions.png" width="100%" alt="GitHub contributions in the last year" />
 </div>
 
 <!-- Generated by .github/workflows/github-stats.yml using GH_STATS_TOKEN (required). -->
