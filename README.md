@@ -45,6 +45,18 @@ These team and system results come from employer-internal evaluations. Client na
 
 Selected systems demonstrating production-oriented AI engineering.
 
+### Grounded Document Parser
+
+**Problem.** Native documents, scanned files, and mixed PDFs require different ingestion paths. OCR-only processing discards native structure. Silent fallback makes provenance difficult to audit.
+
+**Built.** I built an explicitly routed document-ingestion system. It parses native PDFs with `pdf-inspector` and Office, CSV, HTML, and EPUB files with Docling. It keeps local OCR for scans and images. Users review native/OCR routing page by page for mixed PDFs. Immutable text spans and source anchors connect extracted values to pages, paragraphs, slides, sheets, cells, and tables. Values without exact source evidence are rejected.
+
+**Stack.** `Python · Streamlit · Pydantic · pdf-inspector · Docling · LangExtract · GLM-OCR · PaddleOCR-VL · vLLM`
+
+**Evidence.** The system supports nine explicit processing types across native PDFs, mixed PDFs, Office documents, structured files, scans, and images. It blocks incompatible file and route selections. Grounded extraction accepts only exact character intervals that resolve to source anchors. The repository tests parsing, routing, extraction, recovery, persistence, CLI, and UI contracts across 39 test modules.
+
+[Code](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/README.md#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion/tests)
+
 ### LoRA Fine-tune Studio
 
 **Problem.** Local adapter training requires separate hardware checks, dataset preparation, recipe configuration, checkpoint recovery, and evaluation steps.
@@ -80,18 +92,6 @@ Selected systems demonstrating production-oriented AI engineering.
 **Evidence.** The workspace runs Ollama locally. It supports optional OpenAI, Anthropic, Gemini, OpenRouter, xAI, OpenCode, and compatible gateway routes. CI verifies provider and API contracts, workspace behavior, frontend tests, linting, and production builds.
 
 [Code](https://github.com/pypi-ahmad/local-ai-chat-studio) · [Screenshot](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/docs/screenshot-chat.png) · [Setup](https://github.com/pypi-ahmad/local-ai-chat-studio#install-and-run) · [Architecture](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/local-ai-chat-studio/tree/main/tests)
-
-### Grounded Document Parser
-
-**Problem.** Native documents, scanned files, and mixed PDFs require different ingestion paths. OCR-only processing discards native structure. Silent fallback makes provenance difficult to audit.
-
-**Built.** I built an explicitly routed document-ingestion system. It parses native PDFs with `pdf-inspector` and Office, CSV, HTML, and EPUB files with Docling. It keeps local OCR for scans and images. Users review native/OCR routing page by page for mixed PDFs. Immutable text spans and source anchors connect extracted values to pages, paragraphs, slides, sheets, cells, and tables. Values without exact source evidence are rejected.
-
-**Stack.** `Python · Streamlit · Pydantic · pdf-inspector · Docling · LangExtract · GLM-OCR · PaddleOCR-VL · vLLM`
-
-**Evidence.** The system supports nine explicit processing types across native PDFs, mixed PDFs, Office documents, structured files, scans, and images. It blocks incompatible file and route selections. Grounded extraction accepts only exact character intervals that resolve to source anchors. The repository tests parsing, routing, extraction, recovery, persistence, CLI, and UI contracts across 39 test modules.
-
-[Code](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/README.md#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion/tests)
 
 ## Currently Building
 
