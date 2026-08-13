@@ -114,10 +114,16 @@ Selected systems demonstrating production-oriented AI engineering.
 
 ## Stack
 
+- **AI and machine learning:** PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, TRL, PEFT, LangGraph, and LangChain.
+- **Models and agent interfaces:** OpenAI, Anthropic, Gemini, Ollama, structured outputs, and MCP.
+- **Backend, retrieval, and data:** Python, FastAPI, Flask, Pydantic, Streamlit, PostgreSQL, SQLite, MongoDB, Redis, Milvus, ChromaDB, FAISS, Azure Databricks, and PySpark.
+- **Frontend and delivery:** React, Next.js, TypeScript, Vite, Docker, Azure, AWS, GitHub Actions, and Linux.
+- **Quality engineering:** pytest, Ruff, mypy/ty, Vitest, evaluation harnesses, tracing, and failure analysis.
+
 <div align="center">
   <img
-    src="https://skillicons.dev/icons?i=python,fastapi,docker,postgres,sqlite,react,ts,azure,aws,githubactions"
-    alt="Core stack icons"
+    src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,flask,react,nextjs,ts,vite,docker,azure,aws,postgres,redis,githubactions&perline=8"
+    alt="Technology stack icons"
   />
 </div>
 
