@@ -1,11 +1,7 @@
 <div align="center">
   <h1>Ahmad Mujtaba</h1>
-  <p><b>Applied AI / GenAI Engineer</b> — Document AI, RAG systems, agentic automation (Python, FastAPI, LangGraph)</p>
-
-  <img
-    alt="Typing: focus areas"
-    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Document+Intelligence+%E2%80%A2+RAG+%E2%80%A2+Agentic+Systems+%E2%80%A2+Eval+%26+Guardrails"
-  />
+  <p><b>Applied AI Engineer building reliable Document AI, RAG, and agentic systems.</b></p>
+  <p>Production experience in evaluation, structured extraction, healthcare AI, and Azure deployments.</p>
 
   <p>
     <a href="https://www.linkedin.com/in/ahmad-mle/">
@@ -19,21 +15,6 @@
     </a>
   </p>
 
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://capsule-render.vercel.app/api?type=waving&color=0D1117,0F172A,111827&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=E2E8F0&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=94A3B8"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://capsule-render.vercel.app/api?type=waving&color=FFFFFF,EFF6FF,DBEAFE&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=0F172A&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=334155"
-    />
-    <img
-      src="https://capsule-render.vercel.app/api?type=waving&color=0D1117,0F172A,111827&height=220&section=header&text=Ahmad%20Mujtaba&fontSize=62&fontColor=E2E8F0&animation=fadeIn&fontAlignY=38&desc=Document%20Intelligence%20%C2%B7%20RAG%20%C2%B7%20Agentic%20Automation&descSize=16&descAlignY=58&descAlign=50&descColor=94A3B8"
-      width="100%"
-      alt="Header"
-    />
-  </picture>
 </div>
 
 <p align="center">
@@ -58,77 +39,55 @@ I treat LLM outputs as **unverified signals**. Systems ship with structured vali
 
 ## Featured Work
 
-These are the repos I recommend pinning (recruiter-first, “proof in the repo”).
+Four projects that demonstrate local model training, computer-use agents, multi-provider AI workspaces, and grounded document extraction.
 
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <a href="https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.light.svg" />
-            <img alt="agentic-rag-arxiv-research-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/agentic-rag-arxiv-research-assistant.dark.svg" />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://github.com/pypi-ahmad/computer-use">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" />
-            <img alt="computer-use" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/pypi-ahmad/finetuning-nlp-classification">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.light.svg" />
-            <img alt="finetuning-nlp-classification" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/finetuning-nlp-classification.dark.svg" />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://github.com/pypi-ahmad/local-agentic-enterprise-platform">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.light.svg" />
-            <img alt="local-agentic-enterprise-platform" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-agentic-enterprise-platform.dark.svg" />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/pypi-ahmad/medical-document-intelligence-assistant">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.light.svg" />
-            <img alt="medical-document-intelligence-assistant" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/medical-document-intelligence-assistant.dark.svg" />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://github.com/pypi-ahmad/risk-fraud-aml-systems">
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.light.svg" />
-            <img alt="risk-fraud-aml-systems" src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/risk-fraud-aml-systems.dark.svg" />
-          </picture>
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
+### LoRA Fine-tune Studio
 
-Other highlights:
-- [`genai-systems-lab`](https://github.com/pypi-ahmad/genai-systems-lab) (collection of production-grade GenAI systems behind one repo contract)
-- [`pypi-ahmad.github.io`](https://github.com/pypi-ahmad/pypi-ahmad.github.io) (portfolio site code + tests)
-- [`Clinical-Decision-Support-System`](https://github.com/pypi-ahmad/Clinical-Decision-Support-System) (CDS-style document pipeline with strong security + LangGraph story)
+**Problem.** Local adapter training is fragmented across hardware checks, dataset preparation, recipe configuration, checkpoint recovery, and evaluation.
+
+**Built.** A guided Windows/Linux studio that validates datasets, detects CUDA and VRAM, runs isolated training jobs with cancellation and checkpoint resume, compares adapters with base models, and optionally publishes adapters to Hugging Face Hub.
+
+**Stack.** `Python · Streamlit · PyTorch · Transformers · TRL · PEFT · Unsloth`
+
+**Evidence.** Supports five training approaches—SFT, Reward, DPO, KTO, and ORPO—across LoRA, QLoRA, OFT, and QOFT, with eight focused workflow pages, eight test modules, and CI.
+
+[Code](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Screenshot](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/docs/images/training-studio.png) · [Setup](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app#install-from-github) · [Architecture](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/tree/main/tests)
+
+### Computer Use Workbench
+
+**Problem.** Provider-native computer-use agents expose different tool contracts, execution loops, and safety controls, making them difficult to compare and operate consistently.
+
+**Built.** A local workbench with explicit OpenAI, Anthropic, and Google execution routes, a sandboxed Ubuntu/XFCE desktop, controlled fallback behavior, short-lived credentials, and retained audit frames.
+
+**Stack.** `Python · FastAPI · React 19 · SQLite · Docker · OpenAI · Anthropic · Gemini`
+
+**Evidence.** Implements three direct provider routes, limits credentials to eight hours, bounds audit retention to seven days or 1 GiB, and gates releases with backend/frontend tests, dependency audits, sandbox builds, and high/critical image scanning.
+
+[Code](https://github.com/pypi-ahmad/computer-use) · [Screenshot](https://github.com/pypi-ahmad/computer-use/blob/main/assets/screenshot.png) · [Setup](https://github.com/pypi-ahmad/computer-use#quick-start) · [Architecture](https://github.com/pypi-ahmad/computer-use/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/computer-use/tree/main/tests)
+
+### Local AI Chat Studio
+
+**Problem.** Local and hosted models usually require separate clients, making side-by-side comparison, provenance, and context control difficult.
+
+**Built.** A local-first workspace with streaming chat, compare/replay/diff workflows, context-budget pruning, provenance receipts, prompt-injection quarantine, secret and PII warnings, and local memory/RAG.
+
+**Stack.** `Python · FastAPI · React 19 · SQLite · ChromaDB · Ollama`
+
+**Evidence.** Runs Ollama locally and supports optional OpenAI, Anthropic, Gemini, OpenRouter, xAI, OpenCode, and compatible gateway routes, with CI covering provider/API contracts, workspace behavior, frontend tests, linting, and production builds.
+
+[Code](https://github.com/pypi-ahmad/local-ai-chat-studio) · [Screenshot](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/docs/screenshot-chat.png) · [Setup](https://github.com/pypi-ahmad/local-ai-chat-studio#install-and-run) · [Architecture](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/local-ai-chat-studio/tree/main/tests)
+
+### Grounded Document Parser
+
+**Problem.** Extracting structured data from complex PDFs requires page-level grounding, stable ordering, review routing, and recoverable failures—not untraceable free-form generation.
+
+**Built.** A grounded parser that renders every page to pixels, analyzes pages concurrently, produces ordered Markdown/JSON, routes custom forms by confidence, and preserves isolated failures as warnings.
+
+**Stack.** `Python · Streamlit · Pydantic · OpenAI · GLM-OCR`
+
+**Evidence.** Processes ordered 16-page windows with up to eight page workers, routes classifications below 85% confidence for review, and verifies extraction, routing, recovery, evaluation, and UI contracts across 22 test modules.
+
+[Code](https://github.com/pypi-ahmad/grounded-docparse) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/main/tests)
 
 ## Stack
 
@@ -146,12 +105,7 @@ Other highlights:
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=pypi-ahmad&show_icons=true&theme=radical&hide_border=true" height="170" alt="GitHub stats"/>
-  <img src="https://streak-stats.demolab.com/?user=pypi-ahmad&theme=radical&hide_border=true&v=2" height="170" alt="GitHub streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pypi-ahmad&theme=radical" alt="Profile details"/>
+  <img src="assets/github-contributions.png" width="100%" alt="GitHub contributions in the last year" />
 </div>
 
 <!-- Generated by .github/workflows/github-stats.yml using GH_STATS_TOKEN (required). -->
