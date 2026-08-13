@@ -19,6 +19,20 @@ Release entries currently use calendar dates.
 
 ### Security
 
+## [2026-08-13]
+
+### Added
+
+- Grounded Document Parser featured-work case study with routing, provenance, and test-coverage evidence.
+- Tracked local analysis artifacts: `.codegraph/`, `.firecrawl/`, `.ua/`, and `graphify-out/`.
+- 3D contribution graph on `main` and automated repo-card generation.
+
+### Changed
+
+- Refocused the profile README on engineering work, qualified internal outcome metrics, and removed promotional language.
+- Moved Grounded Document Parser to the first featured project.
+- Updated the role summary and applied AI stack.
+
 ## [2026-06-19]
 
 ### Added
