@@ -23,6 +23,7 @@
   <a href="#currently-building">Building</a> ·
   <a href="#engineering-principles">Principles</a> ·
   <a href="#writing">Writing</a> ·
+  <a href="#github-statistics">Statistics</a> ·
   <a href="#repository">Repository</a> ·
   <a href="#contact--availability">Contact</a>
 </p>
@@ -127,6 +128,56 @@ Selected systems demonstrating production-oriented AI engineering.
     alt="Technology stack icons"
   />
 </div>
+
+## GitHub Statistics
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/stats.svg" height="170" alt="Ahmad Mujtaba's GitHub statistics" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/top-langs.svg" height="170" alt="Ahmad Mujtaba's top languages" />
+  <br />
+  <img src="https://streak-stats.demolab.com?user=pypi-ahmad&amp;theme=github-dark-blue&amp;hide_border=true" alt="Ahmad Mujtaba's GitHub contribution streak" />
+</div>
+
+### Native GitHub Statistics
+
+GitHub already shows:
+
+- Contribution calendar and yearly contribution totals
+- Activity feed and activity overview
+- Followers and following counts
+- Achievements and badges
+- Up to six pinned repositories or gists
+
+Source: [GitHub profile documentation](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile).
+
+### README Cards
+
+[GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) can show:
+
+- Total stars earned, commits, pull requests, issues, contributed repositories, and rank
+- Top languages by repository code size
+- Individual repository descriptions, stars, forks, issues, and primary languages
+- Gist statistics
+- WakaTime coding-time statistics
+
+Top languages measure repository bytes, not skill level. The original project is no longer maintained, so this profile generates its cards with the maintained [GitHub Readme Stats Action](https://github.com/stats-organization/github-readme-stats-action).
+
+[GitHub Streak Stats](https://github.com/denvercoder1/github-readme-streak-stats) shows:
+
+- Total contributions
+- Current contribution streak
+- Longest contribution streak
+- Streak dates and contribution-calendar history
+
+### Advanced GitHub Metrics
+
+[Metrics](https://github.com/lowlighter/metrics) supports 47 plugins and 335 options, including:
+
+- Commit calendars, isometric calendars, recent activity, and coding habits
+- Languages, recently used languages, lines changed, and code snippets
+- Stars, stargazer growth, followers, sponsors, and starred topics
+- Pull requests, issues, reviews, discussions, and notable contributions
+- Achievements, repositories, gists, projects, licenses, and repository traffic
 
 ## Activity
 

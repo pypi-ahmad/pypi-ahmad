@@ -1,5 +1,5 @@
 ---
-name: Update 3D Contribution Graph
+name: Update Profile Statistics
 
 on:
   schedule:
@@ -25,18 +25,36 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: pypi-ahmad
 
-      - name: Commit graph changes
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: "username=pypi-ahmad&show_icons=true&theme=github_dark&hide_border=true"
+          path: profile-stats/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: "username=pypi-ahmad&layout=compact&langs_count=8&theme=github_dark&hide_border=true"
+          path: profile-stats/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit profile updates
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile-3d-contrib
+          git add -- profile-3d-contrib profile-stats
 
           if git diff --cached --quiet; then
-            echo "No graph changes."
+            echo "No profile changes."
             exit 0
           fi
 
-          git commit -m "chore: update 3D contribution graph"
+          git commit -m "chore: update profile statistics"
           git push origin HEAD:main
