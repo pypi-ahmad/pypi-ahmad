@@ -1,9 +1,7 @@
 # Pinned repositories to showcase in the profile README (one per line).
 # Accepts either "repo" or "owner/repo".
-fine-tuning-app
+lora-qlora-fine-tuning-app
 computer-use
 local-ai-chat-studio
 grounded-docparse
-medical-document-intelligence-assistant
-agentic-rag-arxiv-research-assistant
 
