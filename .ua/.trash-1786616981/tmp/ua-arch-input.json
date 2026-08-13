@@ -1,0 +1,846 @@
+{
+  "allEdges": [
+    {
+      "source": "pipeline:.github/workflows/repo-cards.yml",
+      "target": "file:scripts/generate_repo_cards.py",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:CODE_OF_CONDUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:SECURITY.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:SECURITY.md",
+      "target": "document:CHANGELOG.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:graphify-out/GRAPH_REPORT.md",
+      "target": "config:graphify-out/.graphify_analysis.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:graphify-out/GRAPH_REPORT.md",
+      "target": "config:graphify-out/.graphify_labels.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:graphify-out/GRAPH_REPORT.md",
+      "target": "config:graphify-out/.graphify_extract.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:.github/pinned_repos.txt",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ],
+  "fileNodes": [
+    {
+      "id": "pipeline:.github/workflows/repo-cards.yml",
+      "type": "pipeline",
+      "name": "repo-cards.yml",
+      "filePath": ".github/workflows/repo-cards.yml",
+      "summary": "Scheduled GitHub Actions workflow that runs the repository card generator and publishes its rendered cards to the cards branch.",
+      "tags": [
+        "ci-cd",
+        "automation",
+        "github-actions",
+        "repository-cards"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Runs a Python script on a daily schedule or manual dispatch, then publishes only changed card assets."
+    },
+    {
+      "id": "document:CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "CHANGELOG.md",
+      "summary": "Records dated project releases using the Keep a Changelog structure, including workflow, governance, and security-policy changes.",
+      "tags": [
+        "documentation",
+        "release-notes",
+        "project-history",
+        "maintenance"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "Defines expected community conduct, reporting guidance, enforcement responsibilities, and scope for repository participation.",
+      "tags": [
+        "documentation",
+        "governance",
+        "community",
+        "policy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "Guides contributors through issue-first changes, focused pull requests, local validation, security reporting, and conduct expectations.",
+      "tags": [
+        "documentation",
+        "contributing",
+        "development",
+        "governance"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:DATASET.md",
+      "type": "document",
+      "name": "DATASET.md",
+      "filePath": "DATASET.md",
+      "summary": "States that the repository has no fixed public dataset download and is intended to work with user-provided documents or data.",
+      "tags": [
+        "documentation",
+        "datasets",
+        "data-usage"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "type": "document",
+      "name": "SECURITY.md",
+      "filePath": "SECURITY.md",
+      "summary": "Defines supported-version policy, private vulnerability reporting, and maintainer triage through remediation and release communication.",
+      "tags": [
+        "documentation",
+        "security",
+        "vulnerability-reporting",
+        "policy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_analysis.json",
+      "type": "config",
+      "name": ".graphify_analysis.json",
+      "filePath": "graphify-out/.graphify_analysis.json",
+      "summary": "Stores graph clustering results, cohesion scores, hub nodes, surprising connections, and generated questions for the Graphify report.",
+      "tags": [
+        "configuration",
+        "graph-analysis",
+        "metadata"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:graphify-out/.graphify_ast.json",
+      "type": "config",
+      "name": ".graphify_ast.json",
+      "filePath": "graphify-out/.graphify_ast.json",
+      "summary": "Caches structural AST extraction nodes and edges collected from the project code corpus.",
+      "tags": [
+        "configuration",
+        "ast",
+        "graph-extraction"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:graphify-out/.graphify_cached.json",
+      "type": "config",
+      "name": ".graphify_cached.json",
+      "filePath": "graphify-out/.graphify_cached.json",
+      "summary": "Holds cached semantic graph extraction results for reuse during a Graphify build.",
+      "tags": [
+        "configuration",
+        "cache",
+        "graph-extraction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_01.json",
+      "type": "config",
+      "name": ".graphify_chunk_01.json",
+      "filePath": "graphify-out/.graphify_chunk_01.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 01.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_02.json",
+      "type": "config",
+      "name": ".graphify_chunk_02.json",
+      "filePath": "graphify-out/.graphify_chunk_02.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 02.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_03.json",
+      "type": "config",
+      "name": ".graphify_chunk_03.json",
+      "filePath": "graphify-out/.graphify_chunk_03.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 03.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_04.json",
+      "type": "config",
+      "name": ".graphify_chunk_04.json",
+      "filePath": "graphify-out/.graphify_chunk_04.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 04.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_05.json",
+      "type": "config",
+      "name": ".graphify_chunk_05.json",
+      "filePath": "graphify-out/.graphify_chunk_05.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 05.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_06.json",
+      "type": "config",
+      "name": ".graphify_chunk_06.json",
+      "filePath": "graphify-out/.graphify_chunk_06.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 06.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_07.json",
+      "type": "config",
+      "name": ".graphify_chunk_07.json",
+      "filePath": "graphify-out/.graphify_chunk_07.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 07.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_08.json",
+      "type": "config",
+      "name": ".graphify_chunk_08.json",
+      "filePath": "graphify-out/.graphify_chunk_08.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 08.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_09.json",
+      "type": "config",
+      "name": ".graphify_chunk_09.json",
+      "filePath": "graphify-out/.graphify_chunk_09.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 09.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_10.json",
+      "type": "config",
+      "name": ".graphify_chunk_10.json",
+      "filePath": "graphify-out/.graphify_chunk_10.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 10.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_chunk_11.json",
+      "type": "config",
+      "name": ".graphify_chunk_11.json",
+      "filePath": "graphify-out/.graphify_chunk_11.json",
+      "summary": "Stores semantic extraction output for Graphify chunk 11.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "chunk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_detect.json",
+      "type": "config",
+      "name": ".graphify_detect.json",
+      "filePath": "graphify-out/.graphify_detect.json",
+      "summary": "Records Graphify corpus detection results, including discovered files, scan root, exclusions, and word-count metadata.",
+      "tags": [
+        "configuration",
+        "corpus-scan",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_extract.json",
+      "type": "config",
+      "name": ".graphify_extract.json",
+      "filePath": "graphify-out/.graphify_extract.json",
+      "summary": "Combines structural and semantic extraction into the complete intermediate Graphify node and edge dataset.",
+      "tags": [
+        "configuration",
+        "graph-extraction",
+        "intermediate"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:graphify-out/.graphify_labels.json",
+      "type": "config",
+      "name": ".graphify_labels.json",
+      "filePath": "graphify-out/.graphify_labels.json",
+      "summary": "Maps Graphify community identifiers to human-readable labels used by reports and visualizations.",
+      "tags": [
+        "configuration",
+        "graph-analysis",
+        "labels"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/.graphify_semantic.json",
+      "type": "config",
+      "name": ".graphify_semantic.json",
+      "filePath": "graphify-out/.graphify_semantic.json",
+      "summary": "Stores merged semantic extraction nodes, edges, hyperedges, and token counts for Graphify processing.",
+      "tags": [
+        "configuration",
+        "semantic-analysis",
+        "graph-extraction"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:graphify-out/.graphify_uncached.txt",
+      "type": "document",
+      "name": ".graphify_uncached.txt",
+      "filePath": "graphify-out/.graphify_uncached.txt",
+      "summary": "Temporary list of corpus files requiring semantic Graphify extraction when no cache entry is available.",
+      "tags": [
+        "documentation",
+        "cache",
+        "graph-extraction"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:graphify-out/GRAPH_REPORT.md",
+      "type": "document",
+      "name": "GRAPH_REPORT.md",
+      "filePath": "graphify-out/GRAPH_REPORT.md",
+      "summary": "Generated Graphify audit report covering corpus scope, community structure, graph hubs, connections, and suggested exploration questions.",
+      "tags": [
+        "documentation",
+        "graph-analysis",
+        "report"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:graphify-out/cost.json",
+      "type": "config",
+      "name": "cost.json",
+      "filePath": "graphify-out/cost.json",
+      "summary": "Records Graphify run history and cumulative input and output token counts for the generated repository graph.",
+      "tags": [
+        "configuration",
+        "graphify",
+        "cost-tracking"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/graph.html",
+      "type": "file",
+      "name": "graph.html",
+      "filePath": "graphify-out/graph.html",
+      "summary": "Standalone interactive visualization of the generated repository graph, embedding graph nodes, edges, community metadata, search, and filtering controls.",
+      "tags": [
+        "visualization",
+        "graphify",
+        "interactive-graph",
+        "html"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Embeds graph data directly in JavaScript and uses vis-network from a CDN for interactive rendering."
+    },
+    {
+      "id": "config:graphify-out/graph.json",
+      "type": "config",
+      "name": "graph.json",
+      "filePath": "graphify-out/graph.json",
+      "summary": "Graphify export containing the repository knowledge graph's nodes, links, hyperedges, metadata, and build commit reference.",
+      "tags": [
+        "configuration",
+        "graphify",
+        "knowledge-graph",
+        "graph-data"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:graphify-out/manifest.json",
+      "type": "config",
+      "name": "manifest.json",
+      "filePath": "graphify-out/manifest.json",
+      "summary": "Tracks per-file modification times and structural and semantic hashes for Graphify incremental graph updates.",
+      "tags": [
+        "configuration",
+        "graphify",
+        "incremental-build",
+        "file-manifest"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/0b6b16ae2cb11bd033493a32125ca2dc18a9166ba3bbb36721c1d703d20eeaa4.json",
+      "type": "config",
+      "name": "0b6b16ae2cb11bd033493a32125ca2dc18a9166ba3bbb36721c1d703d20eeaa4.json",
+      "filePath": "graphify-out/cache/semantic/0b6b16ae2cb11bd033493a32125ca2dc18a9166ba3bbb36721c1d703d20eeaa4.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/0b9d0ce6ce1f870df2f1e035086c8aca8da401716ad43a170382b6f89e070a2c.json",
+      "type": "config",
+      "name": "0b9d0ce6ce1f870df2f1e035086c8aca8da401716ad43a170382b6f89e070a2c.json",
+      "filePath": "graphify-out/cache/semantic/0b9d0ce6ce1f870df2f1e035086c8aca8da401716ad43a170382b6f89e070a2c.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/188ff160baf4be2640bb52f4f012db7d0620f7ae5a0fa15115cbb8b4efef34ba.json",
+      "type": "config",
+      "name": "188ff160baf4be2640bb52f4f012db7d0620f7ae5a0fa15115cbb8b4efef34ba.json",
+      "filePath": "graphify-out/cache/semantic/188ff160baf4be2640bb52f4f012db7d0620f7ae5a0fa15115cbb8b4efef34ba.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/1b24fcb3001345c4c60cb8cecf21330d006482964be1edbcd37223f23ee0950e.json",
+      "type": "config",
+      "name": "1b24fcb3001345c4c60cb8cecf21330d006482964be1edbcd37223f23ee0950e.json",
+      "filePath": "graphify-out/cache/semantic/1b24fcb3001345c4c60cb8cecf21330d006482964be1edbcd37223f23ee0950e.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/1b6efeb209495bcc03c2b16cfb7c9e18b0c9e34e1342c0e45d9d165a414ce615.json",
+      "type": "config",
+      "name": "1b6efeb209495bcc03c2b16cfb7c9e18b0c9e34e1342c0e45d9d165a414ce615.json",
+      "filePath": "graphify-out/cache/semantic/1b6efeb209495bcc03c2b16cfb7c9e18b0c9e34e1342c0e45d9d165a414ce615.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/1fc25594febf3e8bf88da84d77eae0656b7adf0dd45a0203ba9a4546e1e8b67c.json",
+      "type": "config",
+      "name": "1fc25594febf3e8bf88da84d77eae0656b7adf0dd45a0203ba9a4546e1e8b67c.json",
+      "filePath": "graphify-out/cache/semantic/1fc25594febf3e8bf88da84d77eae0656b7adf0dd45a0203ba9a4546e1e8b67c.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/20d7318077a5aa45f459a9bc5c629233d5e327772e9e02de8b278e715a4a32e4.json",
+      "type": "config",
+      "name": "20d7318077a5aa45f459a9bc5c629233d5e327772e9e02de8b278e715a4a32e4.json",
+      "filePath": "graphify-out/cache/semantic/20d7318077a5aa45f459a9bc5c629233d5e327772e9e02de8b278e715a4a32e4.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/23400aab4099f034601930946bc955b75252d5100ace2af30d48a238e1d5df05.json",
+      "type": "config",
+      "name": "23400aab4099f034601930946bc955b75252d5100ace2af30d48a238e1d5df05.json",
+      "filePath": "graphify-out/cache/semantic/23400aab4099f034601930946bc955b75252d5100ace2af30d48a238e1d5df05.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/586bca654d91f77c317ffc9ea4d4e830d4272b6977690904d02b43aa21eeba2b.json",
+      "type": "config",
+      "name": "586bca654d91f77c317ffc9ea4d4e830d4272b6977690904d02b43aa21eeba2b.json",
+      "filePath": "graphify-out/cache/semantic/586bca654d91f77c317ffc9ea4d4e830d4272b6977690904d02b43aa21eeba2b.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/6196339d305d3931e4464cf5a4c244320aa3ea846b924c4dd01f9e825efb8951.json",
+      "type": "config",
+      "name": "6196339d305d3931e4464cf5a4c244320aa3ea846b924c4dd01f9e825efb8951.json",
+      "filePath": "graphify-out/cache/semantic/6196339d305d3931e4464cf5a4c244320aa3ea846b924c4dd01f9e825efb8951.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/71c68495ed1eec3195f92e6df2df8b1d0d74aa76f16e88ded005d124a91690aa.json",
+      "type": "config",
+      "name": "71c68495ed1eec3195f92e6df2df8b1d0d74aa76f16e88ded005d124a91690aa.json",
+      "filePath": "graphify-out/cache/semantic/71c68495ed1eec3195f92e6df2df8b1d0d74aa76f16e88ded005d124a91690aa.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/7b1b35dec0a83fadbb13cd29bf2edb6aeede4360fe755e915f74d40459b6ac10.json",
+      "type": "config",
+      "name": "7b1b35dec0a83fadbb13cd29bf2edb6aeede4360fe755e915f74d40459b6ac10.json",
+      "filePath": "graphify-out/cache/semantic/7b1b35dec0a83fadbb13cd29bf2edb6aeede4360fe755e915f74d40459b6ac10.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/9f43e0dd1f443309b1723a3c7f3f1c9385acd9bdbf78cbb009f2b700be029e0a.json",
+      "type": "config",
+      "name": "9f43e0dd1f443309b1723a3c7f3f1c9385acd9bdbf78cbb009f2b700be029e0a.json",
+      "filePath": "graphify-out/cache/semantic/9f43e0dd1f443309b1723a3c7f3f1c9385acd9bdbf78cbb009f2b700be029e0a.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/a51e52150c5875f488fa5fbb92c90a7727f30c2d7f2644e633776eb7451b5edc.json",
+      "type": "config",
+      "name": "a51e52150c5875f488fa5fbb92c90a7727f30c2d7f2644e633776eb7451b5edc.json",
+      "filePath": "graphify-out/cache/semantic/a51e52150c5875f488fa5fbb92c90a7727f30c2d7f2644e633776eb7451b5edc.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/b38c0ebc8d396a85bbd27583f7020f94ed8907be89cafbb0cfb81cb130b071a2.json",
+      "type": "config",
+      "name": "b38c0ebc8d396a85bbd27583f7020f94ed8907be89cafbb0cfb81cb130b071a2.json",
+      "filePath": "graphify-out/cache/semantic/b38c0ebc8d396a85bbd27583f7020f94ed8907be89cafbb0cfb81cb130b071a2.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/ba62eb314890f3ccbebee7a4dee5c73006e845d32fb1034b54f1c603151b802e.json",
+      "type": "config",
+      "name": "ba62eb314890f3ccbebee7a4dee5c73006e845d32fb1034b54f1c603151b802e.json",
+      "filePath": "graphify-out/cache/semantic/ba62eb314890f3ccbebee7a4dee5c73006e845d32fb1034b54f1c603151b802e.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/c999011e08eb4b883552d50b91046f5e73975ebf767f5352e25371f6f8258b76.json",
+      "type": "config",
+      "name": "c999011e08eb4b883552d50b91046f5e73975ebf767f5352e25371f6f8258b76.json",
+      "filePath": "graphify-out/cache/semantic/c999011e08eb4b883552d50b91046f5e73975ebf767f5352e25371f6f8258b76.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/cfcf77eb1c29200e19007dc978be514be891bdc114398cc271bc9764c87409d9.json",
+      "type": "config",
+      "name": "cfcf77eb1c29200e19007dc978be514be891bdc114398cc271bc9764c87409d9.json",
+      "filePath": "graphify-out/cache/semantic/cfcf77eb1c29200e19007dc978be514be891bdc114398cc271bc9764c87409d9.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/e7f6c25314d12ab8d90e2478de61d9715ad9120f3df6d1665d362f1cc5c08d5d.json",
+      "type": "config",
+      "name": "e7f6c25314d12ab8d90e2478de61d9715ad9120f3df6d1665d362f1cc5c08d5d.json",
+      "filePath": "graphify-out/cache/semantic/e7f6c25314d12ab8d90e2478de61d9715ad9120f3df6d1665d362f1cc5c08d5d.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/semantic/fd7dfba100ebafac8daee2e4cb6d30b3ded4b98a37bf37076881ef69a0f5634a.json",
+      "type": "config",
+      "name": "fd7dfba100ebafac8daee2e4cb6d30b3ded4b98a37bf37076881ef69a0f5634a.json",
+      "filePath": "graphify-out/cache/semantic/fd7dfba100ebafac8daee2e4cb6d30b3ded4b98a37bf37076881ef69a0f5634a.json",
+      "summary": "Cached Graphify semantic extraction fragment containing graph nodes, edges, and hyperedges for one source artifact.",
+      "tags": [
+        "graph-cache",
+        "semantic-extraction",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "Starter ignore rules for Understand Anything analysis, including commented suggestions for generated files, environments, caches, and tests.",
+      "tags": [
+        "configuration",
+        "analysis",
+        "ignore-rules"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "Stores the Understand Anything output language preference for this repository.",
+      "tags": [
+        "configuration",
+        "knowledge-graph",
+        "language-settings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_python",
+      "type": "file",
+      "name": ".graphify_python",
+      "filePath": "graphify-out/.graphify_python",
+      "summary": "Records the Python interpreter path Graphify uses for subsequent graph operations.",
+      "tags": [
+        "graphify",
+        "tooling",
+        "runtime-path"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_root",
+      "type": "file",
+      "name": ".graphify_root",
+      "filePath": "graphify-out/.graphify_root",
+      "summary": "Records the repository root used as the source corpus for Graphify runs.",
+      "tags": [
+        "graphify",
+        "tooling",
+        "project-root"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "type": "config",
+      "name": "25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "filePath": "graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "summary": "Cached Graphify AST extraction for the repository card generator, including structural nodes, edges, and raw calls.",
+      "tags": [
+        "configuration",
+        "graphify",
+        "ast-cache",
+        "code-analysis"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:graphify-out/cache/stat-index.json",
+      "type": "config",
+      "name": "stat-index.json",
+      "filePath": "graphify-out/cache/stat-index.json",
+      "summary": "Graphify cache index storing file size, modification time, word count, and content hashes for corpus change detection.",
+      "tags": [
+        "configuration",
+        "graphify",
+        "cache-index",
+        "incremental-build"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/generate_repo_cards.py",
+      "type": "file",
+      "name": "generate_repo_cards.py",
+      "filePath": "scripts/generate_repo_cards.py",
+      "summary": "Fetches GitHub repository metadata and renders themed SVG repository cards for the profile README.",
+      "tags": [
+        "automation",
+        "github-api",
+        "svg-generation",
+        "profile-cards"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Uses dataclasses for immutable card data, urllib for GitHub REST API requests, and standard-library HTML escaping for SVG output."
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "GitHub profile README presenting Ahmad Mujtaba's applied-AI work, selected outcomes, featured projects, engineering principles, technical stack, activity, and availability.",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "profile",
+        "portfolio",
+        "applied-ai"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:.github/pinned_repos.txt",
+      "type": "document",
+      "name": "pinned_repos.txt",
+      "filePath": ".github/pinned_repos.txt",
+      "summary": "Lists repositories selected for profile README showcase, accepting either repository names or owner/repository identifiers.",
+      "tags": [
+        "documentation",
+        "profile",
+        "repository-list"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "importEdges": []
+}

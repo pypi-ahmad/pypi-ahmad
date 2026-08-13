@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "document:CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "CHANGELOG.md",
+      "summary": "Records dated project releases using the Keep a Changelog structure, including workflow, governance, and security-policy changes.",
+      "tags": ["documentation", "release-notes", "project-history", "maintenance"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CODE_OF_CONDUCT.md",
+      "type": "document",
+      "name": "CODE_OF_CONDUCT.md",
+      "filePath": "CODE_OF_CONDUCT.md",
+      "summary": "Defines expected community conduct, reporting guidance, enforcement responsibilities, and scope for repository participation.",
+      "tags": ["documentation", "governance", "community", "policy"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "Guides contributors through issue-first changes, focused pull requests, local validation, security reporting, and conduct expectations.",
+      "tags": ["documentation", "contributing", "development", "governance"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:DATASET.md",
+      "type": "document",
+      "name": "DATASET.md",
+      "filePath": "DATASET.md",
+      "summary": "States that the repository has no fixed public dataset download and is intended to work with user-provided documents or data.",
+      "tags": ["documentation", "datasets", "data-usage"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Profile README presenting Ahmad Mujtaba's applied-AI work, selected outcomes, featured repositories, technical stack, activity visualizations, and RAG engineering approach.",
+      "tags": ["documentation", "entry-point", "profile", "portfolio", "rag"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:SECURITY.md",
+      "type": "document",
+      "name": "SECURITY.md",
+      "filePath": "SECURITY.md",
+      "summary": "Defines supported-version policy, private vulnerability reporting, and maintainer triage through remediation and release communication.",
+      "tags": ["documentation", "security", "vulnerability-reporting", "policy"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:CHANGELOG.md",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:CODE_OF_CONDUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:CONTRIBUTING.md",
+      "target": "document:SECURITY.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:SECURITY.md",
+      "target": "document:CHANGELOG.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

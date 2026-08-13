@@ -1,0 +1,28 @@
+{
+  "projectRoot": "D:\\AI\\Github\\pypi-ahmad",
+  "batchFiles": [
+    {"path":"graphify-out/.graphify_analysis.json","language":"json","sizeLines":247,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_ast.json","language":"json","sizeLines":457,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_cached.json","language":"json","sizeLines":0,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_01.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_02.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_03.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_04.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_05.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_06.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_07.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_08.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_09.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_10.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_chunk_11.json","language":"json","sizeLines":1,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_detect.json","language":"json","sizeLines":0,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_extract.json","language":"json","sizeLines":1886,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_labels.json","language":"json","sizeLines":0,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_semantic.json","language":"json","sizeLines":1436,"fileCategory":"config"},
+    {"path":"graphify-out/.graphify_uncached.txt","language":"txt","sizeLines":0,"fileCategory":"docs"},
+    {"path":"graphify-out/GRAPH_REPORT.md","language":"markdown","sizeLines":137,"fileCategory":"docs"}
+  ],
+  "batchImportData": {
+    "graphify-out/.graphify_analysis.json": [], "graphify-out/.graphify_ast.json": [], "graphify-out/.graphify_cached.json": [], "graphify-out/.graphify_chunk_01.json": [], "graphify-out/.graphify_chunk_02.json": [], "graphify-out/.graphify_chunk_03.json": [], "graphify-out/.graphify_chunk_04.json": [], "graphify-out/.graphify_chunk_05.json": [], "graphify-out/.graphify_chunk_06.json": [], "graphify-out/.graphify_chunk_07.json": [], "graphify-out/.graphify_chunk_08.json": [], "graphify-out/.graphify_chunk_09.json": [], "graphify-out/.graphify_chunk_10.json": [], "graphify-out/.graphify_chunk_11.json": [], "graphify-out/.graphify_detect.json": [], "graphify-out/.graphify_extract.json": [], "graphify-out/.graphify_labels.json": [], "graphify-out/.graphify_semantic.json": [], "graphify-out/.graphify_uncached.txt": [], "graphify-out/GRAPH_REPORT.md": []
+  }
+}

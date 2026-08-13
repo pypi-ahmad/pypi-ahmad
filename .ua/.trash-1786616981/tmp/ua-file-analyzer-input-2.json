@@ -1,0 +1,7 @@
+{
+  "projectRoot": "D:\\AI\\Github\\pypi-ahmad",
+  "batchFiles": [
+    {"path":"README.md","language":"markdown","sizeLines":209,"fileCategory":"docs"}
+  ],
+  "batchImportData": {"README.md": []}
+}

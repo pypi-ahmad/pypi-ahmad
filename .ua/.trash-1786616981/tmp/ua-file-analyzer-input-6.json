@@ -1,0 +1,7 @@
+{
+  "projectRoot": "D:\\AI\\Github\\pypi-ahmad",
+  "batchFiles": [
+    {"path":".github/pinned_repos.txt","language":"txt","sizeLines":9,"fileCategory":"docs"}
+  ],
+  "batchImportData": {".github/pinned_repos.txt": []}
+}

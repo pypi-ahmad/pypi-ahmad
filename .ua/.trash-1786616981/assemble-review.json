@@ -1,0 +1,14 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report contains no unfixable warnings.",
+    "All 69 nodes have IDs, known types, and normalized complexity values.",
+    "All 28 edges reference existing nodes.",
+    "The import map contains no resolved internal imports, so no cross-batch import edges were required."
+  ]
+}

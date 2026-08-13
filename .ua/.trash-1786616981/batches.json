@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 61,
+  "totalBatches": 2,
+  "exportsByPath": {
+    ".ua/.understandignore": [],
+    "graphify-out/.graphify_python": [],
+    "graphify-out/.graphify_root": [],
+    "scripts/generate_repo_cards.py": [
+      "Theme",
+      "_read_repo_list",
+      "_fetch",
+      "RepoInfo",
+      "_repo_url",
+      "_fetch_repo",
+      "_wrap",
+      "_esc",
+      "_render_svg",
+      "main"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 209,
+          "fileCategory": "docs"
+        }
+      ],
+      "batchImportData": {
+        "README.md": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": ".github/pinned_repos.txt",
+          "language": "txt",
+          "sizeLines": 9,
+          "fileCategory": "docs"
+        }
+      ],
+      "batchImportData": {
+        ".github/pinned_repos.txt": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

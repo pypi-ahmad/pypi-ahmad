@@ -1,0 +1,13 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report contained no corrections or unfixable issues.",
+    "Verified 71 unique nodes, 29 edges, no dangling references, and valid complexity values.",
+    "All 61 scanned files have a graph node; importMap contains no project-internal imports, so no cross-batch import edges were needed."
+  ]
+}

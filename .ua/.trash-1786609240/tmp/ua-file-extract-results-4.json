@@ -1,0 +1,223 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [
+    "graphify-out/graph.html"
+  ],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": "graphify-out/cost.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "total_input_tokens",
+          "level": 1,
+          "line": 16
+        },
+        {
+          "heading": "total_output_tokens",
+          "level": 1,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "graphify-out/graph.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 2118,
+      "nonEmptyLines": 2118,
+      "sections": [
+        {
+          "heading": "directed",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "multigraph",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "graph",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "links",
+          "level": 1,
+          "line": 1161
+        },
+        {
+          "heading": "hyperedges",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "built_at_commit",
+          "level": 1,
+          "line": 2117
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "graphify-out/manifest.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 107,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "scripts/generate_repo_cards.py",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": ".github/pinned_repos.txt",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": ".github/workflows/github-stats.yml",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": ".github/workflows/repo-cards.yml",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": ".github/workflows/snake.yml",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "CHANGELOG.md",
+          "level": 1,
+          "line": 27
+        },
+        {
+          "heading": "CODE_OF_CONDUCT.md",
+          "level": 1,
+          "line": 32
+        },
+        {
+          "heading": "CONTRIBUTING.md",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "DATASET.md",
+          "level": 1,
+          "line": 42
+        },
+        {
+          "heading": "README.md",
+          "level": 1,
+          "line": 47
+        },
+        {
+          "heading": "SECURITY.md",
+          "level": 1,
+          "line": 52
+        },
+        {
+          "heading": "profile-3d-contrib/profile-gitblock.svg",
+          "level": 1,
+          "line": 57
+        },
+        {
+          "heading": "profile-3d-contrib/profile-green-animate.svg",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "profile-3d-contrib/profile-green.svg",
+          "level": 1,
+          "line": 67
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-green.svg",
+          "level": 1,
+          "line": 72
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-rainbow.svg",
+          "level": 1,
+          "line": 77
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-view.svg",
+          "level": 1,
+          "line": 82
+        },
+        {
+          "heading": "profile-3d-contrib/profile-season-animate.svg",
+          "level": 1,
+          "line": 87
+        },
+        {
+          "heading": "profile-3d-contrib/profile-season.svg",
+          "level": 1,
+          "line": 92
+        },
+        {
+          "heading": "profile-3d-contrib/profile-south-season-animate.svg",
+          "level": 1,
+          "line": 97
+        },
+        {
+          "heading": "profile-3d-contrib/profile-south-season.svg",
+          "level": 1,
+          "line": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    }
+  ]
+}

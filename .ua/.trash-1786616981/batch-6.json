@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "document:.github/pinned_repos.txt",
+      "type": "document",
+      "name": "pinned_repos.txt",
+      "filePath": ".github/pinned_repos.txt",
+      "summary": "Lists repositories selected for profile README showcase, accepting either repository names or owner/repository identifiers.",
+      "tags": ["documentation", "profile", "repository-list"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:.github/pinned_repos.txt",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

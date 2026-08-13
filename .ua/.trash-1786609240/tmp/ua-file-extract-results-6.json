@@ -1,0 +1,771 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [
+    ".github/pinned_repos.txt",
+    ".ua/.understandignore",
+    "graphify-out/.graphify_python",
+    "graphify-out/.graphify_root"
+  ],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 1,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "edges",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "raw_calls",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "graphify-out/cache/stat-index.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": ".github/pinned_repos.txt",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": ".github/workflows/github-stats.yml",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": ".github/workflows/repo-cards.yml",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": ".github/workflows/snake.yml",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "CHANGELOG.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "CODE_OF_CONDUCT.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "CONTRIBUTING.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "DATASET.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "README.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "SECURITY.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-gitblock.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-green-animate.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-green.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-green.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-rainbow.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-night-view.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-season-animate.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-season.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-south-season-animate.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "profile-3d-contrib/profile-south-season.svg",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "scripts/generate_repo_cards.py",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "scripts/generate_repo_cards.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 277,
+      "nonEmptyLines": 232,
+      "functions": [
+        {
+          "name": "_read_repo_list",
+          "startLine": 66,
+          "endLine": 79,
+          "params": [
+            "path",
+            "default_owner"
+          ]
+        },
+        {
+          "name": "_fetch",
+          "startLine": 82,
+          "endLine": 101,
+          "params": [
+            "url",
+            "headers",
+            "timeout_s",
+            "retries",
+            "retry_sleep_s"
+          ]
+        },
+        {
+          "name": "_repo_url",
+          "startLine": 116,
+          "endLine": 117,
+          "params": [
+            "owner",
+            "repo"
+          ]
+        },
+        {
+          "name": "_fetch_repo",
+          "startLine": 120,
+          "endLine": 144,
+          "params": [
+            "owner",
+            "repo",
+            "token",
+            "timeout_s",
+            "retries",
+            "retry_sleep_s"
+          ]
+        },
+        {
+          "name": "_wrap",
+          "startLine": 147,
+          "endLine": 175,
+          "params": [
+            "text",
+            "max_chars",
+            "max_lines"
+          ]
+        },
+        {
+          "name": "_esc",
+          "startLine": 178,
+          "endLine": 179,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "_render_svg",
+          "startLine": 182,
+          "endLine": 234,
+          "params": [
+            "info",
+            "theme"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 237,
+          "endLine": 273,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Theme",
+          "startLine": 28,
+          "endLine": 37,
+          "methods": [],
+          "properties": [
+            "name",
+            "suffix",
+            "bg",
+            "bg2",
+            "border",
+            "title",
+            "text",
+            "muted",
+            "accent"
+          ]
+        },
+        {
+          "name": "RepoInfo",
+          "startLine": 105,
+          "endLine": 113,
+          "methods": [],
+          "properties": [
+            "owner",
+            "name",
+            "description",
+            "stars",
+            "forks",
+            "language",
+            "updated_at",
+            "url"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Theme",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "_read_repo_list",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "_fetch",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "RepoInfo",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "_repo_url",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "_fetch_repo",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "_wrap",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "_esc",
+          "line": 178,
+          "isDefault": false
+        },
+        {
+          "name": "_render_svg",
+          "line": 182,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 237,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_read_repo_list",
+          "callee": "path.read_text(encoding=\"utf-8\").splitlines",
+          "lineNumber": 68
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "path.read_text",
+          "lineNumber": 68
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "raw.strip",
+          "lineNumber": 69
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "line.startswith",
+          "lineNumber": 70
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "line.split",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "repos.append",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "owner.strip",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "repo.strip",
+          "lineNumber": 76
+        },
+        {
+          "caller": "_read_repo_list",
+          "callee": "ValueError",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_fetch",
+          "callee": "range",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_fetch",
+          "callee": "urllib.request.Request",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_fetch",
+          "callee": "urllib.request.urlopen",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_fetch",
+          "callee": "resp.read",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_fetch",
+          "callee": "time.sleep",
+          "lineNumber": 99
+        },
+        {
+          "caller": "_fetch",
+          "callee": "RuntimeError",
+          "lineNumber": 101
+        },
+        {
+          "caller": "_repo_url",
+          "callee": "urllib.parse.quote",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_repo_url",
+          "callee": "urllib.parse.quote",
+          "lineNumber": 117
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "_fetch",
+          "lineNumber": 127
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "_repo_url",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "json.loads",
+          "lineNumber": 134
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "raw.decode",
+          "lineNumber": 134
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "RepoInfo",
+          "lineNumber": 135
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "(data.get(\"description\") or \"\").strip",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "int",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 139
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "int",
+          "lineNumber": 140
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 140
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "(data.get(\"language\") or \"—\").strip",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "str",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 142
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "str",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_fetch_repo",
+          "callee": "data.get",
+          "lineNumber": 143
+        },
+        {
+          "caller": "_wrap",
+          "callee": "text.split",
+          "lineNumber": 148
+        },
+        {
+          "caller": "_wrap",
+          "callee": "len",
+          "lineNumber": 153
+        },
+        {
+          "caller": "_wrap",
+          "callee": "lines.append",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_wrap",
+          "callee": "\" \".join",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_wrap",
+          "callee": "len",
+          "lineNumber": 157
+        },
+        {
+          "caller": "_wrap",
+          "callee": "len",
+          "lineNumber": 158
+        },
+        {
+          "caller": "_wrap",
+          "callee": "cur.append",
+          "lineNumber": 161
+        },
+        {
+          "caller": "_wrap",
+          "callee": "len",
+          "lineNumber": 164
+        },
+        {
+          "caller": "_wrap",
+          "callee": "lines.append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_wrap",
+          "callee": "\" \".join",
+          "lineNumber": 165
+        },
+        {
+          "caller": "_wrap",
+          "callee": "len",
+          "lineNumber": 167
+        },
+        {
+          "caller": "_wrap",
+          "callee": "\" \".join",
+          "lineNumber": 171
+        },
+        {
+          "caller": "_wrap",
+          "callee": "\" \".join",
+          "lineNumber": 172
+        },
+        {
+          "caller": "_wrap",
+          "callee": "(lines[-1][: max(0, max_chars - 1)] + \"…\").rstrip",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_wrap",
+          "callee": "max",
+          "lineNumber": 174
+        },
+        {
+          "caller": "_esc",
+          "callee": "html.escape",
+          "lineNumber": 179
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_wrap",
+          "lineNumber": 189
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 196
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 212
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 217
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "len",
+          "lineNumber": 217
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 221
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "len",
+          "lineNumber": 221
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 226
+        },
+        {
+          "caller": "_render_svg",
+          "callee": "_esc",
+          "lineNumber": 231
+        },
+        {
+          "caller": "main",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 238
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 239
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 240
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 245
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 246
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 247
+        },
+        {
+          "caller": "main",
+          "callee": "p.add_argument",
+          "lineNumber": 248
+        },
+        {
+          "caller": "main",
+          "callee": "p.parse_args",
+          "lineNumber": 249
+        },
+        {
+          "caller": "main",
+          "callee": "Path.home",
+          "lineNumber": 251
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 252
+        },
+        {
+          "caller": "main",
+          "callee": "Path",
+          "lineNumber": 253
+        },
+        {
+          "caller": "main",
+          "callee": "out_dir.mkdir",
+          "lineNumber": 254
+        },
+        {
+          "caller": "main",
+          "callee": "_read_repo_list",
+          "lineNumber": 256
+        },
+        {
+          "caller": "main",
+          "callee": "os.environ.get",
+          "lineNumber": 257
+        },
+        {
+          "caller": "main",
+          "callee": "os.environ.get",
+          "lineNumber": 257
+        },
+        {
+          "caller": "main",
+          "callee": "_fetch_repo",
+          "lineNumber": 260
+        },
+        {
+          "caller": "main",
+          "callee": "_render_svg(info, theme).encode",
+          "lineNumber": 269
+        },
+        {
+          "caller": "main",
+          "callee": "_render_svg",
+          "lineNumber": 269
+        },
+        {
+          "caller": "main",
+          "callee": "out_path.write_bytes",
+          "lineNumber": 271
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 8,
+        "classCount": 2
+      }
+    }
+  ]
+}

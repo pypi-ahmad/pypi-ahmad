@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "config:graphify-out/cost.json",
+      "type": "config",
+      "name": "cost.json",
+      "filePath": "graphify-out/cost.json",
+      "summary": "Records Graphify run history and cumulative input and output token counts for the generated repository graph.",
+      "tags": ["configuration", "graphify", "cost-tracking"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/graph.html",
+      "type": "file",
+      "name": "graph.html",
+      "filePath": "graphify-out/graph.html",
+      "summary": "Standalone interactive visualization of the generated repository graph, embedding graph nodes, edges, community metadata, search, and filtering controls.",
+      "tags": ["visualization", "graphify", "interactive-graph", "html"],
+      "complexity": "complex",
+      "languageNotes": "Embeds graph data directly in JavaScript and uses vis-network from a CDN for interactive rendering."
+    },
+    {
+      "id": "config:graphify-out/graph.json",
+      "type": "config",
+      "name": "graph.json",
+      "filePath": "graphify-out/graph.json",
+      "summary": "Graphify export containing the repository knowledge graph's nodes, links, hyperedges, metadata, and build commit reference.",
+      "tags": ["configuration", "graphify", "knowledge-graph", "graph-data"],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:graphify-out/manifest.json",
+      "type": "config",
+      "name": "manifest.json",
+      "filePath": "graphify-out/manifest.json",
+      "summary": "Tracks per-file modification times and structural and semantic hashes for Graphify incremental graph updates.",
+      "tags": ["configuration", "graphify", "incremental-build", "file-manifest"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

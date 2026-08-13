@@ -1,0 +1,13 @@
+{
+  "projectRoot": "D:\\AI\\Github\\pypi-ahmad",
+  "batchFiles": [
+    {"path": ".github/workflows/github-stats.yml", "language": "yaml", "sizeLines": 84, "fileCategory": "infra"},
+    {"path": ".github/workflows/repo-cards.yml", "language": "yaml", "sizeLines": 60, "fileCategory": "infra"},
+    {"path": ".github/workflows/snake.yml", "language": "yaml", "sizeLines": 49, "fileCategory": "infra"}
+  ],
+  "batchImportData": {
+    ".github/workflows/github-stats.yml": [],
+    ".github/workflows/repo-cards.yml": [],
+    ".github/workflows/snake.yml": []
+  }
+}

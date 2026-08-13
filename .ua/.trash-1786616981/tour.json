@@ -1,0 +1,54 @@
+[
+  {
+    "order": 1,
+    "title": "Profile Portfolio Overview",
+    "description": "Start with the profile README, the repository's entry point rather than a runtime application. It explains the applied-AI portfolio, featured work, engineering principles, technical stack, and availability that the remaining assets support.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Repository Scope",
+    "description": "The dataset note makes an important boundary explicit: this profile repository does not distribute a fixed public dataset. Read it next to distinguish the presentation and automation work here from the user-provided documents and data used by related applied-AI projects.",
+    "nodeIds": ["document:DATASET.md"]
+  },
+  {
+    "order": 3,
+    "title": "Featured Repository Selection",
+    "description": "The pinned-repository list is the small source of truth that determines which projects appear in the profile showcase. Its link to the README explains how curated project choices become part of the public portfolio narrative introduced in Step 1.",
+    "nodeIds": ["document:.github/pinned_repos.txt", "document:README.md"]
+  },
+  {
+    "order": 4,
+    "title": "Card Publication Automation",
+    "description": "The scheduled GitHub Actions workflow runs the card generator and publishes changed SVG assets to the cards branch. This is the automation boundary: profile presentation stays current without making the README itself a runtime application.",
+    "nodeIds": ["pipeline:.github/workflows/repo-cards.yml"],
+    "languageLesson": "GitHub Actions workflows combine triggers, jobs, and ordered steps; scheduled and manual-dispatch triggers make the same asset-generation pipeline repeatable."
+  },
+  {
+    "order": 5,
+    "title": "Repository Card Generator",
+    "description": "The Python generator is the automation layer's central implementation and has the graph's largest fan-out because it contains the card-building components. Its immutable theme and repository-metadata models separate presentation choices from the GitHub data that will be rendered.",
+    "nodeIds": ["file:scripts/generate_repo_cards.py", "class:scripts/generate_repo_cards.py:Theme", "class:scripts/generate_repo_cards.py:RepoInfo"],
+    "languageLesson": "Python dataclasses provide compact immutable-style data models, which helps keep theme settings and fetched repository metadata explicit while rendering assets."
+  },
+  {
+    "order": 6,
+    "title": "Fetch and Render Flow",
+    "description": "Follow the generator's internal flow from parsing the selected repositories, through GitHub API fetching and metadata mapping, to safe SVG rendering and the CLI entry point. These functions show how the curated input from Step 3 becomes light and dark repository cards consumed by the publishing workflow in Step 4.",
+    "nodeIds": ["function:scripts/generate_repo_cards.py:_read_repo_list", "function:scripts/generate_repo_cards.py:_fetch_repo", "function:scripts/generate_repo_cards.py:_render_svg", "function:scripts/generate_repo_cards.py:main", "function:scripts/generate_repo_cards.py:_esc"],
+    "languageLesson": "Escaping text before inserting it into SVG is essential because repository metadata is external input; bounded wrapping also preserves a stable visual layout."
+  },
+  {
+    "order": 7,
+    "title": "Repository Graph Outputs",
+    "description": "Graphify turns the repository into inspectable artifacts: the report explains the analysis, graph.json stores the graph data, and graph.html provides an interactive view. The manifest records file hashes and timestamps so later analysis can detect what changed instead of treating every run as unrelated.",
+    "nodeIds": ["document:graphify-out/GRAPH_REPORT.md", "config:graphify-out/graph.json", "file:graphify-out/graph.html", "config:graphify-out/manifest.json"],
+    "languageLesson": "A graph export separates machine-readable data from the visualization layer, allowing the same repository relationships to support reports, interactive exploration, and incremental rebuilds."
+  },
+  {
+    "order": 8,
+    "title": "Contribution and Security",
+    "description": "Finish with the governance documents that define how the profile repository evolves: focused contributions, private vulnerability reporting, and recorded release history. These policies make the generated public assets maintainable and trustworthy alongside the technical automation.",
+    "nodeIds": ["document:CONTRIBUTING.md", "document:SECURITY.md", "document:CHANGELOG.md", "document:CODE_OF_CONDUCT.md"]
+  }
+]

@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "document:.github/pinned_repos.txt",
+      "type": "document",
+      "name": "pinned_repos.txt",
+      "filePath": ".github/pinned_repos.txt",
+      "summary": "Lists profile repositories to showcase, accepting either repository names or owner/repository identifiers for the card generator.",
+      "tags": ["documentation", "repository-list", "profile-cards"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "Starter ignore rules for Understand Anything analysis, including commented suggestions for generated files, environments, caches, and tests.",
+      "tags": ["configuration", "analysis", "ignore-rules"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.ua/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".ua/config.json",
+      "summary": "Stores the Understand Anything output language preference for this repository.",
+      "tags": ["configuration", "knowledge-graph", "language-settings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_python",
+      "type": "file",
+      "name": ".graphify_python",
+      "filePath": "graphify-out/.graphify_python",
+      "summary": "Records the Python interpreter path Graphify uses for subsequent graph operations.",
+      "tags": ["graphify", "tooling", "runtime-path"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_root",
+      "type": "file",
+      "name": ".graphify_root",
+      "filePath": "graphify-out/.graphify_root",
+      "summary": "Records the repository root used as the source corpus for Graphify runs.",
+      "tags": ["graphify", "tooling", "project-root"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "type": "config",
+      "name": "25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "filePath": "graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json",
+      "summary": "Cached Graphify AST extraction for the repository card generator, including structural nodes, edges, and raw calls.",
+      "tags": ["configuration", "graphify", "ast-cache", "code-analysis"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:graphify-out/cache/stat-index.json",
+      "type": "config",
+      "name": "stat-index.json",
+      "filePath": "graphify-out/cache/stat-index.json",
+      "summary": "Graphify cache index storing file size, modification time, word count, and content hashes for corpus change detection.",
+      "tags": ["configuration", "graphify", "cache-index", "incremental-build"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/generate_repo_cards.py",
+      "type": "file",
+      "name": "generate_repo_cards.py",
+      "filePath": "scripts/generate_repo_cards.py",
+      "summary": "Fetches GitHub repository metadata and renders themed SVG repository cards for the profile README.",
+      "tags": ["automation", "github-api", "svg-generation", "profile-cards"],
+      "complexity": "complex",
+      "languageNotes": "Uses dataclasses for immutable card data, urllib for GitHub REST API requests, and standard-library HTML escaping for SVG output."
+    },
+    {
+      "id": "class:scripts/generate_repo_cards.py:Theme",
+      "type": "class",
+      "name": "Theme",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [28, 37],
+      "summary": "Immutable color and naming configuration for a rendered repository card theme.",
+      "tags": ["data-model", "theme", "svg-generation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_read_repo_list",
+      "type": "function",
+      "name": "_read_repo_list",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [66, 79],
+      "summary": "Parses repository list entries into owner and repository pairs, applying a default owner to bare names.",
+      "tags": ["parsing", "validation", "repository-list"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_fetch",
+      "type": "function",
+      "name": "_fetch",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [82, 101],
+      "summary": "Performs an HTTP GET request with a user agent, timeout, retries, and delayed retry handling.",
+      "tags": ["http-client", "retry", "github-api"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/generate_repo_cards.py:RepoInfo",
+      "type": "class",
+      "name": "RepoInfo",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [105, 113],
+      "summary": "Immutable repository metadata used to render a profile card.",
+      "tags": ["data-model", "repository-metadata", "svg-generation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_repo_url",
+      "type": "function",
+      "name": "_repo_url",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [116, 117],
+      "summary": "Builds a URL-escaped GitHub REST API endpoint for a repository.",
+      "tags": ["utility", "github-api", "url-building"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_fetch_repo",
+      "type": "function",
+      "name": "_fetch_repo",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [120, 144],
+      "summary": "Fetches a repository from the GitHub REST API and maps response fields into a RepoInfo value.",
+      "tags": ["github-api", "serialization", "repository-metadata"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_wrap",
+      "type": "function",
+      "name": "_wrap",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [147, 175],
+      "summary": "Wraps card descriptions to bounded line and character limits, adding an ellipsis when text is truncated.",
+      "tags": ["utility", "text-formatting", "svg-generation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_esc",
+      "type": "function",
+      "name": "_esc",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [178, 179],
+      "summary": "Escapes text for safe insertion into SVG attributes and content.",
+      "tags": ["utility", "html-escaping", "svg-generation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:_render_svg",
+      "type": "function",
+      "name": "_render_svg",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [182, 234],
+      "summary": "Renders a themed, escaped SVG card from repository metadata, including title, description, language, and activity details.",
+      "tags": ["svg-generation", "templating", "profile-cards"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/generate_repo_cards.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/generate_repo_cards.py",
+      "lineRange": [237, 273],
+      "summary": "Parses CLI options, loads selected repositories, fetches metadata, and writes light and dark SVG cards.",
+      "tags": ["entry-point", "cli", "profile-cards"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {"source": "document:.github/pinned_repos.txt", "target": "file:scripts/generate_repo_cards.py", "type": "documents", "direction": "forward", "weight": 0.5},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "class:scripts/generate_repo_cards.py:Theme", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_read_repo_list", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_fetch", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "class:scripts/generate_repo_cards.py:RepoInfo", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_repo_url", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_fetch_repo", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_wrap", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_esc", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_render_svg", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:main", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "class:scripts/generate_repo_cards.py:Theme", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_read_repo_list", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_fetch", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "class:scripts/generate_repo_cards.py:RepoInfo", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_repo_url", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_fetch_repo", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_wrap", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_esc", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:_render_svg", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:scripts/generate_repo_cards.py", "target": "function:scripts/generate_repo_cards.py:main", "type": "exports", "direction": "forward", "weight": 0.8}
+  ]
+}

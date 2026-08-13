@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/github-stats.yml",
+      "type": "pipeline",
+      "name": "github-stats.yml",
+      "filePath": ".github/workflows/github-stats.yml",
+      "summary": "Scheduled GitHub Actions workflow that generates public-only GitHub language statistics and publishes the SVG assets to the generated branch.",
+      "tags": ["ci-cd", "automation", "github-actions", "statistics"],
+      "complexity": "moderate",
+      "languageNotes": "Uses YAML workflow syntax with scheduled and manual triggers, shell validation, and branch publishing steps."
+    },
+    {
+      "id": "pipeline:.github/workflows/repo-cards.yml",
+      "type": "pipeline",
+      "name": "repo-cards.yml",
+      "filePath": ".github/workflows/repo-cards.yml",
+      "summary": "Scheduled GitHub Actions workflow that runs the repository card generator and publishes its rendered cards to the cards branch.",
+      "tags": ["ci-cd", "automation", "github-actions", "repository-cards"],
+      "complexity": "moderate",
+      "languageNotes": "Runs a Python script on a daily schedule or manual dispatch, then publishes only changed card assets."
+    },
+    {
+      "id": "pipeline:.github/workflows/snake.yml",
+      "type": "pipeline",
+      "name": "snake.yml",
+      "filePath": ".github/workflows/snake.yml",
+      "summary": "Scheduled GitHub Actions workflow that generates contribution-snake SVGs and a 3D profile graph, publishing them to output and main branches.",
+      "tags": ["ci-cd", "automation", "github-actions", "profile-animation"],
+      "complexity": "moderate",
+      "languageNotes": "Uses third-party GitHub Actions to generate visual assets on a daily schedule or manual dispatch."
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline:.github/workflows/repo-cards.yml",
+      "target": "file:scripts/generate_repo_cards.py",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

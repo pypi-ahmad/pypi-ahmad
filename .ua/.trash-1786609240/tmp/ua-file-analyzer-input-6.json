@@ -1,0 +1,23 @@
+{
+  "projectRoot": "D:\\AI\\Github\\pypi-ahmad",
+  "batchFiles": [
+    {"path": ".github/pinned_repos.txt", "language": "txt", "sizeLines": 9, "fileCategory": "docs"},
+    {"path": ".ua/.understandignore", "language": "unknown", "sizeLines": 99, "fileCategory": "code"},
+    {"path": ".ua/config.json", "language": "json", "sizeLines": 1, "fileCategory": "config"},
+    {"path": "graphify-out/.graphify_python", "language": "unknown", "sizeLines": 0, "fileCategory": "code"},
+    {"path": "graphify-out/.graphify_root", "language": "unknown", "sizeLines": 0, "fileCategory": "code"},
+    {"path": "graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json", "language": "json", "sizeLines": 0, "fileCategory": "config"},
+    {"path": "graphify-out/cache/stat-index.json", "language": "json", "sizeLines": 0, "fileCategory": "config"},
+    {"path": "scripts/generate_repo_cards.py", "language": "python", "sizeLines": 277, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    ".github/pinned_repos.txt": [],
+    ".ua/.understandignore": [],
+    ".ua/config.json": [],
+    "graphify-out/.graphify_python": [],
+    "graphify-out/.graphify_root": [],
+    "graphify-out/cache/ast/v0.9.35/25343c48144bb8fbec0b76374cdbb35552423caf42f5f9a55aa2c24fa998f30b.json": [],
+    "graphify-out/cache/stat-index.json": [],
+    "scripts/generate_repo_cards.py": []
+  }
+}

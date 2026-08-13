@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "GitHub profile README presenting Ahmad Mujtaba's applied-AI work, selected outcomes, featured projects, engineering principles, technical stack, activity, and availability.",
+      "tags": ["documentation", "entry-point", "profile", "portfolio", "applied-ai"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

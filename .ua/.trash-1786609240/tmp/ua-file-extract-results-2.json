@@ -1,0 +1,304 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 6,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 6
+    }
+  },
+  "results": [
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 41,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "Changelog",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[Unreleased]",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "Deprecated",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Removed",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "[2026-06-19]",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "[2026-06-13]",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "Code of Conduct",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Our Pledge",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Our Standards",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Enforcement Responsibilities",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Reporting",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Enforcement",
+          "level": 2,
+          "line": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 35,
+      "nonEmptyLines": 23,
+      "sections": [
+        {
+          "heading": "Contributing",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Getting Started",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Pull Request Guidelines",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Validation Checklist",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Reporting",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Code of Conduct",
+          "level": 2,
+          "line": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "DATASET.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "Datasets",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 209,
+      "nonEmptyLines": 180,
+      "sections": [
+        {
+          "heading": "About",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Selected Outcomes",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Featured Work",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Stack",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Activity",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "One Deep Dive (Optional)",
+          "level": 2,
+          "line": 181
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 32,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "Security Policy",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Supported Versions",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Reporting a Vulnerability",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Response Process",
+          "level": 2,
+          "line": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}
