@@ -1,9 +1,7 @@
 # Pinned repositories to showcase in the profile README (one per line).
 # Accepts either "repo" or "owner/repo".
-agentic-rag-arxiv-research-assistant
+lora-qlora-fine-tuning-app
 computer-use
-finetuning-nlp-classification
-local-agentic-enterprise-platform
-medical-document-intelligence-assistant
-risk-fraud-aml-systems
+local-ai-chat-studio
+grounded-docparse
 
