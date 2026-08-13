@@ -50,7 +50,7 @@ The linked repositories are independent public implementations of related engine
 
 **Evaluation boundary.** The corpus size, source documents, schemas, field weighting, and scoring implementation are confidential. The result does not establish accuracy on other document domains.
 
-**Related public implementation.** [`grounded-docparse`](https://github.com/pypi-ahmad/grounded-docparse) publishes a synthetic and public regression corpus, baseline artifacts, confidence routing, and an evaluation script. It does not reproduce the internal benchmark.
+**Related public implementation.** [`grounded-docparse`](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion) publishes a synthetic and public regression corpus, baseline artifacts, confidence routing, and an evaluation script on the `native-document-ingestion` branch. It does not reproduce the internal benchmark.
 
 ## Policy-Entity Extraction
 

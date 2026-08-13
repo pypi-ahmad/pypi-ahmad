@@ -23,6 +23,7 @@
   <a href="#currently-building">Building</a> ·
   <a href="#engineering-principles">Principles</a> ·
   <a href="#writing">Writing</a> ·
+  <a href="#repository">Repository</a> ·
   <a href="#contact--availability">Contact</a>
 </p>
 
@@ -108,15 +109,15 @@ Selected systems demonstrating production-oriented AI engineering.
 
 ## Writing
 
+- **[Extraction Quality Research](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/extraction-quality-research.md).** An analysis of reference quality, regression metrics, OCR failure modes, and evidence limits.
 - **[Computer Use: Zero-to-Hero Study Handbook](https://github.com/pypi-ahmad/computer-use/blob/main/docs/zero-to-hero-study-handbook.md).** A first-principles guide to computer-use agents, typed APIs, route fallback, and audited execution.
-- **[Extraction Quality Research](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/extraction-quality-research.md).** An analysis of reference quality, regression metrics, OCR failure modes, and evidence limits.
 - **[Legal GraphRAG Architecture](https://github.com/pypi-ahmad/legal-graphrag/blob/main/docs/ARCHITECTURE.md).** An implementation note covering ingestion, hybrid retrieval, graph construction, and evaluation.
 
 ## Stack
 
-- **AI and machine learning:** PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, TRL, PEFT, LangGraph, and LangChain.
+- **AI and machine learning:** PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, TRL, PEFT, LangGraph, LangChain, and vLLM.
 - **Models and agent interfaces:** OpenAI, Anthropic, Gemini, Ollama, structured outputs, and MCP.
-- **Backend, retrieval, and data:** Python, FastAPI, Flask, Pydantic, Streamlit, PostgreSQL, SQLite, MongoDB, Redis, Milvus, ChromaDB, FAISS, Azure Databricks, and PySpark.
+- **Backend, retrieval, and data:** Python, FastAPI, Flask, Pydantic, Streamlit, Docling, PostgreSQL, SQLite, MongoDB, Redis, Milvus, ChromaDB, FAISS, Azure Databricks, and PySpark.
 - **Frontend and delivery:** React, Next.js, TypeScript, Vite, Docker, Azure, AWS, GitHub Actions, and Linux.
 - **Quality engineering:** pytest, Ruff, mypy/ty, Vitest, evaluation harnesses, tracing, and failure analysis.
 
@@ -141,6 +142,14 @@ Selected systems demonstrating production-oriented AI engineering.
   </picture>
 </div>
 </details>
+
+## Repository
+
+Source of record is [`main`](https://github.com/pypi-ahmad/pypi-ahmad). Latest snapshot: [2026-08-13](https://github.com/pypi-ahmad/pypi-ahmad/releases/tag/2026-08-13). Changelog: [CHANGELOG.md](CHANGELOG.md).
+
+- Profile and outcomes: `README.md`, [`docs/sanitized-outcomes.md`](docs/sanitized-outcomes.md), [`DATASET.md`](DATASET.md)
+- Governance: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- Analysis artifacts: [`.codegraph/`](.codegraph/), [`.firecrawl/`](.firecrawl/), [`.ua/`](.ua/), [`graphify-out/`](graphify-out/) ([graph report](graphify-out/GRAPH_REPORT.md))
 
 ## Contact & Availability
 

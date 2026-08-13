@@ -11,6 +11,8 @@ Release entries currently use calendar dates.
 
 ### Changed
 
+- Documented the 2026-08-13 snapshot, featured-work order, and tracked analysis artifacts in README, contributing, dataset, and security docs.
+
 ### Deprecated
 
 ### Removed

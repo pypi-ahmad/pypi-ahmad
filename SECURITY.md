@@ -6,6 +6,10 @@ This policy applies to the [`pypi-ahmad/pypi-ahmad`](https://github.com/pypi-ahm
 
 Security fixes are applied to the default branch (`main`).
 
+## Local artifacts
+
+This repository tracks analysis caches under `.codegraph/`, `.firecrawl/`, `.ua/`, and `graphify-out/`. Do not commit session tokens, API keys, or dashboard logs such as `.ua/dashboard.stdout.log`.
+
 ## Reporting a Vulnerability
 
 Use **GitHub Private Vulnerability Reporting** for security issues whenever possible:

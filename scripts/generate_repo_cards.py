@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Generate light/dark SVG "repo cards" for a GitHub profile README.
+Generate light/dark SVG repo cards from GitHub repository metadata.
 
-We generate SVGs locally from GitHub repository metadata (REST API), then a
-GitHub Actions workflow commits the SVGs to a dedicated branch. The profile
-README embeds those SVGs via raw.githubusercontent.com so it stays fast and
-reliable (no live dependency on third-party card services).
+A GitHub Actions workflow publishes the SVGs to the orphan `cards` branch.
+`.github/pinned_repos.txt` lists featured repositories in README order.
+The profile README currently embeds the 3D contribution graph from
+`profile-3d-contrib/` on `main`, not these cards.
 """
 
 from __future__ import annotations
