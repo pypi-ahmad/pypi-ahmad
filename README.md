@@ -28,9 +28,9 @@
 
 ## About
 
-Applied AI Engineer at Deloitte, building document-intelligence, RAG, and agentic systems on Azure. I focus on evaluation, structured outputs, retrieval quality, and deterministic safeguards that make LLM applications measurable and dependable.
+AI and Data Science Engineer at Deloitte, building document-intelligence, RAG, and agentic systems on Azure. I focus on evaluation, structured outputs, retrieval quality, and deterministic safeguards that make LLM applications measurable and dependable.
 
-Previously, I worked on conversational AI, warranty analytics, and production data pipelines at Cognizant.
+Previously, I worked on classical machine learning, conversational AI, warranty analytics, Azure, and production data pipelines at Cognizant.
 
 ## Selected Outcomes
 
