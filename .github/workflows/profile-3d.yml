@@ -43,6 +43,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
+      - name: Generate streak stats card
+        uses: DenverCoder1/github-readme-streak-stats@f69662e10794e8757b12d3303a113a30b01c9bc9
+        with:
+          options: "user=pypi-ahmad&theme=github-dark-blue&hide_border=true&timezone=Asia/Kolkata"
+          path: profile-stats/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit profile updates
         shell: bash
         run: |

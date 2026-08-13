@@ -135,7 +135,7 @@ Selected systems demonstrating production-oriented AI engineering.
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/stats.svg" height="170" alt="Ahmad Mujtaba's GitHub statistics" />
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/top-langs.svg" height="170" alt="Ahmad Mujtaba's top languages" />
   <br />
-  <img src="https://streak-stats.demolab.com?user=pypi-ahmad&amp;theme=github-dark-blue&amp;hide_border=true" alt="Ahmad Mujtaba's GitHub contribution streak" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/streak.svg" alt="Ahmad Mujtaba's GitHub contribution streak" />
 </div>
 
 ### Native GitHub Statistics
