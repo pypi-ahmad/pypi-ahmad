@@ -32,10 +32,12 @@ I treat LLM outputs as **unverified signals**. I validate them with schemas, eva
 
 ## Selected Outcomes
 
-- Improved task completion from **38% → 80%** on a **200-task** internal evaluation by engineering a Milvus-backed RAG layer for multi-agent reasoning.
-- Reduced browser-agent prompt-token consumption by **~40%** by replacing raw DOM dumps with accessibility-tree snapshots + compressed observations (Playwright MCP tooling).
-- Improved structured extraction accuracy from **80–81% → 90%+** (multi-pass extraction with confidence-aware retries + routing).
-- Raised policy-entity extraction accuracy from **90% → 99%** via model + validation iteration (prompting, canonical comparisons, and evaluation).
+These team and system results come from employer-internal evaluations. Client names, source data, task definitions, schemas, and proprietary code are omitted.
+
+- **Browser task completion.** Task completion increased from **38% to 80%** across the same **200-task internal evaluation**. My contribution was Milvus retrieval, reranking, and failure-aware routing. [Sanitized case study](docs/sanitized-outcomes.md#browser-task-completion) · Related public implementations: [computer-use loop](https://github.com/pypi-ahmad/cua-workbench) and [corrective retrieval](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant).
+- **Browser-agent prompt tokens.** Prompt-token consumption fell by **approximately 40%** in an internal evaluation. The baseline used raw DOM observations. My contribution was accessibility-tree snapshots and compressed observations. The evaluation size and trace details are confidential. [Sanitized case study](docs/sanitized-outcomes.md#browser-agent-prompt-tokens) · [Related public implementation](https://github.com/pypi-ahmad/cua-workbench).
+- **Structured extraction.** Accuracy increased from **80–81% to above 90%** on the same internal benchmark. My contribution was multi-pass extraction, confidence-aware retries, and routing. The corpus size, schemas, and scoring details are confidential. [Sanitized case study](docs/sanitized-outcomes.md#structured-extraction) · [Related public implementation](https://github.com/pypi-ahmad/grounded-docparse).
+- **Policy-entity extraction.** Accuracy increased from **90% to 99%** on the same internal benchmark. My contribution was prompt iteration, canonical comparison, and evaluation. The dataset size, policy documents, and entity schema are confidential. [Sanitized case study](docs/sanitized-outcomes.md#policy-entity-extraction) · [Related public implementation](https://github.com/pypi-ahmad/medical-document-intelligence-assistant).
 
 ## Featured Work
 
