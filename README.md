@@ -83,15 +83,15 @@ Selected systems demonstrating production-oriented AI engineering.
 
 ### Grounded Document Parser
 
-**Problem.** Complex PDFs require page-level grounding and stable output order. Low-confidence classifications require review. A failed page should not invalidate successful work.
+**Problem.** Native documents, scanned files, and mixed PDFs require different ingestion paths. OCR-only processing discards native structure. Silent fallback makes provenance difficult to audit.
 
-**Built.** I built a grounded document parser. It renders every page to pixels. It analyzes pages concurrently. It produces ordered Markdown and JSON. It routes custom forms by confidence. It records isolated failures as warnings.
+**Built.** I built an explicitly routed document-ingestion system. It parses native PDFs with `pdf-inspector` and Office, CSV, HTML, and EPUB files with Docling. It keeps local OCR for scans and images. Users review native/OCR routing page by page for mixed PDFs. Immutable text spans and source anchors connect extracted values to pages, paragraphs, slides, sheets, cells, and tables. Values without exact source evidence are rejected.
 
-**Stack.** `Python · Streamlit · Pydantic · OpenAI · GLM-OCR`
+**Stack.** `Python · Streamlit · Pydantic · pdf-inspector · Docling · LangExtract · GLM-OCR · PaddleOCR-VL · vLLM`
 
-**Evidence.** The parser processes ordered 16-page windows with up to eight page workers. It routes classifications below 85% confidence for review. The repository tests extraction, routing, recovery, evaluation, and UI contracts across 22 test modules.
+**Evidence.** The system supports nine explicit processing types across native PDFs, mixed PDFs, Office documents, structured files, scans, and images. It blocks incompatible file and route selections. Grounded extraction accepts only exact character intervals that resolve to source anchors. The repository tests parsing, routing, extraction, recovery, persistence, CLI, and UI contracts across 39 test modules.
 
-[Code](https://github.com/pypi-ahmad/grounded-docparse) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/main/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/main/tests)
+[Code](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/README.md#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion/tests)
 
 ## Currently Building
 
