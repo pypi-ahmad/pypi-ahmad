@@ -9,6 +9,8 @@ Release entries currently use calendar dates.
 
 ### Added
 
+- Advanced GitHub statistics dashboard covering reach, collaboration, coding activity, releases, downloads, and repository traffic.
+
 ### Changed
 
 - Documented the 2026-08-13 snapshot, featured-work order, and tracked analysis artifacts in README, contributing, dataset, and security docs.

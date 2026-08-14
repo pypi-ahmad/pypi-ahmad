@@ -138,6 +138,29 @@ Selected systems demonstrating production-oriented AI engineering.
   <img src="https://github.com/pypi-ahmad/pypi-ahmad/raw/refs/heads/main/profile-stats/streak.svg" alt="Ahmad Mujtaba's GitHub contribution streak" />
 </div>
 
+<details>
+<summary><b>Advanced GitHub dashboard</b></summary>
+<br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.light.svg" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.dark.svg" width="100%" alt="GitHub reach and collaboration statistics" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.light.svg" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.dark.svg" width="100%" alt="GitHub code and activity statistics" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.light.svg" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.dark.svg" width="100%" alt="GitHub distribution and repository traffic statistics" />
+</picture>
+</details>
+
 ### Native GitHub Statistics
 
 GitHub already shows:
@@ -171,13 +194,13 @@ Top languages measure repository bytes, not skill level. The original project is
 
 ### Advanced GitHub Metrics
 
-[Metrics](https://github.com/lowlighter/metrics) supports 47 plugins and 335 options, including:
+The generated dashboard shows:
 
-- Commit calendars, isometric calendars, recent activity, and coding habits
-- Languages, recently used languages, lines changed, and code snippets
-- Stars, stargazer growth, followers, sponsors, and starred topics
-- Pull requests, issues, reviews, discussions, and notable contributions
-- Achievements, repositories, gists, projects, licenses, and repository traffic
+- Lifetime stars, forks, watchers, pull-request reviews, merge rate, issue status, and external contributions
+- Recently active repositories, recently used languages, lifetime lines changed, and 30-day coding habits
+- Published releases, release-asset downloads, and 14-day repository traffic
+
+Statistics cover public, owned, non-fork, non-archived repositories. GitHub traffic is available only for the latest 14 days. Release downloads count uploaded assets, not source archives.
 
 ## Activity
 
