@@ -236,3 +236,5 @@ Based in **Gurugram, India** — IST (UTC+05:30).
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=90&section=footer" alt="Footer" />
 </div>
+
+<p align="center">Made with ❤️ by Ahmad Mujtaba</p>
