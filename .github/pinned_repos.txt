@@ -1,8 +1,9 @@
 # Pinned repositories to showcase in the profile README (one per line).
-# Keep this list in the same order as Featured Work in README.md.
+# Entries may be generated even when they are not displayed in the showcase.
 # Accepts either "repo" or "owner/repo".
 grounded-docparse
 lora-qlora-fine-tuning-app
 computer-use
 local-ai-chat-studio
+Agentic-Document-Extraction
 
