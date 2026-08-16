@@ -5,28 +5,25 @@
 <text x="28" y="62" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases; GitHub traffic covers the last 14 days</text>
 <rect x="28" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="42" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases</text>
-<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">103</text>
+<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">112</text>
 <rect x="234" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="248" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Asset downloads</text>
-<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">11</text>
+<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">14</text>
 <rect x="440" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="454" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Repository views</text>
-<text x="454" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">317</text>
+<text x="454" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">345</text>
 <rect x="646" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="660" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Repository clones</text>
-<text x="660" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">1,788</text>
+<text x="660" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">3,422</text>
 <text x="28" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Popular referrers</text>
-<text x="28" y="225" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Google</text>
+<text x="28" y="225" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">github.com</text>
 <rect x="133" y="212" width="520" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="212" width="520.0" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="252" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">github.com</text>
+<text x="28" y="252" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Google</text>
 <rect x="133" y="239" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="239" width="484.9" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="239" width="502.9" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="279" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Bing</text>
 <rect x="133" y="266" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="266" width="40.9" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="306" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">DuckDuckGo</text>
-<rect x="133" y="293" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="293" width="5.8" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="382" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-08-15 00:27 UTC · 117 public owned repositories · traffic coverage 117/117; release coverage 117/117</text>
+<rect x="133" y="266" width="40.0" height="14" rx="4" fill="#3fb950"/>
+<text x="28" y="382" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-08-16 00:26 UTC · 119 public owned repositories · traffic coverage 119/119; release coverage 119/119</text>
 </svg>
