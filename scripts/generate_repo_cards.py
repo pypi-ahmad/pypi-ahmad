@@ -14,6 +14,7 @@ import argparse
 import html
 import json
 import os
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -96,7 +97,7 @@ def _fetch(url: str, headers: dict[str, str], timeout_s: int, retries: int, retr
         except Exception as e:  # noqa: BLE001 - surface final error after retries
             last_err = e
             if attempt < retries:
-                time.sleep(retry_sleep_s)
+                time.sleep(retry_sleep_s * (2 ** (attempt - 1)))
     assert last_err is not None
     raise RuntimeError(f"Failed to fetch after {retries} attempts: {last_err}") from last_err
 
@@ -256,19 +257,28 @@ def main() -> int:
     repos = _read_repo_list(repos_file, default_owner=default_owner)
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
 
+    failures: list[str] = []
     for owner, repo in repos:
-        info = _fetch_repo(
-            owner=owner,
-            repo=repo,
-            token=token,
-            timeout_s=args.timeout_s,
-            retries=args.retries,
-            retry_sleep_s=args.retry_sleep_s,
-        )
+        try:
+            info = _fetch_repo(
+                owner=owner,
+                repo=repo,
+                token=token,
+                timeout_s=args.timeout_s,
+                retries=args.retries,
+                retry_sleep_s=args.retry_sleep_s,
+            )
+        except Exception as e:  # noqa: BLE001 - keep generating other cards
+            print(f"warning: skipping {owner}/{repo}: {e}", file=sys.stderr)
+            failures.append(f"{owner}/{repo}")
+            continue
         for theme in THEMES:
             svg = _render_svg(info, theme).encode("utf-8")
             out_path = out_dir / f"{repo}.{theme.suffix}.svg"
             out_path.write_bytes(svg)
+
+    if failures and len(failures) == len(repos):
+        raise SystemExit(f"Failed to fetch all repos: {', '.join(failures)}")
 
     return 0
 
