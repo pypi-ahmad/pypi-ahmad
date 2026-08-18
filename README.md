@@ -1,7 +1,8 @@
 <div align="center">
   <h1>Ahmad Mujtaba</h1>
-  <p><b>Applied AI Engineer building reliable Document AI, RAG, and agentic systems.</b></p>
-  <p>Production experience in evaluation, structured extraction, healthcare AI, and Azure deployments.</p>
+  <h3>Applied AI Engineer</h3>
+  <p><b>I build reliable Document AI, RAG, and agentic systems grounded in evaluation and production safeguards.</b></p>
+  <p>Structured Extraction · Retrieval Quality · Healthcare AI · Azure</p>
 
   <p>
     <a href="https://www.linkedin.com/in/ahmad-mle/">
@@ -11,7 +12,10 @@
       <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Live-111827?style=for-the-badge&logo=vercel&logoColor=white" />
     </a>
     <a href="mailto:ahmad.iiitk@gmail.com">
-      <img alt="Email" src="https://img.shields.io/badge/Email-ahmad.iiitk%40gmail.com-334155?style=for-the-badge&logo=gmail&logoColor=white" />
+      <img alt="Email Ahmad Mujtaba" src="https://img.shields.io/badge/-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
+    </a>
+    <a href="#contact--availability">
+      <img alt="Contact Ahmad Mujtaba" src="https://img.shields.io/badge/Contact-Let%27s%20talk-0F766E?style=for-the-badge" />
     </a>
   </p>
 
@@ -31,9 +35,9 @@
 
 ## About
 
-AI and Data Science Engineer at Deloitte, building document-intelligence, RAG, and agentic systems on Azure. I focus on evaluation, structured outputs, retrieval quality, and deterministic safeguards that make LLM applications measurable and dependable.
+I’m an Applied AI Engineer at Deloitte, where I build and evaluate production systems for document intelligence, retrieval, and agentic workflows on Azure. My work focuses on structured extraction, retrieval quality, and deterministic safeguards—turning probabilistic models into measurable, dependable software.
 
-Previously, I worked on classical machine learning, conversational AI, warranty analytics, Azure, and production data pipelines at Cognizant.
+Previously at Cognizant, I worked across machine learning, conversational AI, warranty analytics, and production data pipelines. Across both roles, my focus has remained consistent: moving AI beyond promising demos into systems teams can test, operate, and trust.
 
 ## Selected Outcomes
 
@@ -150,6 +154,10 @@ Selected systems demonstrating production-oriented AI engineering.
 
 ## Certifications
 
+<details>
+<summary><b>Anthropic Education certificates (4)</b></summary>
+<br />
+
 Selected Anthropic Education course certificates. Select a certificate to open the source PDF.
 
 <div align="center">
@@ -167,21 +175,66 @@ Selected Anthropic Education course certificates. Select a certificate to open t
     <img src="certifications/anthropic/certificate-uubk52krkzap-1787045826.png" width="49%" alt="Anthropic Claude Code 101 certificate" />
   </a>
 </div>
+</details>
 
 ## Stack
 
-- **AI and machine learning:** PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, TRL, PEFT, LangGraph, LangChain, and vLLM.
-- **Models and agent interfaces:** OpenAI, Anthropic, Gemini, Ollama, structured outputs, and MCP.
-- **Backend, retrieval, and data:** Python, FastAPI, Flask, Pydantic, Streamlit, Docling, PostgreSQL, SQLite, MongoDB, Redis, Milvus, ChromaDB, FAISS, Azure Databricks, and PySpark.
-- **Frontend and delivery:** React, Next.js, TypeScript, Vite, Docker, Azure, AWS, GitHub Actions, and Linux.
-- **Quality engineering:** pytest, Ruff, mypy/ty, Vitest, evaluation harnesses, tracing, and failure analysis.
+A layered view of the tools I use to build, evaluate, and ship AI systems.
 
-<div align="center">
-  <img
-    src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,flask,react,nextjs,ts,vite,docker,azure,aws,postgres,redis,githubactions&perline=8"
-    alt="Technology stack icons"
-  />
-</div>
+<p align="center"><b>AI &amp; Model Engineering</b></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=dark&amp;titles=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=light&amp;titles=true" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=light&amp;titles=true" alt="AI and model engineering: Python, PyTorch, TensorFlow, scikit-learn, Hugging Face, and LangChain" />
+  </picture>
+  <br />
+  <sub>Transformers · TRL · PEFT · LangGraph · vLLM</sub>
+</p>
+
+<p align="center"><b>Models &amp; Agent Interfaces</b></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=dark&amp;titles=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=light&amp;titles=true" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=light&amp;titles=true" alt="Model and agent interfaces: OpenAI, Anthropic Claude, Gemini, Ollama, and MCP" />
+  </picture>
+  <br />
+  <sub>Structured outputs · provider-native tool interfaces</sub>
+</p>
+
+<p align="center"><b>Applications &amp; APIs</b></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=dark&amp;titles=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=light&amp;titles=true" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=light&amp;titles=true" alt="Applications and APIs: FastAPI, Flask, Pydantic, Streamlit, React, Next.js, TypeScript, and Vite" />
+  </picture>
+  <br />
+  <sub>Document processing: Docling</sub>
+</p>
+
+<p align="center"><b>Data &amp; Retrieval</b></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=dark&amp;titles=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=light&amp;titles=true" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=light&amp;titles=true" alt="Data and retrieval: PostgreSQL, SQLite, MongoDB, Redis, Milvus, Databricks, and Spark" />
+  </picture>
+  <br />
+  <sub>ChromaDB · FAISS</sub>
+</p>
+
+<p align="center"><b>Delivery &amp; Quality</b></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=dark&amp;titles=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=light&amp;titles=true" />
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=light&amp;titles=true" alt="Delivery and quality: Docker, Azure, AWS, GitHub Actions, Linux, pytest, and Vitest" />
+  </picture>
+  <br />
+  <sub>Ruff · mypy/ty · evaluation harnesses · tracing · failure analysis</sub>
+</p>
 
 ## GitHub Statistics
 
@@ -215,7 +268,9 @@ Selected Anthropic Education course certificates. Select a certificate to open t
 </picture>
 </details>
 
-### Native GitHub Statistics
+<details>
+<summary><b>Native GitHub Statistics</b></summary>
+<br />
 
 GitHub already shows:
 
@@ -226,6 +281,7 @@ GitHub already shows:
 - Up to six pinned repositories or gists
 
 Source: [GitHub profile documentation](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile).
+</details>
 
 ### README Cards
 
