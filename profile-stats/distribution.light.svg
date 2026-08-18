@@ -5,7 +5,7 @@
 <text x="28" y="62" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases; GitHub traffic covers the last 14 days</text>
 <rect x="28" y="84" width="190" height="70" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="42" y="111" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases</text>
-<text x="42" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">119</text>
+<text x="42" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">127</text>
 <rect x="234" y="84" width="190" height="70" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="248" y="111" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Asset downloads</text>
 <text x="248" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">14</text>
@@ -31,5 +31,5 @@
 <text x="28" y="333" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">linkedin.com</text>
 <rect x="133" y="320" width="520" height="14" rx="4" fill="#f6f8fa"/>
 <rect x="133" y="320" width="4.6" height="14" rx="4" fill="#1a7f37"/>
-<text x="28" y="382" fill="#57606a" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-08-17 00:25 UTC · 122 public owned repositories · traffic coverage 122/122; release coverage 122/122</text>
+<text x="28" y="382" fill="#57606a" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-08-18 00:25 UTC · 123 public owned repositories · traffic coverage 123/123; release coverage 123/123</text>
 </svg>
