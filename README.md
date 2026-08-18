@@ -23,6 +23,7 @@
   <a href="#currently-building">Building</a> ·
   <a href="#engineering-principles">Principles</a> ·
   <a href="#writing">Writing</a> ·
+  <a href="#certifications">Certifications</a> ·
   <a href="#github-statistics">Statistics</a> ·
   <a href="#repository">Repository</a> ·
   <a href="#contact--availability">Contact</a>
@@ -146,6 +147,26 @@ Selected systems demonstrating production-oriented AI engineering.
 - **[Extraction Quality Research](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/extraction-quality-research.md).** An analysis of reference quality, regression metrics, OCR failure modes, and evidence limits.
 - **[Computer Use: Zero-to-Hero Study Handbook](https://github.com/pypi-ahmad/computer-use/blob/main/docs/zero-to-hero-study-handbook.md).** A first-principles guide to computer-use agents, typed APIs, route fallback, and audited execution.
 - **[Legal GraphRAG Architecture](https://github.com/pypi-ahmad/legal-graphrag/blob/main/docs/ARCHITECTURE.md).** An implementation note covering ingestion, hybrid retrieval, graph construction, and evaluation.
+
+## Certifications
+
+Selected Anthropic Education course certificates. Select a certificate to open the source PDF.
+
+<div align="center">
+  <a href="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.pdf">
+    <img src="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.png" width="49%" alt="Anthropic Claude 101 certificate" />
+  </a>
+  <a href="certifications/anthropic/certificate-suzvk58nwng2-1773228332.pdf">
+    <img src="certifications/anthropic/certificate-suzvk58nwng2-1773228332.png" width="49%" alt="Anthropic AI Fluency: Framework and Foundations certificate" />
+  </a>
+  <br />
+  <a href="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.pdf">
+    <img src="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.png" width="49%" alt="Anthropic Claude with the Anthropic API certificate" />
+  </a>
+  <a href="certifications/anthropic/certificate-uubk52krkzap-1787045826.pdf">
+    <img src="certifications/anthropic/certificate-uubk52krkzap-1787045826.png" width="49%" alt="Anthropic Claude Code 101 certificate" />
+  </a>
+</div>
 
 ## Stack
 
