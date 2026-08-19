@@ -86,6 +86,8 @@ jobs:
           target_branch: output
           build_dir: dist
           keep_history: false
+          author: Ahmad Mujtaba <72138709+pypi-ahmad@users.noreply.github.com>
+          committer: Ahmad Mujtaba <72138709+pypi-ahmad@users.noreply.github.com>
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

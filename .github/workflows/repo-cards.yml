@@ -41,8 +41,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Ahmad Mujtaba"
+          git config user.email "72138709+pypi-ahmad@users.noreply.github.com"
 
           if git ls-remote --exit-code --heads origin cards >/dev/null 2>&1; then
             git fetch origin cards
