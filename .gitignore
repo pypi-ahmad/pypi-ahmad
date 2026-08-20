@@ -45,3 +45,8 @@ vectordb/
 _embed_cache/
 **/_embed_cache/
 # <<< Codex Local Ignore (env/venv/cache/artifacts) <<<
+
+.codex/
+.codegraph/
+.code-review-graph/
+.ua/
