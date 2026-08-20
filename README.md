@@ -179,62 +179,18 @@ Selected Anthropic Education course certificates. Select a certificate to open t
 
 ## Stack
 
-A layered view of the tools I use to build, evaluate, and ship AI systems.
+<details>
+<summary><b>Technology stack</b></summary>
+<br />
 
-<p align="center"><b>AI &amp; Model Engineering</b></p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=dark&amp;titles=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=light&amp;titles=true" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=python,pytorch,tensorflow,scikitlearn,huggingface,langchain&amp;theme=light&amp;titles=true" alt="AI and model engineering: Python, PyTorch, TensorFlow, scikit-learn, Hugging Face, and LangChain" />
-  </picture>
-  <br />
-  <sub>Transformers · TRL · PEFT · LangGraph · vLLM</sub>
-</p>
+Core tools used to build and evaluate reliable document AI, retrieval, and agentic systems.
 
-<p align="center"><b>Models &amp; Agent Interfaces</b></p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=dark&amp;titles=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=light&amp;titles=true" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt,claude,gemini,ollama,mcp&amp;theme=light&amp;titles=true" alt="Model and agent interfaces: OpenAI, Anthropic Claude, Gemini, Ollama, and MCP" />
-  </picture>
-  <br />
-  <sub>Structured outputs · provider-native tool interfaces</sub>
-</p>
-
-<p align="center"><b>Applications &amp; APIs</b></p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=dark&amp;titles=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=light&amp;titles=true" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=fastapi,flask,pydantic,streamlit,react,nextjs,typescript,vite&amp;theme=light&amp;titles=true" alt="Applications and APIs: FastAPI, Flask, Pydantic, Streamlit, React, Next.js, TypeScript, and Vite" />
-  </picture>
-  <br />
-  <sub>Document processing: Docling</sub>
-</p>
-
-<p align="center"><b>Data &amp; Retrieval</b></p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=dark&amp;titles=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=light&amp;titles=true" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql,sqlite,mongodb,redis,milvus,databricks,spark&amp;theme=light&amp;titles=true" alt="Data and retrieval: PostgreSQL, SQLite, MongoDB, Redis, Milvus, Databricks, and Spark" />
-  </picture>
-  <br />
-  <sub>ChromaDB · FAISS</sub>
-</p>
-
-<p align="center"><b>Delivery &amp; Quality</b></p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=dark&amp;titles=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=light&amp;titles=true" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=docker,azure,aws,githubactions,linux,pytest,vitest&amp;theme=light&amp;titles=true" alt="Delivery and quality: Docker, Azure, AWS, GitHub Actions, Linux, pytest, and Vitest" />
-  </picture>
-  <br />
-  <sub>Ruff · mypy/ty · evaluation harnesses · tracing · failure analysis</sub>
-</p>
+- **Model engineering:** Python, PyTorch, TensorFlow, scikit-learn, Hugging Face, Transformers, TRL, PEFT, vLLM
+- **Agent systems:** OpenAI, Anthropic, Gemini, Ollama, MCP, LangChain, LangGraph
+- **Document AI & retrieval:** Pydantic, Docling, Milvus, ChromaDB, FAISS
+- **Applications:** FastAPI, Flask, Streamlit, React, Next.js, TypeScript
+- **Data, delivery & evaluation:** PostgreSQL, SQLite, MongoDB, Redis, Docker, Azure, AWS, GitHub Actions, pytest, Vitest, Ruff, mypy/ty
+</details>
 
 ## GitHub Statistics
 
