@@ -183,13 +183,17 @@ Selected Anthropic Education course certificates. Select a certificate to open t
 <summary><b>Technology stack</b></summary>
 <br />
 
-Core tools used to build and evaluate reliable document AI, retrieval, and agentic systems.
+Core capabilities for building and evaluating reliable document AI, retrieval, and agentic systems.
 
-- **Model engineering:** Python, PyTorch, TensorFlow, scikit-learn, Hugging Face, Transformers, TRL, PEFT, vLLM
-- **Agent systems:** OpenAI, Anthropic, Gemini, Ollama, MCP, LangChain, LangGraph
-- **Document AI & retrieval:** Pydantic, Docling, Milvus, ChromaDB, FAISS
-- **Applications:** FastAPI, Flask, Streamlit, React, Next.js, TypeScript
-- **Data, delivery & evaluation:** PostgreSQL, SQLite, MongoDB, Redis, Docker, Azure, AWS, GitHub Actions, pytest, Vitest, Ruff, mypy/ty
+- **Healthcare & consulting delivery:** U.S. payer workflows, prior authorization, utilization management, clinical-document processing, care-management decision support, claims and eligibility adjudication, HIPAA/PHI handling, FHIR/HL7, SME workflow mapping, solution and compliance documentation, client communication
+- **Languages & backend:** Python, SQL, FastAPI, Flask, REST APIs, async services, microservices, PySpark, NumPy, Pandas, Streamlit, React, Next.js, TypeScript, PostgreSQL, SQLite, MongoDB, Redis
+- **Agentic AI & orchestration:** Agentic and multi-agent design, LangChain, LangGraph, Model Context Protocol (MCP), Playwright MCP, workflow automation, prompt engineering, Pydantic structured outputs, function/tool calling, human-in-the-loop approvals
+- **RAG & retrieval:** Milvus, FAISS, ChromaDB, DuckDB, SQLGlot, hybrid search (BM25 + dense), reranking, retrieval evaluation, hallucination reduction
+- **LLM platforms & inference:** Azure OpenAI, Azure AI Foundry, OpenAI GPT-5/GPT-4, Google Gemini 2.5/3, Anthropic Claude Opus/Sonnet, Ollama, GGUF, quantization, vLLM
+- **Data, ML & fine-tuning:** Spark MLlib, scikit-learn, XGBoost, LightGBM, Random Forest, PyTorch, TensorFlow, Transformers, Hugging Face, LoRA/QLoRA, TRL, PEFT, bitsandbytes, ETL, Medallion architecture, feature engineering, fraud detection, risk scoring, model evaluation, validation, monitoring, Precision@K, PR-AUC
+- **Document intelligence:** Azure Content Understanding, Docling, layout-aware parsing, OCR, PaddleOCR-VL, DeepSeek-OCR, GLM-OCR, PaddleOCR, multimodal document understanding, table and entity extraction
+- **Agentic coding workflows:** Claude Code, Codex, OpenCode, CLI-first and GUI agent operations, CLAUDE.md and agent.md, reusable skills, planning, tool routing, verification loops, context compaction
+- **Cloud, delivery & quality:** Azure (Databricks, App Services, Cognitive Services, Key Vault, Blob, ML Studio), AWS (Lambda, S3, SageMaker, CloudWatch, Lex), Docker, GitLab/GitHub Actions, CI/CD, Power BI, pytest, Vitest, Ruff, mypy/ty, evaluation harnesses, tracing, failure analysis; automotive warranty analytics, FMCG B2B, and conversational AI
 </details>
 
 ## GitHub Statistics
