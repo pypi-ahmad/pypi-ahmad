@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import http.client
 import json
 import os
 import time
@@ -84,7 +85,7 @@ class GitHubClient:
                 last_error = ApiError(error.code, url, message)
                 if error.code not in {202, 429, 500, 502, 503, 504}:
                     raise last_error
-            except (urllib.error.URLError, TimeoutError, ApiError) as error:
+            except (urllib.error.URLError, TimeoutError, http.client.IncompleteRead, http.client.RemoteDisconnected, ApiError) as error:
                 last_error = error
                 if isinstance(error, ApiError) and error.status != 202:
                     raise
