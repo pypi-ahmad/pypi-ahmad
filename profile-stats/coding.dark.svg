@@ -5,85 +5,85 @@
 <text x="28" y="62" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lifetime code totals; recent metrics cover 30 days</text>
 <rect x="28" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="42" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lines added</text>
-<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">38,258,607</text>
+<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">38,298,692</text>
 <rect x="234" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="248" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lines removed</text>
-<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">15,353,207</text>
+<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">15,372,018</text>
 <text x="28" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Recently active repositories</text>
-<text x="28" y="220" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-09-01</text>
-<text x="28" y="245" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Machine-Learning-Projects  2026-08-14</text>
-<text x="28" y="270" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">OpenAI-X-RapidOCR-Agentic-Document_extraction  2026-08-30</text>
-<text x="28" y="295" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">NaviDC-OCR-Agentic-Document-Extraction  2026-08-29</text>
-<text x="28" y="320" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">local-ai-chat-studio  2026-08-27</text>
+<text x="28" y="220" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">google-timesfm  2026-09-02</text>
+<text x="28" y="245" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">liteparse-agentic-document-extraction  2026-09-02</text>
+<text x="28" y="270" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">OpenAI-Agentic-Document_extraction  2026-09-02</text>
+<text x="28" y="295" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-09-02</text>
+<text x="28" y="320" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Machine-Learning-Projects  2026-08-14</text>
 <text x="470" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Recently used languages</text>
 <text x="470" y="223" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">HTML</text>
 <rect x="575" y="210" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="210" width="260.0" height="14" rx="4" fill="#58a6ff"/>
 <text x="470" y="250" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Python</text>
 <rect x="575" y="237" width="260" height="14" rx="4" fill="#161b22"/>
-<rect x="575" y="237" width="165.7" height="14" rx="4" fill="#58a6ff"/>
+<rect x="575" y="237" width="170.3" height="14" rx="4" fill="#58a6ff"/>
 <text x="470" y="277" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">TypeScript</text>
 <rect x="575" y="264" width="260" height="14" rx="4" fill="#161b22"/>
-<rect x="575" y="264" width="23.1" height="14" rx="4" fill="#58a6ff"/>
+<rect x="575" y="264" width="23.0" height="14" rx="4" fill="#58a6ff"/>
 <text x="470" y="304" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">JavaScript</text>
 <rect x="575" y="291" width="260" height="14" rx="4" fill="#161b22"/>
-<rect x="575" y="291" width="21.0" height="14" rx="4" fill="#58a6ff"/>
+<rect x="575" y="291" width="20.9" height="14" rx="4" fill="#58a6ff"/>
 <text x="470" y="331" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Jupyter Notebook</text>
 <rect x="575" y="318" width="260" height="14" rx="4" fill="#161b22"/>
-<rect x="575" y="318" width="9.6" height="14" rx="4" fill="#58a6ff"/>
+<rect x="575" y="318" width="9.7" height="14" rx="4" fill="#58a6ff"/>
 <text x="28" y="372" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Commit habits (Asia/Kolkata)</text>
 <text x="28" y="409" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Mon</text>
 <rect x="133" y="396" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="396" width="125.4" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="396" width="125.7" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="436" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Tue</text>
 <rect x="133" y="423" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="423" width="30.8" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="423" width="30.3" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="463" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Wed</text>
 <rect x="133" y="450" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="450" width="55.0" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="450" width="76.2" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="490" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Thu</text>
 <rect x="133" y="477" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="477" width="71.1" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="477" width="71.7" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="517" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Fri</text>
 <rect x="133" y="504" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="504" width="66.0" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="504" width="66.6" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="544" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sat</text>
 <rect x="133" y="531" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="531" width="250.0" height="14" rx="4" fill="#3fb950"/>
 <text x="28" y="571" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sun</text>
 <rect x="133" y="558" width="250" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="558" width="104.8" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="558" width="105.8" height="14" rx="4" fill="#3fb950"/>
 <rect x="450" y="426.0" width="11" height="110.0" fill="#58a6ff"/>
 <text x="455" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">00</text>
-<rect x="467" y="510.7" width="11" height="25.3" fill="#58a6ff"/>
-<rect x="484" y="500.0" width="11" height="36.0" fill="#58a6ff"/>
-<rect x="501" y="507.3" width="11" height="28.7" fill="#58a6ff"/>
+<rect x="467" y="510.2" width="11" height="25.8" fill="#58a6ff"/>
+<rect x="484" y="499.3" width="11" height="36.7" fill="#58a6ff"/>
+<rect x="501" y="506.8" width="11" height="29.2" fill="#58a6ff"/>
 <text x="506" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">03</text>
-<rect x="518" y="532.0" width="11" height="4.0" fill="#58a6ff"/>
-<rect x="535" y="532.7" width="11" height="3.3" fill="#58a6ff"/>
-<rect x="552" y="531.3" width="11" height="4.7" fill="#58a6ff"/>
+<rect x="518" y="531.9" width="11" height="4.1" fill="#58a6ff"/>
+<rect x="535" y="532.6" width="11" height="3.4" fill="#58a6ff"/>
+<rect x="552" y="531.2" width="11" height="4.8" fill="#58a6ff"/>
 <text x="557" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">06</text>
-<rect x="569" y="532.0" width="11" height="4.0" fill="#58a6ff"/>
-<rect x="586" y="530.7" width="11" height="5.3" fill="#58a6ff"/>
+<rect x="569" y="531.9" width="11" height="4.1" fill="#58a6ff"/>
+<rect x="586" y="531.2" width="11" height="4.8" fill="#58a6ff"/>
 <rect x="603" y="536.0" width="11" height="0.0" fill="#58a6ff"/>
 <text x="608" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">09</text>
-<rect x="620" y="530.7" width="11" height="5.3" fill="#58a6ff"/>
-<rect x="637" y="519.3" width="11" height="16.7" fill="#58a6ff"/>
-<rect x="654" y="515.3" width="11" height="20.7" fill="#58a6ff"/>
+<rect x="620" y="530.6" width="11" height="5.4" fill="#58a6ff"/>
+<rect x="637" y="519.0" width="11" height="17.0" fill="#58a6ff"/>
+<rect x="654" y="515.0" width="11" height="21.0" fill="#58a6ff"/>
 <text x="659" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">12</text>
-<rect x="671" y="480.0" width="11" height="56.0" fill="#58a6ff"/>
-<rect x="688" y="489.3" width="11" height="46.7" fill="#58a6ff"/>
-<rect x="705" y="484.0" width="11" height="52.0" fill="#58a6ff"/>
+<rect x="671" y="477.6" width="11" height="58.4" fill="#58a6ff"/>
+<rect x="688" y="476.2" width="11" height="59.8" fill="#58a6ff"/>
+<rect x="705" y="478.3" width="11" height="57.7" fill="#58a6ff"/>
 <text x="710" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">15</text>
-<rect x="722" y="512.7" width="11" height="23.3" fill="#58a6ff"/>
-<rect x="739" y="525.3" width="11" height="10.7" fill="#58a6ff"/>
-<rect x="756" y="506.7" width="11" height="29.3" fill="#58a6ff"/>
+<rect x="722" y="512.2" width="11" height="23.8" fill="#58a6ff"/>
+<rect x="739" y="525.1" width="11" height="10.9" fill="#58a6ff"/>
+<rect x="756" y="506.1" width="11" height="29.9" fill="#58a6ff"/>
 <text x="761" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">18</text>
-<rect x="773" y="500.7" width="11" height="35.3" fill="#58a6ff"/>
-<rect x="790" y="498.0" width="11" height="38.0" fill="#58a6ff"/>
-<rect x="807" y="512.0" width="11" height="24.0" fill="#58a6ff"/>
+<rect x="773" y="500.0" width="11" height="36.0" fill="#58a6ff"/>
+<rect x="790" y="497.3" width="11" height="38.7" fill="#58a6ff"/>
+<rect x="807" y="511.6" width="11" height="24.4" fill="#58a6ff"/>
 <text x="812" y="554" fill="#8b949e" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">21</text>
-<rect x="824" y="516.7" width="11" height="19.3" fill="#58a6ff"/>
-<rect x="841" y="495.3" width="11" height="40.7" fill="#58a6ff"/>
-<text x="28" y="602" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-09-02 02:39 UTC · 129 public owned repositories · line coverage 129/129</text>
+<rect x="824" y="516.3" width="11" height="19.7" fill="#58a6ff"/>
+<rect x="841" y="494.6" width="11" height="41.4" fill="#58a6ff"/>
+<text x="28" y="602" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-09-03 02:44 UTC · 132 public owned repositories · line coverage 132/132</text>
 </svg>
