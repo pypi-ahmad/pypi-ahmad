@@ -6,31 +6,34 @@ This policy applies to the [`pypi-ahmad/pypi-ahmad`](https://github.com/pypi-ahm
 
 Security fixes are applied to the default branch (`main`).
 
-## Local artifacts
-
-This repository tracks analysis caches under `.codegraph/`, `.firecrawl/`, `.ua/`, and `graphify-out/`. Do not commit session tokens, API keys, or dashboard logs such as `.ua/dashboard.stdout.log`.
-
 ## Reporting a Vulnerability
 
-Use **GitHub Private Vulnerability Reporting** for security issues whenever possible:
+If the repository security page offers GitHub Private Vulnerability Reporting,
+use it to report the issue privately:
 
-- Repository Security page: <https://github.com/pypi-ahmad/pypi-ahmad/security>
-- Policy page: <https://github.com/pypi-ahmad/pypi-ahmad/security/policy>
+- [Repository security page](https://github.com/pypi-ahmad/pypi-ahmad/security)
 
-If private reporting is temporarily unavailable, open a GitHub issue with **minimal details** and avoid exploit instructions, credentials, or sensitive data.
+Otherwise, report the vulnerability privately at
+[ahmad.iiitk@gmail.com](mailto:ahmad.iiitk@gmail.com).
 
-Please include:
+Do not open a public issue for a security vulnerability. Do not include live
+credentials, API keys, tokens, or unnecessary personal data in a report.
+
+Include, where possible:
 
 - A clear description of the issue
 - Potential impact
-- Reproduction steps or proof-of-concept (sanitized)
+- Reproduction steps or a sanitized proof of concept
 - Suggested remediation, if available
 
 ## Response Process
 
 Maintainers will:
 
-1. Acknowledge and triage reports.
+1. Review and triage the report privately.
 2. Assess severity and scope.
 3. Implement and validate a fix.
-4. Communicate resolution through repository updates and changelog notes where appropriate.
+4. Communicate resolution through private updates and public repository notes
+   only when appropriate and safe.
+
+Allow maintainers to investigate and address the issue before making it public.

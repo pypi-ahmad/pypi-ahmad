@@ -1,39 +1,46 @@
 # Code of Conduct
 
-## Our Pledge
+## Our pledge
 
-We are committed to making participation in this project a harassment-free experience for everyone.
+We are committed to a welcoming, harassment-free project for everyone who
+participates.
 
-## Our Standards
+## Our standards
 
 Examples of behavior that contributes to a positive environment include:
 
-- Being respectful and constructive
-- Giving and accepting feedback gracefully
-- Focusing on what is best for the community
+- Being respectful and constructive in technical and editorial feedback.
+- Giving and receiving feedback in good faith.
+- Focusing discussion on the work and the community.
 
 Examples of unacceptable behavior include:
 
-- Harassment, discrimination, or personal attacks
-- Trolling, insulting, or derogatory comments
-- Publishing private information without permission
+- Harassment, discrimination, threats, or personal attacks.
+- Trolling, insulting, or derogatory comments.
+- Publishing private information without permission.
 
-## Enforcement Responsibilities
+## Enforcement responsibilities
 
-Project maintainers are responsible for clarifying and enforcing acceptable behavior.
+Project maintainers clarify and enforce these standards.
 
 ## Scope
 
-This Code of Conduct applies in all project spaces, including issues, pull requests, and community discussions.
+This Code of Conduct applies in all project spaces, including issues, pull
+requests, discussions, and other project-related communication.
 
-## Reporting
+## Reporting a Concern
 
-To report behavior that violates this Code of Conduct, open an issue in this repository:
+Report possible violations privately at
+[ahmad.iiitk@gmail.com](mailto:ahmad.iiitk@gmail.com). Include only the
+information needed to assess the incident, and avoid sharing sensitive personal
+information unless it is necessary for the report.
 
-- Issues: <https://github.com/pypi-ahmad/pypi-ahmad/issues>
-
-When reporting, include only the information needed to assess the incident. Avoid sharing sensitive personal information.
+Maintainers will handle reports with discretion. Retaliation against someone
+who raises a concern in good faith is not acceptable.
+If the concern involves a maintainer, identify that in the report.
 
 ## Enforcement
 
-Maintainers may take any action they deem appropriate, including warning, temporary ban, or permanent removal from participation.
+Maintainers may take action proportionate to the circumstances, including a
+private correction, warning, temporary restriction, or permanent removal from
+participation.

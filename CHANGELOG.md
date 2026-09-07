@@ -9,11 +9,13 @@ Release entries currently use calendar dates.
 
 ### Added
 
-- Advanced GitHub statistics dashboard covering reach, collaboration, coding activity, releases, downloads, and repository traffic.
+- Added an advanced GitHub statistics dashboard for reach, collaboration, coding activity, releases, downloads, and repository traffic.
 
 ### Changed
 
-- Documented the 2026-08-13 snapshot, featured-work order, and tracked analysis artifacts in README, contributing, dataset, and security docs.
+- Reworked the profile README for hiring managers and collaborators: shortened featured work and the technology stack, retained visual statistics, and removed statistics-tool explanations and internal artifact links.
+- Added multi-agent fraud and referral-fraud detection work to the About summary and Stack section, including deterministic risk scoring, human-in-the-loop review, and PII-redaction guardrails.
+- Clarified contribution guidance and private reporting routes for conduct and security concerns.
 
 ### Deprecated
 
@@ -27,13 +29,13 @@ Release entries currently use calendar dates.
 
 ### Added
 
-- Grounded Document Parser featured-work case study with routing, provenance, and test-coverage evidence.
+- Added a Grounded Document Parser featured-work case study with routing, provenance, and test-coverage evidence.
 - Tracked local analysis artifacts: `.codegraph/`, `.firecrawl/`, `.ua/`, and `graphify-out/`.
 - 3D contribution graph on `main` and automated repo-card generation.
 
 ### Changed
 
-- Refocused the profile README on engineering work, qualified internal outcome metrics, and removed promotional language.
+- Updated the profile README to focus on engineering work, qualify internal outcome metrics, and remove promotional language.
 - Moved Grounded Document Parser to the first featured project.
 - Updated the role summary and applied AI stack.
 
@@ -42,11 +44,11 @@ Release entries currently use calendar dates.
 ### Added
 
 - Automated GitHub stats workflow and README embeds for generated overview/language cards.
-- Governance documentation baseline: restored `CONTRIBUTING.md` and standardized policy files.
+- Restored `CONTRIBUTING.md` and standardized the policy files.
 
 ### Changed
 
-- Rewrote security policy, code of conduct, and changelog structure for clearer OSS maintenance standards.
+- Reworked the security policy, code of conduct, and changelog structure to clarify OSS maintenance standards.
 
 ### Security
 
