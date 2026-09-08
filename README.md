@@ -5,32 +5,7 @@
   <p>Structured Extraction · Retrieval Quality · Healthcare AI · Azure</p>
 
   <p>
-    <a href="https://x.com/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/twitter.png" width="36" height="36" alt="X / Twitter" title="X / Twitter (@pypi_ahmad)" />
-    </a>&nbsp;
-    <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/linkedin.png" width="36" height="36" alt="LinkedIn" title="LinkedIn (Ahmad Mujtaba)" />
-    </a>&nbsp;
-    <a href="https://github.com/pypi-ahmad" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/github.png" width="36" height="36" alt="GitHub" title="GitHub (@pypi-ahmad)" />
-    </a>&nbsp;
-    <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/portfolio.png" width="36" height="36" alt="Portfolio" title="Portfolio (pypi-ahmad.github.io)" />
-    </a>&nbsp;
-    <a href="https://wa.me/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/whatsapp.png" width="36" height="36" alt="WhatsApp" title="WhatsApp (pypi_ahmad)" />
-    </a>&nbsp;
-    <a href="https://t.me/dataintuitionist" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/telegram.png" width="36" height="36" alt="Telegram" title="Telegram (@dataintuitionist)" />
-    </a>&nbsp;
-    <a href="https://www.instagram.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/instagram.png" width="36" height="36" alt="Instagram" title="Instagram (@dataintuitionist)" />
-    </a>&nbsp;
-    <a href="https://www.facebook.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-      <img src="contacts-icons/facebook.png" width="36" height="36" alt="Facebook" title="Facebook (dataintuitionist)" />
-    </a>
-    <br />
-    <img src="contacts-icons/social-divider.svg" width="340" height="6" alt="" />
+    <img src="contacts-icons/social-icons-white-row.png" width="340" height="52" alt="Social media icons: X / Twitter, LinkedIn, GitHub, Portfolio, WhatsApp, Telegram, Instagram, and Facebook" />
   </p>
 
   <p>
