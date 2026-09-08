@@ -29,6 +29,8 @@
     <a href="https://www.facebook.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
       <img src="contacts-icons/facebook.png" width="36" height="36" alt="Facebook" title="Facebook (dataintuitionist)" />
     </a>
+    <br />
+    <img src="contacts-icons/social-divider.svg" width="340" height="6" alt="" />
   </p>
 
   <p>
