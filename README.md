@@ -5,15 +5,11 @@
   <p>Structured Extraction · Retrieval Quality · Healthcare AI · Azure</p>
 
   <p>
-    <img src="contacts-icons/social-icons-white-row.png" width="340" height="52" alt="Social media icons: X / Twitter, LinkedIn, GitHub, Portfolio, WhatsApp, Telegram, Instagram, and Facebook" />
-  </p>
-
-  <p>
     <a href="mailto:ahmad.iiitk@gmail.com">
-      <img alt="Email Ahmad Mujtaba" src="https://img.shields.io/badge/-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
+      <img alt="Email me" src="https://img.shields.io/badge/Email%20me-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
     </a>
-    <a href="#contact--availability">
-      <img alt="Contact Ahmad Mujtaba" src="https://img.shields.io/badge/Contact-Let%27s%20talk-0F766E?style=for-the-badge" />
+    <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
+      <img alt="Connect on LinkedIn" src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" />
     </a>
   </p>
 
