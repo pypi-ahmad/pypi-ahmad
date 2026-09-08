@@ -9,6 +9,7 @@ Release entries currently use calendar dates.
 
 ### Added
 
+- Added direct contact links and custom branding icons for Twitter/X, LinkedIn, GitHub, Portfolio, WhatsApp, Telegram, Instagram, and Facebook, along with the updated professional bio headline.
 - Added an advanced GitHub statistics dashboard for reach, collaboration, coding activity, releases, downloads, and repository traffic.
 
 ### Changed
