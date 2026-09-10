@@ -123,6 +123,22 @@ Local AI Chat Studio supports streaming chat, comparison, replay, and response d
 ## Certifications
 
 <details>
+<summary><b>Anthropic professional certifications (1)</b></summary>
+<br />
+
+<div align="center">
+  <a href="certifications/anthropic/claude-certified-associate-foundations.pdf">
+    <img src="certifications/anthropic/claude-certified-associate-foundations.png" width="32%" alt="Anthropic Claude Certified Associate - Foundations badge" />
+  </a>
+  <p>
+    <b>Claude Certified Associate - Foundations</b><br />
+    Issued Aug 31, 2026 · Expires Aug 31, 2027<br />
+    <a href="https://www.credly.com/badges/d9eace76-da4e-447f-b38b-9c39ac6edf6d">Verify on Credly</a>
+  </p>
+</div>
+</details>
+
+<details>
 <summary><b>Anthropic Education certificates (4)</b></summary>
 <br />
 
