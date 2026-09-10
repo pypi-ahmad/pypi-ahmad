@@ -132,7 +132,7 @@ Local AI Chat Studio supports streaming chat, comparison, replay, and response d
   </a>
   <p>
     <b>Claude Certified Associate - Foundations</b><br />
-    Issued Aug 31, 2026 · Expires Aug 31, 2027<br />
+    Issued Aug 31, 2026<br />
     <a href="https://www.credly.com/badges/d9eace76-da4e-447f-b38b-9c39ac6edf6d">Verify on Credly</a>
   </p>
 </div>
