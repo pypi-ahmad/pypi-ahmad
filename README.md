@@ -290,35 +290,37 @@ Based in **Gurugram, India** (IST, UTC+05:30), I’m open to selective remote-fi
 <p align="center">
   <strong>Get in touch</strong><br /><br />
   <a href="mailto:ahmad.iiitk@gmail.com">
-    <img alt="Email Ahmad Mujtaba" src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
+    <img alt="Email Ahmad Mujtaba" title="Email Ahmad Mujtaba" src="contacts-icons/email.svg" width="48" height="48" />
   </a>
   <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
-    <img alt="Connect with Ahmad Mujtaba on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" />
+    <img alt="Connect with Ahmad Mujtaba on LinkedIn" title="Connect with Ahmad Mujtaba on LinkedIn" src="contacts-icons/linkedin.svg" width="48" height="48" />
   </a>
   <a href="https://wa.me/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Message Ahmad Mujtaba on WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" />
+    <img alt="Message Ahmad Mujtaba on WhatsApp" title="Message Ahmad Mujtaba on WhatsApp" src="contacts-icons/whatsapp.svg" width="48" height="48" />
   </a>
   <a href="https://t.me/dataintuitionist" target="_blank" rel="noopener noreferrer">
-    <img alt="Message Ahmad Mujtaba on Telegram" src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" />
+    <img alt="Message Ahmad Mujtaba on Telegram" title="Message Ahmad Mujtaba on Telegram" src="contacts-icons/telegram.svg" width="48" height="48" />
   </a>
 </p>
+
+<br />
 
 <p align="center">
   <strong>Profiles and social</strong><br /><br />
   <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba's portfolio" src="https://img.shields.io/badge/Portfolio-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" />
+    <img alt="Ahmad Mujtaba’s portfolio" title="Ahmad Mujtaba’s portfolio" src="contacts-icons/portfolio.svg" width="48" height="48" />
   </a>
   <a href="https://github.com/pypi-ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" />
+    <img alt="Ahmad Mujtaba on GitHub" title="Ahmad Mujtaba on GitHub" src="contacts-icons/github.svg" width="48" height="48" />
   </a>
   <a href="https://x.com/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on X / Twitter" src="https://img.shields.io/badge/X%20%2F%20Twitter-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" />
+    <img alt="Ahmad Mujtaba on X (Twitter)" title="Ahmad Mujtaba on X (Twitter)" src="contacts-icons/twitter.svg" width="48" height="48" />
   </a>
   <a href="https://www.instagram.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" />
+    <img alt="Ahmad Mujtaba on Instagram" title="Ahmad Mujtaba on Instagram" src="contacts-icons/instagram.svg" width="48" height="48" />
   </a>
   <a href="https://www.facebook.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" />
+    <img alt="Ahmad Mujtaba on Facebook" title="Ahmad Mujtaba on Facebook" src="contacts-icons/facebook.svg" width="48" height="48" />
   </a>
 </p>
 
