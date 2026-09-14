@@ -117,7 +117,7 @@ query($login: String!) {
       first: 5, includeUserRepositories: false,
       contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, PULL_REQUEST_REVIEW, REPOSITORY],
       orderBy: {field: UPDATED_AT, direction: DESC}
-    ) { totalCount nodes { nameWithOwner } }
+    ) { totalCount nodes { nameWithOwner isPrivate } }
   }
 }
 """
@@ -172,7 +172,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!, $since: GitTimestamp!) 
       commitContributionsByRepository(maxRepositories: 100) {
         contributions { totalCount }
         repository {
-          nameWithOwner
+          nameWithOwner isPrivate
           languages(first: 8, orderBy: {field: SIZE, direction: DESC}) {
             edges { size node { name color } }
           }
@@ -266,6 +266,8 @@ def _recent_activity(
     hours: Counter[int] = Counter()
     local_zone = _timezone(timezone_name)
     for group in groups:
+        if group["repository"].get("isPrivate", False):
+            continue
         edges = group["repository"]["languages"]["edges"]
         size = sum(edge["size"] for edge in edges) or 1
         commits = group["contributions"]["totalCount"]
@@ -385,7 +387,7 @@ def collect_metrics(
         "open_issues": user["openIssues"]["totalCount"],
         "closed_issues": user["closedIssues"]["totalCount"],
         "external_total": user["repositoriesContributedTo"]["totalCount"],
-        "external_recent": [node["nameWithOwner"] for node in user["repositoriesContributedTo"]["nodes"]],
+        "external_recent": [node["nameWithOwner"] for node in user["repositoriesContributedTo"]["nodes"] if not node.get("isPrivate", False)],
         "active_repositories": [(repository["name"], repository["pushedAt"][:10]) for repository in active[:5]],
         "languages": languages.most_common(5),
         "weekdays": weekdays,
@@ -544,6 +546,7 @@ def main() -> int:
     parser.add_argument("--out-dir", default="profile-stats")
     parser.add_argument("--recent-days", type=int, default=30)
     parser.add_argument("--timezone", default="Asia/Kolkata")
+    parser.add_argument("--dashboard-only", action="store_true", help="Refresh JSON without replacing README SVGs")
     args = parser.parse_args()
     if args.recent_days < 1:
         parser.error("--recent-days must be positive")
@@ -552,10 +555,15 @@ def main() -> int:
     if not token:
         parser.error("METRICS_TOKEN or GH_TOKEN is required")
 
-    metrics = collect_metrics(GitHubClient(token), args.user, args.recent_days, args.timezone)
-    rendered = render_all(metrics)
+    from dashboard_export import collect_dashboard, write_dashboard
+
+    client = GitHubClient(token)
+    metrics = collect_metrics(client, args.user, args.recent_days, args.timezone)
+    dashboard = collect_dashboard(client, metrics)
+    rendered = {} if args.dashboard_only else render_all(metrics)
     output = Path(args.out_dir)
     output.mkdir(parents=True, exist_ok=True)
+    write_dashboard(output / "dashboard.json", dashboard)
     for filename, content in rendered.items():
         (output / filename).write_text(content, encoding="utf-8")
     return 0

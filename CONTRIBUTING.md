@@ -30,6 +30,26 @@ welcome when they are focused and easy to review.
 - Do not add local analysis caches, dashboard output, credentials, tokens, or
   other sensitive workspace data unless a maintainer explicitly requests it.
 
+## Portfolio dashboard export
+
+`scripts/generate_github_stats.py` also writes the public, schema-versioned
+`profile-stats/dashboard.json` consumed by the portfolio. The existing scheduled
+profile workflow publishes it with the SVG assets. Use `--dashboard-only` to
+refresh JSON without rewriting SVGs:
+
+```powershell
+uv run --no-project python scripts/generate_github_stats.py --dashboard-only
+uv run --no-project python -m unittest discover -s tests -v
+```
+
+Use authenticated `gh` or the generator's existing configured token support.
+Never put credentials or raw API responses into this public export. Its allowlist
+excludes private repository identities; aggregate profile contribution counts
+may include private activity. Validation precedes atomic replacement, so failed
+collection leaves the prior JSON intact. Copy a reviewed export to the portfolio's
+`public/data/github.json` to refresh its offline fallback. Publication requires
+separate approval.
+
 ## Releases
 
 Releases use calendar-date tags, as recorded in [CHANGELOG.md](CHANGELOG.md).
