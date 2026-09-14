@@ -91,11 +91,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Report generator failures
+      - name: Report restored animation fallbacks
         if: always() && steps.publish.outcome == 'success'
         shell: bash
         run: |
-          test "${{ steps.snake.outcome }}" = success
-          test "${{ steps.snake_validation.outcome }}" = success
-          test "${{ steps.arcade.outcome }}" = success
-          test "${{ steps.arcade_validation.outcome }}" = success
+          if [[ "${{ steps.snake.outcome }}" == success && "${{ steps.snake_validation.outcome }}" == success && "${{ steps.arcade.outcome }}" == success && "${{ steps.arcade_validation.outcome }}" == success ]]
+          then
+            exit 0
+          fi
+
+          echo "::warning::One or more animation generators failed; restored last-known-good animations were published."
+          {
+            echo "## Profile animation fallbacks published"
+            echo
+            echo "One or more generators or validations failed. The complete last-known-good animation set was restored and published."
+            echo
+            echo "| Step | Outcome |"
+            echo "| --- | --- |"
+            echo "| Snake generator | ${{ steps.snake.outcome }} |"
+            echo "| Snake validation | ${{ steps.snake_validation.outcome }} |"
+            echo "| Arcade generator | ${{ steps.arcade.outcome }} |"
+            echo "| Arcade validation | ${{ steps.arcade_validation.outcome }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
