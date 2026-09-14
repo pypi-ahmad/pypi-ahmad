@@ -50,6 +50,14 @@ collection leaves the prior JSON intact. Copy a reviewed export to the portfolio
 `public/data/github.json` to refresh its offline fallback. Publication requires
 separate approval.
 
+The additive schema-v1 discovery collections include public repository metadata,
+published release records/assets, and public external merged pull requests.
+`scripts/discovery_export.py` collects and validates them, reusing the advanced
+collector's release requests. Forks and archives are available to the explorer;
+release history excludes forks and drafts. Collection failures stop the new
+export rather than publishing an incomplete history as complete. Older snapshots
+without these fields remain readable by the portfolio.
+
 ## Releases
 
 Releases use calendar-date tags, as recorded in [CHANGELOG.md](CHANGELOG.md).

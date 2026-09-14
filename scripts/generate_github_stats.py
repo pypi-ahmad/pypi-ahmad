@@ -54,6 +54,7 @@ class GitHubClient:
     def __init__(self, token: str, retries: int = 4) -> None:
         self.token = token
         self.retries = retries
+        self.dashboard_release_cache = {}
 
     def request(
         self,
@@ -282,15 +283,9 @@ def _recent_activity(
 
 
 def _published_releases(client: GitHubClient, owner: str, name: str) -> tuple[int, int]:
-    releases = downloads = page = 0
-    while True:
-        page += 1
-        batch = client.rest(f"/repos/{owner}/{name}/releases", per_page=100, page=page)
-        public = [release for release in batch if not release.get("draft")]
-        releases += len(public)
-        downloads += sum(asset.get("download_count", 0) for release in public for asset in release.get("assets", []))
-        if len(batch) < 100:
-            return releases, downloads
+    from discovery_export import release_records
+    records = release_records(client, owner, name)
+    return len(records), sum(asset["downloads"] for item in records for asset in item["assets"])
 
 
 def _repo_extras(client: GitHubClient, login: str, repository: dict[str, Any]) -> dict[str, Any]:
@@ -559,7 +554,7 @@ def main() -> int:
 
     client = GitHubClient(token)
     metrics = collect_metrics(client, args.user, args.recent_days, args.timezone)
-    dashboard = collect_dashboard(client, metrics)
+    dashboard = collect_dashboard(client, metrics, include_discovery=True)
     rendered = {} if args.dashboard_only else render_all(metrics)
     output = Path(args.out_dir)
     output.mkdir(parents=True, exist_ok=True)

@@ -67,7 +67,7 @@ def streaks(days: list[dict], today: str) -> dict:
     return {"current": current, "longest": longest, "asOf": today}
 
 
-def collect_dashboard(client, metrics: dict) -> dict:
+def collect_dashboard(client, metrics: dict, *, include_discovery=False) -> dict:
     login, now = metrics["login"], metrics["generated_at"]
     profile = client.graphql(PROFILE_QUERY, login=login)["user"]
     created = date.fromisoformat(profile["createdAt"][:10])
@@ -136,11 +136,16 @@ def collect_dashboard(client, metrics: dict) -> dict:
         },
         "years": years,
     }
+    if include_discovery:
+        from discovery_export import collect_discovery
+        result.update(collect_discovery(client, login))
     validate_dashboard(result)
     return result
 
 
 def validate_dashboard(data: dict) -> None:
+    from discovery_export import validate_discovery
+    validate_discovery(data)
     if data.get("schemaVersion") != 1 or not data.get("years"):
         raise ValueError("Missing dashboard version or history")
     datetime.fromisoformat(data["generatedAt"])
