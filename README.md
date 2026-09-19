@@ -724,7 +724,7 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 </p>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=90&section=footer" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=020A05&height=90&section=footer" alt="Footer" />
 </div>
 
 <p align="center">Made with ❤️ by Ahmad Mujtaba</p>
