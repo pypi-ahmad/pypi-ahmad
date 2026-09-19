@@ -1,27 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="160" viewBox="0 0 960 160" role="img" aria-labelledby="title desc">
   <title id="title">Let’s work together</title>
-  <desc id="desc">A dark editorial banner with violet and cyan aurora light, connected data nodes, and document-intelligence motifs.</desc>
+  <desc id="desc">A Windows Terminal PowerShell session inviting collaboration in production AI.</desc>
   <defs>
-    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11131D"/><stop offset="1" stop-color="#171427"/></linearGradient>
-    <radialGradient id="violet" cx="50%" cy="50%" r="50%"><stop stop-color="#8B5CF6" stop-opacity=".42"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
-    <radialGradient id="cyan" cx="50%" cy="50%" r="50%"><stop stop-color="#22D3EE" stop-opacity=".3"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0D1117"/><stop offset="1" stop-color="#19172D"/></linearGradient>
+    <radialGradient id="violet"><stop stop-color="#A78BFA" stop-opacity=".32"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="aqua"><stop stop-color="#67E8F9" stop-opacity=".22"/><stop offset="1" stop-color="#67E8F9" stop-opacity="0"/></radialGradient>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#A8A8BF" opacity=".13"/></pattern>
   </defs>
-  <rect x=".75" y=".75" width="958.5" height="158.5" rx="22" fill="url(#surface)" stroke="#39364F" stroke-width="1.5"/>
-  <rect x="14" y="14" width="932" height="132" rx="15" fill="url(#grid)"/>
-  <ellipse cx="397" cy="76" rx="260" ry="105" fill="url(#violet)"/>
-  <ellipse cx="604" cy="84" rx="250" ry="100" fill="url(#cyan)"/>
-  <g fill="none" stroke="#514C6D" stroke-width="1.5" opacity=".85">
-    <path d="M62 81h145l36-36h116M62 81h145l36 36h116M601 45h116l36 36h145M601 117h116l36-36h145"/>
-  </g>
-  <g fill="#58D5E5"><circle cx="62" cy="81" r="4"/><circle cx="207" cy="81" r="3"/><circle cx="753" cy="81" r="3"/><circle cx="898" cy="81" r="4"/></g>
-  <g transform="translate(91 48)" fill="none" stroke="#A78BFA" stroke-width="2">
-    <rect width="48" height="64" rx="8"/><path d="M12 17h24M12 27h18M12 42h24M12 52h15"/>
-  </g>
-  <g transform="translate(821 51)" fill="none" stroke="#58D5E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="15" cy="15" r="7"/><circle cx="47" cy="15" r="7"/><circle cx="31" cy="43" r="7"/><path d="m21 18 7 18m13-18-7 18M22 15h18"/>
-  </g>
-  <text x="480" y="61" text-anchor="middle" fill="#A78BFA" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3">OPEN TO COLLABORATION</text>
-  <text x="480" y="91" text-anchor="middle" fill="#F5F3FF" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">LET’S WORK TOGETHER</text>
-  <text x="480" y="116" text-anchor="middle" fill="#C5C5D8" font-family="Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="1">PRODUCTION AI · DOCUMENT INTELLIGENCE · AGENTIC SYSTEMS</text>
+  <rect x=".75" y=".75" width="958.5" height="158.5" rx="18" fill="url(#surface)" stroke="#39364F" stroke-width="1.5"/>
+  <path d="M1 35h958" stroke="#39364F"/>
+  <path d="M14 35V10q0-5 5-5h166q5 0 5 5v25" fill="#0D1117" stroke="#39364F"/>
+  <path d="m29 15 8 6-8 6m12 0h9" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="61" y="24" fill="#C5C5D8" font-family="Segoe UI,Arial,sans-serif" font-size="11">PowerShell · Contact</text>
+  <g fill="none" stroke="#A8A8BF" stroke-width="1.3"><path d="M860 18h12M898 14h10v9h-10zM934 14l9 9m0-9-9 9"/></g>
+  <rect x="14" y="42" width="932" height="104" rx="12" fill="url(#grid)"/>
+  <ellipse cx="390" cy="97" rx="260" ry="90" fill="url(#violet)"/><ellipse cx="610" cy="102" rx="250" ry="85" fill="url(#aqua)"/>
+  <text x="32" y="60" font-family="Cascadia Code,Consolas,monospace" font-size="10"><tspan fill="#A78BFA">PS C:\Users\Ahmad\profile&gt; </tspan><tspan fill="#67E8F9">Start-Process .\contact.url</tspan></text>
+  <text x="480" y="91" text-anchor="middle" fill="#A78BFA" font-family="Cascadia Code,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="2.5">OPEN TO COLLABORATION</text>
+  <text x="480" y="119" text-anchor="middle" fill="#F5F3FF" font-family="Cascadia Code,Consolas,monospace" font-size="24" font-weight="700">LET’S WORK TOGETHER</text>
+  <text x="480" y="139" text-anchor="middle" fill="#A8A8BF" font-family="Cascadia Code,Consolas,monospace" font-size="11">Production AI · Document Intelligence · Agentic Systems</text>
 </svg>
