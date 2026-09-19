@@ -31,13 +31,13 @@
 
 ## About
 
-I am a production AI engineer specializing in multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation. At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. At Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
+At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. Previously, at Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
 
 My work began in ML, NLP, and data science, expanded into conversational AI, and now includes GenAI and agentic AI. Evaluation and operational reliability have stayed central throughout.
 
 ### How I work
 
-I begin by researching existing solutions and comparing model quality and cost. I inspect early results manually, regression-test changes, preserve source evidence, and monitor systems after delivery. I prefer typed boundaries, explicit failure states, human review where needed, and claims that remain inside the available evidence.
+I start by researching existing solutions and comparing model quality and cost. I inspect early results manually and regression-test changes, keeping source evidence available for review. After delivery, I monitor the systems. I prefer typed boundaries, explicit failure states, and human review where needed, and I keep my claims within what the evidence supports.
 
 ## Measured Outcomes
 
@@ -129,7 +129,7 @@ Iterated prompts, implemented canonical comparison, and expanded evaluation for 
 <summary><b>Conversational B2B reordering</b></summary>
 <br />
 
-For a separate FMCG engagement, built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
+For a separate FMCG engagement, I built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
 </details>
 
 ### Machine Learning Engineer Intern · AiEnsured
@@ -190,11 +190,11 @@ The repository includes the training implementation, example datasets, workflow 
 <summary><b>Self-Improving Prompt Optimizer · Evaluation, Prompt Optimization</b></summary>
 <br />
 
-A prompt that looks better on one example may perform worse elsewhere, so alternatives need a consistent evaluation set and visible scoring trade-offs. This LangGraph workflow generates diverse prompt candidates, evaluates them against the same selected benchmark, and maintains an elite pool. Streamlit shows scores, Pareto trade-offs, per-case results, and downloadable history.
+A prompt that looks better on one example may perform worse elsewhere. This LangGraph workflow generates diverse prompt candidates and evaluates them against the same selected benchmark, keeping an elite pool. Streamlit shows scores, Pareto trade-offs, per-case results, and downloadable history so the comparisons can be reviewed.
 
-Every candidate is evaluated against the same selected benchmark. The workflow supports weighted, Pareto, and hybrid selection, caches exact prompt scores, and retains the strongest candidate across generations.
+The workflow supports weighted, Pareto, and hybrid selection. It caches exact prompt scores and retains the strongest candidate across generations.
 
-Candidate generation and judge-based scoring remain inspectable. A higher judge score is an experimental result rather than evidence of general improvement outside the selected benchmark. Evaluation is sequential, run state is in memory, and the repository has no automated test suite. Judge quality and benchmark coverage constrain the conclusions.
+Candidate generation and judge-based scoring can be inspected. A higher judge score is an experimental result; it does not establish improvement outside the selected benchmark. Conclusions depend on judge quality and benchmark coverage. Evaluation runs sequentially, with run state held in memory, and the repository has no automated test suite.
 
 [Repository](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#self-improving-prompt-optimizer)
 </details>
@@ -203,11 +203,11 @@ Candidate generation and judge-based scoring remain inspectable. A higher judge 
 <summary><b>Video Summarizer · Multimodal AI, Retrieval</b></summary>
 <br />
 
-Reprocessing a complete video for every task repeats work over the same speech and visual evidence. This local Streamlit workspace uses Adversal’s remote MCP video analysis and reuses returned Markdown, timestamps, and frames. Qdrant supports video-scoped retrieval for questions and generated documents, while persisted request IDs allow monitoring and recovery.
+Reprocessing a complete video for every task repeats work over the same speech and visual evidence. This local Streamlit workspace uses Adversal’s remote MCP video analysis and reuses returned Markdown, timestamps, and frames. Qdrant scopes retrieval to the selected video for questions and generated documents.
 
-Completed source artifacts, request identifiers, and job state are retained; retrieval stays scoped to the selected video; and generated answers expose their source material.
+The app saves completed source artifacts, request IDs, and job state for monitoring and recovery. Generated answers include their source material.
 
-The repository includes job lifecycle handling, evidence indexing, export workflows, and focused tests using service mocks. Adversal supplies the underlying video-understanding service. Video understanding and model calls use external services, one video workspace is active per browser session, and generated documents and chat history remain session-scoped.
+The repository includes job lifecycle handling, evidence indexing, export workflows, and focused tests using service mocks. Adversal supplies the underlying video-understanding service, and model calls also use external services. Each browser session has one active video workspace; generated documents and chat history stay within that session.
 
 [Repository](https://github.com/pypi-ahmad/video-summarizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#video-summarizer)
 </details>
@@ -318,7 +318,7 @@ The [measured outcomes](#measured-outcomes) and linked project stories show how 
 <summary><b>Current learning interests</b></summary>
 <br />
 
-These learning interests do not represent claims of production expertise.
+I am learning about the following areas and do not claim production expertise in them.
 
 - **Agentic AI and orchestration:** LangGraph + MCP, AutoGen, CrewAI, multi-agent systems
 - **Reasoning models and post-training:** test-time compute scaling, GRPO, DPO
@@ -345,7 +345,7 @@ I am building on professional experience and independent projects to learn forwa
 8. **Operational monitoring (professional experience):** Built analytics and model-drift dashboards for changing claim behavior and service issues.
 9. **Evaluation and iteration (professional experience):** Used manual review and regression testing with confidence-aware extraction, retries, and validation.
 
-[Follow the evidence-backed FDE journey](https://pypi-ahmad.github.io/fde)
+[View my FDE learning path](https://pypi-ahmad.github.io/fde)
 
 ## Education & Credentials
 
@@ -530,7 +530,7 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 
 ## Contact & Availability
 
-Based in **Gurugram, India** (IST, UTC+05:30), I’m open to remote-first production AI and GenAI engineering roles and focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
+I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first production AI and GenAI engineering roles. I’m also available for focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
 
 [View the contact page](https://pypi-ahmad.github.io/contact)
 
