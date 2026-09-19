@@ -1,8 +1,7 @@
 <div align="center">
   <h1>Ahmad Mujtaba</h1>
-  <h3>AI &amp; Data Science Engineer · Production AI · Deloitte US-India</h3>
-  <p><b>Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.</b></p>
-  <p>Document AI · Retrieval · Agentic Systems · Evaluation · Event-Driven Cloud</p>
+  <p>AI &amp; Data Science Engineer · Deloitte US-India · Gurugram, India</p>
+  <p>Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.</p>
 
   <p>
     <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
@@ -18,6 +17,7 @@
 </div>
 
 <p align="center">
+  <a href="#featured-projects">Featured work</a> ·
   <a href="#measured-outcomes">Outcomes</a> ·
   <a href="#professional-experience">Experience</a> ·
   <a href="#case-studies">Case Studies</a> ·
@@ -29,125 +29,58 @@
   <a href="#contact--availability">Contact</a>
 </p>
 
-## About
-
-At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. Previously, at Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
-
-My work began in ML, NLP, and data science, expanded into conversational AI, and now includes GenAI and agentic AI. Evaluation and operational reliability have stayed central throughout.
-
-### How I work
-
-I start by researching existing solutions and comparing model quality and cost. I inspect early results manually and regression-test changes, keeping source evidence available for review. After delivery, I monitor the systems. I prefer typed boundaries, explicit failure states, and human review where needed, and I keep my claims within what the evidence supports.
-
-## Measured outcomes
-
-These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
-
-| Outcome | Evaluation context | My contribution |
-|---|---|---|
-| **95%+ fax-classification accuracy** | Deloitte; measured across 500-file bulk batches. | Worked on Azure Databricks classification and routing for fax intake. |
-| **80–81% to 92%+ structured-extraction accuracy** | Deloitte; recurring 100-file internal evaluation runs. | Designed grouped extraction, confidence-aware four-pass extraction, retries, validation, and routing. |
-| **38% to 80% browser task completion** | Deloitte; the same 200-task internal evaluation. | Contributed Milvus retrieval, reranking, and failure-aware routing. |
-| **~40% lower browser-agent prompt-token use** | Deloitte; internal comparison against raw DOM observations. | Built accessibility-tree snapshots and compressed observations. |
-| **90% to 99% policy-entity extraction accuracy** | Deloitte; the same internal benchmark. | Iterated prompts, implemented canonical comparison, and expanded evaluation. |
-| **79% to 88% warranty-classifier recall** | Cognizant; reported internal classifier evaluation. | Retrained and tuned Random Forest, compared XGBoost, and retained Random Forest based on results. |
-
-[Read the portfolio experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
-
-## Professional experience
-
-### AI & Data Science Engineer · Deloitte US-India
-
-**July 2025 – Present · Gurugram, India**
-
 <details open>
-<summary><b>Prior-authorization document processing</b></summary>
-<br />
+<summary>Animated AI workshop · collapse to hide</summary>
 
-A production Azure pipeline processes incoming healthcare fax packets from classification through extraction, validation, routing, and recovery. Handwriting, nonstandard forms, business rules, and a 117-field schema made a single extraction call unreliable.
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-static.dark.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/workshop-static.light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile/workshop.dark.svg" />
+  <img src="assets/profile/workshop.light.svg" width="960" alt="An illustrated AI workshop with documents, retrieval nodes, a model chip, and review tools. Decorative animation representing separate projects." />
+</picture>
 
-- Used Azure Content Understanding to generate Markdown, then Azure OpenAI to extract structured values.
-- Designed the production revision around **seven calls grouping related fields**, replacing one request for all 117 fields.
-- Designed confidence-aware **four-pass extraction**, retries, validation, and explicit recovery outcomes.
-- Migrated GPT-4.1 prompts to GPT-5.2 and checked the revision with manual review and regression tests.
-- Kept classification and extraction separate, producing RPA-ready CSV/JSON and annotated PDFs.
-- The grouped extraction revision went live in **September 2026**.
+[Static illustration: light](assets/profile/workshop-static.light.svg) · [dark](assets/profile/workshop-static.dark.svg)
 
-[Detailed experience](https://pypi-ahmad.github.io/experience#prior-authorization)
 </details>
 
-<details>
-<summary><b>Healthcare integrity and fraud analytics</b></summary>
-<br />
+## Featured projects
 
-- Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs, delivery risks, and implementation guidance.
-- Built a seven-agent LangGraph and GPT-4o Vision workflow that combined visual, metadata, and semantic document checks with NPI/EIN validation and deterministic 0–100 risk scoring.
-- Developed out-of-network claims and referral-pattern analysis with approval gates, evidence review, investigator-facing dashboards, and report generation.
+Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
 
-[Detailed experience](https://pypi-ahmad.github.io/experience#healthcare-integrity)
-</details>
+<p align="center">
+  <a href="https://github.com/pypi-ahmad/Agentic-Document-Extraction">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/Agentic-Document-Extraction.dark.svg" />
+      <img src="assets/profile/Agentic-Document-Extraction.light.svg" width="320" alt="Paperplane: Grounded document parsing." />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/lora-qlora-fine-tuning-app.dark.svg" />
+      <img src="assets/profile/lora-qlora-fine-tuning-app.light.svg" width="320" alt="LoRA Fine-tune Studio: Local adapter training." />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/self-improving-prompt-optimizer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/self-improving-prompt-optimizer.dark.svg" />
+      <img src="assets/profile/self-improving-prompt-optimizer.light.svg" width="320" alt="Self-Improving Prompt Optimizer: Benchmark-based prompt comparison." />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/video-summarizer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/profile/video-summarizer.dark.svg" />
+      <img src="assets/profile/video-summarizer.light.svg" width="320" alt="Video Summarizer: Video evidence and retrieval." />
+    </picture>
+  </a>
+</p>
 
-<details>
-<summary><b>Computer-use and multi-agent reasoning</b></summary>
-<br />
+[Paperplane](https://github.com/pypi-ahmad/Agentic-Document-Extraction) · [LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Self-Improving Prompt Optimizer](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) · [Video Summarizer](https://github.com/pypi-ahmad/video-summarizer)
 
-- Contributed Milvus retrieval, reranking, and failure-aware routing to a computer-use workflow.
-- Built a Playwright MCP tool using accessibility-tree snapshots and compressed-vision context instead of raw DOM observations.
-- Task completion and prompt-token use were evaluated as separate outcomes.
-
-[Detailed experience](https://pypi-ahmad.github.io/experience#computer-use)
-</details>
-
-<details>
-<summary><b>Policy-entity extraction</b></summary>
-<br />
-
-Iterated prompts, implemented canonical comparison, and expanded evaluation for structured policy-entity extraction used in care-management decision support.
-
-[Detailed experience](https://pypi-ahmad.github.io/experience#policy-entity-extraction)
-</details>
-
-### Associate Data Scientist · Cognizant Technology Solutions
-
-**September 2022 – May 2025 · Noida, India**
-
-<details open>
-<summary><b>Warranty decisions, NLP processing, and operational monitoring</b></summary>
-<br />
-
-- Improved an automotive warranty workflow handling roughly 1,800–2,200 claims per weekday and approximately 1,000 per weekend day.
-- Retrained and tuned its existing Random Forest classifier, compared XGBoost, and retained Random Forest because XGBoost did not outperform it.
-- Prioritized recall because missing a legitimate claim carried a higher business cost than additional review.
-- Migrated legacy LUIS intent and entity processing to Azure Conversational Language Understanding.
-- Helped move expensive downstream processing out of the FastAPI request path through Azure Blob Storage and Azure Functions after HTTP 504 timeouts under a 30-second SLA.
-- Built Power BI analytics, model-behavior, and drift dashboards.
-
-[Detailed experience](https://pypi-ahmad.github.io/experience#warranty-processing)
-</details>
-
-<details>
-<summary><b>Conversational B2B reordering</b></summary>
-<br />
-
-For a separate FMCG engagement, I built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
-</details>
-
-### Machine Learning Engineer Intern · AiEnsured
-
-**July 2021 – August 2021 · Remote, India**
-
-- Supported CNN-based object-detection work, including code optimization and error analysis.
-- Implemented regression and classification models and contributed to feature-engineering experiments.
-
-### Architecture snapshots
-
-1. Prior authorization: Fax documents → type and urgency classification → eligible documents → Azure Content Understanding Markdown → grouped Azure OpenAI extraction → validation and business rules → structured output or review.
-2. Computer use: Retrieved knowledge and browser observations → multi-agent reasoning → tool execution → explicit routing and failure handling.
-3. Warranty processing: Standard claim scoring remains separate from NLP processing; accepted payloads move through Blob Storage to Azure Functions for downstream work.
-
-[View the architecture diagrams](https://pypi-ahmad.github.io/experience)
 
 ## Case studies
+
+<details>
+<summary>Five case studies · decisions, evidence, and limitations</summary>
 
 These five studies cover independent tools and research. The Document AI repositories compare different approaches and remain separate applications.
 
@@ -225,7 +158,13 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 [Repository](https://github.com/pypi-ahmad/hinglish-turn-detection) · [Demo](https://huggingface.co/spaces/pypi-ahmad/hinglish-turn-detection) · [Portfolio study](https://pypi-ahmad.github.io/projects#hinglish-turn-detection)
 </details>
 
+</details>
+
+
 ## Public projects
+
+<details>
+<summary>Browse the complete project catalog</summary>
 
 | Project | Focus | What it does |
 |---|---|---|
@@ -245,40 +184,165 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 [Explore the complete projects page](https://pypi-ahmad.github.io/projects)
 
-## Repository showcase
+</details>
 
-<div align="center">
-  <a href="https://github.com/pypi-ahmad/computer-use">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" width="49%" alt="computer-use repository card" />
-    </picture>
-  </a>
-  <a href="https://github.com/pypi-ahmad/grounded-docparse">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" width="49%" alt="grounded-docparse repository card" />
-    </picture>
-  </a>
-  <a href="https://github.com/pypi-ahmad/Agentic-Document-Extraction">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" width="49%" alt="Agentic-Document-Extraction repository card" />
-    </picture>
-  </a>
-  <a href="https://github.com/pypi-ahmad/local-ai-chat-studio">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" width="49%" alt="local-ai-chat-studio repository card" />
-    </picture>
-  </a>
-</div>
+
+## About
+
+<details>
+<summary>My background and how I work</summary>
+
+At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. Previously, at Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
+
+My work began in ML, NLP, and data science, expanded into conversational AI, and now includes GenAI and agentic AI. Evaluation and operational reliability have stayed central throughout.
+
+### How I work
+
+I start by researching existing solutions and comparing model quality and cost. I inspect early results manually and regression-test changes, keeping source evidence available for review. After delivery, I monitor the systems. I prefer typed boundaries, explicit failure states, and human review where needed, and I keep my claims within what the evidence supports.
+
+</details>
+
+
+## Measured outcomes
+
+These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
+
+- **80–81% to 92%+ structured-extraction accuracy.** Deloitte; recurring 100-file internal evaluation runs. I designed grouped extraction, confidence-aware four-pass extraction, retries, validation, and routing.
+- **38% to 80% browser task completion.** Deloitte; the same 200-task internal evaluation. I contributed Milvus retrieval, reranking, and failure-aware routing.
+- **79% to 88% warranty-classifier recall.** Cognizant; reported internal classifier evaluation. I retrained and tuned Random Forest, compared XGBoost, and retained Random Forest based on results.
+
+<details>
+<summary>All six outcomes and evaluation contexts</summary>
+
+| Outcome | Evaluation context | My contribution |
+|---|---|---|
+| **95%+ fax-classification accuracy** | Deloitte; measured across 500-file bulk batches. | Worked on Azure Databricks classification and routing for fax intake. |
+| **80–81% to 92%+ structured-extraction accuracy** | Deloitte; recurring 100-file internal evaluation runs. | Designed grouped extraction, confidence-aware four-pass extraction, retries, validation, and routing. |
+| **38% to 80% browser task completion** | Deloitte; the same 200-task internal evaluation. | Contributed Milvus retrieval, reranking, and failure-aware routing. |
+| **~40% lower browser-agent prompt-token use** | Deloitte; internal comparison against raw DOM observations. | Built accessibility-tree snapshots and compressed observations. |
+| **90% to 99% policy-entity extraction accuracy** | Deloitte; the same internal benchmark. | Iterated prompts, implemented canonical comparison, and expanded evaluation. |
+| **79% to 88% warranty-classifier recall** | Cognizant; reported internal classifier evaluation. | Retrained and tuned Random Forest, compared XGBoost, and retained Random Forest based on results. |
+
+</details>
+
+[Read the portfolio experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
+
+
+## Professional experience
+
+- **Deloitte US-India** · AI & Data Science Engineer · July 2025 – Present · Gurugram, India
+- **Cognizant Technology Solutions** · Associate Data Scientist · September 2022 – May 2025 · Noida, India
+- **AiEnsured** · Machine Learning Engineer Intern · July 2021 – August 2021 · Remote, India
+
+<details>
+<summary>Project contributions, engineering decisions, and architecture snapshots</summary>
+
+### AI & Data Science Engineer · Deloitte US-India
+
+**July 2025 – Present · Gurugram, India**
+
+<details>
+<summary><b>Prior-authorization document processing</b></summary>
+<br />
+
+A production Azure pipeline processes incoming healthcare fax packets from classification through extraction, validation, routing, and recovery. Handwriting, nonstandard forms, business rules, and a 117-field schema made a single extraction call unreliable.
+
+- Used Azure Content Understanding to generate Markdown, then Azure OpenAI to extract structured values.
+- Designed the production revision around **seven calls grouping related fields**, replacing one request for all 117 fields.
+- Designed confidence-aware **four-pass extraction**, retries, validation, and explicit recovery outcomes.
+- Migrated GPT-4.1 prompts to GPT-5.2 and checked the revision with manual review and regression tests.
+- Kept classification and extraction separate, producing RPA-ready CSV/JSON and annotated PDFs.
+Grouping related fields across seven calls and running confidence-aware extraction passes are separate parts of the approach.
+
+- The grouped extraction revision went live in **September 2026**.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#prior-authorization)
+</details>
+
+<details>
+<summary><b>Healthcare integrity and fraud analytics</b></summary>
+<br />
+
+Three separate projects covered document integrity, out-of-network claims, and referral patterns.
+
+- Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs, delivery risks, and implementation guidance.
+- Built a seven-agent LangGraph and GPT-4o Vision workflow that combined visual, metadata, and semantic document checks with NPI/EIN validation and deterministic 0–100 risk scoring.
+- Developed out-of-network claims-analysis dashboards with deterministic risk signals, evidence review, and investigator-facing reporting.
+- Developed referral-pattern analysis with agentic orchestration, approval gates, evidence review, and report generation.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#healthcare-integrity)
+</details>
+
+<details>
+<summary><b>Computer-use and multi-agent reasoning</b></summary>
+<br />
+
+- Contributed Milvus retrieval, reranking, and failure-aware routing to a computer-use workflow.
+- Built a Playwright MCP tool using accessibility-tree snapshots and compressed-vision context instead of raw DOM observations.
+- Task completion and prompt-token use were evaluated as separate outcomes.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#computer-use)
+</details>
+
+<details>
+<summary><b>Policy-entity extraction</b></summary>
+<br />
+
+Iterated prompts, implemented canonical comparison, and expanded evaluation for structured policy-entity extraction used in care-management decision support.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#policy-entity-extraction)
+</details>
+
+### Associate Data Scientist · Cognizant Technology Solutions
+
+**September 2022 – May 2025 · Noida, India**
+
+<details>
+<summary><b>Warranty decisions, NLP processing, and operational monitoring</b></summary>
+<br />
+
+- Improved an automotive warranty workflow handling roughly 1,800–2,200 claims per weekday and approximately 1,000 per weekend day.
+- Retrained and tuned its existing Random Forest classifier, compared XGBoost, and retained Random Forest because XGBoost did not outperform it.
+- Prioritized recall because missing a legitimate claim carried a higher business cost than additional review.
+- Migrated legacy LUIS intent and entity processing to Azure Conversational Language Understanding.
+- Helped move expensive downstream processing out of the FastAPI request path through Azure Blob Storage and Azure Functions after HTTP 504 timeouts under a 30-second SLA.
+- Built Power BI analytics, model-behavior, and drift dashboards.
+- CLU calls remained in FastAPI; separate downstream processing moved through Azure Blob Storage and Azure Functions.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#warranty-processing)
+</details>
+
+<details>
+<summary><b>Conversational B2B reordering</b></summary>
+<br />
+
+For a separate FMCG engagement, I built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
+</details>
+
+### Machine Learning Engineer Intern · AiEnsured
+
+**July 2021 – August 2021 · Remote, India**
+
+- Supported CNN-based object-detection work, including code optimization and error analysis.
+- Implemented regression and classification models and contributed to feature-engineering experiments.
+
+### Architecture snapshots
+
+1. Prior authorization: Fax documents → type and urgency classification → eligible documents → Azure Content Understanding Markdown → grouped Azure OpenAI extraction → validation and business rules → structured output or review.
+2. Computer use: Retrieved knowledge and browser observations → multi-agent reasoning → tool execution → explicit routing and failure handling.
+3. Warranty processing: Standard claim scoring remains separate from NLP processing; accepted payloads move through Blob Storage to Azure Functions for downstream work.
+
+[View the architecture diagrams](https://pypi-ahmad.github.io/experience)
+
+</details>
+
 
 ## Skills, with context
+
+LLM architectures and agentic workflows · Retrieval and knowledge systems · Multimodal document intelligence · Evaluation and production ML · Event-driven cloud and backend systems.
+
+<details>
+<summary>How I use these capabilities: professional work, personal projects, and learning</summary>
 
 ### Core capabilities
 
@@ -289,6 +353,8 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 - Event-driven cloud and backend systems: Python and FastAPI services with downstream Azure Blob Storage and Functions processing; schema-first contracts, local/cloud model routing, reproducible environments, and deployment controls in public projects.
 
 ### AI system lifecycle
+
+These stages appear across separate projects. Each system uses the stages its problem needs.
 
 **Data → Retrieval → Model → Agent → State → API → Deployment → Evaluation → Observability → Iteration**
 
@@ -331,9 +397,15 @@ I am learning about the following areas and do not claim production expertise in
 
 [Explore skills with project context](https://pypi-ahmad.github.io/skills)
 
+</details>
+
+
 ## Forward-deployed AI engineering
 
 I am building on professional experience and independent projects to learn forward-deployed AI engineering. The path is ongoing and does not represent a completed curriculum, an employment title, or ownership of the full customer lifecycle.
+
+<details>
+<summary>Nine foundations from professional experience and personal projects</summary>
 
 1. Problem discovery (professional experience): Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
 2. Solution definition (professional experience): Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
@@ -347,12 +419,23 @@ I am building on professional experience and independent projects to learn forwa
 
 [View my FDE learning path](https://pypi-ahmad.github.io/fde)
 
+</details>
+
+
 ## Education & credentials
 
 ### Degrees
 
-- **M.Tech in Data Analytics and Decision Sciences**, Indian Institute of Information Technology Kurnool, October 2020 to June 2022. Coursework included machine learning, deep learning, NLP, computer vision, and statistics.
-- **B.Tech in Computer Science Engineering**, Maulana Azad National Urdu University, August 2015 to June 2019. Coursework included data structures and algorithms, engineering mathematics, and web development.
+- **M.Tech in Data Analytics and Decision Sciences**, Indian Institute of Information Technology Kurnool, October 2020 to June 2022.
+- **B.Tech in Computer Science Engineering**, Maulana Azad National Urdu University, August 2015 to June 2019.
+
+<details>
+<summary>Degree coursework</summary>
+
+- M.Tech: machine learning, deep learning, NLP, computer vision, and statistics.
+- B.Tech: data structures and algorithms, engineering mathematics, and web development.
+
+</details>
 
 ### Professional certification
 
@@ -371,6 +454,9 @@ I am building on professional experience and independent projects to learn forwa
   </p>
 </div>
 </details>
+
+<details>
+<summary>Course certificates · 13 credentials</summary>
 
 ### Course certificates
 
@@ -415,9 +501,26 @@ I am building on professional experience and independent projects to learn forwa
 - [SQL for Data Science](https://coursera.org/verify/9SC5S8TMRKF3): Coursera
 </details>
 
+</details>
+
 [View the complete education and credential portfolio](https://pypi-ahmad.github.io/education)
 
+
+## Activity
+
+[View contribution activity on my portfolio](https://pypi-ahmad.github.io/github?tab=activity).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" width="100%" alt="GitHub contribution activity" />
+</picture>
+
+
 ## GitHub statistics
+
+<details>
+<summary>Statistics, languages, streaks, and the advanced dashboard</summary>
 
 [Open the live GitHub dashboard](https://pypi-ahmad.github.io/github) for repository discovery, releases, collaboration, contribution, and traffic snapshots.
 
@@ -451,13 +554,47 @@ I am building on professional experience and independent projects to learn forwa
 </picture>
 </details>
 
-## Activity
+</details>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=pypi-ahmad&amp;theme=github-dark&amp;area=true&amp;hide_border=true&amp;days=31&amp;custom_title=GitHub%20Activity" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=pypi-ahmad&amp;theme=github-light&amp;area=true&amp;hide_border=true&amp;days=31&amp;custom_title=GitHub%20Activity" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pypi-ahmad&amp;theme=github-light&amp;area=true&amp;hide_border=true&amp;days=31&amp;custom_title=GitHub%20Activity" width="100%" alt="GitHub activity graph" />
-</picture>
+
+## Repository showcase
+
+<details>
+<summary>More repository cards</summary>
+
+<div align="center">
+  <a href="https://github.com/pypi-ahmad/computer-use">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" width="49%" alt="computer-use repository card" />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/grounded-docparse">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" width="49%" alt="grounded-docparse repository card" />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/Agentic-Document-Extraction">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" width="49%" alt="Agentic-Document-Extraction repository card" />
+    </picture>
+  </a>
+  <a href="https://github.com/pypi-ahmad/local-ai-chat-studio">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" width="49%" alt="local-ai-chat-studio repository card" />
+    </picture>
+  </a>
+</div>
+
+</details>
+
 
 <details>
 <summary><b>Contribution arcade</b></summary>
@@ -523,10 +660,17 @@ I am building on professional experience and independent projects to learn forwa
 
 ## Repository
 
+<details>
+<summary>Repository documentation and governance</summary>
+
 The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of record. See the [changelog](CHANGELOG.md).
 
 - Profile and outcome boundaries: `README.md`, [`docs/sanitized-outcomes.md`](docs/sanitized-outcomes.md)
+- Profile artwork: regenerate the themed hero and featured covers with `uv run --no-project python scripts/generate_profile_art.py`. Featured covers omit changing counts; the repository-card workflow refreshes GitHub metadata separately.
 - Governance: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+
+</details>
+
 
 ## Contact & availability
 
