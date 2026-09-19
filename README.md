@@ -31,9 +31,9 @@
 
 ## About
 
-I build production AI systems that turn difficult documents, retrieved knowledge, and tool interactions into evidence-backed outcomes. At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. At Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
+I am a production AI engineer specializing in multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation. At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. At Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
 
-My work has progressed from **ML, NLP, and data science** to **conversational AI**, then to **GenAI and agentic AI**. Evaluation and operational reliability have remained part of the work throughout.
+My work began in ML, NLP, and data science, expanded into conversational AI, and now includes GenAI and agentic AI. Evaluation and operational reliability have stayed central throughout.
 
 ### How I work
 
@@ -149,19 +149,17 @@ For a separate FMCG engagement, built a conversational reordering workflow using
 
 ## Case Studies
 
-Five detailed studies from independent tools and research. The Document AI repositories compare approaches; they are not one combined application.
+These five studies cover independent tools and research. The Document AI repositories compare different approaches and remain separate applications.
 
 <details open>
 <summary><b>Document AI Engineering Lab · Document AI, Extraction, GraphRAG</b></summary>
 <br />
 
-**Problem.** Scans, handwriting, tables, and native documents need different processing strategies. Readable text alone is not enough: extracted fields and answers need evidence that a person can inspect.
+Scans, handwriting, tables, and native documents call for different processing strategies. Readable text alone is insufficient when extracted fields and answers need evidence a person can inspect.
 
-**Built.** Eight separate implementations for local OCR, multimodal parsing, schema extraction, annotated review artifacts, and GraphRAG question answering.
+The lab contains eight separate implementations for local OCR, multimodal parsing, schema extraction, annotated review artifacts, and GraphRAG question answering. They keep source evidence distinct from model interpretation, make local and cloud processing comparisons explicit, and treat document Q&A separately from parsing.
 
-**Engineering decisions.** Keep source evidence distinct from model interpretation; compare local and cloud processing explicitly; treat document Q&A as a separate problem from parsing.
-
-**Evidence and limits.** The repositories expose processing paths, output contracts, and review artifacts. They do not establish a shared accuracy benchmark or parity with a commercial extraction service. Privacy and provider boundaries differ by implementation.
+The repositories expose processing paths, output contracts, and review artifacts. They do not establish a shared accuracy benchmark or parity with a commercial extraction service, and privacy and provider boundaries differ by implementation.
 
 | Implementation | Approach |
 |---|---|
@@ -179,15 +177,11 @@ Five detailed studies from independent tools and research. The Document AI repos
 <summary><b>LoRA Fine-tune Studio · Model Training, Fine-Tuning</b></summary>
 <br />
 
-**Problem.** Local fine-tuning depends on dataset compatibility, GPU capacity, run configuration, recovery, and adapter review.
+Local fine-tuning depends on dataset compatibility, GPU capacity, run configuration, recovery, and adapter review. This Streamlit workflow covers dataset preparation, model inspection, parameter-efficient training, job monitoring, and base-versus-adapter comparison. It saves portable PEFT adapters and maintains a persistent local job queue.
 
-**Built.** A Streamlit workflow for dataset preparation, model inspection, parameter-efficient training, job monitoring, and base-versus-adapter comparison. It saves portable PEFT adapters and maintains a persistent local job queue.
+Runs are validated before launch, GPU workers are isolated, and the queue processes one run at a time. The app supports cancellation, logs, and checkpoint recovery, alongside a CUDA-free synthetic showcase.
 
-**Decisions.** Validate before launch; isolate GPU workers; queue one run at a time; support cancellation, logs, and checkpoint recovery; provide a CUDA-free synthetic showcase.
-
-**Evidence.** The repository includes the training implementation, example datasets, workflow documentation, and a read-only showcase. Adapter quality depends on the selected data, model, and recipe.
-
-**Limit.** It is a single-user local experiment environment, not hosted or distributed training. The separate showcase performs no training.
+The repository includes the training implementation, example datasets, workflow documentation, and a read-only showcase. Adapter quality depends on the selected data, model, and recipe. It is a single-user local experiment environment and does not provide hosted or distributed training; the separate showcase performs no training.
 
 [Repository](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Portfolio study](https://pypi-ahmad.github.io/projects#lora-fine-tune-studio)
 </details>
@@ -196,15 +190,11 @@ Five detailed studies from independent tools and research. The Document AI repos
 <summary><b>Self-Improving Prompt Optimizer · Evaluation, Prompt Optimization</b></summary>
 <br />
 
-**Problem.** A prompt that looks better on one example may perform worse elsewhere; alternatives need a consistent evaluation set and visible scoring trade-offs.
+A prompt that looks better on one example may perform worse elsewhere, so alternatives need a consistent evaluation set and visible scoring trade-offs. This LangGraph workflow generates diverse prompt candidates, evaluates them against the same selected benchmark, and maintains an elite pool. Streamlit shows scores, Pareto trade-offs, per-case results, and downloadable history.
 
-**Built.** A LangGraph workflow that generates diverse prompt candidates, evaluates them against the same selected benchmark, and maintains an elite pool. Streamlit exposes scores, Pareto trade-offs, per-case results, and downloadable history.
+Every candidate is evaluated against the same selected benchmark. The workflow supports weighted, Pareto, and hybrid selection, caches exact prompt scores, and retains the strongest candidate across generations.
 
-**Decisions.** Evaluate every candidate against the same selected benchmark; support weighted, Pareto, and hybrid selection; cache exact prompt scores; retain the best candidate across generations.
-
-**Evidence.** Candidate generation and judge-based scoring remain inspectable. A higher judge score is an experimental result, not proof of general improvement outside the selected benchmark.
-
-**Limit.** Evaluation is sequential, run state is in memory, and the repository has no automated test suite. Judge quality and benchmark coverage constrain conclusions.
+Candidate generation and judge-based scoring remain inspectable. A higher judge score is an experimental result rather than evidence of general improvement outside the selected benchmark. Evaluation is sequential, run state is in memory, and the repository has no automated test suite. Judge quality and benchmark coverage constrain the conclusions.
 
 [Repository](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#self-improving-prompt-optimizer)
 </details>
@@ -213,15 +203,11 @@ Five detailed studies from independent tools and research. The Document AI repos
 <summary><b>Video Summarizer · Multimodal AI, Retrieval</b></summary>
 <br />
 
-**Problem.** Reprocessing a complete video for every task repeats work over the same speech and visual evidence.
+Reprocessing a complete video for every task repeats work over the same speech and visual evidence. This local Streamlit workspace uses Adversal’s remote MCP video analysis and reuses returned Markdown, timestamps, and frames. Qdrant supports video-scoped retrieval for questions and generated documents, while persisted request IDs allow monitoring and recovery.
 
-**Built.** A local Streamlit workspace around Adversal’s remote MCP video analysis. It reuses returned Markdown, timestamps, and frames; Qdrant supports video-scoped retrieval for questions and generated documents; persisted request IDs allow monitoring and recovery.
+Completed source artifacts, request identifiers, and job state are retained; retrieval stays scoped to the selected video; and generated answers expose their source material.
 
-**Decisions.** Reuse completed source artifacts; persist request identifiers and job state; scope retrieval to the selected video; expose source material with generated answers.
-
-**Evidence.** The repository includes job lifecycle handling, evidence indexing, export workflows, and focused tests using service mocks. Adversal supplies the underlying video-understanding service.
-
-**Limit.** Video understanding and model calls use external services. One video workspace is active per browser session, and generated documents and chat history remain session-scoped.
+The repository includes job lifecycle handling, evidence indexing, export workflows, and focused tests using service mocks. Adversal supplies the underlying video-understanding service. Video understanding and model calls use external services, one video workspace is active per browser session, and generated documents and chat history remain session-scoped.
 
 [Repository](https://github.com/pypi-ahmad/video-summarizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#video-summarizer)
 </details>
@@ -230,15 +216,11 @@ Five detailed studies from independent tools and research. The Document AI repos
 <summary><b>Hinglish Turn Detection · Speech ML, Evaluation</b></summary>
 <br />
 
-**Problem.** A pause is not always a finished utterance; false-complete decisions can cause a voice agent to interrupt the speaker.
+A pause is not always a finished utterance, and false-complete decisions can cause a voice agent to interrupt the speaker. The study compares Whisper-tiny-based audio classifiers, pooling and augmentation strategies, an audio-text variant, and a three-seed finalist with validation-calibrated thresholds.
 
-**Built.** Whisper-tiny-based audio classifiers, pooling and augmentation comparisons, an audio-text variant, and a three-seed finalist study with validation-calibrated thresholds.
+It tracks false-complete rate alongside recall and F1, selects the final architecture and threshold from validation results before held-out evaluation, and compares audio-only and audio-text approaches for both quality and live inference overhead.
 
-**Decisions.** Track false-complete rate alongside recall and F1; choose the final architecture and threshold on validation results before held-out evaluation; compare audio-only and audio-text approaches for both quality and live inference overhead.
-
-**Evidence.** The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% recall** on **4,890 held-out examples**. Recall missed the desired 85% target.
-
-**Limit.** The data lacks verified Hinglish/code-switch labels and speaker IDs, and much of the training audio is synthetic. This is not a speaker-disjoint benchmark of real human Hinglish conversations.
+The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% recall** on **4,890 held-out examples**. Recall missed the desired 85% target. The data lacks verified Hinglish/code-switch labels and speaker IDs, and much of the training audio is synthetic, so this is not a speaker-disjoint benchmark of real human Hinglish conversations.
 
 [Repository](https://github.com/pypi-ahmad/hinglish-turn-detection) · [Demo](https://huggingface.co/spaces/pypi-ahmad/hinglish-turn-detection) · [Portfolio study](https://pypi-ahmad.github.io/projects#hinglish-turn-detection)
 </details>
@@ -336,7 +318,7 @@ The [measured outcomes](#measured-outcomes) and linked project stories show how 
 <summary><b>Current learning interests</b></summary>
 <br />
 
-These are learning interests, not claims of production expertise.
+These learning interests do not represent claims of production expertise.
 
 - **Agentic AI and orchestration:** LangGraph + MCP, AutoGen, CrewAI, multi-agent systems
 - **Reasoning models and post-training:** test-time compute scaling, GRPO, DPO
@@ -351,17 +333,17 @@ These are learning interests, not claims of production expertise.
 
 ## Forward-Deployed AI Engineering
 
-I am building on professional experience and independent projects to learn forward-deployed AI engineering. This is a learning path, not a completed curriculum, employment title, or claim of owning the full customer lifecycle.
+I am building on professional experience and independent projects to learn forward-deployed AI engineering. The path is ongoing and does not represent a completed curriculum, an employment title, or ownership of the full customer lifecycle.
 
-1. **Problem discovery — professional experience.** Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
-2. **Solution definition — professional experience.** Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
-3. **AI prototyping — professional experience.** Iterated structured extraction and prompts, compared model behavior, and inspected intermediate Markdown for omissions and hallucinations.
-4. **Retrieval systems — professional experience.** Contributed Milvus retrieval, reranking, and failure-aware routing to computer-use and multi-agent reasoning.
-5. **Agentic systems — professional experience.** Built LangGraph specialist checks combining visual, metadata, and semantic evidence with review and reporting.
-6. **State and recovery — personal projects.** Built persistent training queues and checkpoint recovery, plus resumable video-analysis requests and saved job state.
-7. **Deployment and integration — professional experience.** Helped decouple expensive warranty processing through Azure Blob Storage and Azure Functions.
-8. **Operational monitoring — professional experience.** Built analytics and model-drift dashboards for changing claim behavior and service issues.
-9. **Evaluation and iteration — professional experience.** Used manual review and regression testing with confidence-aware extraction, retries, and validation.
+1. **Problem discovery (professional experience):** Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
+2. **Solution definition (professional experience):** Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
+3. **AI prototyping (professional experience):** Iterated structured extraction and prompts, compared model behavior, and inspected intermediate Markdown for omissions and hallucinations.
+4. **Retrieval systems (professional experience):** Contributed Milvus retrieval, reranking, and failure-aware routing to computer-use and multi-agent reasoning.
+5. **Agentic systems (professional experience):** Built LangGraph specialist checks combining visual, metadata, and semantic evidence with review and reporting.
+6. **State and recovery (personal projects):** Built persistent training queues and checkpoint recovery, plus resumable video-analysis requests and saved job state.
+7. **Deployment and integration (professional experience):** Helped decouple expensive warranty processing through Azure Blob Storage and Azure Functions.
+8. **Operational monitoring (professional experience):** Built analytics and model-drift dashboards for changing claim behavior and service issues.
+9. **Evaluation and iteration (professional experience):** Used manual review and regression testing with confidence-aware extraction, retries, and validation.
 
 [Follow the evidence-backed FDE journey](https://pypi-ahmad.github.io/fde)
 
@@ -369,8 +351,8 @@ I am building on professional experience and independent projects to learn forwa
 
 ### Degrees
 
-- **M.Tech in Data Analytics and Decision Sciences** — Indian Institute of Information Technology Kurnool, October 2020 – June 2022. Coursework included machine learning, deep learning, NLP, computer vision, and statistics.
-- **B.Tech in Computer Science Engineering** — Maulana Azad National Urdu University, August 2015 – June 2019. Coursework included data structures and algorithms, engineering mathematics, and web development.
+- **M.Tech in Data Analytics and Decision Sciences**, Indian Institute of Information Technology Kurnool, October 2020 to June 2022. Coursework included machine learning, deep learning, NLP, computer vision, and statistics.
+- **B.Tech in Computer Science Engineering**, Maulana Azad National Urdu University, August 2015 to June 2019. Coursework included data structures and algorithms, engineering mathematics, and web development.
 
 ### Professional certification
 
