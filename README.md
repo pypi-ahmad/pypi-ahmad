@@ -1,10 +1,13 @@
 <div align="center">
   <h1>Ahmad Mujtaba</h1>
-  <h3>AI Engineer | Data Scientist | GenAI • Agentic AI • ML • LLMs | @Deloitte USI</h3>
-  <p><b>I build reliable Document AI, RAG, and agentic systems with evaluation and production safeguards built in.</b></p>
-  <p>Structured Extraction · Retrieval Quality · Healthcare AI · Azure</p>
+  <h3>AI &amp; Data Science Engineer · Production AI · Deloitte US-India</h3>
+  <p><b>Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.</b></p>
+  <p>Document AI · Retrieval · Agentic Systems · Evaluation · Event-Driven Cloud</p>
 
   <p>
+    <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
+      <img alt="View portfolio" src="https://img.shields.io/badge/View%20portfolio-2563EB?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" />
+    </a>
     <a href="mailto:ahmad.iiitk@gmail.com">
       <img alt="Email me" src="https://img.shields.io/badge/Email%20me-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
     </a>
@@ -12,61 +15,253 @@
       <img alt="Connect on LinkedIn" src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" />
     </a>
   </p>
-
 </div>
 
 <p align="center">
-  <a href="#selected-outcomes">Outcomes</a> ·
-  <a href="#featured-work">Featured</a> ·
-  <a href="#currently-building">Building</a> ·
-  <a href="#engineering-principles">Principles</a> ·
-  <a href="#writing">Writing</a> ·
-  <a href="#certifications">Certifications</a> ·
+  <a href="#measured-outcomes">Outcomes</a> ·
+  <a href="#professional-experience">Experience</a> ·
+  <a href="#case-studies">Case Studies</a> ·
+  <a href="#public-projects">Projects</a> ·
+  <a href="#skills-with-context">Skills</a> ·
+  <a href="#forward-deployed-ai-engineering">FDE Path</a> ·
+  <a href="#education--credentials">Education</a> ·
   <a href="#github-statistics">Statistics</a> ·
-  <a href="#repository">Repository</a> ·
   <a href="#contact--availability">Contact</a>
 </p>
 
 ## About
 
-I’m an Applied AI Engineer at Deloitte, where I build and evaluate production Document AI, retrieval, and agentic systems on Azure. My work focuses on structured extraction, retrieval quality, and deterministic safeguards. I also lead multi-agent fraud and compliance analytics work that combines risk scoring, human review, and governance guardrails. Before Deloitte, I worked at Cognizant on machine learning, conversational AI, warranty analytics, and production data pipelines.
+I build production AI systems that turn difficult documents, retrieved knowledge, and tool interactions into evidence-backed outcomes. At Deloitte, I work on healthcare document processing, retrieval and computer-use workflows, and healthcare integrity analytics. At Cognizant, I improved production machine-learning and NLP systems, built conversational AI, and helped move expensive processing into event-driven Azure services.
 
-## Selected Outcomes
+My work has progressed from **ML, NLP, and data science** to **conversational AI**, then to **GenAI and agentic AI**. Evaluation and operational reliability have remained part of the work throughout.
 
-The following team and system results come from internal employer evaluations. Client names, source data, task definitions, schemas, and proprietary code are omitted.
+### How I work
 
-- **Browser task completion.** Task completion rose from **38% to 80%** in the same **200-task internal evaluation**. I worked on Milvus retrieval, reranking, and failure-aware routing. [Sanitized case study](docs/sanitized-outcomes.md#browser-task-completion) · Related public implementations: [computer-use loop](https://github.com/pypi-ahmad/cua-workbench) and [corrective retrieval](https://github.com/pypi-ahmad/agentic-rag-arxiv-research-assistant).
-- **Browser-agent prompt tokens.** Prompt-token consumption dropped by **approximately 40%** in an internal evaluation that used raw DOM observations as its baseline. I worked on accessibility-tree snapshots and compressed observations. The evaluation size and trace details are confidential. [Sanitized case study](docs/sanitized-outcomes.md#browser-agent-prompt-tokens) · [Related public implementation](https://github.com/pypi-ahmad/cua-workbench).
-- **Structured extraction.** Baseline accuracy was **80% to 81%** and rose above **90%** on the same internal benchmark. I worked on multi-pass extraction, confidence-aware retries, and routing. The corpus size, schemas, and scoring details are confidential. [Sanitized case study](docs/sanitized-outcomes.md#structured-extraction) · [Related public implementation](https://github.com/pypi-ahmad/grounded-docparse).
-- **Policy-entity extraction.** Accuracy rose from **90% to 99%** on the same internal benchmark. I worked on prompt iteration, canonical comparison, and evaluation. The dataset size, policy documents, and entity schema are confidential. [Sanitized case study](docs/sanitized-outcomes.md#policy-entity-extraction) · [Related public implementation](https://github.com/pypi-ahmad/medical-document-intelligence-assistant).
+I begin by researching existing solutions and comparing model quality and cost. I inspect early results manually, regression-test changes, preserve source evidence, and monitor systems after delivery. I prefer typed boundaries, explicit failure states, human review where needed, and claims that remain inside the available evidence.
 
-## Featured Work
+## Measured Outcomes
 
-Selected public systems with production-focused engineering and supporting evidence.
+These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
 
-### Grounded Document Parser
+| Outcome | Evaluation context | My contribution |
+|---|---|---|
+| **95%+ fax-classification accuracy** | Deloitte; measured across 500-file bulk batches. | Worked on Azure Databricks classification and routing for fax intake. |
+| **80–81% to 92%+ structured-extraction accuracy** | Deloitte; recurring 100-file internal evaluation runs. | Designed grouped extraction, confidence-aware four-pass extraction, retries, validation, and routing. |
+| **38% to 80% browser task completion** | Deloitte; the same 200-task internal evaluation. | Contributed Milvus retrieval, reranking, and failure-aware routing. |
+| **~40% lower browser-agent prompt-token use** | Deloitte; internal comparison against raw DOM observations. | Built accessibility-tree snapshots and compressed observations. |
+| **90% to 99% policy-entity extraction accuracy** | Deloitte; the same internal benchmark. | Iterated prompts, implemented canonical comparison, and expanded evaluation. |
+| **79% to 88% warranty-classifier recall** | Cognizant; reported internal classifier evaluation. | Retrained and tuned Random Forest, compared XGBoost, and retained Random Forest based on results. |
 
-Grounded Document Parser handles native documents, scans, and mixed PDFs through native parsing or local OCR while retaining provenance. Extracted values link to source anchors, and the system rejects values without exact evidence. Its test suite covers 39 modules for parsing, routing, extraction, recovery, persistence, CLI, and UI behavior.
+[Read the portfolio experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
 
-[Code](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion) · [Screenshot](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/images/document-parse-studio-full.png) · [Setup](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/README.md#install-and-set-up) · [Architecture](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/architecture.md) · [Tests](https://github.com/pypi-ahmad/grounded-docparse/tree/native-document-ingestion/tests)
+## Professional Experience
 
-### LoRA Fine-tune Studio
+### AI & Data Science Engineer · Deloitte US-India
 
-LoRA Fine-tune Studio supports local adapter training on Windows and Linux. It validates datasets, checks CUDA and VRAM, uses isolated workers, recovers checkpoints, and compares adapters with base models. It supports five training approaches and four adapter methods. CI runs formatting, linting, type checks, and tests.
+**July 2025 – Present · Gurugram, India**
 
-[Code](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Screenshot](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/docs/images/training-studio.png) · [Setup](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app#install-from-github) · [Architecture](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app/tree/main/tests)
+<details open>
+<summary><b>Prior-authorization document processing</b></summary>
+<br />
 
-### Computer Use Workbench
+A production Azure pipeline processes incoming healthcare fax packets from classification through extraction, validation, routing, and recovery. Handwriting, nonstandard forms, business rules, and a 117-field schema made a single extraction call unreliable.
 
-Computer Use Workbench provides consistent OpenAI, Anthropic, and Google computer-use routes in a sandboxed Ubuntu/XFCE desktop. It has three direct provider routes, expires credentials after eight hours, and retains audit frames for seven days or 1 GiB. CI checks backend and frontend tests, dependency audits, sandbox builds, and high/critical image scanning.
+- Used Azure Content Understanding to generate Markdown, then Azure OpenAI to extract structured values.
+- Designed the production revision around **seven calls grouping related fields**, replacing one request for all 117 fields.
+- Designed confidence-aware **four-pass extraction**, retries, validation, and explicit recovery outcomes.
+- Migrated GPT-4.1 prompts to GPT-5.2 and checked the revision with manual review and regression tests.
+- Kept classification and extraction separate, producing RPA-ready CSV/JSON and annotated PDFs.
+- The grouped extraction revision went live in **September 2026**.
 
-[Code](https://github.com/pypi-ahmad/computer-use) · [Screenshot](https://github.com/pypi-ahmad/computer-use/blob/main/assets/screenshot.png) · [Setup](https://github.com/pypi-ahmad/computer-use#quick-start) · [Architecture](https://github.com/pypi-ahmad/computer-use/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/computer-use/tree/main/tests)
+[Detailed experience](https://pypi-ahmad.github.io/experience#prior-authorization)
+</details>
 
-### Local AI Chat Studio
+<details>
+<summary><b>Healthcare integrity and fraud analytics</b></summary>
+<br />
 
-Local AI Chat Studio supports streaming chat, comparison, replay, and response diffs for local and hosted models. It runs Ollama locally and supports optional provider and compatible gateway routes. It uses token budgets, provenance receipts, prompt-injection quarantine, and CI-verified provider and API contracts.
+- Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs, delivery risks, and implementation guidance.
+- Built a seven-agent LangGraph and GPT-4o Vision workflow that combined visual, metadata, and semantic document checks with NPI/EIN validation and deterministic 0–100 risk scoring.
+- Developed out-of-network claims and referral-pattern analysis with approval gates, evidence review, investigator-facing dashboards, and report generation.
 
-[Code](https://github.com/pypi-ahmad/local-ai-chat-studio) · [Screenshot](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/docs/screenshot-chat.png) · [Setup](https://github.com/pypi-ahmad/local-ai-chat-studio#install-and-run) · [Architecture](https://github.com/pypi-ahmad/local-ai-chat-studio/blob/main/TECHNICAL.md) · [Tests](https://github.com/pypi-ahmad/local-ai-chat-studio/tree/main/tests)
+[Detailed experience](https://pypi-ahmad.github.io/experience#healthcare-integrity)
+</details>
+
+<details>
+<summary><b>Computer-use and multi-agent reasoning</b></summary>
+<br />
+
+- Contributed Milvus retrieval, reranking, and failure-aware routing to a computer-use workflow.
+- Built a Playwright MCP tool using accessibility-tree snapshots and compressed-vision context instead of raw DOM observations.
+- Task completion and prompt-token use were evaluated as separate outcomes.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#computer-use)
+</details>
+
+<details>
+<summary><b>Policy-entity extraction</b></summary>
+<br />
+
+Iterated prompts, implemented canonical comparison, and expanded evaluation for structured policy-entity extraction used in care-management decision support.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#policy-entity-extraction)
+</details>
+
+### Associate Data Scientist · Cognizant Technology Solutions
+
+**September 2022 – May 2025 · Noida, India**
+
+<details open>
+<summary><b>Warranty decisions, NLP processing, and operational monitoring</b></summary>
+<br />
+
+- Improved an automotive warranty workflow handling roughly 1,800–2,200 claims per weekday and approximately 1,000 per weekend day.
+- Retrained and tuned its existing Random Forest classifier, compared XGBoost, and retained Random Forest because XGBoost did not outperform it.
+- Prioritized recall because missing a legitimate claim carried a higher business cost than additional review.
+- Migrated legacy LUIS intent and entity processing to Azure Conversational Language Understanding.
+- Helped move expensive downstream processing out of the FastAPI request path through Azure Blob Storage and Azure Functions after HTTP 504 timeouts under a 30-second SLA.
+- Built Power BI analytics, model-behavior, and drift dashboards.
+
+[Detailed experience](https://pypi-ahmad.github.io/experience#warranty-processing)
+</details>
+
+<details>
+<summary><b>Conversational B2B reordering</b></summary>
+<br />
+
+For a separate FMCG engagement, built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
+</details>
+
+### Machine Learning Engineer Intern · AiEnsured
+
+**July 2021 – August 2021 · Remote, India**
+
+- Supported CNN-based object-detection work, including code optimization and error analysis.
+- Implemented regression and classification models and contributed to feature-engineering experiments.
+
+### Architecture snapshots
+
+1. **Prior authorization:** Fax documents → type and urgency classification → eligible documents → Azure Content Understanding Markdown → grouped Azure OpenAI extraction → validation and business rules → structured output or review.
+2. **Computer use:** Retrieved knowledge and browser observations → multi-agent reasoning → tool execution → explicit routing and failure handling.
+3. **Warranty processing:** Standard claim scoring remains separate from NLP processing; accepted payloads move through Blob Storage to Azure Functions for downstream work.
+
+[View the architecture diagrams](https://pypi-ahmad.github.io/experience)
+
+## Case Studies
+
+Five detailed studies from independent tools and research. The Document AI repositories compare approaches; they are not one combined application.
+
+<details open>
+<summary><b>Document AI Engineering Lab · Document AI, Extraction, GraphRAG</b></summary>
+<br />
+
+**Problem.** Scans, handwriting, tables, and native documents need different processing strategies. Readable text alone is not enough: extracted fields and answers need evidence that a person can inspect.
+
+**Built.** Eight separate implementations for local OCR, multimodal parsing, schema extraction, annotated review artifacts, and GraphRAG question answering.
+
+**Engineering decisions.** Keep source evidence distinct from model interpretation; compare local and cloud processing explicitly; treat document Q&A as a separate problem from parsing.
+
+**Evidence and limits.** The repositories expose processing paths, output contracts, and review artifacts. They do not establish a shared accuracy benchmark or parity with a commercial extraction service. Privacy and provider boundaries differ by implementation.
+
+| Implementation | Approach |
+|---|---|
+| [Paperplane](https://github.com/pypi-ahmad/Agentic-Document-Extraction) | Explicit parsing engines with grounded Markdown, JSON, and document organization. |
+| [Document Intelligence Agent](https://github.com/pypi-ahmad/document-intelligence-agent) | GraphRAG retrieval, verification, and cross-document comparison. |
+| [Grounded DocParse](https://github.com/pypi-ahmad/grounded-docparse) | Mixed-format parsing with immutable source spans and evidence-linked extraction. |
+| [OpenAI + RapidOCR](https://github.com/pypi-ahmad/OpenAI-X-RapidOCR-Agentic-Document_extraction) | Local OCR and layout evidence followed by multimodal refinement. |
+| [OpenAI Agentic Document Extraction](https://github.com/pypi-ahmad/OpenAI-Agentic-Document_extraction) | Model-cascade extraction, segment verification, and disputed-field resolution. |
+| [NaviDC-OCR Studio](https://github.com/pypi-ahmad/NaviDC-OCR-Agentic-Document-Extraction) | Local GPU OCR with optional cloud-based semantic field extraction. |
+| [LiteParse Agentic Extraction](https://github.com/pypi-ahmad/liteparse-agentic-document-extraction) | Layout reconstruction with model OCR and targeted hard-region verification. |
+| [ADE workflow example](https://github.com/pypi-ahmad/ai-projects/tree/main/16-Agentic-Document-Extraction) | Bounded LangGraph parsing that produces Markdown, HTML, and annotated pages. |
+</details>
+
+<details>
+<summary><b>LoRA Fine-tune Studio · Model Training, Fine-Tuning</b></summary>
+<br />
+
+**Problem.** Local fine-tuning depends on dataset compatibility, GPU capacity, run configuration, recovery, and adapter review.
+
+**Built.** A Streamlit workflow for dataset preparation, model inspection, parameter-efficient training, job monitoring, and base-versus-adapter comparison. It saves portable PEFT adapters and maintains a persistent local job queue.
+
+**Decisions.** Validate before launch; isolate GPU workers; queue one run at a time; support cancellation, logs, and checkpoint recovery; provide a CUDA-free synthetic showcase.
+
+**Evidence.** The repository includes the training implementation, example datasets, workflow documentation, and a read-only showcase. Adapter quality depends on the selected data, model, and recipe.
+
+**Limit.** It is a single-user local experiment environment, not hosted or distributed training. The separate showcase performs no training.
+
+[Repository](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) · [Portfolio study](https://pypi-ahmad.github.io/projects#lora-fine-tune-studio)
+</details>
+
+<details>
+<summary><b>Self-Improving Prompt Optimizer · Evaluation, Prompt Optimization</b></summary>
+<br />
+
+**Problem.** A prompt that looks better on one example may perform worse elsewhere; alternatives need a consistent evaluation set and visible scoring trade-offs.
+
+**Built.** A LangGraph workflow that generates diverse prompt candidates, evaluates them against the same selected benchmark, and maintains an elite pool. Streamlit exposes scores, Pareto trade-offs, per-case results, and downloadable history.
+
+**Decisions.** Evaluate every candidate against the same selected benchmark; support weighted, Pareto, and hybrid selection; cache exact prompt scores; retain the best candidate across generations.
+
+**Evidence.** Candidate generation and judge-based scoring remain inspectable. A higher judge score is an experimental result, not proof of general improvement outside the selected benchmark.
+
+**Limit.** Evaluation is sequential, run state is in memory, and the repository has no automated test suite. Judge quality and benchmark coverage constrain conclusions.
+
+[Repository](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#self-improving-prompt-optimizer)
+</details>
+
+<details>
+<summary><b>Video Summarizer · Multimodal AI, Retrieval</b></summary>
+<br />
+
+**Problem.** Reprocessing a complete video for every task repeats work over the same speech and visual evidence.
+
+**Built.** A local Streamlit workspace around Adversal’s remote MCP video analysis. It reuses returned Markdown, timestamps, and frames; Qdrant supports video-scoped retrieval for questions and generated documents; persisted request IDs allow monitoring and recovery.
+
+**Decisions.** Reuse completed source artifacts; persist request identifiers and job state; scope retrieval to the selected video; expose source material with generated answers.
+
+**Evidence.** The repository includes job lifecycle handling, evidence indexing, export workflows, and focused tests using service mocks. Adversal supplies the underlying video-understanding service.
+
+**Limit.** Video understanding and model calls use external services. One video workspace is active per browser session, and generated documents and chat history remain session-scoped.
+
+[Repository](https://github.com/pypi-ahmad/video-summarizer) · [Portfolio study](https://pypi-ahmad.github.io/projects#video-summarizer)
+</details>
+
+<details>
+<summary><b>Hinglish Turn Detection · Speech ML, Evaluation</b></summary>
+<br />
+
+**Problem.** A pause is not always a finished utterance; false-complete decisions can cause a voice agent to interrupt the speaker.
+
+**Built.** Whisper-tiny-based audio classifiers, pooling and augmentation comparisons, an audio-text variant, and a three-seed finalist study with validation-calibrated thresholds.
+
+**Decisions.** Track false-complete rate alongside recall and F1; choose the final architecture and threshold on validation results before held-out evaluation; compare audio-only and audio-text approaches for both quality and live inference overhead.
+
+**Evidence.** The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% recall** on **4,890 held-out examples**. Recall missed the desired 85% target.
+
+**Limit.** The data lacks verified Hinglish/code-switch labels and speaker IDs, and much of the training audio is synthetic. This is not a speaker-disjoint benchmark of real human Hinglish conversations.
+
+[Repository](https://github.com/pypi-ahmad/hinglish-turn-detection) · [Demo](https://huggingface.co/spaces/pypi-ahmad/hinglish-turn-detection) · [Portfolio study](https://pypi-ahmad.github.io/projects#hinglish-turn-detection)
+</details>
+
+## Public Projects
+
+| Project | Focus | What it does |
+|---|---|---|
+| [LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) | Model Training · Fine-Tuning | Prepares datasets, trains local LLM adapters, monitors jobs, and compares adapters with base models. |
+| [Tool-Using Browser Agent](https://github.com/pypi-ahmad/tool-using-browser-agent) | Agentic AI · Browser Automation | Plans and performs Playwright actions with memory and human approval before sensitive steps. |
+| [Self-Improving Prompt Optimizer](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) | Evaluation · Prompt Optimization | Generates and compares prompt candidates with multi-objective LLM-as-judge scoring. |
+| [NL2SQL Agent](https://github.com/pypi-ahmad/natural-language-to-sql-agent) | Agentic AI · Data Systems | Produces reviewed SQL for SQLite and PostgreSQL with audit trails and local or hosted models. |
+| [Autonomous Coding Agent Crew](https://github.com/pypi-ahmad/autonomous-coding-agent-crew) | Agentic AI · Developer Tools | Coordinates planning, specialists, review, testing, debugging, documentation, and quality gates. |
+| [Multi-Agent Debate Decision System](https://github.com/pypi-ahmad/multi-agent-debate-decision-system) | Multi-Agent AI · Decision Support | Runs moderated debates with structured judging, confidence, recommendations, and risks. |
+| [Multi-Agent Research Assistant](https://github.com/pypi-ahmad/multi-agent-research-assistant) | Multi-Agent AI · Research | Coordinates planning, parallel research, critique, reflection, and cited report writing. |
+| [Local-First Knowledge Base Agent](https://github.com/pypi-ahmad/local-first-knowledge-base-agent) | Local AI · Knowledge Systems | Indexes personal knowledge for cited answers, temporal reasoning, and local knowledge graphs. |
+| [Intelligent Personal Finance Agent](https://github.com/pypi-ahmad/intelligent-personal-finance-agent) | Local AI · Personal Finance | Ingests statements, learns category corrections, and keeps the ledger on the user’s machine. |
+| [Document Intelligence Agent](https://github.com/pypi-ahmad/document-intelligence-agent) | Document AI · GraphRAG | Uses LangGraph and ArcadeDB for extraction, community detection, retrieval, and verification. |
+| [Autonomous Job Application Agent](https://github.com/pypi-ahmad/autonomous-job-application-agent) | Agentic AI · Workflow Automation | Collects and scores jobs, drafts tailored content, and tracks applications locally with human review. |
+| [AutoTabML Studio](https://github.com/pypi-ahmad/AutoTabML-Studio) | Machine Learning · AutoML | Turns tabular data into trained, evaluated, deployable models through reproducible UI and CLI workflows. |
+| [Codebase Understanding Agent](https://github.com/pypi-ahmad/codebase-understanding-agent) | Agentic AI · Developer Tools | Clones, scans, summarizes, and explains repositories, then answers codebase questions through chat. |
+
+[Explore the complete projects page](https://pypi-ahmad.github.io/projects)
 
 ## Repository Showcase
 
@@ -101,29 +296,86 @@ Local AI Chat Studio supports streaming chat, comparison, replay, and response d
   </a>
 </div>
 
-## Currently Building
+## Skills, with Context
 
-**[LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app):** a local application for LoRA, QLoRA, OFT, and QOFT training workflows.
+### Core capabilities
 
-**Current question.** How can a local studio choose safe training defaults from GPU VRAM, dataset shape, and evaluation evidence while preserving reproducible runs?
+- **LLM architectures and agentic workflows:** context engineering and prompt hardening for structured workflows; separate agentic systems add tools, planning, approval gates, memory, retries, and explicit failure handling.
+- **Retrieval and knowledge systems:** hybrid retrieval, reranking, graph traversal, citations, and local-first memory for grounded answers.
+- **Multimodal document intelligence:** layout-aware extraction from scanned and handwritten faxes using Azure Content Understanding and Azure OpenAI, with grouped fields, confidence-aware retries, schema validation, and human review.
+- **Evaluation and production ML:** Random Forest retraining, XGBoost comparison, recall-led evaluation, drift dashboards, prompt regression checks, fixed internal benchmarks, and personal experiments in LLM-as-judge evaluation and LoRA/QLoRA.
+- **Event-driven cloud and backend systems:** Python and FastAPI services with downstream Azure Blob Storage and Functions processing; schema-first contracts, local/cloud model routing, reproducible environments, and deployment controls in public projects.
 
-## Engineering Principles
+### AI system lifecycle
 
-- **Evaluation first.** Define baselines, metrics, failure sets, and acceptance thresholds before changing a model or prompt.
-- **Typed boundaries.** Validate LLM, tool, and API payloads before they change application state.
-- **Observability.** Record traces, token use, retries, routing decisions, and failure reasons.
-- **Security.** Scope credentials, validate inputs, isolate tool execution, and define retention limits.
+**Data → Retrieval → Model → Agent → State → API → Deployment → Evaluation → Observability → Iteration**
 
-## Writing
+The [measured outcomes](#measured-outcomes) and linked project stories show how these capabilities were applied and evaluated.
 
-- **[Extraction Quality Research](https://github.com/pypi-ahmad/grounded-docparse/blob/native-document-ingestion/docs/extraction-quality-research.md).** An analysis of reference quality, regression metrics, OCR failure modes, and evidence limits.
-- **[Computer Use: Zero-to-Hero Study Handbook](https://github.com/pypi-ahmad/computer-use/blob/main/docs/zero-to-hero-study-handbook.md).** A first-principles guide to computer-use agents, typed APIs, route fallback, and audited execution.
-- **[Legal GraphRAG Architecture](https://github.com/pypi-ahmad/legal-graphrag/blob/main/docs/ARCHITECTURE.md).** An implementation note covering ingestion, hybrid retrieval, graph construction, and evaluation.
+### Professional delivery
 
-## Certifications
+| Tools | Applied context |
+|---|---|
+| Azure OpenAI, Azure Content Understanding, Azure Databricks | Grouped LLM extraction over CU Markdown with confidence-aware four-pass extraction and validation. |
+| LangGraph, GPT-4o Vision, Streamlit | Specialist document checks, deterministic risk scoring, evidence review, and investigator-facing reporting. |
+| Milvus, Playwright, MCP | Retrieval, reranking, and efficient browser observations for multi-agent reasoning. |
+| Python, FastAPI, Azure App Service, Blob Storage, Functions, CLU, Random Forest, XGBoost, Power BI | Warranty classification, NLP migration, downstream processing, analytics, and drift monitoring. |
+| AWS Lex, Azure OpenAI, Lambda, S3 | Conversational B2B reordering for a separate FMCG engagement. |
+
+### Personal project tooling
+
+| Tools | Public implementation |
+|---|---|
+| LangChain, Anthropic, Gemini, Ollama, Pydantic, SQLite, PostgreSQL | [NL2SQL Agent](https://github.com/pypi-ahmad/natural-language-to-sql-agent) |
+| PyTorch, Transformers, PEFT, TRL | [LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) |
+| Chroma | [Google OKF implementation](https://github.com/pypi-ahmad/google-okf-implementation) |
+| ArcadeDB, LangGraph | [Document Intelligence Agent](https://github.com/pypi-ahmad/document-intelligence-agent) |
+| Docker, GitHub Actions, Qdrant | [Video Summarizer](https://github.com/pypi-ahmad/video-summarizer) |
 
 <details>
-<summary><b>Anthropic professional certifications (1)</b></summary>
+<summary><b>Current learning interests</b></summary>
+<br />
+
+These are learning interests, not claims of production expertise.
+
+- **Agentic AI and orchestration:** LangGraph + MCP, AutoGen, CrewAI, multi-agent systems
+- **Reasoning models and post-training:** test-time compute scaling, GRPO, DPO
+- **Evaluation and AI governance:** LLM-as-a-Judge, DeepEval, NeMo Guardrails, red-teaming, precision-recall curves
+- **Edge AI and high-throughput inference:** vLLM, SGLang, Ollama, FP4/FP8 quantization, AWQ
+- **Agentic RAG and GraphRAG:** Neo4j, LlamaIndex Workflows, vector databases, hybrid search
+- **Multimodal and vision-language AI:** VLMs, Document AI, audio-to-audio systems
+- **Cloud events and observability:** Azure Event Grid, Application Insights
+</details>
+
+[Explore skills with project context](https://pypi-ahmad.github.io/skills)
+
+## Forward-Deployed AI Engineering
+
+I am building on professional experience and independent projects to learn forward-deployed AI engineering. This is a learning path, not a completed curriculum, employment title, or claim of owning the full customer lifecycle.
+
+1. **Problem discovery — professional experience.** Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
+2. **Solution definition — professional experience.** Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
+3. **AI prototyping — professional experience.** Iterated structured extraction and prompts, compared model behavior, and inspected intermediate Markdown for omissions and hallucinations.
+4. **Retrieval systems — professional experience.** Contributed Milvus retrieval, reranking, and failure-aware routing to computer-use and multi-agent reasoning.
+5. **Agentic systems — professional experience.** Built LangGraph specialist checks combining visual, metadata, and semantic evidence with review and reporting.
+6. **State and recovery — personal projects.** Built persistent training queues and checkpoint recovery, plus resumable video-analysis requests and saved job state.
+7. **Deployment and integration — professional experience.** Helped decouple expensive warranty processing through Azure Blob Storage and Azure Functions.
+8. **Operational monitoring — professional experience.** Built analytics and model-drift dashboards for changing claim behavior and service issues.
+9. **Evaluation and iteration — professional experience.** Used manual review and regression testing with confidence-aware extraction, retries, and validation.
+
+[Follow the evidence-backed FDE journey](https://pypi-ahmad.github.io/fde)
+
+## Education & Credentials
+
+### Degrees
+
+- **M.Tech in Data Analytics and Decision Sciences** — Indian Institute of Information Technology Kurnool, October 2020 – June 2022. Coursework included machine learning, deep learning, NLP, computer vision, and statistics.
+- **B.Tech in Computer Science Engineering** — Maulana Azad National Urdu University, August 2015 – June 2019. Coursework included data structures and algorithms, engineering mathematics, and web development.
+
+### Professional certification
+
+<details open>
+<summary><b>Claude Certified Associate - Foundations · Anthropic</b></summary>
 <br />
 
 <div align="center">
@@ -132,17 +384,17 @@ Local AI Chat Studio supports streaming chat, comparison, replay, and response d
   </a>
   <p>
     <b>Claude Certified Associate - Foundations</b><br />
-    Issued Aug 31, 2026<br />
+    Issued August 31, 2026<br />
     <a href="https://www.credly.com/badges/d9eace76-da4e-447f-b38b-9c39ac6edf6d">Verify on Credly</a>
   </p>
 </div>
 </details>
 
+### Course certificates
+
 <details>
 <summary><b>Anthropic Education certificates (4)</b></summary>
 <br />
-
-Selected Anthropic Education course certificates. Select a certificate to open the source PDF.
 
 <div align="center">
   <a href="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.pdf">
@@ -153,28 +405,39 @@ Selected Anthropic Education course certificates. Select a certificate to open t
   </a>
   <br />
   <a href="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.pdf">
-    <img src="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.png" width="49%" alt="Anthropic Claude with the Anthropic API certificate" />
+    <img src="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.png" width="49%" alt="Anthropic Building with the Claude API certificate" />
   </a>
   <a href="certifications/anthropic/certificate-uubk52krkzap-1787045826.pdf">
     <img src="certifications/anthropic/certificate-uubk52krkzap-1787045826.png" width="49%" alt="Anthropic Claude Code 101 certificate" />
   </a>
 </div>
-</details>
 
-## Stack
+- [Claude Code 101](https://verify.skilljar.com/c/uubk52krkzap) — completed August 18, 2026
+- [Building with the Claude API](https://verify.skilljar.com/c/2njdrsdeigc4) — completed July 6, 2026
+- [Claude 101](https://verify.skilljar.com/c/b3ejcctoop7p) — completed March 10, 2026
+- [AI Fluency: Framework & Foundations](https://verify.skilljar.com/c/suzvk58nwng2) — completed March 11, 2026
+</details>
 
 <details>
-<summary><b>Technology stack</b></summary>
+<summary><b>Machine learning, deep learning, data science, and SQL certificates (9)</b></summary>
 <br />
 
-- **Document AI and retrieval:** Azure Content Understanding, Docling, layout-aware parsing, OCR, multimodal document understanding, Milvus, FAISS, ChromaDB, hybrid search, reranking, and retrieval evaluation
-- **LLM and agent systems:** Azure OpenAI, Azure AI Foundry, OpenAI, Anthropic, Gemini, Ollama, LangChain, LangGraph, MCP, structured outputs, tool calling, human-in-the-loop review, and PII-redaction guardrails
-- **ML and fine-tuning:** PyTorch, Transformers, Hugging Face, LoRA/QLoRA, TRL, PEFT, vLLM, model evaluation, monitoring, deterministic risk scoring, Precision@K, and PR-AUC
-- **Platform and delivery:** Python, SQL, FastAPI, Streamlit, React, Docker, Azure, AWS, PostgreSQL, SQLite, CI/CD, pytest, Vitest, Ruff, mypy/ty, tracing, and failure analysis
-- **Healthcare and consulting delivery:** U.S. payer workflows, clinical-document processing, HIPAA/PHI handling, FHIR/HL7, SME workflow mapping, solution and compliance documentation, and client communication
+- [Machine Learning Specialization](https://coursera.org/verify/specialization/2T5GNSDSV29S) — DeepLearning.AI / Stanford via Coursera
+- [Advanced Learning Algorithms](https://coursera.org/verify/P9GJ4PVXL9UW) — DeepLearning.AI / Stanford via Coursera
+- [Supervised Machine Learning](https://coursera.org/verify/4Q4USU8YJYY6) — DeepLearning.AI / Stanford via Coursera
+- [Unsupervised Learning & Recommenders](https://coursera.org/verify/97JED3L5UX8X) — DeepLearning.AI / Stanford via Coursera
+- [Deep Learning A-Z™](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6) — Udemy
+- [Deep Learning A-Z™ Hands-On](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6) — Udemy
+- [Machine Learning A-Z™](https://ude.my/UC-11aa09b1-e4ec-4cf6-bc0b-10e2b3f34ba1) — Udemy
+- [Data Science for Professionals](https://ude.my/UC-fef4ecf7-2b39-44dc-91ab-4bc4eb7e94ae) — Udemy
+- [SQL for Data Science](https://coursera.org/verify/9SC5S8TMRKF3) — Coursera
 </details>
 
+[View the complete education and credential portfolio](https://pypi-ahmad.github.io/education)
+
 ## GitHub Statistics
+
+[Open the live GitHub dashboard](https://pypi-ahmad.github.io/github) for repository discovery, releases, collaboration, contribution, and traffic snapshots.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/stats.svg" height="170" alt="Ahmad Mujtaba's GitHub statistics" />
@@ -280,12 +543,14 @@ Selected Anthropic Education course certificates. Select a certificate to open t
 
 The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of record. See the [changelog](CHANGELOG.md).
 
-- Profile and outcomes: `README.md`, [`docs/sanitized-outcomes.md`](docs/sanitized-outcomes.md), [`DATASET.md`](DATASET.md)
+- Profile and outcome boundaries: `README.md`, [`docs/sanitized-outcomes.md`](docs/sanitized-outcomes.md)
 - Governance: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 
 ## Contact & Availability
 
-Based in **Gurugram, India** (IST, UTC+05:30), I’m open to selective remote-first Applied AI and GenAI roles and focused technical collaborations. My work centers on Document AI, RAG, evaluation, and computer-use systems.
+Based in **Gurugram, India** (IST, UTC+05:30), I’m open to remote-first production AI and GenAI engineering roles and focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
+
+[View the contact page](https://pypi-ahmad.github.io/contact)
 
 <p align="center">
   <strong>Get in touch</strong><br /><br />
