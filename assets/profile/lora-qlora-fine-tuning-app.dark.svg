@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-label="LoRA Fine-tune Studio">
+  <title>LoRA Fine-tune Studio</title>
+  <desc>Prepare datasets, train local adapters, and compare them with base models.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#0D1117"/><stop offset="1" stop-color="#19172D"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="418" height="278" rx="20" fill="url(#bg)" stroke="#39364F"/>
+  <path d="M24 66h270" stroke="#39364F"/>
+  <circle cx="354" cy="50" r="58" fill="#A78BFA" opacity=".07"/>
+  <g transform="translate(330 19) scale(.8)"><g fill="none" stroke="#A78BFA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="17" y="17" width="30" height="30" rx="7"/><path d="M25 4v13m14-13v13M25 47v13m14-13v13M4 25h13M4 39h13m30-14h13M47 39h13 M25 33l5 5 10-13"/></g></g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="24" y="40" font-size="13" font-weight="600" letter-spacing="1.3" fill="#67E8F9">02 / MODEL TRAINING</text>
+    <text x="24" y="109" font-size="24" font-weight="700" fill="#F5F3FF">LoRA Fine-tune Studio</text>
+    <text x="24" y="167" font-size="18" fill="#C5C5D8">Prepare datasets, train local</text><text x="24" y="190" font-size="18" fill="#C5C5D8">adapters, and compare them with base</text><text x="24" y="213" font-size="18" fill="#C5C5D8">models.</text>
+    <path d="M24 235h372" stroke="#39364F"/>
+    <text x="24" y="260" font-size="12" fill="#A8A8BF">INDEPENDENT PROJECT</text>
+    <text x="396" y="260" text-anchor="end" font-size="12" fill="#A8A8BF">VIEW CODE ↗</text>
+  </g>
+</svg>

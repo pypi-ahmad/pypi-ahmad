@@ -4,8 +4,7 @@ Generate light/dark SVG repo cards from GitHub repository metadata.
 
 A GitHub Actions workflow publishes the SVGs to the orphan `cards` branch.
 `.github/pinned_repos.txt` lists featured repositories in README order.
-The profile README currently embeds the 3D contribution graph from
-`profile-3d-contrib/` on `main`, not these cards.
+The README uses these cards alongside repository-local illustrated project covers.
 """
 
 from __future__ import annotations
@@ -15,6 +14,7 @@ import html
 import json
 import os
 import sys
+import textwrap
 import time
 import urllib.parse
 import urllib.request
@@ -43,25 +43,56 @@ THEMES: list[Theme] = [
         name="dark",
         suffix="dark",
         bg="#0D1117",
-        bg2="#0B1220",
-        border="#1F2937",
-        title="#E2E8F0",
-        text="#94A3B8",
-        muted="#64748B",
-        accent="#38BDF8",
+        bg2="#19172D",
+        border="#39364F",
+        title="#F5F3FF",
+        text="#C5C5D8",
+        muted="#A8A8BF",
+        accent="#A78BFA",
     ),
     Theme(
         name="light",
         suffix="light",
         bg="#FFFFFF",
-        bg2="#F8FAFC",
-        border="#E2E8F0",
-        title="#0F172A",
-        text="#334155",
-        muted="#64748B",
-        accent="#2563EB",
+        bg2="#F3F0FF",
+        border="#DDD6F0",
+        title="#211C3B",
+        text="#48435F",
+        muted="#625B78",
+        accent="#6D28D9",
     ),
 ]
+
+# Curated copy from https://pypi-ahmad.github.io/projects, separate from live metrics.
+FEATURED = {
+    "Agentic-Document-Extraction": (
+        "Paperplane", "01 / DOCUMENT AI",
+        "Parse documents into grounded Markdown, JSON, and review artifacts.", "document",
+    ),
+    "lora-qlora-fine-tuning-app": (
+        "LoRA Fine-tune Studio", "02 / MODEL TRAINING",
+        "Prepare datasets, train local adapters, and compare them with base models.", "training",
+    ),
+    "self-improving-prompt-optimizer": (
+        "Prompt optimizer", "03 / EVALUATION",
+        "Compare prompt candidates against a fixed benchmark with visible trade-offs.", "evaluation",
+    ),
+    "video-summarizer": (
+        "Video Summarizer", "04 / MULTIMODAL",
+        "Reuse video evidence for retrieval, answers, and generated documents.", "video",
+    ),
+}
+
+
+def _motif(kind: str, accent: str) -> str:
+    """Small original line illustrations, contained in a 64-pixel square."""
+    shapes = {
+        "document": '<path d="M14 8h25l12 12v37H14z M39 8v14h12 M23 32h19 M23 40h19 M23 48h12"/>',
+        "training": '<rect x="17" y="17" width="30" height="30" rx="7"/><path d="M25 4v13m14-13v13M25 47v13m14-13v13M4 25h13M4 39h13m30-14h13M47 39h13 M25 33l5 5 10-13"/>',
+        "evaluation": '<path d="M8 13h48M8 32h48M8 51h48"/><circle cx="22" cy="13" r="5"/><circle cx="43" cy="32" r="5"/><circle cx="30" cy="51" r="5"/>',
+        "video": '<rect x="5" y="10" width="54" height="42" rx="9"/><path d="M26 22l16 9-16 9z"/>',
+    }
+    return f'<g fill="none" stroke="{accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{shapes.get(kind, shapes["document"])}</g>'
 
 
 def _read_repo_list(path: Path, default_owner: str) -> list[tuple[str, str]]:
@@ -146,91 +177,59 @@ def _fetch_repo(owner: str, repo: str, token: str | None, timeout_s: int, retrie
 
 
 def _wrap(text: str, max_chars: int, max_lines: int) -> list[str]:
-    words = [w for w in text.split() if w]
-    lines: list[str] = []
-    cur: list[str] = []
-    cur_len = 0
-    for w in words:
-        add = len(w) + (1 if cur else 0)
-        if cur and cur_len + add > max_chars:
-            lines.append(" ".join(cur))
-            cur = [w]
-            cur_len = len(w)
-            if len(lines) >= max_lines:
-                break
-        else:
-            cur.append(w)
-            cur_len += add
-
-    if len(lines) < max_lines and cur:
-        lines.append(" ".join(cur))
-
-    if len(lines) > max_lines:
-        lines = lines[:max_lines]
-
-    # Ellipsize if truncated.
-    joined = " ".join(words)
-    if joined and " ".join(lines) != joined:
-        if lines:
-            lines[-1] = (lines[-1][: max(0, max_chars - 1)] + "…").rstrip()
-    return lines
+    """Bound both line count and unbroken repository names."""
+    return textwrap.wrap(
+        text, width=max_chars, max_lines=max_lines, placeholder="…",
+        break_long_words=True, break_on_hyphens=True,
+    )
 
 
 def _esc(s: str) -> str:
     return html.escape(s, quote=True)
 
 
-def _render_svg(info: RepoInfo, theme: Theme) -> str:
-    width = 520
-    height = 140
-    pad = 16
-
-    title = info.name
-    desc = info.description or " "
-    desc_lines = _wrap(desc, max_chars=56, max_lines=2)
-
-    meta = f"★ {info.stars}   ⑂ {info.forks}   {info.language}"
-    updated = info.updated_at[:10] if info.updated_at else ""
-
-    # A small "glow" on the accent dot looks nicer than flat icons.
+def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> str:
+    featured = FEATURED.get(info.name) if info.owner == "pypi-ahmad" else None
+    title, category, desc, kind = featured or (
+        info.name, "PUBLIC REPOSITORY", info.description or "Explore the repository.", "document"
+    )
+    title_lines = _wrap(title, max_chars=25, max_lines=2)
+    desc_lines = _wrap(desc, max_chars=36, max_lines=3)
+    cyan = "#67E8F9" if theme.name == "dark" else "#0E7490"
+    title_svg = "".join(
+        f'<text x="24" y="{109 + i * 28}" font-size="24" font-weight="700" fill="{theme.title}">{_esc(line)}</text>'
+        for i, line in enumerate(title_lines)
+    )
+    description_svg = "".join(
+        f'<text x="24" y="{167 + i * 23}" font-size="18" fill="{theme.text}">{_esc(line)}</text>'
+        for i, line in enumerate(desc_lines)
+    )
+    if show_metrics:
+        meta = f"★ {info.stars}   ⑂ {info.forks}   {info.language}"
+        updated = f"Updated {info.updated_at[:10]}" if info.updated_at else ""
+    else:
+        meta, updated = "INDEPENDENT PROJECT", "VIEW CODE ↗"
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{_esc(title)}">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-label="{_esc(title)}">
+  <title>{_esc(title)}</title>
+  <desc>{_esc(desc)}</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="{theme.bg}"/>
-      <stop offset="1" stop-color="{theme.bg2}"/>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="{theme.bg}"/><stop offset="1" stop-color="{theme.bg2}"/>
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.18"/>
-    </filter>
   </defs>
-
-  <rect x="0.5" y="0.5" rx="16" ry="16" width="{width-1}" height="{height-1}" fill="url(#bg)" stroke="{theme.border}" filter="url(#shadow)"/>
-
-  <circle cx="{pad+8}" cy="{pad+10}" r="5.5" fill="{theme.accent}" opacity="0.95"/>
-  <text x="{pad+22}" y="{pad+16}" fill="{theme.title}" font-size="18" font-weight="700"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
-    {_esc(title)}
-  </text>
-
-  <text x="{pad}" y="{pad+44}" fill="{theme.text}" font-size="13.5"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
-    {_esc(desc_lines[0] if len(desc_lines) > 0 else "")}
-  </text>
-  <text x="{pad}" y="{pad+64}" fill="{theme.text}" font-size="13.5"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
-    {_esc(desc_lines[1] if len(desc_lines) > 1 else "")}
-  </text>
-
-  <text x="{pad}" y="{height-pad}" fill="{theme.muted}" font-size="12.5"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
-    {_esc(meta)}
-  </text>
-
-  <text x="{width-pad}" y="{height-pad}" text-anchor="end" fill="{theme.muted}" font-size="12.5"
-        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial">
-    {_esc(updated)}
-  </text>
+  <rect x="1" y="1" width="418" height="278" rx="20" fill="url(#bg)" stroke="{theme.border}"/>
+  <path d="M24 66h270" stroke="{theme.border}"/>
+  <circle cx="354" cy="50" r="58" fill="{theme.accent}" opacity=".07"/>
+  <g transform="translate(330 19) scale(.8)">{_motif(kind, theme.accent)}</g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="24" y="40" font-size="13" font-weight="600" letter-spacing="1.3" fill="{cyan}">{_esc(category)}</text>
+    {title_svg}
+    {description_svg}
+    <path d="M24 235h372" stroke="{theme.border}"/>
+    <text x="24" y="260" font-size="12" fill="{theme.muted}">{_esc(meta)}</text>
+    <text x="396" y="260" text-anchor="end" font-size="12" fill="{theme.muted}">{_esc(updated)}</text>
+  </g>
 </svg>
 """
 
