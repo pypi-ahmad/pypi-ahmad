@@ -40,15 +40,24 @@ class ProfileArtTests(unittest.TestCase):
     def test_every_major_section_has_a_numbered_semantic_header(self):
         self.assertEqual(len(SECTIONS), 14)
         for index, (name, (title, label)) in enumerate(SECTIONS.items(), 1):
+            themed = []
             for theme in THEMES:
                 svg = section_header(theme, index, title, label)
+                themed.append(svg)
                 node = ET.fromstring(svg)
                 self.assertEqual(node.get("viewBox"), "0 0 960 92")
                 self.assertIn(f"{index:02d} /", svg)
                 self.assertIn(title.replace("&", "&amp;"), svg)
                 self.assertIn(label, svg)
                 self.assertIn(MONO, svg)
+                self.assertNotIn("Segoe UI", svg)
+                for color in ("#020A05", "#06120A", "#39FF14", "#D7FFE2", "#86A88F", "#174D2A"):
+                    self.assertIn(color, svg)
+                for old_accent in (theme.system, theme.accent):
+                    if old_accent not in ("#39FF14",):
+                        self.assertNotIn(old_accent, svg)
                 self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
+            self.assertEqual(themed[0], themed[1])
             heading_id = {
                 "skills": "skills-with-context",
                 "fde": "forward-deployed-ai-engineering",

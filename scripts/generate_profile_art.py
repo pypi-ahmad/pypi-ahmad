@@ -42,15 +42,17 @@ def _defs(theme: Theme, grid: int = 24) -> str:
 
 
 def section_header(theme: Theme, index: int, title: str, label: str) -> str:
+    del theme  # Section headers intentionally use one dark hacker-green theme in both modes.
     number = f"{index:02d} /"
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="92" viewBox="0 0 960 92" role="img" aria-labelledby="title desc">
-  <title id="title">{number} {_esc(title)}</title><desc id="desc">Numbered section heading for {_esc(title)}.</desc>{_defs(theme)}
-  <rect x=".75" y=".75" width="958.5" height="90.5" rx="14" fill="url(#surface)" stroke="{theme.border}" stroke-width="1.5"/><rect x="10" y="10" width="940" height="72" rx="10" fill="url(#grid)"/>
-  <path d="M20 25V16h9M940 67v9h-9" fill="none" stroke="{theme.system}" stroke-width="1.5"/>
-  <text x="30" y="56" fill="{theme.system}" font-family="{MONO}" font-size="16" font-weight="700" letter-spacing="1.4">{number}</text>
-  <text x="112" y="59" fill="{theme.title}" font-family="{DISPLAY}" font-size="30" font-weight="700">{_esc(title)}</text>
-  <text x="928" y="54" text-anchor="end" fill="{theme.muted}" font-family="{MONO}" font-size="10" font-weight="700" letter-spacing="1.5">{label}</text>
-  <path d="M112 70H928" stroke="{theme.border}"/><path d="M112 70h96" stroke="{theme.accent}" stroke-width="2"/>
+  <title id="title">{number} {_esc(title)}</title><desc id="desc">Numbered hacker-green section heading for {_esc(title)}.</desc>
+  <defs><linearGradient id="surface" x2="1" y2="1"><stop stop-color="#020A05"/><stop offset="1" stop-color="#06120A"/></linearGradient><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#39FF14" opacity=".08"/></pattern></defs>
+  <rect x=".75" y=".75" width="958.5" height="90.5" rx="14" fill="url(#surface)" stroke="#174D2A" stroke-width="1.5"/><rect x="10" y="10" width="940" height="72" rx="10" fill="url(#grid)"/>
+  <path d="M20 25V16h9M940 67v9h-9" fill="none" stroke="#39FF14" stroke-width="1.5"/>
+  <text x="30" y="56" fill="#39FF14" font-family="{MONO}" font-size="16" font-weight="700" letter-spacing="1.4">{number}</text>
+  <text x="112" y="59" fill="#D7FFE2" font-family="{MONO}" font-size="28" font-weight="700">{_esc(title)}</text>
+  <text x="928" y="54" text-anchor="end" fill="#86A88F" font-family="{MONO}" font-size="10" font-weight="700" letter-spacing="1.5">{label}</text>
+  <path d="M112 70H928" stroke="#174D2A"/><path d="M112 70h96" stroke="#39FF14" stroke-width="2"/>
 </svg>\n'''
 
 
