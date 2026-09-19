@@ -1,0 +1,1098 @@
+{
+  "nodes": [
+    {
+      "id": "_github_pinned_repos_config",
+      "label": "Pinned Repositories Configuration",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 8
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_pinned_repos_grounded_docparse",
+      "label": "Grounded Document Parser Showcase Entry",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 4,
+        "end_line": 4
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_pinned_repos_lora_fine_tuning_app",
+      "label": "LoRA Fine-Tune Studio Showcase Entry",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 5,
+        "end_line": 5
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_pinned_repos_computer_use",
+      "label": "Computer Use Workbench Showcase Entry",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 6,
+        "end_line": 6
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_pinned_repos_local_ai_chat_studio",
+      "label": "Local AI Chat Studio Showcase Entry",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 7,
+        "end_line": 7
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_pinned_repos_agentic_document_extraction",
+      "label": "Agentic Document Extraction Showcase Entry",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt",
+      "source_location": {
+        "start_line": 8,
+        "end_line": 8
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_3d_workflow",
+      "label": "Update Profile Statistics Workflow",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-3d.yml",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 73
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_3d_generate_3d",
+      "label": "Generate 3D Contribution Graph",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-3d.yml",
+      "source_location": {
+        "start_line": 22,
+        "end_line": 27
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_3d_generate_stats",
+      "label": "Generate Advanced GitHub Statistics Step",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-3d.yml",
+      "source_location": {
+        "start_line": 53,
+        "end_line": 56
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_animations_workflow",
+      "label": "Update Profile Animations Workflow",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-animations.yml",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 116
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_animations_snake",
+      "label": "Generate Contribution Snake Step",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-animations.yml",
+      "source_location": {
+        "start_line": 32,
+        "end_line": 41
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_profile_animations_arcade",
+      "label": "Generate Contribution Arcade Games Step",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-animations.yml",
+      "source_location": {
+        "start_line": 54,
+        "end_line": 60
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_repo_cards_workflow",
+      "label": "Update Repo Cards Workflow",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\repo-cards.yml",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 68
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_github_workflows_repo_cards_generate_cards",
+      "label": "Generate Repo Cards Step",
+      "file_type": "code",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\repo-cards.yml",
+      "source_location": {
+        "start_line": 32,
+        "end_line": 39
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_ua__trash_1786616981_merge_warnings_assembled_graph",
+      "label": "Assembled Graph Log",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\merge-warnings.txt",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 14
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_ua__trash_1786616981_merge_warnings_imports_recovery",
+      "label": "Imports Edge Recovery Log",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\merge-warnings.txt",
+      "source_location": {
+        "start_line": 10,
+        "end_line": 11
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_ua__trash_1786616981_tmp_changed_existing_files_list",
+      "label": "Changed Existing Files List",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-existing-files.txt",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 14
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_ua__trash_1786616981_tmp_changed_files_list",
+      "label": "Changed Files List",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-files.txt",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 16
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "changelog_unreleased",
+      "label": "Changelog Unreleased Section",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CHANGELOG.md",
+      "source_location": {
+        "start_line": 8,
+        "end_line": 28
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "changelog_version_2026_08_13",
+      "label": "Changelog Version 2026-08-13",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CHANGELOG.md",
+      "source_location": {
+        "start_line": 29,
+        "end_line": 42
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_pledge",
+      "label": "Code of Conduct Pledge",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CODE_OF_CONDUCT.md",
+      "source_location": {
+        "start_line": 3,
+        "end_line": 7
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "code_of_conduct_reporting",
+      "label": "Code of Conduct Reporting a Concern",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CODE_OF_CONDUCT.md",
+      "source_location": {
+        "start_line": 31,
+        "end_line": 41
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "contributing_guidelines",
+      "label": "Repository-Specific Guidance",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 17,
+        "end_line": 32
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "contributing_portfolio_dashboard",
+      "label": "Portfolio Dashboard Export",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 33,
+        "end_line": 52
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Failed collections stop the new export rather than publishing an incomplete history as complete. Failed collection leaves the prior JSON intact (atomic replacement)."
+    },
+    {
+      "id": "contributing_discovery_export",
+      "label": "Discovery Export Scheme v1",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 53,
+        "end_line": 60
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_about",
+      "label": "About Ahmad Mujtaba",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 30,
+        "end_line": 33
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_outcomes",
+      "label": "Selected Outcomes Summary",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 34,
+        "end_line": 42
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_grounded_docparse",
+      "label": "Grounded Document Parser Featured Work",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 47,
+        "end_line": 52
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_lora_studio",
+      "label": "LoRA Fine-tune Studio Featured Work",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 53,
+        "end_line": 58
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_cua_workbench",
+      "label": "Computer Use Workbench Featured Work",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 59,
+        "end_line": 64
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_local_ai_studio",
+      "label": "Local AI Chat Studio Featured Work",
+      "file_type": "concept",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 65,
+        "end_line": 70
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_engineering_principles",
+      "label": "Engineering Principles",
+      "file_type": "rationale",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 110,
+        "end_line": 116
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Evaluation first (define baselines before changing model or prompt); Typed boundaries (validate payloads before they change application state); Observability (record traces, token use); Security (scope credentials, isolate tool execution)."
+    },
+    {
+      "id": "readme_certifications",
+      "label": "Anthropic Certifications and Education Badge",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 123,
+        "end_line": 162
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "security_policy",
+      "label": "Security Policy and Reporting",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\SECURITY.md",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 40
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_agent_instruction_files_matrix",
+      "label": "Coding Agent Instruction Files Matrix",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\agent-instruction-files.md",
+      "source_location": {
+        "start_line": 9,
+        "end_line": 22
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_agent_instruction_files_shared_setup",
+      "label": "Practical Shared Setup Recommendation",
+      "file_type": "rationale",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\agent-instruction-files.md",
+      "source_location": {
+        "start_line": 23,
+        "end_line": 30
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Put repository-wide cross-agent guidance in root AGENTS.md; keep ~/.claude/CLAUDE.md for Claude Code; ~/.gemini/GEMINI.md for Gemini CLI; and ~/.copilot/copilot-instructions.md for Copilot CLI personal rules."
+    },
+    {
+      "id": "docs_github_readme_research_findings",
+      "label": "Effective README Research Findings",
+      "file_type": "rationale",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\github-readme-research.md",
+      "source_location": {
+        "start_line": 11,
+        "end_line": 20
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Write around the reader's next decision (What is this, why should I care, what can I do next?). Make the first success easy. Lead with purpose and usefulness."
+    },
+    {
+      "id": "docs_github_readme_research_templates",
+      "label": "README Layout and Templates",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\github-readme-research.md",
+      "source_location": {
+        "start_line": 42,
+        "end_line": 105
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_sanitized_outcomes_browser_tasks",
+      "label": "Browser Task Completion Case Study",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": {
+        "start_line": 7,
+        "end_line": 22
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_sanitized_outcomes_browser_tokens",
+      "label": "Browser-Agent Prompt Tokens Case Study",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": {
+        "start_line": 23,
+        "end_line": 38
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_sanitized_outcomes_structured_extraction",
+      "label": "Structured Document Extraction Case Study",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": {
+        "start_line": 39,
+        "end_line": 54
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_sanitized_outcomes_policy_extraction",
+      "label": "Policy-Entity Extraction Case Study",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": {
+        "start_line": 55,
+        "end_line": 70
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "certifications_anthropic_certificate_2njdrsdeigc4_1783399597_claude_api",
+      "label": "Claude with the Anthropic API Certificate",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-2njdrsdeigc4-1783399597.pdf",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "certifications_anthropic_certificate_b3ejcctoop7p_1773144487_claude_101",
+      "label": "Claude 101 Certificate",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-b3ejcctoop7p-1773144487.pdf",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "certifications_anthropic_certificate_suzvk58nwng2_1773228332_ai_fluency",
+      "label": "AI Fluency: Framework & Foundations Certificate",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-suzvk58nwng2-1773228332.pdf",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "certifications_anthropic_certificate_uubk52krkzap_1787045826_claude_code",
+      "label": "Claude Code 101 Certificate",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-uubk52krkzap-1787045826.pdf",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "certifications_anthropic_claude_certified_associate_foundations_associate",
+      "label": "Claude Certified Associate - Foundations",
+      "file_type": "document",
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\claude-certified-associate-foundations.pdf",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_outcomes",
+      "target": "docs_sanitized_outcomes_browser_tasks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 38,
+        "end_line": 38
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_outcomes",
+      "target": "docs_sanitized_outcomes_browser_tokens",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 39,
+        "end_line": 39
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_outcomes",
+      "target": "docs_sanitized_outcomes_structured_extraction",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 40,
+        "end_line": 40
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_outcomes",
+      "target": "docs_sanitized_outcomes_policy_extraction",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 41,
+        "end_line": 41
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_certifications",
+      "target": "certifications_anthropic_claude_certified_associate_foundations_associate",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 130,
+        "end_line": 132
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_certifications",
+      "target": "certifications_anthropic_certificate_b3ejcctoop7p_1773144487_claude_101",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 148,
+        "end_line": 150
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_certifications",
+      "target": "certifications_anthropic_certificate_suzvk58nwng2_1773228332_ai_fluency",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 151,
+        "end_line": 153
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_certifications",
+      "target": "certifications_anthropic_certificate_2njdrsdeigc4_1783399597_claude_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 155,
+        "end_line": 157
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_certifications",
+      "target": "certifications_anthropic_certificate_uubk52krkzap_1787045826_claude_code",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": {
+        "start_line": 158,
+        "end_line": 160
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "_github_workflows_repo_cards_generate_cards",
+      "target": "_github_pinned_repos_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\repo-cards.yml",
+      "source_location": {
+        "start_line": 35,
+        "end_line": 35
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "contributing_guidelines",
+      "target": "_github_pinned_repos_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 23,
+        "end_line": 23
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "contributing_guidelines",
+      "target": "changelog_unreleased",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 63,
+        "end_line": 63
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "contributing_guidelines",
+      "target": "security_policy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 85,
+        "end_line": 85
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "contributing_guidelines",
+      "target": "code_of_conduct_pledge",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\CONTRIBUTING.md",
+      "source_location": {
+        "start_line": 87,
+        "end_line": 87
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "readme_grounded_docparse",
+      "target": "_github_pinned_repos_grounded_docparse",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_lora_studio",
+      "target": "_github_pinned_repos_lora_fine_tuning_app",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_cua_workbench",
+      "target": "_github_pinned_repos_computer_use",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_local_ai_studio",
+      "target": "_github_pinned_repos_local_ai_chat_studio",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_about",
+      "target": "docs_github_readme_research_findings",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_sanitized_outcomes_browser_tasks",
+      "target": "readme_cua_workbench",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_sanitized_outcomes_browser_tokens",
+      "target": "readme_cua_workbench",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_sanitized_outcomes_structured_extraction",
+      "target": "readme_grounded_docparse",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_sanitized_outcomes_policy_extraction",
+      "target": "readme_about",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\docs\\sanitized-outcomes.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_github_workflows_profile_3d_generate_stats",
+      "target": "contributing_portfolio_dashboard",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-3d.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_github_workflows_profile_animations_workflow",
+      "target": "_github_workflows_profile_3d_workflow",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-animations.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_github_workflows_repo_cards_workflow",
+      "target": "_github_workflows_profile_3d_workflow",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\repo-cards.yml",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_ua__trash_1786616981_tmp_changed_files_list",
+      "target": "_github_pinned_repos_config",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-files.txt",
+      "source_location": {
+        "start_line": 1,
+        "end_line": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "_ua__trash_1786616981_tmp_changed_files_list",
+      "target": "_github_workflows_profile_3d_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-files.txt",
+      "source_location": {
+        "start_line": 3,
+        "end_line": 3
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "_ua__trash_1786616981_tmp_changed_files_list",
+      "target": "readme_about",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-files.txt",
+      "source_location": {
+        "start_line": 5,
+        "end_line": 5
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "_ua__trash_1786616981_tmp_changed_files_list",
+      "target": "docs_sanitized_outcomes_browser_tasks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.ua\\.trash-1786616981\\tmp\\changed-files.txt",
+      "source_location": {
+        "start_line": 6,
+        "end_line": 6
+      },
+      "weight": 1.0
+    },
+    {
+      "source": "certifications_anthropic_claude_certified_associate_foundations_associate",
+      "target": "certifications_anthropic_certificate_2njdrsdeigc4_1783399597_claude_api",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\claude-certified-associate-foundations.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "certifications_anthropic_certificate_2njdrsdeigc4_1783399597_claude_api",
+      "target": "certifications_anthropic_certificate_uubk52krkzap_1787045826_claude_code",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-2njdrsdeigc4-1783399597.pdf",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "certifications_anthropic_certificate_b3ejcctoop7p_1773144487_claude_101",
+      "target": "certifications_anthropic_certificate_uubk52krkzap_1787045826_claude_code",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\certifications\\anthropic\\certificate-b3ejcctoop7p-1773144487.pdf",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "automated_profile_asset_generation_system",
+      "label": "Automated Profile Asset Generation System",
+      "nodes": [
+        "_github_workflows_profile_3d_workflow",
+        "_github_workflows_profile_animations_workflow",
+        "_github_workflows_repo_cards_workflow"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\workflows\\profile-3d.yml"
+    },
+    {
+      "id": "pinned_repositories_showcase_list",
+      "label": "Pinned Repositories Showcase List",
+      "nodes": [
+        "_github_pinned_repos_grounded_docparse",
+        "_github_pinned_repos_lora_fine_tuning_app",
+        "_github_pinned_repos_computer_use",
+        "_github_pinned_repos_local_ai_chat_studio"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\.github\\pinned_repos.txt"
+    },
+    {
+      "id": "anthropic_claude_professional_capabilities_suite",
+      "label": "Anthropic Claude Professional Capabilities Suite",
+      "nodes": [
+        "certifications_anthropic_claude_certified_associate_foundations_associate",
+        "certifications_anthropic_certificate_2njdrsdeigc4_1783399597_claude_api",
+        "certifications_anthropic_certificate_b3ejcctoop7p_1773144487_claude_101",
+        "certifications_anthropic_certificate_suzvk58nwng2_1773228332_ai_fluency",
+        "certifications_anthropic_certificate_uubk52krkzap_1787045826_claude_code"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\AI\\Github\\pypi-ahmad\\README.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
