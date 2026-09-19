@@ -36,30 +36,36 @@ class Theme:
     text: str
     muted: str
     accent: str
+    system: str
+    live: str
 
 
 THEMES: list[Theme] = [
     Theme(
         name="dark",
         suffix="dark",
-        bg="#0D1117",
-        bg2="#19172D",
-        border="#39364F",
-        title="#F5F3FF",
-        text="#C5C5D8",
-        muted="#A8A8BF",
-        accent="#A78BFA",
+        bg="#050709",
+        bg2="#0B0E13",
+        border="#2A3038",
+        title="#E6EDF3",
+        text="#A9B4C0",
+        muted="#7B8794",
+        accent="#F2B134",
+        system="#39D9FF",
+        live="#3DDC84",
     ),
     Theme(
         name="light",
         suffix="light",
-        bg="#FFFFFF",
-        bg2="#F3F0FF",
-        border="#DDD6F0",
-        title="#211C3B",
-        text="#48435F",
-        muted="#625B78",
-        accent="#6D28D9",
+        bg="#F7F9FC",
+        bg2="#FFFFFF",
+        border="#D4DAE1",
+        title="#111827",
+        text="#3F4A56",
+        muted="#66717D",
+        accent="#9A6700",
+        system="#006B80",
+        live="#1A7F4B",
     ),
 ]
 
@@ -68,18 +74,22 @@ FEATURED = {
     "Agentic-Document-Extraction": (
         "Paperplane", "01 / DOCUMENT AI",
         "Parse documents into grounded Markdown, JSON, and review artifacts.", "document",
+        ("Document", "OCR", "Extraction", "Evaluation"),
     ),
     "lora-qlora-fine-tuning-app": (
         "LoRA Fine-tune Studio", "02 / MODEL TRAINING",
         "Prepare datasets, train local adapters, and compare them with base models.", "training",
+        ("Dataset", "Prepare", "Train", "Compare"),
     ),
     "self-improving-prompt-optimizer": (
         "Prompt optimizer", "03 / EVALUATION",
         "Compare prompt candidates against a fixed benchmark with visible trade-offs.", "evaluation",
+        ("Prompt", "Generate", "Evaluate", "Select"),
     ),
     "video-summarizer": (
         "Video Summarizer", "04 / MULTIMODAL",
         "Reuse video evidence for retrieval, answers, and generated documents.", "video",
+        ("Video", "Evidence", "Retrieval", "Answer"),
     ),
 }
 
@@ -190,12 +200,11 @@ def _esc(s: str) -> str:
 
 def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> str:
     featured = FEATURED.get(info.name) if info.owner == "pypi-ahmad" else None
-    title, category, desc, kind = featured or (
-        info.name, "PUBLIC REPOSITORY", info.description or "Explore the repository.", "document"
+    title, category, desc, kind, _ = featured or (
+        info.name, "PUBLIC REPOSITORY", info.description or "Explore the repository.", "document", ()
     )
     title_lines = _wrap(title, max_chars=25, max_lines=2)
     desc_lines = _wrap(desc, max_chars=36, max_lines=3)
-    cyan = "#67E8F9" if theme.name == "dark" else "#0E7490"
     title_svg = "".join(
         f'<text x="24" y="{109 + i * 28}" font-size="24" font-weight="700" fill="{theme.title}">{_esc(line)}</text>'
         for i, line in enumerate(title_lines)
@@ -220,15 +229,15 @@ def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> s
   </defs>
   <rect x="1" y="1" width="418" height="278" rx="20" fill="url(#bg)" stroke="{theme.border}"/>
   <path d="M24 66h270" stroke="{theme.border}"/>
-  <circle cx="354" cy="50" r="58" fill="{theme.accent}" opacity=".07"/>
-  <g transform="translate(330 19) scale(.8)">{_motif(kind, theme.accent)}</g>
+  <circle cx="354" cy="50" r="58" fill="{theme.system}" opacity=".07"/>
+  <g transform="translate(330 19) scale(.8)">{_motif(kind, theme.system)}</g>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <text x="24" y="40" font-size="13" font-weight="600" letter-spacing="1.3" fill="{cyan}">{_esc(category)}</text>
+    <text x="24" y="40" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.3" fill="{theme.system}">{_esc(category)}</text>
     {title_svg}
     {description_svg}
     <path d="M24 235h372" stroke="{theme.border}"/>
-    <text x="24" y="260" font-size="12" fill="{theme.muted}">{_esc(meta)}</text>
-    <text x="396" y="260" text-anchor="end" font-size="12" fill="{theme.muted}">{_esc(updated)}</text>
+    <text x="24" y="260" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="12" fill="{theme.muted}">{_esc(meta)}</text>
+    <text x="396" y="260" text-anchor="end" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="12" fill="{theme.muted}">{_esc(updated)}</text>
   </g>
 </svg>
 """
