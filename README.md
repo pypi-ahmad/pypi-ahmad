@@ -39,7 +39,7 @@ My work began in ML, NLP, and data science, expanded into conversational AI, and
 
 I start by researching existing solutions and comparing model quality and cost. I inspect early results manually and regression-test changes, keeping source evidence available for review. After delivery, I monitor the systems. I prefer typed boundaries, explicit failure states, and human review where needed, and I keep my claims within what the evidence supports.
 
-## Measured Outcomes
+## Measured outcomes
 
 These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
 
@@ -54,7 +54,7 @@ These are team and system results from internal employer evaluations. My contrib
 
 [Read the portfolio experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
 
-## Professional Experience
+## Professional experience
 
 ### AI & Data Science Engineer · Deloitte US-India
 
@@ -141,13 +141,13 @@ For a separate FMCG engagement, I built a conversational reordering workflow usi
 
 ### Architecture snapshots
 
-1. **Prior authorization:** Fax documents → type and urgency classification → eligible documents → Azure Content Understanding Markdown → grouped Azure OpenAI extraction → validation and business rules → structured output or review.
-2. **Computer use:** Retrieved knowledge and browser observations → multi-agent reasoning → tool execution → explicit routing and failure handling.
-3. **Warranty processing:** Standard claim scoring remains separate from NLP processing; accepted payloads move through Blob Storage to Azure Functions for downstream work.
+1. Prior authorization: Fax documents → type and urgency classification → eligible documents → Azure Content Understanding Markdown → grouped Azure OpenAI extraction → validation and business rules → structured output or review.
+2. Computer use: Retrieved knowledge and browser observations → multi-agent reasoning → tool execution → explicit routing and failure handling.
+3. Warranty processing: Standard claim scoring remains separate from NLP processing; accepted payloads move through Blob Storage to Azure Functions for downstream work.
 
 [View the architecture diagrams](https://pypi-ahmad.github.io/experience)
 
-## Case Studies
+## Case studies
 
 These five studies cover independent tools and research. The Document AI repositories compare different approaches and remain separate applications.
 
@@ -225,7 +225,7 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 [Repository](https://github.com/pypi-ahmad/hinglish-turn-detection) · [Demo](https://huggingface.co/spaces/pypi-ahmad/hinglish-turn-detection) · [Portfolio study](https://pypi-ahmad.github.io/projects#hinglish-turn-detection)
 </details>
 
-## Public Projects
+## Public projects
 
 | Project | Focus | What it does |
 |---|---|---|
@@ -245,7 +245,7 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 [Explore the complete projects page](https://pypi-ahmad.github.io/projects)
 
-## Repository Showcase
+## Repository showcase
 
 <div align="center">
   <a href="https://github.com/pypi-ahmad/computer-use">
@@ -278,15 +278,15 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
   </a>
 </div>
 
-## Skills, with Context
+## Skills, with context
 
 ### Core capabilities
 
-- **LLM architectures and agentic workflows:** context engineering and prompt hardening for structured workflows; separate agentic systems add tools, planning, approval gates, memory, retries, and explicit failure handling.
-- **Retrieval and knowledge systems:** hybrid retrieval, reranking, graph traversal, citations, and local-first memory for grounded answers.
-- **Multimodal document intelligence:** layout-aware extraction from scanned and handwritten faxes using Azure Content Understanding and Azure OpenAI, with grouped fields, confidence-aware retries, schema validation, and human review.
-- **Evaluation and production ML:** Random Forest retraining, XGBoost comparison, recall-led evaluation, drift dashboards, prompt regression checks, fixed internal benchmarks, and personal experiments in LLM-as-judge evaluation and LoRA/QLoRA.
-- **Event-driven cloud and backend systems:** Python and FastAPI services with downstream Azure Blob Storage and Functions processing; schema-first contracts, local/cloud model routing, reproducible environments, and deployment controls in public projects.
+- LLM architectures and agentic workflows: context engineering and prompt hardening for structured workflows; separate agentic systems add tools, planning, approval gates, memory, retries, and explicit failure handling.
+- Retrieval and knowledge systems: hybrid retrieval, reranking, graph traversal, citations, and local-first memory for grounded answers.
+- Multimodal document intelligence: layout-aware extraction from scanned and handwritten faxes using Azure Content Understanding and Azure OpenAI, with grouped fields, confidence-aware retries, schema validation, and human review.
+- Evaluation and production ML: Random Forest retraining, XGBoost comparison, recall-led evaluation, drift dashboards, prompt regression checks, fixed internal benchmarks, and personal experiments in LLM-as-judge evaluation and LoRA/QLoRA.
+- Event-driven cloud and backend systems: Python and FastAPI services with downstream Azure Blob Storage and Functions processing; schema-first contracts, local/cloud model routing, reproducible environments, and deployment controls in public projects.
 
 ### AI system lifecycle
 
@@ -320,34 +320,34 @@ The [measured outcomes](#measured-outcomes) and linked project stories show how 
 
 I am learning about the following areas and do not claim production expertise in them.
 
-- **Agentic AI and orchestration:** LangGraph + MCP, AutoGen, CrewAI, multi-agent systems
-- **Reasoning models and post-training:** test-time compute scaling, GRPO, DPO
-- **Evaluation and AI governance:** LLM-as-a-Judge, DeepEval, NeMo Guardrails, red-teaming, precision-recall curves
-- **Edge AI and high-throughput inference:** vLLM, SGLang, Ollama, FP4/FP8 quantization, AWQ
-- **Agentic RAG and GraphRAG:** Neo4j, LlamaIndex Workflows, vector databases, hybrid search
-- **Multimodal and vision-language AI:** VLMs, Document AI, audio-to-audio systems
-- **Cloud events and observability:** Azure Event Grid, Application Insights
+- Agentic AI and orchestration: LangGraph + MCP, AutoGen, CrewAI, multi-agent systems
+- Reasoning models and post-training: test-time compute scaling, GRPO, DPO
+- Evaluation and AI governance: LLM-as-a-Judge, DeepEval, NeMo Guardrails, red-teaming, precision-recall curves
+- Edge AI and high-throughput inference: vLLM, SGLang, Ollama, FP4/FP8 quantization, AWQ
+- Agentic RAG and GraphRAG: Neo4j, LlamaIndex Workflows, vector databases, hybrid search
+- Multimodal and vision-language AI: VLMs, Document AI, audio-to-audio systems
+- Cloud events and observability: Azure Event Grid, Application Insights
 </details>
 
 [Explore skills with project context](https://pypi-ahmad.github.io/skills)
 
-## Forward-Deployed AI Engineering
+## Forward-deployed AI engineering
 
 I am building on professional experience and independent projects to learn forward-deployed AI engineering. The path is ongoing and does not represent a completed curriculum, an employment title, or ownership of the full customer lifecycle.
 
-1. **Problem discovery (professional experience):** Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
-2. **Solution definition (professional experience):** Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
-3. **AI prototyping (professional experience):** Iterated structured extraction and prompts, compared model behavior, and inspected intermediate Markdown for omissions and hallucinations.
-4. **Retrieval systems (professional experience):** Contributed Milvus retrieval, reranking, and failure-aware routing to computer-use and multi-agent reasoning.
-5. **Agentic systems (professional experience):** Built LangGraph specialist checks combining visual, metadata, and semantic evidence with review and reporting.
-6. **State and recovery (personal projects):** Built persistent training queues and checkpoint recovery, plus resumable video-analysis requests and saved job state.
-7. **Deployment and integration (professional experience):** Helped decouple expensive warranty processing through Azure Blob Storage and Azure Functions.
-8. **Operational monitoring (professional experience):** Built analytics and model-drift dashboards for changing claim behavior and service issues.
-9. **Evaluation and iteration (professional experience):** Used manual review and regression testing with confidence-aware extraction, retries, and validation.
+1. Problem discovery (professional experience): Partnered with clinical, operational, and business stakeholders to map workflows and document PHI-aware solution designs.
+2. Solution definition (professional experience): Documented delivery risks, constraints, and implementation guidance connecting workflow requirements to engineering decisions.
+3. AI prototyping (professional experience): Iterated structured extraction and prompts, compared model behavior, and inspected intermediate Markdown for omissions and hallucinations.
+4. Retrieval systems (professional experience): Contributed Milvus retrieval, reranking, and failure-aware routing to computer-use and multi-agent reasoning.
+5. Agentic systems (professional experience): Built LangGraph specialist checks combining visual, metadata, and semantic evidence with review and reporting.
+6. State and recovery (personal projects): Built persistent training queues and checkpoint recovery, plus resumable video-analysis requests and saved job state.
+7. Deployment and integration (professional experience): Helped decouple expensive warranty processing through Azure Blob Storage and Azure Functions.
+8. Operational monitoring (professional experience): Built analytics and model-drift dashboards for changing claim behavior and service issues.
+9. Evaluation and iteration (professional experience): Used manual review and regression testing with confidence-aware extraction, retries, and validation.
 
 [View my FDE learning path](https://pypi-ahmad.github.io/fde)
 
-## Education & Credentials
+## Education & credentials
 
 ### Degrees
 
@@ -394,30 +394,30 @@ I am building on professional experience and independent projects to learn forwa
   </a>
 </div>
 
-- [Claude Code 101](https://verify.skilljar.com/c/uubk52krkzap) — completed August 18, 2026
-- [Building with the Claude API](https://verify.skilljar.com/c/2njdrsdeigc4) — completed July 6, 2026
-- [Claude 101](https://verify.skilljar.com/c/b3ejcctoop7p) — completed March 10, 2026
-- [AI Fluency: Framework & Foundations](https://verify.skilljar.com/c/suzvk58nwng2) — completed March 11, 2026
+- [Claude Code 101](https://verify.skilljar.com/c/uubk52krkzap): completed August 18, 2026
+- [Building with the Claude API](https://verify.skilljar.com/c/2njdrsdeigc4): completed July 6, 2026
+- [Claude 101](https://verify.skilljar.com/c/b3ejcctoop7p): completed March 10, 2026
+- [AI Fluency: Framework & Foundations](https://verify.skilljar.com/c/suzvk58nwng2): completed March 11, 2026
 </details>
 
 <details>
 <summary><b>Machine learning, deep learning, data science, and SQL certificates (9)</b></summary>
 <br />
 
-- [Machine Learning Specialization](https://coursera.org/verify/specialization/2T5GNSDSV29S) — DeepLearning.AI / Stanford via Coursera
-- [Advanced Learning Algorithms](https://coursera.org/verify/P9GJ4PVXL9UW) — DeepLearning.AI / Stanford via Coursera
-- [Supervised Machine Learning](https://coursera.org/verify/4Q4USU8YJYY6) — DeepLearning.AI / Stanford via Coursera
-- [Unsupervised Learning & Recommenders](https://coursera.org/verify/97JED3L5UX8X) — DeepLearning.AI / Stanford via Coursera
-- [Deep Learning A-Z™](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6) — Udemy
-- [Deep Learning A-Z™ Hands-On](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6) — Udemy
-- [Machine Learning A-Z™](https://ude.my/UC-11aa09b1-e4ec-4cf6-bc0b-10e2b3f34ba1) — Udemy
-- [Data Science for Professionals](https://ude.my/UC-fef4ecf7-2b39-44dc-91ab-4bc4eb7e94ae) — Udemy
-- [SQL for Data Science](https://coursera.org/verify/9SC5S8TMRKF3) — Coursera
+- [Machine Learning Specialization](https://coursera.org/verify/specialization/2T5GNSDSV29S): DeepLearning.AI / Stanford via Coursera
+- [Advanced Learning Algorithms](https://coursera.org/verify/P9GJ4PVXL9UW): DeepLearning.AI / Stanford via Coursera
+- [Supervised Machine Learning](https://coursera.org/verify/4Q4USU8YJYY6): DeepLearning.AI / Stanford via Coursera
+- [Unsupervised Learning & Recommenders](https://coursera.org/verify/97JED3L5UX8X): DeepLearning.AI / Stanford via Coursera
+- [Deep Learning A-Z™](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6): Udemy
+- [Deep Learning A-Z™ Hands-On](https://ude.my/UC-35dee0b3-49ec-4fe0-9b75-5768680f7fe6): Udemy
+- [Machine Learning A-Z™](https://ude.my/UC-11aa09b1-e4ec-4cf6-bc0b-10e2b3f34ba1): Udemy
+- [Data Science for Professionals](https://ude.my/UC-fef4ecf7-2b39-44dc-91ab-4bc4eb7e94ae): Udemy
+- [SQL for Data Science](https://coursera.org/verify/9SC5S8TMRKF3): Coursera
 </details>
 
 [View the complete education and credential portfolio](https://pypi-ahmad.github.io/education)
 
-## GitHub Statistics
+## GitHub statistics
 
 [Open the live GitHub dashboard](https://pypi-ahmad.github.io/github) for repository discovery, releases, collaboration, contribution, and traffic snapshots.
 
@@ -528,7 +528,7 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 - Profile and outcome boundaries: `README.md`, [`docs/sanitized-outcomes.md`](docs/sanitized-outcomes.md)
 - Governance: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 
-## Contact & Availability
+## Contact & availability
 
 I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first production AI and GenAI engineering roles. I’m also available for focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
 
