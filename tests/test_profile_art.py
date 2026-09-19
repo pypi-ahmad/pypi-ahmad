@@ -52,6 +52,24 @@ class ProfileArtTests(unittest.TestCase):
         ):
             self.assertIn(destination, readme)
 
+        portfolio = (root / "assets" / "profile" / "cta-portfolio.svg").read_text(encoding="utf-8")
+        for color in ("#EA4335", "#FBBC04", "#34A853", "#4285F4"):
+            self.assertIn(color, portfolio)
+
+        email_cta = (root / "assets" / "profile" / "cta-email.svg").read_text(encoding="utf-8")
+        email_tile = (root / "contacts-icons" / "email.svg").read_text(encoding="utf-8")
+        for color in ("#4285F4", "#34A853", "#EA4335", "#FBBC04", "#C5221F"):
+            self.assertIn(color, email_cta)
+            self.assertIn(color, email_tile)
+        self.assertIn("m18.364 9.455 4-3", email_cta)
+        self.assertIn("m18.364 9.455 4-3", email_tile)
+
+        linkedin_cta = (root / "assets" / "profile" / "cta-linkedin.svg").read_text(encoding="utf-8")
+        linkedin_tile = (root / "contacts-icons" / "linkedin.svg").read_text(encoding="utf-8")
+        for asset in (linkedin_cta, linkedin_tile):
+            self.assertIn("#0A66C2", asset)
+            self.assertIn("M416 32H31.9", asset)
+
     def test_contact_directory_preserves_every_destination(self):
         root = Path(__file__).resolve().parents[1]
         readme = (root / "README.md").read_text(encoding="utf-8")
