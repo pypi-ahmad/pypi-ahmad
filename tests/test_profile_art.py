@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from generate_profile_art import SECTIONS, section_divider, workshop
+from generate_profile_art import SECTIONS, contact_aurora, section_divider, workshop
 from generate_repo_cards import FEATURED, THEMES, RepoInfo, _render_svg, _wrap
 
 
@@ -23,6 +23,8 @@ class ProfileArtTests(unittest.TestCase):
                     self.assertEqual(node.get("viewBox"), "0 0 960 72")
                     self.assertIn(command, svg)
                     self.assertIn(label, svg)
+                    self.assertIn("PowerShell", svg)
+                    self.assertIn(r"PS C:\Users\Ahmad\profile&gt;", svg)
                     self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", readme)
 
     def test_header_ctas_are_local_accessible_svg_buttons(self):
@@ -56,11 +58,13 @@ class ProfileArtTests(unittest.TestCase):
         for theme in ("dark", "light"):
             banner = root / "assets" / "profile" / f"contact-aurora.{theme}.svg"
             svg = banner.read_text(encoding="utf-8")
+            self.assertEqual(svg, contact_aurora(next(item for item in THEMES if item.name == theme)))
             node = ET.fromstring(svg)
             self.assertEqual(node.get("viewBox"), "0 0 960 160")
             self.assertEqual(node.find("{http://www.w3.org/2000/svg}title").text, "Let’s work together")
             self.assertIsNotNone(node.find("{http://www.w3.org/2000/svg}desc"))
             self.assertIn("LET’S WORK TOGETHER", svg)
+            self.assertIn("PowerShell · Contact", svg)
             self.assertIn(f'assets/profile/contact-aurora.{theme}.svg', readme)
         self.assertNotIn("contact-divider.svg", readme)
         self.assertIn("DIRECT CHANNELS", readme)
@@ -121,6 +125,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertIsNotNone(root.find("{http://www.w3.org/2000/svg}title"))
                 self.assertIsNotNone(root.find("{http://www.w3.org/2000/svg}desc"))
                 self.assertIn("DATAINTUITIONIST IN", svg)
+                self.assertIn("PowerShell · AI Workshop", svg)
                 self.assertNotIn("AHMAD.M()", svg)
                 if animated:
                     self.assertIn("12s linear infinite", svg)
