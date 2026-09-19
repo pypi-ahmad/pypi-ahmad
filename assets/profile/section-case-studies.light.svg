@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="72" viewBox="0 0 960 72" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering Decisions terminal divider</title>
+  <desc id="desc">A terminal-style section divider showing the command ~/profile $ cat case-studies.md.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F0FF"/></linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#625B78" opacity=".12"/></pattern>
+  </defs>
+  <rect x=".75" y=".75" width="958.5" height="70.5" rx="14" fill="url(#surface)" stroke="#DDD6F0" stroke-width="1.5"/>
+  <rect x="12" y="12" width="936" height="48" rx="9" fill="url(#grid)"/>
+  <g><circle cx="27" cy="24" r="3" fill="#F87171"/><circle cx="39" cy="24" r="3" fill="#FBBF24"/><circle cx="51" cy="24" r="3" fill="#34D399"/></g>
+  <path d="M66 16v40" stroke="#DDD6F0"/>
+  <text x="82" y="32" fill="#0E7490" font-family="Cascadia Code,Consolas,monospace" font-size="15" font-weight="600">~/profile $ cat case-studies.md</text>
+  <text x="82" y="51" fill="#625B78" font-family="Cascadia Code,Consolas,monospace" font-size="10">process exited successfully · content follows</text>
+  <text x="928" y="39" text-anchor="end" fill="#6D28D9" font-family="Cascadia Code,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1.5">ENGINEERING DECISIONS</text>
+</svg>

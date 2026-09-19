@@ -9,6 +9,44 @@ from pathlib import Path
 from generate_repo_cards import FEATURED, THEMES, RepoInfo, Theme, _render_svg
 
 
+SECTIONS = {
+    "featured-projects": ("~/profile $ ls featured-projects/", "SELECTED WORK"),
+    "case-studies": ("~/profile $ cat case-studies.md", "ENGINEERING DECISIONS"),
+    "public-projects": ("~/profile $ find projects -maxdepth 1", "OPEN SOURCE"),
+    "about": ("~/profile $ whoami --verbose", "BACKGROUND"),
+    "measured-outcomes": ("~/profile $ pytest outcomes/ -q", "EVIDENCE"),
+    "professional-experience": ("~/profile $ git log --career", "EXPERIENCE"),
+    "skills": ("~/profile $ tree capabilities/", "TOOLKIT"),
+    "fde": ("~/profile $ ./learn --forward-deployed", "LEARNING PATH"),
+    "education": ("~/profile $ cat education.yaml", "CREDENTIALS"),
+    "activity": ("~/profile $ git log --graph --oneline", "ACTIVITY"),
+    "github-statistics": ("~/profile $ ./metrics --github", "LIVE SNAPSHOT"),
+    "repository-showcase": ("~/profile $ ls repositories/featured", "MORE WORK"),
+    "repository": ("~/profile $ cat CONTRIBUTING.md", "GOVERNANCE"),
+    "contact": ("~/profile $ open contact", "AVAILABLE"),
+}
+
+
+def section_divider(theme: Theme, command: str, label: str) -> str:
+    cyan = "#67E8F9" if theme.name == "dark" else "#0E7490"
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="72" viewBox="0 0 960 72" role="img" aria-labelledby="title desc">
+  <title id="title">{label.title()} terminal divider</title>
+  <desc id="desc">A terminal-style section divider showing the command {command}.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1"><stop stop-color="{theme.bg}"/><stop offset="1" stop-color="{theme.bg2}"/></linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="{theme.muted}" opacity=".12"/></pattern>
+  </defs>
+  <rect x=".75" y=".75" width="958.5" height="70.5" rx="14" fill="url(#surface)" stroke="{theme.border}" stroke-width="1.5"/>
+  <rect x="12" y="12" width="936" height="48" rx="9" fill="url(#grid)"/>
+  <g><circle cx="27" cy="24" r="3" fill="#F87171"/><circle cx="39" cy="24" r="3" fill="#FBBF24"/><circle cx="51" cy="24" r="3" fill="#34D399"/></g>
+  <path d="M66 16v40" stroke="{theme.border}"/>
+  <text x="82" y="32" fill="{cyan}" font-family="Cascadia Code,Consolas,monospace" font-size="15" font-weight="600">{command}</text>
+  <text x="82" y="51" fill="{theme.muted}" font-family="Cascadia Code,Consolas,monospace" font-size="10">process exited successfully · content follows</text>
+  <text x="928" y="39" text-anchor="end" fill="{theme.accent}" font-family="Cascadia Code,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1.5">{label}</text>
+</svg>
+'''
+
+
 def workshop(theme: Theme, *, animated: bool) -> str:
     cyan = "#67E8F9" if theme.name == "dark" else "#0E7490"
     amber = "#FCD34D" if theme.name == "dark" else "#92400E"
@@ -32,7 +70,7 @@ def workshop(theme: Theme, *, animated: bool) -> str:
   <rect x="14" y="14" width="932" height="232" rx="16" fill="url(#grid)"/>
   <ellipse cx="479" cy="139" rx="160" ry="104" fill="{theme.accent}" opacity=".045"/>
   <g font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2" font-weight="600">
-    <text x="32" y="36" fill="{theme.accent}">AHMAD.M()</text>
+    <text x="32" y="36" fill="{theme.accent}">DATAINTUITIONIST IN</text>
     <text x="928" y="36" text-anchor="end" fill="{theme.muted}">THE AI WORKSHOP</text>
   </g>
   <g fill="none" stroke="{theme.border}" stroke-width="2">
@@ -99,7 +137,11 @@ def main() -> None:
             (output / f"{repo}.{theme.suffix}.svg").write_text(
                 _render_svg(info, theme, show_metrics=False), encoding="utf-8"
             )
-    print(f"Generated 12 profile assets in {output}")
+        for name, (command, label) in SECTIONS.items():
+            (output / f"section-{name}.{theme.suffix}.svg").write_text(
+                section_divider(theme, command, label), encoding="utf-8"
+            )
+    print(f"Generated {12 + len(SECTIONS) * 2} profile assets in {output}")
 
 
 if __name__ == "__main__":
