@@ -2,11 +2,12 @@
   <title id="title">View portfolio</title>
   <desc id="desc">A dark portfolio button with the Google Chrome mark.</desc>
   <rect x=".5" y=".5" width="239" height="55" rx="13.5" fill="#161B22" stroke="#30363D"/>
-  <path d="M14 14h37l-9.5 16.5H23.5z" fill="#EA4335"/>
-  <path d="M51 14l-9.5 16.5H23.5L32 45.5z" fill="#FBBC05"/>
-  <path d="M32 45.5L23.5 30.5h18z" fill="#34A853"/>
-  <circle cx="32" cy="28" r="10.5" fill="#4285F4" stroke="#D2E3FC" stroke-width="2"/>
-  <circle cx="32" cy="28" r="4.5" fill="#E8F0FE"/>
+  <g transform="translate(16 12)">
+    <path d="M16 0a16 16 0 0 1 13.86 8H16a8 8 0 0 0-6.93 4L4.45 4A15.94 15.94 0 0 1 16 0z" fill="#EA4335"/>
+    <path d="M29.86 8A16 16 0 0 1 16 32l6.93-12A8 8 0 0 0 24 16c0-1.46-.39-2.83-1.07-4z" fill="#FBBC04"/>
+    <path d="M16 32A16 16 0 0 1 4.45 4l6.93 12A8 8 0 0 0 16 24c2.96 0 5.55-1.61 6.93-4z" fill="#34A853"/>
+    <circle cx="16" cy="16" r="6.8" fill="#4285F4" stroke="#FFF" stroke-width="2.4"/>
+  </g>
   <path d="M68 13v30" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
   <text x="84" y="25" fill="#C9D1D9" font-family="Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.4">EXPLORE</text>
   <text x="84" y="41" fill="#F0F6FC" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">View portfolio</text>
