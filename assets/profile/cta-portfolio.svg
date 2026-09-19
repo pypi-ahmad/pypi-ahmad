@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="56" viewBox="0 0 240 56" role="img" aria-labelledby="title desc">
+  <title id="title">View portfolio</title>
+  <desc id="desc">A dark portfolio button with the Google Chrome mark.</desc>
+  <rect x=".5" y=".5" width="239" height="55" rx="13.5" fill="#161B22" stroke="#30363D"/>
+  <path d="M14 14h37l-9.5 16.5H23.5z" fill="#EA4335"/>
+  <path d="M51 14l-9.5 16.5H23.5L32 45.5z" fill="#FBBC05"/>
+  <path d="M32 45.5L23.5 30.5h18z" fill="#34A853"/>
+  <circle cx="32" cy="28" r="10.5" fill="#4285F4" stroke="#D2E3FC" stroke-width="2"/>
+  <circle cx="32" cy="28" r="4.5" fill="#E8F0FE"/>
+  <path d="M68 13v30" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+  <text x="84" y="25" fill="#C9D1D9" font-family="Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.4">EXPLORE</text>
+  <text x="84" y="41" fill="#F0F6FC" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">View portfolio</text>
+  <path d="M217 28h10m-4-4 4 4-4 4" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="56" viewBox="0 0 240 56" role="img" aria-labelledby="title desc">
+  <title id="title">Connect on LinkedIn</title>
+  <desc id="desc">A dark professional-network button with the LinkedIn mark.</desc>
+  <rect x=".5" y=".5" width="239" height="55" rx="13.5" fill="#161B22" stroke="#30363D"/>
+  <rect x="16" y="12" width="32" height="32" rx="6" fill="#0A66C2"/>
+  <circle cx="23.4" cy="21" r="2.3" fill="#fff"/>
+  <path d="M21.2 25h4.4v12h-4.4zm7.1 0h4.2v1.64c.6-1.08 2.1-2.14 4.38-2.14 4.7 0 5.56 3.09 5.56 7.1V37h-4.4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V37h-4.4z" fill="#fff"/>
+  <path d="M68 13v30" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+  <text x="84" y="25" fill="#C9D1D9" font-family="Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.4">PROFESSIONAL NETWORK</text>
+  <text x="84" y="41" fill="#F0F6FC" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" textLength="120" lengthAdjust="spacingAndGlyphs">Connect on LinkedIn</text>
+  <path d="M217 28h10m-4-4 4 4-4 4" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

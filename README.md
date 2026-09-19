@@ -5,13 +5,13 @@
 
   <p>
     <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
-      <img alt="View portfolio" src="https://img.shields.io/badge/View%20portfolio-2563EB?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" />
+      <img alt="View portfolio" src="assets/profile/cta-portfolio.svg" width="240" height="56" />
     </a>
     <a href="mailto:ahmad.iiitk@gmail.com">
-      <img alt="Email me" src="https://img.shields.io/badge/Email%20me-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" />
+      <img alt="Email Ahmad Mujtaba" src="assets/profile/cta-email.svg" width="240" height="56" />
     </a>
     <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
-      <img alt="Connect on LinkedIn" src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" />
+      <img alt="Connect with Ahmad Mujtaba on LinkedIn" src="assets/profile/cta-linkedin.svg" width="240" height="56" />
     </a>
   </p>
 </div>
@@ -29,9 +29,6 @@
   <a href="#contact--availability">Contact</a>
 </p>
 
-<details open>
-<summary>Animated AI workshop · collapse to hide</summary>
-
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-static.dark.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/workshop-static.light.svg" />
@@ -39,11 +36,9 @@
   <img src="assets/profile/workshop.light.svg" width="960" alt="An illustrated AI workshop with documents, retrieval nodes, a model chip, and review tools. Decorative animation representing separate projects." />
 </picture>
 
-[Static illustration: light](assets/profile/workshop-static.light.svg) · [dark](assets/profile/workshop-static.dark.svg)
-
-</details>
-
 ## Featured projects
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-featured-projects.dark.svg" /><img src="assets/profile/section-featured-projects.light.svg" width="960" alt="Terminal command opening selected featured projects" /></picture>
 
 Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
 
@@ -78,6 +73,8 @@ Independent tools and research. Explore the code, or expand the case studies bel
 
 
 ## Case studies
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-case-studies.dark.svg" /><img src="assets/profile/section-case-studies.light.svg" width="960" alt="Terminal command opening engineering case studies" /></picture>
 
 <details>
 <summary>Five case studies · decisions, evidence, and limitations</summary>
@@ -163,6 +160,8 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 ## Public projects
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-public-projects.dark.svg" /><img src="assets/profile/section-public-projects.light.svg" width="960" alt="Terminal command listing public projects" /></picture>
+
 <details>
 <summary>Browse the complete project catalog</summary>
 
@@ -189,6 +188,8 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 ## About
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-about.dark.svg" /><img src="assets/profile/section-about.light.svg" width="960" alt="Terminal command introducing Ahmad Mujtaba" /></picture>
+
 <details>
 <summary>My background and how I work</summary>
 
@@ -204,6 +205,8 @@ I start by researching existing solutions and comparing model quality and cost. 
 
 
 ## Measured outcomes
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-measured-outcomes.dark.svg" /><img src="assets/profile/section-measured-outcomes.light.svg" width="960" alt="Terminal command opening measured engineering outcomes" /></picture>
 
 These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
 
@@ -229,6 +232,8 @@ These are team and system results from internal employer evaluations. My contrib
 
 
 ## Professional experience
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-professional-experience.dark.svg" /><img src="assets/profile/section-professional-experience.light.svg" width="960" alt="Terminal command opening professional experience" /></picture>
 
 - **Deloitte US-India** · AI & Data Science Engineer · July 2025 – Present · Gurugram, India
 - **Cognizant Technology Solutions** · Associate Data Scientist · September 2022 – May 2025 · Noida, India
@@ -339,6 +344,8 @@ For a separate FMCG engagement, I built a conversational reordering workflow usi
 
 ## Skills, with context
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-skills.dark.svg" /><img src="assets/profile/section-skills.light.svg" width="960" alt="Terminal command listing engineering capabilities" /></picture>
+
 LLM architectures and agentic workflows · Retrieval and knowledge systems · Multimodal document intelligence · Evaluation and production ML · Event-driven cloud and backend systems.
 
 <details>
@@ -402,6 +409,8 @@ I am learning about the following areas and do not claim production expertise in
 
 ## Forward-deployed AI engineering
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-fde.dark.svg" /><img src="assets/profile/section-fde.light.svg" width="960" alt="Terminal command opening the forward-deployed AI learning path" /></picture>
+
 I am building on professional experience and independent projects to learn forward-deployed AI engineering. The path is ongoing and does not represent a completed curriculum, an employment title, or ownership of the full customer lifecycle.
 
 <details>
@@ -423,6 +432,8 @@ I am building on professional experience and independent projects to learn forwa
 
 
 ## Education & credentials
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-education.dark.svg" /><img src="assets/profile/section-education.light.svg" width="960" alt="Terminal command opening education and credentials" /></picture>
 
 ### Degrees
 
@@ -508,6 +519,8 @@ I am building on professional experience and independent projects to learn forwa
 
 ## Activity
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-activity.dark.svg" /><img src="assets/profile/section-activity.light.svg" width="960" alt="Terminal command opening GitHub activity" /></picture>
+
 [View contribution activity on my portfolio](https://pypi-ahmad.github.io/github?tab=activity).
 
 <picture>
@@ -518,6 +531,8 @@ I am building on professional experience and independent projects to learn forwa
 
 
 ## GitHub statistics
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-github-statistics.dark.svg" /><img src="assets/profile/section-github-statistics.light.svg" width="960" alt="Terminal command opening the GitHub statistics snapshot" /></picture>
 
 <details>
 <summary>Statistics, languages, streaks, and the advanced dashboard</summary>
@@ -558,6 +573,8 @@ I am building on professional experience and independent projects to learn forwa
 
 
 ## Repository showcase
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-repository-showcase.dark.svg" /><img src="assets/profile/section-repository-showcase.light.svg" width="960" alt="Terminal command listing featured repositories" /></picture>
 
 <details>
 <summary>More repository cards</summary>
@@ -660,6 +677,8 @@ I am building on professional experience and independent projects to learn forwa
 
 ## Repository
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-repository.dark.svg" /><img src="assets/profile/section-repository.light.svg" width="960" alt="Terminal command opening repository governance" /></picture>
+
 <details>
 <summary>Repository documentation and governance</summary>
 
@@ -674,44 +693,62 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 
 ## Contact & availability
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-contact.dark.svg" /><img src="assets/profile/section-contact.light.svg" width="960" alt="Terminal command opening contact and availability" /></picture>
+
 I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first production AI and GenAI engineering roles. I’m also available for focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
 
 [View the contact page](https://pypi-ahmad.github.io/contact)
 
 <p align="center">
-  <strong>Get in touch</strong><br /><br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-aurora.dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile/contact-aurora.light.svg" />
+    <img src="assets/profile/contact-aurora.light.svg" width="960" alt="Let’s work together: production AI, document intelligence, and agentic systems" />
+  </picture>
+</p>
+
+<p align="center">
+  Open to remote-first production AI and GenAI engineering roles, plus focused consulting in document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.<br /><br />
   <a href="mailto:ahmad.iiitk@gmail.com">
-    <img alt="Email Ahmad Mujtaba" title="Email Ahmad Mujtaba" src="contacts-icons/email.svg" width="48" height="48" />
+    <img alt="Email Ahmad Mujtaba" src="assets/profile/cta-email.svg" width="240" height="56" />
   </a>
   <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
-    <img alt="Connect with Ahmad Mujtaba on LinkedIn" title="Connect with Ahmad Mujtaba on LinkedIn" src="contacts-icons/linkedin.svg" width="48" height="48" />
-  </a>
-  <a href="https://wa.me/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Message Ahmad Mujtaba on WhatsApp" title="Message Ahmad Mujtaba on WhatsApp" src="contacts-icons/whatsapp.svg" width="48" height="48" />
-  </a>
-  <a href="https://t.me/dataintuitionist" target="_blank" rel="noopener noreferrer">
-    <img alt="Message Ahmad Mujtaba on Telegram" title="Message Ahmad Mujtaba on Telegram" src="contacts-icons/telegram.svg" width="48" height="48" />
+    <img alt="Connect with Ahmad Mujtaba on LinkedIn" src="assets/profile/cta-linkedin.svg" width="240" height="56" />
   </a>
 </p>
 
-<br />
+<p align="center">
+  <sub><strong>DIRECT CHANNELS</strong></sub><br /><br />
+  <a href="mailto:ahmad.iiitk@gmail.com">
+    <img alt="Email Ahmad Mujtaba" title="Email Ahmad Mujtaba" src="contacts-icons/email.svg" width="40" height="40" />
+  </a>
+  <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
+    <img alt="Connect with Ahmad Mujtaba on LinkedIn" title="Connect with Ahmad Mujtaba on LinkedIn" src="contacts-icons/linkedin.svg" width="40" height="40" />
+  </a>
+  <a href="https://wa.me/pypi_ahmad" target="_blank" rel="noopener noreferrer">
+    <img alt="Message Ahmad Mujtaba on WhatsApp" title="Message Ahmad Mujtaba on WhatsApp" src="contacts-icons/whatsapp.svg" width="40" height="40" />
+  </a>
+  <a href="https://t.me/dataintuitionist" target="_blank" rel="noopener noreferrer">
+    <img alt="Message Ahmad Mujtaba on Telegram" title="Message Ahmad Mujtaba on Telegram" src="contacts-icons/telegram.svg" width="40" height="40" />
+  </a>
+</p>
 
 <p align="center">
-  <strong>Profiles and social</strong><br /><br />
+  <sub><strong>ELSEWHERE</strong></sub><br /><br />
   <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba’s portfolio" title="Ahmad Mujtaba’s portfolio" src="contacts-icons/portfolio.svg" width="48" height="48" />
+    <img alt="Ahmad Mujtaba’s portfolio" title="Ahmad Mujtaba’s portfolio" src="contacts-icons/portfolio.svg" width="40" height="40" />
   </a>
   <a href="https://github.com/pypi-ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on GitHub" title="Ahmad Mujtaba on GitHub" src="contacts-icons/github.svg" width="48" height="48" />
+    <img alt="Ahmad Mujtaba on GitHub" title="Ahmad Mujtaba on GitHub" src="contacts-icons/github.svg" width="40" height="40" />
   </a>
   <a href="https://x.com/pypi_ahmad" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on X (Twitter)" title="Ahmad Mujtaba on X (Twitter)" src="contacts-icons/twitter.svg" width="48" height="48" />
+    <img alt="Ahmad Mujtaba on X (Twitter)" title="Ahmad Mujtaba on X (Twitter)" src="contacts-icons/twitter.svg" width="40" height="40" />
   </a>
   <a href="https://www.instagram.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on Instagram" title="Ahmad Mujtaba on Instagram" src="contacts-icons/instagram.svg" width="48" height="48" />
+    <img alt="Ahmad Mujtaba on Instagram" title="Ahmad Mujtaba on Instagram" src="contacts-icons/instagram.svg" width="40" height="40" />
   </a>
   <a href="https://www.facebook.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
-    <img alt="Ahmad Mujtaba on Facebook" title="Ahmad Mujtaba on Facebook" src="contacts-icons/facebook.svg" width="48" height="48" />
+    <img alt="Ahmad Mujtaba on Facebook" title="Ahmad Mujtaba on Facebook" src="contacts-icons/facebook.svg" width="40" height="40" />
   </a>
 </p>
 
