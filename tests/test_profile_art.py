@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from generate_profile_art import (  # noqa: E402
     CONTACTS,
+    DISPLAY,
     MONO,
     SECTIONS,
     contact_aurora,
@@ -28,14 +29,38 @@ class ProfileArtTests(unittest.TestCase):
         cls.readme = (cls.root / "README.md").read_text(encoding="utf-8")
 
     def test_theme_palette_and_typography_are_consistent(self):
-        legacy = ("#A78BFA", "#6D28D9", "#19172D", "#F3F0FF")
+        expected = (
+            "#020A05", "#06120A", "#174D2A", "#E7FFEC", "#B8D8C0",
+            "#86A88F", "#39FF14", "#00E676", "#39FF14",
+        )
+        legacy = (
+            "#050709", "#0B0E13", "#F2B134", "#39D9FF", "#A78BFA",
+            "#6D28D9", "#F7F9FC", "#FFFFFF", "#006B80",
+        )
         for theme in THEMES:
-            self.assertTrue(theme.system)
-            self.assertTrue(theme.live)
+            self.assertEqual(
+                (theme.bg, theme.bg2, theme.border, theme.title, theme.text,
+                 theme.muted, theme.accent, theme.system, theme.live),
+                expected,
+            )
             for renderer in (telemetry, contact_aurora):
                 svg = renderer(theme)
                 self.assertIn(MONO, svg)
                 self.assertFalse(any(color in svg for color in legacy))
+        self.assertEqual(THEMES[0].__dict__ | {"name": "same", "suffix": "same"},
+                         THEMES[1].__dict__ | {"name": "same", "suffix": "same"})
+
+    def test_readable_text_colors_clear_wcag_contrast(self):
+        def luminance(color):
+            channels = [int(color[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+            channels = [value / 12.92 if value <= .03928 else ((value + .055) / 1.055) ** 2.4 for value in channels]
+            return .2126 * channels[0] + .7152 * channels[1] + .0722 * channels[2]
+
+        theme = THEMES[0]
+        for foreground in (theme.title, theme.text, theme.muted):
+            for background in (theme.bg, theme.bg2):
+                lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
+                self.assertGreaterEqual((lighter + .05) / (darker + .05), 4.5)
 
     def test_every_major_section_has_a_numbered_semantic_header(self):
         self.assertEqual(len(SECTIONS), 14)
@@ -50,12 +75,9 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertIn(title.replace("&", "&amp;"), svg)
                 self.assertIn(label, svg)
                 self.assertIn(MONO, svg)
-                self.assertNotIn("Segoe UI", svg)
-                for color in ("#020A05", "#06120A", "#39FF14", "#D7FFE2", "#86A88F", "#174D2A"):
+                self.assertIn(DISPLAY, svg)
+                for color in (theme.bg, theme.bg2, theme.accent, theme.system, theme.title, theme.muted, theme.border):
                     self.assertIn(color, svg)
-                for old_accent in (theme.system, theme.accent):
-                    if old_accent not in ("#39FF14",):
-                        self.assertNotIn(old_accent, svg)
                 self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
             self.assertEqual(themed[0], themed[1])
             heading_id = {
@@ -87,6 +109,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertEqual(node.get("viewBox"), "0 0 240 56")
                 self.assertEqual(node.find("{http://www.w3.org/2000/svg}title").text, title)
                 self.assertIn(MONO, svg)
+                self.assertIn(DISPLAY, svg)
                 for mark in marks:
                     self.assertIn(mark, svg)
                 self.assertIn(f"assets/profile/cta-{kind}.{theme.suffix}.svg", self.readme)
@@ -134,6 +157,7 @@ class ProfileArtTests(unittest.TestCase):
                 svg = contact_cell(theme, key)
                 ET.fromstring(svg)
                 self.assertIn(MONO, svg)
+                self.assertIn(DISPLAY, svg)
                 self.assertIn(f"assets/profile/contact-{key}.{theme.suffix}.svg", self.readme)
         for destination in destinations:
             self.assertIn(f'href="{destination}"', self.readme)
@@ -149,6 +173,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertEqual(root.get("viewBox"), "0 0 960 260")
                 self.assertIn("DATAINTUITIONIST IN", svg)
                 self.assertIn("ILLUSTRATIVE TRACE", svg)
+                self.assertIn('<g transform="translate(72 78)"><g class="paper">', svg)
                 for line in ("document received", "layout parsed", "fields extracted", "evaluation passed", "review required · 2 fields"):
                     self.assertIn(line, svg)
                 if animated:
