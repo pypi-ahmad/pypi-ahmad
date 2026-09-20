@@ -11,7 +11,7 @@ AI & Data Science Engineer · Deloitte US-India · Gurugram, India
 
 Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.
 
-[Portfolio](https://pypi-ahmad.github.io/) · [Email](mailto:ahmad.iiitk@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ahmad-mle/)
+[<img src="contacts-icons/portfolio.png" width="18" height="18" alt="" /> Portfolio](https://pypi-ahmad.github.io/) · [<img src="contacts-icons/email.svg" width="18" height="18" alt="" /> Email](mailto:ahmad.iiitk@gmail.com) · [<img src="contacts-icons/linkedin.png" width="18" height="18" alt="" /> LinkedIn](https://www.linkedin.com/in/ahmad-mle/)
 
 [Projects](#featured-projects) · [Experience](#experience--skills) · [Credentials](#education--credentials) · [Activity](#activity--statistics) · [Contact](#contact--availability)
 
