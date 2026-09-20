@@ -569,27 +569,27 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 
 [View the contact page](https://pypi-ahmad.github.io/contact)
 
-### Let’s work together
+<h3 align="center">Let’s work together</h3>
 
-Production AI · Document Intelligence · Agentic Systems · Evaluation
+<p align="center">Production AI · Document Intelligence · Agentic Systems · Evaluation</p>
 
-### Direct channels
+<h3 align="center">Direct channels</h3>
 
-<p>
-  <a href="mailto:ahmad.iiitk@gmail.com"><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> <strong>Email</strong> — ahmad.iiitk@gmail.com</a> ·
-  <a href="https://www.linkedin.com/in/ahmad-mle/"><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> <strong>LinkedIn</strong> — ahmad-mle</a> ·
-  <a href="https://wa.me/pypi_ahmad"><img src="contacts-icons/whatsapp.png" width="20" height="20" alt="" /> <strong>WhatsApp</strong> — pypi_ahmad</a> ·
-  <a href="https://t.me/dataintuitionist"><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> <strong>Telegram</strong> — dataintuitionist</a>
+<p align="center">
+  <a href="mailto:ahmad.iiitk@gmail.com"><kbd><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> Email</kbd></a>
+  <a href="https://www.linkedin.com/in/ahmad-mle/"><kbd><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> LinkedIn</kbd></a>
+  <a href="https://wa.me/pypi_ahmad"><kbd><img src="contacts-icons/whatsapp.png" width="20" height="20" alt="" /> WhatsApp</kbd></a>
+  <a href="https://t.me/dataintuitionist"><kbd><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> Telegram</kbd></a>
 </p>
 
-### Elsewhere
+<h3 align="center">Elsewhere</h3>
 
-<p>
-  <a href="https://pypi-ahmad.github.io/"><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> <strong>Portfolio</strong> — pypi-ahmad.github.io</a> ·
-  <a href="https://github.com/pypi-ahmad"><img src="contacts-icons/github.png" width="20" height="20" alt="" /> <strong>GitHub</strong> — pypi-ahmad</a> ·
-  <a href="https://x.com/pypi_ahmad"><img src="contacts-icons/twitter.png" width="20" height="20" alt="" /> <strong>X / Twitter</strong> — pypi_ahmad</a> ·
-  <a href="https://www.instagram.com/dataintuitionist/"><img src="contacts-icons/instagram.png" width="20" height="20" alt="" /> <strong>Instagram</strong> — dataintuitionist</a> ·
-  <a href="https://www.facebook.com/dataintuitionist/"><img src="contacts-icons/facebook.png" width="20" height="20" alt="" /> <strong>Facebook</strong> — dataintuitionist</a>
+<p align="center">
+  <a href="https://pypi-ahmad.github.io/"><kbd><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> Portfolio</kbd></a>
+  <a href="https://github.com/pypi-ahmad"><kbd><img src="contacts-icons/github.png" width="20" height="20" alt="" /> GitHub</kbd></a>
+  <a href="https://x.com/pypi_ahmad"><kbd><img src="contacts-icons/twitter.png" width="20" height="20" alt="" /> X / Twitter</kbd></a>
+  <a href="https://www.instagram.com/dataintuitionist/"><kbd><img src="contacts-icons/instagram.png" width="20" height="20" alt="" /> Instagram</kbd></a>
+  <a href="https://www.facebook.com/dataintuitionist/"><kbd><img src="contacts-icons/facebook.png" width="20" height="20" alt="" /> Facebook</kbd></a>
 </p>
 
 <a id="repository"></a>
