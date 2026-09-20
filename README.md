@@ -13,11 +13,13 @@ AI & Data Science Engineer · Deloitte US-India · Gurugram, India
 
 Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.
 
-<p align="center">
-  <a href="https://pypi-ahmad.github.io/"><kbd><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> Portfolio</kbd></a>
-  <a href="mailto:ahmad.iiitk@gmail.com"><kbd><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> Email</kbd></a>
-  <a href="https://www.linkedin.com/in/ahmad-mle/"><kbd><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> LinkedIn</kbd></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://pypi-ahmad.github.io/"><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> <strong>Portfolio</strong></a></td>
+    <td align="center"><a href="mailto:ahmad.iiitk@gmail.com"><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> <strong>Email</strong></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/ahmad-mle/"><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> <strong>LinkedIn</strong></a></td>
+  </tr>
+</table>
 
 [Projects](#featured-projects) · [Experience](#experience--skills) · [Credentials](#education--credentials) · [Activity](#activity--statistics) · [Contact](#contact--availability)
 
@@ -577,22 +579,26 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 
 <h3 align="center">Direct channels</h3>
 
-<p align="center">
-  <a href="mailto:ahmad.iiitk@gmail.com"><kbd><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> Email</kbd></a>
-  <a href="https://www.linkedin.com/in/ahmad-mle/"><kbd><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> LinkedIn</kbd></a>
-  <a href="https://wa.me/pypi_ahmad"><kbd><img src="contacts-icons/whatsapp.png" width="20" height="20" alt="" /> WhatsApp</kbd></a>
-  <a href="https://t.me/dataintuitionist"><kbd><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> Telegram</kbd></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><a href="mailto:ahmad.iiitk@gmail.com"><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> <strong>Email</strong></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/ahmad-mle/"><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> <strong>LinkedIn</strong></a></td>
+    <td align="center"><a href="https://wa.me/pypi_ahmad"><img src="contacts-icons/whatsapp.png" width="20" height="20" alt="" /> <strong>WhatsApp</strong></a></td>
+    <td align="center"><a href="https://t.me/dataintuitionist"><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> <strong>Telegram</strong></a></td>
+  </tr>
+</table>
 
 <h3 align="center">Elsewhere</h3>
 
-<p align="center">
-  <a href="https://pypi-ahmad.github.io/"><kbd><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> Portfolio</kbd></a>
-  <a href="https://github.com/pypi-ahmad"><kbd><img src="contacts-icons/github.png" width="20" height="20" alt="" /> GitHub</kbd></a>
-  <a href="https://x.com/pypi_ahmad"><kbd><img src="contacts-icons/twitter.png" width="20" height="20" alt="" /> X / Twitter</kbd></a>
-  <a href="https://www.instagram.com/dataintuitionist/"><kbd><img src="contacts-icons/instagram.png" width="20" height="20" alt="" /> Instagram</kbd></a>
-  <a href="https://www.facebook.com/dataintuitionist/"><kbd><img src="contacts-icons/facebook.png" width="20" height="20" alt="" /> Facebook</kbd></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><a href="https://pypi-ahmad.github.io/"><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> <strong>Portfolio</strong></a></td>
+    <td align="center"><a href="https://github.com/pypi-ahmad"><img src="contacts-icons/github.png" width="20" height="20" alt="" /> <strong>GitHub</strong></a></td>
+    <td align="center"><a href="https://x.com/pypi_ahmad"><img src="contacts-icons/twitter.png" width="20" height="20" alt="" /> <strong>X / Twitter</strong></a></td>
+    <td align="center"><a href="https://www.instagram.com/dataintuitionist/"><img src="contacts-icons/instagram.png" width="20" height="20" alt="" /> <strong>Instagram</strong></a></td>
+    <td align="center"><a href="https://www.facebook.com/dataintuitionist/"><img src="contacts-icons/facebook.png" width="20" height="20" alt="" /> <strong>Facebook</strong></a></td>
+  </tr>
+</table>
 
 <a id="repository"></a>
 
@@ -610,3 +616,5 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 ---
 
 Made with ❤️ by Ahmad Mujtaba
+
+</div>
