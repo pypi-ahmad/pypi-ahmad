@@ -25,6 +25,8 @@ Production AI Engineer focused on multimodal document intelligence, LLM extracti
 
 ## Featured projects
 
+<div align="left">
+
 Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
 
 - **[Paperplane](https://github.com/pypi-ahmad/Agentic-Document-Extraction)** — Document AI. Parse documents into grounded Markdown, JSON, and review artifacts.
@@ -145,7 +147,11 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 </details>
 
+</div>
+
 ## Measured outcomes
+
+<div align="left">
 
 These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
 
@@ -169,7 +175,11 @@ These are team and system results from internal employer evaluations. My contrib
 
 [Read my professional experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
 
+</div>
+
 ## Experience & skills
+
+<div align="left">
 
 <a id="professional-experience"></a>
 
@@ -358,9 +368,13 @@ I am building on professional experience and independent projects to learn forwa
 
 </details>
 
+</div>
+
 ## Education & credentials
 
 ### Degrees
+
+<div align="left">
 
 - **M.Tech in Data Analytics and Decision Sciences**, Indian Institute of Information Technology Kurnool, October 2020 to June 2022.
 - **B.Tech in Computer Science Engineering**, Maulana Azad National Urdu University, August 2015 to June 2019.
@@ -372,6 +386,8 @@ I am building on professional experience and independent projects to learn forwa
 - B.Tech: data structures and algorithms, engineering mathematics, and web development.
 
 </details>
+
+</div>
 
 ### Professional certification
 
