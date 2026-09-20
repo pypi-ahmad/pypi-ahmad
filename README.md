@@ -1,7 +1,5 @@
 <div align="center">
-  <h1>Ahmad Mujtaba</h1>
-  <p>AI &amp; Data Science Engineer · Deloitte US-India · Gurugram, India</p>
-  <p>Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.</p>
+  <h1><picture><source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/profile-hero-mobile.dark.svg" /><source media="(max-width: 480px)" srcset="assets/profile/profile-hero-mobile.light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/profile/profile-hero.dark.svg" /><img src="assets/profile/profile-hero.light.svg" width="600" alt="Ahmad Mujtaba — AI and Data Science Engineer at Deloitte US-India in Gurugram, India. Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation." /></picture></h1>
 
   <p>
     <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
@@ -46,7 +44,7 @@
 </picture>
 </p>
 
-<h2 id="featured-projects">01 / Featured projects</h2>
+<h2 id="featured-projects"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-featured-projects.dark.svg" /><img src="assets/profile/section-featured-projects.light.svg" width="600" alt="01 / Featured projects" /></picture></h2>
 
 Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
 
@@ -94,7 +92,7 @@ Independent tools and research. Explore the code, or expand the case studies bel
   </a>
 </p>
 
-<h2 id="case-studies">02 / Case studies</h2>
+<h2 id="case-studies"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-case-studies.dark.svg" /><img src="assets/profile/section-case-studies.light.svg" width="600" alt="02 / Case studies" /></picture></h2>
 
 <details>
 <summary>Five case studies · decisions, evidence, and limitations</summary>
@@ -172,7 +170,7 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 </details>
 
-<h2 id="public-projects">03 / Public projects</h2>
+<h2 id="public-projects"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-public-projects.dark.svg" /><img src="assets/profile/section-public-projects.light.svg" width="600" alt="03 / Public projects" /></picture></h2>
 
 <details>
 <summary>Browse the complete project catalog</summary>
@@ -197,7 +195,7 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 </details>
 
-<h2 id="about">04 / About</h2>
+<h2 id="about"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-about.dark.svg" /><img src="assets/profile/section-about.light.svg" width="600" alt="04 / About" /></picture></h2>
 
 <details>
 <summary>My background and how I work</summary>
@@ -212,7 +210,7 @@ I start by researching existing solutions and comparing model quality and cost. 
 
 </details>
 
-<h2 id="measured-outcomes">05 / Measured outcomes</h2>
+<h2 id="measured-outcomes"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-measured-outcomes.dark.svg" /><img src="assets/profile/section-measured-outcomes.light.svg" width="600" alt="05 / Measured outcomes" /></picture></h2>
 
 These are team and system results from internal employer evaluations. My contribution is stated separately. Client identities, internal project names, source data, prompts, schemas, thresholds, scoring details, and proprietary code are omitted. Related public projects demonstrate engineering patterns; they do not reproduce these measurements.
 
@@ -236,7 +234,7 @@ These are team and system results from internal employer evaluations. My contrib
 
 [Read my professional experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
 
-<h2 id="professional-experience">06 / Professional experience</h2>
+<h2 id="professional-experience"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-professional-experience.dark.svg" /><img src="assets/profile/section-professional-experience.light.svg" width="600" alt="06 / Professional experience" /></picture></h2>
 
 - **Deloitte US-India** · AI & Data Science Engineer · July 2025 – Present · Gurugram, India
 - **Cognizant Technology Solutions** · Associate Data Scientist · September 2022 – May 2025 · Noida, India
@@ -338,7 +336,7 @@ For a separate FMCG engagement, I built a conversational reordering workflow usi
 
 </details>
 
-<h2 id="skills-with-context">07 / Skills, with context</h2>
+<h2 id="skills-with-context"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-skills.dark.svg" /><img src="assets/profile/section-skills.light.svg" width="600" alt="07 / Skills, with context" /></picture></h2>
 
 LLM architectures and agentic workflows · Retrieval and knowledge systems · Multimodal document intelligence · Evaluation and production ML · Event-driven cloud and backend systems.
 
@@ -399,7 +397,7 @@ I am learning about the following areas and do not claim production expertise in
 
 </details>
 
-<h2 id="forward-deployed-ai-engineering">08 / Forward-deployed AI engineering</h2>
+<h2 id="forward-deployed-ai-engineering"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-fde.dark.svg" /><img src="assets/profile/section-fde.light.svg" width="600" alt="08 / Forward-deployed AI engineering" /></picture></h2>
 
 I am building on professional experience and independent projects to learn forward-deployed AI engineering. The path is ongoing and does not represent a completed curriculum, an employment title, or ownership of the full customer lifecycle.
 
@@ -420,7 +418,7 @@ I am building on professional experience and independent projects to learn forwa
 
 </details>
 
-<h2 id="education--credentials">09 / Education &amp; credentials</h2>
+<h2 id="education--credentials"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-education.dark.svg" /><img src="assets/profile/section-education.light.svg" width="600" alt="09 / Education and credentials" /></picture></h2>
 
 ### Degrees
 
@@ -499,7 +497,7 @@ I am building on professional experience and independent projects to learn forwa
 
 [View the complete education and credential portfolio](https://pypi-ahmad.github.io/education)
 
-<h2 id="activity">10 / Activity</h2>
+<h2 id="activity"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-activity.dark.svg" /><img src="assets/profile/section-activity.light.svg" width="600" alt="10 / Activity" /></picture></h2>
 
 [View contribution activity on my portfolio](https://pypi-ahmad.github.io/github?tab=activity).
 
@@ -511,7 +509,7 @@ I am building on professional experience and independent projects to learn forwa
 </picture>
 </p>
 
-<h2 id="github-statistics">11 / GitHub statistics</h2>
+<h2 id="github-statistics"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-github-statistics.dark.svg" /><img src="assets/profile/section-github-statistics.light.svg" width="600" alt="11 / GitHub statistics" /></picture></h2>
 
 <details>
 <summary>Statistics, languages, streaks, and the advanced dashboard</summary>
@@ -557,7 +555,7 @@ I am building on professional experience and independent projects to learn forwa
 
 </details>
 
-<h2 id="repository-showcase">12 / Repository showcase</h2>
+<h2 id="repository-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-repository-showcase.dark.svg" /><img src="assets/profile/section-repository-showcase.light.svg" width="600" alt="12 / Repository showcase" /></picture></h2>
 
 <details>
 <summary>More repository cards</summary>
@@ -655,7 +653,7 @@ I am building on professional experience and independent projects to learn forwa
 </div>
 </details>
 
-<h2 id="repository">13 / Repository</h2>
+<h2 id="repository"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-repository.dark.svg" /><img src="assets/profile/section-repository.light.svg" width="600" alt="13 / Repository" /></picture></h2>
 
 <details>
 <summary>Repository documentation and governance</summary>
@@ -668,7 +666,7 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 
 </details>
 
-<h2 id="contact--availability">14 / Contact &amp; availability</h2>
+<h2 id="contact--availability"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/section-contact.dark.svg" /><img src="assets/profile/section-contact.light.svg" width="600" alt="14 / Contact and availability" /></picture></h2>
 
 I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first production AI and GenAI engineering roles. I’m also available for focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
 
@@ -685,7 +683,7 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 </p>
 
 <p align="center">
-  <sub><strong>DIRECT CHANNELS</strong></sub>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-direct-channels.dark.svg" /><img src="assets/profile/contact-direct-channels.light.svg" width="360" alt="Direct channels" /></picture>
 </p>
 
 <p align="center">
@@ -704,7 +702,7 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 </p>
 
 <p align="center">
-  <sub><strong>ELSEWHERE</strong></sub>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-elsewhere.dark.svg" /><img src="assets/profile/contact-elsewhere.light.svg" width="360" alt="Elsewhere" /></picture>
 </p>
 
 <p align="center">
@@ -732,4 +730,4 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
   </picture>
 </div>
 
-<p align="center">Made with ❤️ by Ahmad Mujtaba</p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/footer-signature.dark.svg" /><img src="assets/profile/footer-signature.light.svg" width="260" height="36" alt="Made with love by Ahmad Mujtaba" /></picture></p>
