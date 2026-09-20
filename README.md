@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-  <picture><source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/telemetry-mobile.dark.svg" /><source media="(max-width: 760px)" srcset="assets/profile/telemetry-mobile.light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/profile/telemetry.dark.svg" /><img src="assets/profile/telemetry.light.svg" width="820" alt="Focus: multimodal AI; location: Gurugram; status: available; mode: production" /></picture>
+  <picture><source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/telemetry-mobile.dark.svg" /><source media="(max-width: 480px)" srcset="assets/profile/telemetry-mobile.light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/profile/telemetry.dark.svg" /><img src="assets/profile/telemetry.light.svg" width="600" alt="Focus: multimodal AI; location: Gurugram; status: available; mode: production" /></picture>
 </p>
 
 <p align="center">
@@ -35,14 +35,14 @@
 
 <p align="center">
 <picture>
-  <source media="(max-width: 760px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-static-mobile.dark.svg" />
-  <source media="(max-width: 760px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/workshop-static-mobile.light.svg" />
-  <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-mobile.dark.svg" />
-  <source media="(max-width: 760px)" srcset="assets/profile/workshop-mobile.light.svg" />
+  <source media="(max-width: 480px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-static-mobile.dark.svg" />
+  <source media="(max-width: 480px) and (prefers-reduced-motion: reduce)" srcset="assets/profile/workshop-static-mobile.light.svg" />
+  <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-mobile.dark.svg" />
+  <source media="(max-width: 480px)" srcset="assets/profile/workshop-mobile.light.svg" />
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/profile/workshop-static.dark.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/workshop-static.light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile/workshop.dark.svg" />
-  <img src="assets/profile/workshop.light.svg" width="820" alt="An illustrated AI workshop with document input, model evaluation, connected system nodes, and an illustrative review trace." />
+  <img src="assets/profile/workshop.light.svg" width="600" alt="An illustrated AI workshop with document input, model evaluation, connected system nodes, and an illustrative review trace." />
 </picture>
 </p>
 
@@ -53,10 +53,10 @@ Independent tools and research. Explore the code, or expand the case studies bel
 <p align="center">
   <a href="https://github.com/pypi-ahmad/Agentic-Document-Extraction">
     <picture>
-      <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/Agentic-Document-Extraction-mobile.dark.svg" />
-      <source media="(max-width: 760px)" srcset="assets/profile/Agentic-Document-Extraction-mobile.light.svg" />
+      <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/Agentic-Document-Extraction-mobile.dark.svg" />
+      <source media="(max-width: 480px)" srcset="assets/profile/Agentic-Document-Extraction-mobile.light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/profile/Agentic-Document-Extraction.dark.svg" />
-      <img src="assets/profile/Agentic-Document-Extraction.light.svg" width="820" alt="Paperplane: Grounded document parsing." />
+      <img src="assets/profile/Agentic-Document-Extraction.light.svg" width="600" alt="Paperplane: Grounded document parsing." />
     </picture>
   </a>
 </p>
@@ -64,10 +64,10 @@ Independent tools and research. Explore the code, or expand the case studies bel
 <p align="center">
   <a href="https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app">
     <picture>
-      <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/lora-qlora-fine-tuning-app-mobile.dark.svg" />
-      <source media="(max-width: 760px)" srcset="assets/profile/lora-qlora-fine-tuning-app-mobile.light.svg" />
+      <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/lora-qlora-fine-tuning-app-mobile.dark.svg" />
+      <source media="(max-width: 480px)" srcset="assets/profile/lora-qlora-fine-tuning-app-mobile.light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/profile/lora-qlora-fine-tuning-app.dark.svg" />
-      <img src="assets/profile/lora-qlora-fine-tuning-app.light.svg" width="820" alt="LoRA Fine-tune Studio: Local adapter training." />
+      <img src="assets/profile/lora-qlora-fine-tuning-app.light.svg" width="600" alt="LoRA Fine-tune Studio: Local adapter training." />
     </picture>
   </a>
 </p>
@@ -75,10 +75,10 @@ Independent tools and research. Explore the code, or expand the case studies bel
 <p align="center">
   <a href="https://github.com/pypi-ahmad/self-improving-prompt-optimizer">
     <picture>
-      <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/self-improving-prompt-optimizer-mobile.dark.svg" />
-      <source media="(max-width: 760px)" srcset="assets/profile/self-improving-prompt-optimizer-mobile.light.svg" />
+      <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/self-improving-prompt-optimizer-mobile.dark.svg" />
+      <source media="(max-width: 480px)" srcset="assets/profile/self-improving-prompt-optimizer-mobile.light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/profile/self-improving-prompt-optimizer.dark.svg" />
-      <img src="assets/profile/self-improving-prompt-optimizer.light.svg" width="820" alt="Self-Improving Prompt Optimizer: Benchmark-based prompt comparison." />
+      <img src="assets/profile/self-improving-prompt-optimizer.light.svg" width="600" alt="Self-Improving Prompt Optimizer: Benchmark-based prompt comparison." />
     </picture>
   </a>
 </p>
@@ -86,10 +86,10 @@ Independent tools and research. Explore the code, or expand the case studies bel
 <p align="center">
   <a href="https://github.com/pypi-ahmad/video-summarizer">
     <picture>
-      <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/video-summarizer-mobile.dark.svg" />
-      <source media="(max-width: 760px)" srcset="assets/profile/video-summarizer-mobile.light.svg" />
+      <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/video-summarizer-mobile.dark.svg" />
+      <source media="(max-width: 480px)" srcset="assets/profile/video-summarizer-mobile.light.svg" />
       <source media="(prefers-color-scheme: dark)" srcset="assets/profile/video-summarizer.dark.svg" />
-      <img src="assets/profile/video-summarizer.light.svg" width="820" alt="Video Summarizer: Video evidence and retrieval." />
+      <img src="assets/profile/video-summarizer.light.svg" width="600" alt="Video Summarizer: Video evidence and retrieval." />
     </picture>
   </a>
 </p>
@@ -676,11 +676,11 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 
 <p align="center">
   <picture>
-    <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/contact-aurora-mobile.dark.svg" />
-    <source media="(max-width: 760px)" srcset="assets/profile/contact-aurora-mobile.light.svg" />
+    <source media="(max-width: 480px) and (prefers-color-scheme: dark)" srcset="assets/profile/contact-aurora-mobile.dark.svg" />
+    <source media="(max-width: 480px)" srcset="assets/profile/contact-aurora-mobile.light.svg" />
     <source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-aurora.dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/profile/contact-aurora.light.svg" />
-    <img src="assets/profile/contact-aurora.light.svg" width="820" alt="Let’s work together: production AI, document intelligence, and agentic systems" />
+    <img src="assets/profile/contact-aurora.light.svg" width="600" alt="Let’s work together: production AI, document intelligence, and agentic systems" />
   </picture>
 </p>
 
