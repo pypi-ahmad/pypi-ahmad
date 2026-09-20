@@ -408,6 +408,19 @@ def _text(x: int, y: int, value: str, theme: Theme, *, size: int = 15, weight: i
     return f'<text x="{x}" y="{y}" fill="{color or theme.text}" font-size="{size}" font-weight="{weight}" text-anchor="{anchor}" font-family="Segoe UI,Arial,sans-serif">{html.escape(value)}</text>'
 
 
+def _label(x: int, y: int, value: str, width: int, theme: Theme, *, size: int = 13) -> str:
+    """Bound data labels to their column, retaining the full value in a title."""
+    limit = max(1, int(width / (size * .55)))
+    visible = value if len(value) <= limit else value[:limit - 1].rstrip() + "…"
+    # The viewport is a hard bound even for unusually wide glyphs.
+    return (
+        f'<svg x="{x}" y="{y - size}" width="{width}" height="{size + 5}" '
+        f'viewBox="0 0 {width} {size + 5}" overflow="hidden">'
+        f'<title>{html.escape(value)}</title>'
+        f'{_text(0, size, visible, theme, size=size)}</svg>'
+    )
+
+
 def _header(title: str, subtitle: str, theme: Theme, height: int) -> list[str]:
     return [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -466,7 +479,7 @@ def render_reach(metrics: dict[str, Any], theme: Theme) -> str:
     ])
     names = metrics["external_recent"] or ["No external repositories found"]
     for index, name in enumerate(names[:5]):
-        parts.append(_text(570, 306 + index * 25, name, theme, size=13))
+        parts.append(_label(570, 306 + index * 25, name, 302, theme))
     parts.extend([_footer(metrics, theme, height), "</svg>"])
     return "\n".join(parts)
 
@@ -476,7 +489,7 @@ def _bars(values: list[tuple[str, float]], x: int, y: int, width: int, theme: Th
     parts: list[str] = []
     for index, (label, value) in enumerate(values):
         row = y + index * 27
-        parts.append(_text(x, row + 13, label, theme, size=12))
+        parts.append(_label(x, row + 13, label, 97, theme, size=12))
         parts.append(f'<rect x="{x + 105}" y="{row}" width="{width}" height="14" rx="4" fill="{theme.panel}"/>')
         parts.append(f'<rect x="{x + 105}" y="{row}" width="{width * value / maximum:.1f}" height="14" rx="4" fill="{color or theme.accent}"/>')
     return parts
@@ -491,7 +504,7 @@ def render_coding(metrics: dict[str, Any], theme: Theme) -> str:
     parts.append(_text(28, 190, "Recently active repositories", theme, size=16, weight=600, color=theme.title))
     active = metrics["active_repositories"] or [("No pushes in recent window", "")]
     for index, (name, date) in enumerate(active):
-        parts.append(_text(28, 220 + index * 25, f"{name}  {date}".rstrip(), theme, size=13))
+        parts.append(_label(28, 220 + index * 25, f"{name}  {date}".rstrip(), 414, theme))
     parts.append(_text(470, 190, "Recently used languages", theme, size=16, weight=600, color=theme.title))
     language_values = [(name, value) for name, value in metrics["languages"]] or [("No recent commits", 0)]
     parts.extend(_bars(language_values, 470, 210, 260, theme))

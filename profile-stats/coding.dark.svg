@@ -10,47 +10,47 @@
 <text x="248" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lines removed</text>
 <text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">15,437,277</text>
 <text x="28" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Recently active repositories</text>
-<text x="28" y="220" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-09-19</text>
-<text x="28" y="245" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">repo-auditor  2026-09-19</text>
-<text x="28" y="270" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">doc-reconciler  2026-09-19</text>
-<text x="28" y="295" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">job-packet  2026-09-19</text>
-<text x="28" y="320" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">research-notebook  2026-09-19</text>
+<svg x="28" y="207" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>pypi-ahmad  2026-09-19</title><text x="0" y="13" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-09-19</text></svg>
+<svg x="28" y="232" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>repo-auditor  2026-09-19</title><text x="0" y="13" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">repo-auditor  2026-09-19</text></svg>
+<svg x="28" y="257" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>doc-reconciler  2026-09-19</title><text x="0" y="13" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">doc-reconciler  2026-09-19</text></svg>
+<svg x="28" y="282" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>job-packet  2026-09-19</title><text x="0" y="13" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">job-packet  2026-09-19</text></svg>
+<svg x="28" y="307" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>research-notebook  2026-09-19</title><text x="0" y="13" fill="#c9d1d9" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">research-notebook  2026-09-19</text></svg>
 <text x="470" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Recently used languages</text>
-<text x="470" y="223" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Python</text>
+<svg x="470" y="211" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Python</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Python</text></svg>
 <rect x="575" y="210" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="210" width="260.0" height="14" rx="4" fill="#58a6ff"/>
-<text x="470" y="250" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">JavaScript</text>
+<svg x="470" y="238" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>JavaScript</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">JavaScript</text></svg>
 <rect x="575" y="237" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="237" width="78.6" height="14" rx="4" fill="#58a6ff"/>
-<text x="470" y="277" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">HTML</text>
+<svg x="470" y="265" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>HTML</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">HTML</text></svg>
 <rect x="575" y="264" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="264" width="76.0" height="14" rx="4" fill="#58a6ff"/>
-<text x="470" y="304" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Jupyter Notebook</text>
+<svg x="470" y="292" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Jupyter Notebook</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Jupyter Noteb…</text></svg>
 <rect x="575" y="291" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="291" width="28.3" height="14" rx="4" fill="#58a6ff"/>
-<text x="470" y="331" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">CSS</text>
+<svg x="470" y="319" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>CSS</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">CSS</text></svg>
 <rect x="575" y="318" width="260" height="14" rx="4" fill="#161b22"/>
 <rect x="575" y="318" width="6.5" height="14" rx="4" fill="#58a6ff"/>
 <text x="28" y="372" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Commit habits (Asia/Kolkata)</text>
-<text x="28" y="409" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Mon</text>
+<svg x="28" y="397" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Mon</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Mon</text></svg>
 <rect x="133" y="396" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="396" width="250.0" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="436" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Tue</text>
+<svg x="28" y="424" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Tue</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Tue</text></svg>
 <rect x="133" y="423" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="423" width="37.1" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="463" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Wed</text>
+<svg x="28" y="451" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Wed</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Wed</text></svg>
 <rect x="133" y="450" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="450" width="37.1" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="490" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Thu</text>
+<svg x="28" y="478" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Thu</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Thu</text></svg>
 <rect x="133" y="477" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="477" width="12.4" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="517" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Fri</text>
+<svg x="28" y="505" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Fri</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Fri</text></svg>
 <rect x="133" y="504" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="504" width="14.9" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="544" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sat</text>
+<svg x="28" y="532" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Sat</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sat</text></svg>
 <rect x="133" y="531" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="531" width="54.5" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="571" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sun</text>
+<svg x="28" y="559" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Sun</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sun</text></svg>
 <rect x="133" y="558" width="250" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="558" width="168.3" height="14" rx="4" fill="#3fb950"/>
 <rect x="450" y="474.9" width="11" height="61.1" fill="#58a6ff"/>
