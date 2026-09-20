@@ -585,9 +585,13 @@ I am building on professional experience and independent projects to learn forwa
 
 ## Contact & availability
 
+<div align="left">
+
 I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first production AI and GenAI engineering roles. I’m also available for focused consulting projects in multimodal document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.
 
 [View the contact page](https://pypi-ahmad.github.io/contact)
+
+</div>
 
 <h3 align="center">Let’s work together</h3>
 
