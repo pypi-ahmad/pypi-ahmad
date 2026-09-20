@@ -44,28 +44,28 @@ THEMES: list[Theme] = [
     Theme(
         name="dark",
         suffix="dark",
-        bg="#020A05",
-        bg2="#06120A",
-        border="#174D2A",
-        title="#E7FFEC",
-        text="#B8D8C0",
-        muted="#86A88F",
-        accent="#39FF14",
-        system="#00E676",
-        live="#39FF14",
+        bg="#0C0C0D",
+        bg2="#151517",
+        border="#343438",
+        title="#F4F1EA",
+        text="#C9C5BD",
+        muted="#96928A",
+        accent="#FF5A5F",
+        system="#B8BCC4",
+        live="#FF5A5F",
     ),
     Theme(
         name="light",
         suffix="light",
-        bg="#020A05",
-        bg2="#06120A",
-        border="#174D2A",
-        title="#E7FFEC",
-        text="#B8D8C0",
-        muted="#86A88F",
-        accent="#39FF14",
-        system="#00E676",
-        live="#39FF14",
+        bg="#F2EFE8",
+        bg2="#FFFEFA",
+        border="#D2CEC5",
+        title="#171719",
+        text="#3F3E42",
+        muted="#66635E",
+        accent="#B4232F",
+        system="#565A62",
+        live="#B4232F",
     ),
 ]
 
@@ -227,12 +227,12 @@ def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> s
       <stop stop-color="{theme.bg}"/><stop offset="1" stop-color="{theme.bg2}"/>
     </linearGradient>
   </defs>
-  <rect x="1" y="1" width="418" height="278" rx="20" fill="url(#bg)" stroke="{theme.border}"/>
+  <rect x="1" y="1" width="418" height="278" rx="9" fill="url(#bg)" stroke="{theme.border}"/>
+  <path d="M1 1h418" stroke="{theme.accent}" stroke-width="3"/>
   <path d="M24 66h270" stroke="{theme.border}"/>
-  <circle cx="354" cy="50" r="58" fill="{theme.system}" opacity=".07"/>
   <g transform="translate(330 19) scale(.8)">{_motif(kind, theme.system)}</g>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <text x="24" y="40" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.3" fill="{theme.system}">{_esc(category)}</text>
+    <text x="24" y="40" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.3" fill="{theme.accent}">{_esc(category)}</text>
     {title_svg}
     {description_svg}
     <path d="M24 235h372" stroke="{theme.border}"/>

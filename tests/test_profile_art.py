@@ -29,26 +29,31 @@ class ProfileArtTests(unittest.TestCase):
         cls.readme = (cls.root / "README.md").read_text(encoding="utf-8")
 
     def test_theme_palette_and_typography_are_consistent(self):
-        expected = (
-            "#020A05", "#06120A", "#174D2A", "#E7FFEC", "#B8D8C0",
-            "#86A88F", "#39FF14", "#00E676", "#39FF14",
-        )
+        expected = {
+            "dark": (
+                "#0C0C0D", "#151517", "#343438", "#F4F1EA", "#C9C5BD",
+                "#96928A", "#FF5A5F", "#B8BCC4", "#FF5A5F",
+            ),
+            "light": (
+                "#F2EFE8", "#FFFEFA", "#D2CEC5", "#171719", "#3F3E42",
+                "#66635E", "#B4232F", "#565A62", "#B4232F",
+            ),
+        }
         legacy = (
-            "#050709", "#0B0E13", "#F2B134", "#39D9FF", "#A78BFA",
-            "#6D28D9", "#F7F9FC", "#FFFFFF", "#006B80",
+            "#020A05", "#06120A", "#174D2A", "#E7FFEC", "#B8D8C0",
+            "#86A88F", "#39FF14", "#00E676", "#F2B134", "#39D9FF",
         )
         for theme in THEMES:
             self.assertEqual(
                 (theme.bg, theme.bg2, theme.border, theme.title, theme.text,
                  theme.muted, theme.accent, theme.system, theme.live),
-                expected,
+                expected[theme.name],
             )
             for renderer in (telemetry, contact_aurora):
                 svg = renderer(theme)
                 self.assertIn(MONO, svg)
                 self.assertFalse(any(color in svg for color in legacy))
-        self.assertEqual(THEMES[0].__dict__ | {"name": "same", "suffix": "same"},
-                         THEMES[1].__dict__ | {"name": "same", "suffix": "same"})
+        self.assertNotEqual(expected["dark"], expected["light"])
 
     def test_readable_text_colors_clear_wcag_contrast(self):
         def luminance(color):
@@ -56,11 +61,28 @@ class ProfileArtTests(unittest.TestCase):
             channels = [value / 12.92 if value <= .03928 else ((value + .055) / 1.055) ** 2.4 for value in channels]
             return .2126 * channels[0] + .7152 * channels[1] + .0722 * channels[2]
 
-        theme = THEMES[0]
-        for foreground in (theme.title, theme.text, theme.muted):
-            for background in (theme.bg, theme.bg2):
-                lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
-                self.assertGreaterEqual((lighter + .05) / (darker + .05), 4.5)
+        for theme in THEMES:
+            for foreground in (theme.title, theme.text, theme.muted, theme.accent, theme.system):
+                for background in (theme.bg, theme.bg2):
+                    lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
+                    self.assertGreaterEqual((lighter + .05) / (darker + .05), 4.5)
+
+    def test_generated_assets_are_adaptive_parseable_and_green_free(self):
+        legacy = ("#020A05", "#06120A", "#174D2A", "#E7FFEC", "#39FF14", "#00E676")
+        asset_dir = self.root / "assets" / "profile"
+        dark_assets = sorted(asset_dir.glob("*.dark.svg"))
+        self.assertEqual(len(dark_assets), 34)
+        for dark_path in dark_assets:
+            light_path = dark_path.with_name(dark_path.name.replace(".dark.svg", ".light.svg"))
+            dark = dark_path.read_text(encoding="utf-8")
+            light = light_path.read_text(encoding="utf-8")
+            ET.fromstring(dark)
+            ET.fromstring(light)
+            self.assertNotEqual(dark, light)
+            self.assertFalse(any(color in dark or color in light for color in legacy))
+
+        self.assertIn("color=0C0C0D", self.readme)
+        self.assertIn("color=F2EFE8", self.readme)
 
     def test_every_major_section_has_a_numbered_semantic_header(self):
         self.assertEqual(len(SECTIONS), 14)
@@ -79,7 +101,7 @@ class ProfileArtTests(unittest.TestCase):
                 for color in (theme.bg, theme.bg2, theme.accent, theme.system, theme.title, theme.muted, theme.border):
                     self.assertIn(color, svg)
                 self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
-            self.assertEqual(themed[0], themed[1])
+            self.assertNotEqual(themed[0], themed[1])
             heading_id = {
                 "skills": "skills-with-context",
                 "fde": "forward-deployed-ai-engineering",
