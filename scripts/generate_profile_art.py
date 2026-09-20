@@ -55,6 +55,28 @@ def section_header(theme: Theme, index: int, title: str, label: str) -> str:
 </svg>\n'''
 
 
+def profile_hero(theme: Theme) -> str:
+    title = "Ahmad Mujtaba"
+    subtitle = "AI &amp; Data Science Engineer &#183; Deloitte US-India &#183; Gurugram, India"
+    summary = "Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation."
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="146" viewBox="0 0 600 146" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">{subtitle} {summary}</desc>{_defs(theme)}<rect x=".75" y=".75" width="598.5" height="144.5" rx="8" fill="url(#surface)" stroke="{theme.border}" stroke-width="1.5"/><path d="M18 18v110" stroke="{theme.accent}" stroke-width="3"/><text x="36" y="45" fill="{theme.title}" font-family="{DISPLAY}" font-size="29" font-weight="700">{title}</text><path d="M36 59h528" stroke="{theme.border}"/><text x="36" y="82" fill="{theme.text}" font-family="{DISPLAY}" font-size="15">{subtitle}</text><text x="36" y="108" fill="{theme.text}" font-family="{DISPLAY}" font-size="14">Production AI Engineer focused on multimodal document intelligence, LLM extraction</text><text x="36" y="128" fill="{theme.text}" font-family="{DISPLAY}" font-size="14">architectures, agentic workflows, and LLM evaluation.</text></svg>\n'''
+
+
+def profile_hero_mobile(theme: Theme) -> str:
+    title = "Ahmad Mujtaba"
+    subtitle = "AI &amp; Data Science Engineer &#183; Deloitte US-India &#183; Gurugram, India"
+    summary = "Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation."
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="188" viewBox="0 0 360 188" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">{subtitle} {summary}</desc>{_defs(theme)}<rect x=".75" y=".75" width="358.5" height="186.5" rx="8" fill="url(#surface)" stroke="{theme.border}" stroke-width="1.5"/><path d="M18 18v152" stroke="{theme.accent}" stroke-width="3"/><text x="36" y="45" fill="{theme.title}" font-family="{DISPLAY}" font-size="28" font-weight="700">{title}</text><path d="M36 59h288" stroke="{theme.border}"/><text x="36" y="82" fill="{theme.text}" font-family="{DISPLAY}" font-size="14">{subtitle}</text><text x="36" y="110" fill="{theme.text}" font-family="{DISPLAY}" font-size="13">Production AI Engineer focused on multimodal</text><text x="36" y="130" fill="{theme.text}" font-family="{DISPLAY}" font-size="13">document intelligence, LLM extraction architectures,</text><text x="36" y="150" fill="{theme.text}" font-family="{DISPLAY}" font-size="13">agentic workflows, and LLM evaluation.</text></svg>\n'''
+
+
+def contact_group_label(theme: Theme, label: str) -> str:
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="32" viewBox="0 0 360 32" role="img" aria-labelledby="title desc"><title id="title">{_esc(label.title())}</title><desc id="desc">Contact directory group: {_esc(label.lower())}.</desc><path d="M12 24h336" stroke="{theme.border}"/><path d="M12 24h92" stroke="{theme.accent}" stroke-width="1.5"/><text x="12" y="16" fill="{theme.muted}" font-family="{MONO}" font-size="10" font-weight="700" letter-spacing="1.1">{_esc(label)}</text></svg>\n'''
+
+
+def footer_signature(theme: Theme) -> str:
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="260" height="36" viewBox="0 0 260 36" role="img" aria-labelledby="title desc"><title id="title">Made with love by Ahmad Mujtaba</title><desc id="desc">Profile footer signature.</desc><path d="M8 7v22" stroke="{theme.accent}" stroke-width="2"/><text x="22" y="23" fill="{theme.text}" font-family="{DISPLAY}" font-size="15">Made with</text><text x="101" y="23" fill="{theme.accent}" font-family="{DISPLAY}" font-size="15">&#9829;</text><text x="120" y="23" fill="{theme.text}" font-family="{DISPLAY}" font-size="15">by Ahmad Mujtaba</text></svg>\n'''
+
+
 def _compact_panel(theme: Theme, width: int, height: int, title: str, description: str, body: str) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc"><title id="title">{_esc(title)}</title><desc id="desc">{_esc(description)}</desc>{_defs(theme)}<rect x=".75" y=".75" width="{width - 1.5}" height="{height - 1.5}" rx="8" fill="url(#surface)" stroke="{theme.border}" stroke-width="1.5"/><rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" fill="url(#rules)"/>{body}</svg>\n'''
 
@@ -80,17 +102,9 @@ def telemetry_mobile(theme: Theme) -> str:
         cells.append(f'<text x="{x}" y="{y + 19}" fill="{theme.muted}" font-family="{MONO}" font-size="10" font-weight="700" letter-spacing="1">{label}</text>{dot}<text x="{value_x}" y="{y + 38}" fill="{theme.title}" font-family="{MONO}" font-size="14" font-weight="600">{value}</text>')
     return _compact_panel(theme, 360, 96, "Profile telemetry", "Focus: multimodal AI. Location: Gurugram. Status: available. Mode: production.", f'<path d="M8 1H352" stroke="{theme.accent}" stroke-width="2" stroke-linecap="round"/><path d="M180 10v76M14 48h332" stroke="{theme.border}"/>' + "".join(cells))
 
-def _brand_icon(kind: str) -> str:
-    if kind == "portfolio":
-        return '''<g transform="translate(16 12)"><path d="M16 0a16 16 0 0 1 13.86 8H16a8 8 0 0 0-6.93 4L4.45 4A15.94 15.94 0 0 1 16 0z" fill="#EA4335"/><path d="M29.86 8A16 16 0 0 1 16 32l6.93-12A8 8 0 0 0 24 16c0-1.46-.39-2.83-1.07-4z" fill="#FBBC04"/><path d="M16 32A16 16 0 0 1 4.45 4l6.93 12A8 8 0 0 0 16 24c2.96 0 5.55-1.61 6.93-4z" fill="#34A853"/><circle cx="16" cy="16" r="6.8" fill="#4285F4" stroke="#FFF" stroke-width="2.4"/></g>'''
-    if kind == "email":
-        return '''<svg x="16" y="12" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V6" stroke="#4285F4"/><path d="M21 6v13" stroke="#34A853"/><path d="m3 6 9 7 9-7" stroke="#EA4335"/><path d="m3 6 3 2.33" stroke="#FBBC04"/><path d="m18 8.33 3-2.33" stroke="#C5221F"/></svg>'''
-    return '''<svg x="16" y="12" width="32" height="32" viewBox="0 0 448 512"><path fill="#0A66C2" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3C448 46.5 433.6 32 416 32zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>'''
-
-
 def cta(theme: Theme, kind: str) -> str:
     title, label, action = {"portfolio": ("Open Ahmad Mujtaba's portfolio", "PORTFOLIO", "Open site"), "email": ("Email Ahmad Mujtaba", "EMAIL", "Email me"), "linkedin": ("Connect on LinkedIn", "LINKEDIN", "Connect")}[kind]
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="136" height="56" viewBox="0 0 136 56" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">Editorial {kind} action.</desc><rect x=".5" y=".5" width="135" height="55" rx="7.5" fill="{theme.bg2}" stroke="{theme.border}"/><path d="M8 1H128" stroke="{theme.accent}" stroke-width="2" stroke-linecap="round"/><g transform="translate(-5 2) scale(.74)">{_brand_icon(kind)}</g><path d="M46 12v32" stroke="{theme.border}"/><text x="55" y="22" fill="{theme.muted}" font-family="{MONO}" font-size="9" font-weight="700" letter-spacing=".65">{label}</text><text x="55" y="41" fill="{theme.title}" font-family="{DISPLAY}" font-size="12" font-weight="700">{action}</text><path d="M120 28h8m-3-3 3 3-3 3" fill="none" stroke="{theme.accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>\n'''
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="136" height="56" viewBox="0 0 136 56" role="img" aria-labelledby="title desc"><title id="title">{title}</title><desc id="desc">Editorial {kind} action.</desc><rect x=".5" y=".5" width="135" height="55" rx="7.5" fill="{theme.bg2}" stroke="{theme.border}"/><path d="M8 1H128" stroke="{theme.accent}" stroke-width="2" stroke-linecap="round"/><path d="M18 14v28" stroke="{theme.accent}" stroke-width="2"/><text x="30" y="22" fill="{theme.muted}" font-family="{MONO}" font-size="9" font-weight="700" letter-spacing=".65">{label}</text><text x="30" y="41" fill="{theme.title}" font-family="{DISPLAY}" font-size="12" font-weight="700">{action}</text><path d="M120 28h8m-3-3 3 3-3 3" fill="none" stroke="{theme.accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>\n'''
 
 
 def featured_row(theme: Theme, repo: str) -> str:
@@ -150,6 +164,8 @@ def main() -> None:
     output.mkdir(parents=True, exist_ok=True)
     written = 0
     for theme in THEMES:
+        (output / f"profile-hero.{theme.suffix}.svg").write_text(profile_hero(theme), encoding="utf-8"); written += 1
+        (output / f"profile-hero-mobile.{theme.suffix}.svg").write_text(profile_hero_mobile(theme), encoding="utf-8"); written += 1
         for animated in (True, False):
             name = "workshop" if animated else "workshop-static"
             (output / f"{name}.{theme.suffix}.svg").write_text(workshop(theme, animated=animated), encoding="utf-8"); written += 1
@@ -165,8 +181,11 @@ def main() -> None:
             (output / f"section-{name}.{theme.suffix}.svg").write_text(section_header(theme, index, title, label), encoding="utf-8"); written += 1
         for key in CONTACTS:
             (output / f"contact-{key}.{theme.suffix}.svg").write_text(contact_cell(theme, key), encoding="utf-8"); written += 1
+        for label, name in (("DIRECT CHANNELS", "direct-channels"), ("ELSEWHERE", "elsewhere")):
+            (output / f"contact-{name}.{theme.suffix}.svg").write_text(contact_group_label(theme, label), encoding="utf-8"); written += 1
         (output / f"contact-aurora.{theme.suffix}.svg").write_text(contact_aurora(theme), encoding="utf-8"); written += 1
         (output / f"contact-aurora-mobile.{theme.suffix}.svg").write_text(contact_aurora_mobile(theme), encoding="utf-8"); written += 1
+        (output / f"footer-signature.{theme.suffix}.svg").write_text(footer_signature(theme), encoding="utf-8"); written += 1
     print(f"Generated {written} profile assets in {output}")
 
 

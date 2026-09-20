@@ -15,9 +15,13 @@ from generate_profile_art import (  # noqa: E402
     contact_aurora,
     contact_aurora_mobile,
     contact_cell,
+    contact_group_label,
     cta,
+    footer_signature,
     featured_row,
     featured_row_mobile,
+    profile_hero,
+    profile_hero_mobile,
     section_header,
     telemetry,
     telemetry_mobile,
@@ -110,7 +114,7 @@ class ProfileArtTests(unittest.TestCase):
         legacy = ("#020A05", "#06120A", "#174D2A", "#E7FFEC", "#39FF14", "#00E676")
         asset_dir = self.root / "assets" / "profile"
         dark_assets = sorted(asset_dir.glob("*.dark.svg"))
-        self.assertEqual(len(dark_assets), 42)
+        self.assertEqual(len(dark_assets), 47)
         for dark_path in dark_assets:
             light_path = dark_path.with_name(dark_path.name.replace(".dark.svg", ".light.svg"))
             dark = dark_path.read_text(encoding="utf-8")
@@ -133,7 +137,7 @@ class ProfileArtTests(unittest.TestCase):
 
         self.assertEqual(parser.headings.count("h1"), 1)
         self.assertEqual(parser.headings.count("h2"), len(SECTIONS))
-        self.assertNotRegex(self.readme, r"<h2[^>]*>\s*<picture>")
+        self.assertEqual(len(__import__("re").findall(r"<h2[^>]*>\s*<picture>", self.readme)), len(SECTIONS))
         self.assertEqual(parser.details, parser.summaries)
         self.assertNotRegex(self.readme, r"\btabindex\s*=")
         self.assertNotRegex(self.readme, r"\baria-hidden\s*=")
@@ -179,7 +183,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertIn(DISPLAY, svg)
                 for color in (theme.bg, theme.bg2, theme.accent, theme.system, theme.title, theme.muted, theme.border):
                     self.assertIn(color, svg)
-                self.assertNotIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
+                self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
             self.assertNotEqual(themed[0], themed[1])
             heading_id = {
                 "skills": "skills-with-context",
@@ -187,8 +191,7 @@ class ProfileArtTests(unittest.TestCase):
                 "education": "education--credentials",
                 "contact": "contact--availability",
             }.get(name, name)
-            heading_text = title.replace("&", "&amp;")
-            self.assertIn(f'<h2 id="{heading_id}">{index:02d} / {heading_text}</h2>', self.readme)
+            self.assertIn(f'<h2 id="{heading_id}"><picture>', self.readme)
 
     def test_telemetry_is_adaptive_and_complete(self):
         for theme in THEMES:
@@ -203,13 +206,14 @@ class ProfileArtTests(unittest.TestCase):
             self.assertIn(f"assets/profile/telemetry-mobile.{theme.suffix}.svg", self.readme)
             self.assertIn(f"assets/profile/telemetry.{theme.suffix}.svg", self.readme)
 
-    def test_header_ctas_are_adaptive_accessible_and_keep_brand_art(self):
+    def test_header_ctas_are_adaptive_accessible_and_neutral(self):
         expected = {
-            "portfolio": ("Open Ahmad Mujtaba's portfolio", ("#EA4335", "#FBBC04", "#34A853", "#4285F4")),
-            "email": ("Email Ahmad Mujtaba", ("#4285F4", "#34A853", "#EA4335", "#FBBC04", "#C5221F")),
-            "linkedin": ("Connect on LinkedIn", ("#0A66C2", "M416 32H31.9")),
+            "portfolio": "Open Ahmad Mujtaba's portfolio",
+            "email": "Email Ahmad Mujtaba",
+            "linkedin": "Connect on LinkedIn",
         }
-        for kind, (title, marks) in expected.items():
+        official_marks = ("#EA4335", "#FBBC04", "#34A853", "#4285F4", "#C5221F", "#0A66C2", "M416 32H31.9")
+        for kind, title in expected.items():
             for theme in THEMES:
                 svg = cta(theme, kind)
                 node = ET.fromstring(svg)
@@ -221,8 +225,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertEqual(node.find("{http://www.w3.org/2000/svg}title").text, title)
                 self.assertIn(MONO, svg)
                 self.assertIn(DISPLAY, svg)
-                for mark in marks:
-                    self.assertIn(mark, svg)
+                self.assertFalse(any(mark in svg for mark in official_marks))
                 self.assertIn(f"assets/profile/cta-{kind}.{theme.suffix}.svg", self.readme)
         for destination in (
             'href="https://pypi-ahmad.github.io/"',
@@ -277,8 +280,13 @@ class ProfileArtTests(unittest.TestCase):
             "https://www.facebook.com/dataintuitionist/",
         )
         self.assertEqual(len(CONTACTS), 9)
-        self.assertIn("DIRECT CHANNELS", self.readme)
-        self.assertIn("ELSEWHERE", self.readme)
+        for label, name in (("DIRECT CHANNELS", "direct-channels"), ("ELSEWHERE", "elsewhere")):
+            self.assertIn(f"assets/profile/contact-{name}.dark.svg", self.readme)
+            self.assertIn(f"assets/profile/contact-{name}.light.svg", self.readme)
+            for theme in THEMES:
+                svg = contact_group_label(theme, label)
+                self.assertEqual(ET.fromstring(svg).get("viewBox"), "0 0 360 32")
+                self.assertIn(label, svg)
         self.assertNotIn('src="contacts-icons/', self.readme)
         for key in CONTACTS:
             for theme in THEMES:
@@ -298,7 +306,7 @@ class ProfileArtTests(unittest.TestCase):
     def test_readme_layout_supports_narrow_and_zoomed_views(self):
         self.assertNotIn("max-width: 600px", self.readme)
         self.assertNotIn("max-width: 760px", self.readme)
-        self.assertEqual(self.readme.count("max-width: 480px"), 16)
+        self.assertEqual(self.readme.count("max-width: 480px"), 18)
         self.assertNotIn('width="49%"', self.readme)
         self.assertNotIn('width="32%"', self.readme)
         self.assertNotIn('width="100%"', self.readme)
@@ -321,7 +329,8 @@ class ProfileArtTests(unittest.TestCase):
         parser = ReadmeStructureParser()
         parser.feed(self.readme)
         full_width_assets = {
-            "telemetry.light.svg", "workshop.light.svg", "contact-aurora.light.svg",
+            "profile-hero.light.svg", "telemetry.light.svg", "workshop.light.svg", "contact-aurora.light.svg",
+            *(f"section-{name}.light.svg" for name in SECTIONS),
             *(f"{repo}.light.svg" for repo in FEATURED),
         }
         for attributes, _ in parser.images:
@@ -396,8 +405,13 @@ class ProfileArtTests(unittest.TestCase):
         renderers = (
             ("telemetry", telemetry, (600, 52)),
             ("telemetry-mobile", telemetry_mobile, (360, 96)),
+            ("profile-hero", profile_hero, (600, 146)),
+            ("profile-hero-mobile", profile_hero_mobile, (360, 188)),
             ("contact-aurora", contact_aurora, (600, 88)),
             ("contact-aurora-mobile", contact_aurora_mobile, (360, 120)),
+            ("contact-direct-channels", lambda theme: contact_group_label(theme, "DIRECT CHANNELS"), (360, 32)),
+            ("contact-elsewhere", lambda theme: contact_group_label(theme, "ELSEWHERE"), (360, 32)),
+            ("footer-signature", footer_signature, (260, 36)),
             ("workshop", lambda theme: workshop(theme, animated=True), (600, 160)),
             ("workshop-static", lambda theme: workshop(theme, animated=False), (600, 160)),
             ("workshop-mobile", lambda theme: workshop_mobile(theme, animated=True), (360, 240)),
