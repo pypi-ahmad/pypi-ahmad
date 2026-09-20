@@ -10,7 +10,6 @@
     <a href="mailto:ahmad.iiitk@gmail.com">
       <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cta-email.dark.svg" /><img alt="Email Ahmad Mujtaba" src="assets/profile/cta-email.light.svg" width="136" height="56" /></picture>
     </a>
-    <br />
     <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
       <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cta-linkedin.dark.svg" /><img alt="Connect with Ahmad Mujtaba on LinkedIn" src="assets/profile/cta-linkedin.light.svg" width="136" height="56" /></picture>
     </a>
@@ -23,10 +22,10 @@
 
 <p align="center">
   <a href="#featured-projects">Featured work</a> ·
-  <a href="#measured-outcomes">Outcomes</a> ·
-  <a href="#professional-experience">Experience</a> ·
   <a href="#case-studies">Case studies</a> ·
   <a href="#public-projects">Projects</a> ·
+  <a href="#measured-outcomes">Outcomes</a> ·
+  <a href="#professional-experience">Experience</a> ·
   <a href="#skills-with-context">Skills</a> ·
   <a href="#forward-deployed-ai-engineering">FDE learning path</a> ·
   <a href="#education--credentials">Education</a> ·
@@ -60,6 +59,9 @@ Independent tools and research. Explore the code, or expand the case studies bel
       <img src="assets/profile/Agentic-Document-Extraction.light.svg" width="820" alt="Paperplane: Grounded document parsing." />
     </picture>
   </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app">
     <picture>
       <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/lora-qlora-fine-tuning-app-mobile.dark.svg" />
@@ -68,6 +70,9 @@ Independent tools and research. Explore the code, or expand the case studies bel
       <img src="assets/profile/lora-qlora-fine-tuning-app.light.svg" width="820" alt="LoRA Fine-tune Studio: Local adapter training." />
     </picture>
   </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/pypi-ahmad/self-improving-prompt-optimizer">
     <picture>
       <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/self-improving-prompt-optimizer-mobile.dark.svg" />
@@ -76,6 +81,9 @@ Independent tools and research. Explore the code, or expand the case studies bel
       <img src="assets/profile/self-improving-prompt-optimizer.light.svg" width="820" alt="Self-Improving Prompt Optimizer: Benchmark-based prompt comparison." />
     </picture>
   </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/pypi-ahmad/video-summarizer">
     <picture>
       <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/profile/video-summarizer-mobile.dark.svg" />
@@ -95,7 +103,6 @@ These five studies cover independent tools and research. The Document AI reposit
 
 <details open>
 <summary><b>Document AI Engineering Lab · Document AI, Extraction, GraphRAG</b></summary>
-<br />
 
 Scans, handwriting, tables, and native documents call for different processing strategies. Readable text alone is insufficient when extracted fields and answers need evidence a person can inspect.
 
@@ -117,7 +124,6 @@ The repositories expose processing paths, output contracts, and review artifacts
 
 <details>
 <summary><b>LoRA Fine-tune Studio · Model Training, Fine-Tuning</b></summary>
-<br />
 
 Local fine-tuning depends on dataset compatibility, GPU capacity, run configuration, recovery, and adapter review. This Streamlit workflow covers dataset preparation, model inspection, parameter-efficient training, job monitoring, and base-versus-adapter comparison. It saves portable PEFT adapters and maintains a persistent local job queue.
 
@@ -130,7 +136,6 @@ The repository includes the training implementation, example datasets, workflow 
 
 <details>
 <summary><b>Self-Improving Prompt Optimizer · Evaluation, Prompt Optimization</b></summary>
-<br />
 
 A prompt that looks better on one example may perform worse elsewhere. This LangGraph workflow generates diverse prompt candidates and evaluates them against the same selected benchmark, keeping an elite pool. Streamlit shows scores, Pareto trade-offs, per-case results, and downloadable history so the comparisons can be reviewed.
 
@@ -143,7 +148,6 @@ Candidate generation and judge-based scoring can be inspected. A higher judge sc
 
 <details>
 <summary><b>Video Summarizer · Multimodal AI, Retrieval</b></summary>
-<br />
 
 Reprocessing a complete video for every task repeats work over the same speech and visual evidence. This local Streamlit workspace uses Adversal’s remote MCP video analysis and reuses returned Markdown, timestamps, and frames. Qdrant scopes retrieval to the selected video for questions and generated documents.
 
@@ -156,7 +160,6 @@ The repository includes job lifecycle handling, evidence indexing, export workfl
 
 <details>
 <summary><b>Hinglish Turn Detection · Speech ML, Evaluation</b></summary>
-<br />
 
 A pause is not always a finished utterance, and false-complete decisions can cause a voice agent to interrupt the speaker. The study compares Whisper-tiny-based audio classifiers, pooling and augmentation strategies, an audio-text variant, and a three-seed finalist with validation-calibrated thresholds.
 
@@ -168,7 +171,6 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 </details>
 
 </details>
-
 
 <h2 id="public-projects">03 / Public projects</h2>
 
@@ -195,7 +197,6 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 </details>
 
-
 <h2 id="about">04 / About</h2>
 
 <details>
@@ -210,7 +211,6 @@ My work began in ML, NLP, and data science, expanded into conversational AI, and
 I start by researching existing solutions and comparing model quality and cost. I inspect early results manually and regression-test changes, keeping source evidence available for review. After delivery, I monitor the systems. I prefer typed boundaries, explicit failure states, and human review where needed, and I keep my claims within what the evidence supports.
 
 </details>
-
 
 <h2 id="measured-outcomes">05 / Measured outcomes</h2>
 
@@ -236,7 +236,6 @@ These are team and system results from internal employer evaluations. My contrib
 
 [Read my professional experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
 
-
 <h2 id="professional-experience">06 / Professional experience</h2>
 
 - **Deloitte US-India** · AI & Data Science Engineer · July 2025 – Present · Gurugram, India
@@ -252,7 +251,6 @@ These are team and system results from internal employer evaluations. My contrib
 
 <details>
 <summary><b>Prior-authorization document processing</b></summary>
-<br />
 
 A production Azure pipeline processes incoming healthcare fax packets from classification through extraction, validation, routing, and recovery. Handwriting, nonstandard forms, business rules, and a 117-field schema made a single extraction call unreliable.
 
@@ -270,7 +268,6 @@ Grouping related fields across seven calls and running confidence-aware extracti
 
 <details>
 <summary><b>Healthcare integrity and fraud analytics</b></summary>
-<br />
 
 Three separate projects covered document integrity, out-of-network claims, and referral patterns.
 
@@ -284,7 +281,6 @@ Three separate projects covered document integrity, out-of-network claims, and r
 
 <details>
 <summary><b>Computer-use and multi-agent reasoning</b></summary>
-<br />
 
 - Contributed Milvus retrieval, reranking, and failure-aware routing to a computer-use workflow.
 - Built a Playwright MCP tool using accessibility-tree snapshots and compressed-vision context instead of raw DOM observations.
@@ -295,7 +291,6 @@ Three separate projects covered document integrity, out-of-network claims, and r
 
 <details>
 <summary><b>Policy-entity extraction</b></summary>
-<br />
 
 Iterated prompts, implemented canonical comparison, and expanded evaluation for structured policy-entity extraction used in care-management decision support.
 
@@ -308,7 +303,6 @@ Iterated prompts, implemented canonical comparison, and expanded evaluation for 
 
 <details>
 <summary><b>Warranty decisions, NLP processing, and operational monitoring</b></summary>
-<br />
 
 - Improved an automotive warranty workflow handling roughly 1,800–2,200 claims per weekday and approximately 1,000 per weekend day.
 - Retrained and tuned its existing Random Forest classifier, compared XGBoost, and retained Random Forest because XGBoost did not outperform it.
@@ -323,7 +317,6 @@ Iterated prompts, implemented canonical comparison, and expanded evaluation for 
 
 <details>
 <summary><b>Conversational B2B reordering</b></summary>
-<br />
 
 For a separate FMCG engagement, I built a conversational reordering workflow using AWS Lex, Azure OpenAI, AWS Lambda, and Amazon S3.
 </details>
@@ -344,7 +337,6 @@ For a separate FMCG engagement, I built a conversational reordering workflow usi
 [View the architecture diagrams](https://pypi-ahmad.github.io/experience)
 
 </details>
-
 
 <h2 id="skills-with-context">07 / Skills, with context</h2>
 
@@ -391,7 +383,6 @@ The [measured outcomes](#measured-outcomes) and linked project stories show how 
 
 <details>
 <summary><b>Current learning interests</b></summary>
-<br />
 
 I am learning about the following areas and do not claim production expertise in them.
 
@@ -407,7 +398,6 @@ I am learning about the following areas and do not claim production expertise in
 [Explore skills with project context](https://pypi-ahmad.github.io/skills)
 
 </details>
-
 
 <h2 id="forward-deployed-ai-engineering">08 / Forward-deployed AI engineering</h2>
 
@@ -430,7 +420,6 @@ I am building on professional experience and independent projects to learn forwa
 
 </details>
 
-
 <h2 id="education--credentials">09 / Education &amp; credentials</h2>
 
 ### Degrees
@@ -450,7 +439,6 @@ I am building on professional experience and independent projects to learn forwa
 
 <details open>
 <summary><b>Claude Certified Associate - Foundations · Anthropic</b></summary>
-<br />
 
 <div align="center">
   <a href="certifications/anthropic/claude-certified-associate-foundations.pdf">
@@ -471,21 +459,19 @@ I am building on professional experience and independent projects to learn forwa
 
 <details>
 <summary><b>Anthropic Education certificates (4)</b></summary>
-<br />
 
 <div align="center">
   <a href="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.pdf">
-    <img src="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.png" width="420" alt="Anthropic Claude 101 certificate" />
+    <img src="certifications/anthropic/certificate-b3ejcctoop7p-1773144487.png" width="390" alt="Anthropic Claude 101 certificate" />
   </a>
   <a href="certifications/anthropic/certificate-suzvk58nwng2-1773228332.pdf">
-    <img src="certifications/anthropic/certificate-suzvk58nwng2-1773228332.png" width="420" alt="Anthropic AI Fluency: Framework and Foundations certificate" />
+    <img src="certifications/anthropic/certificate-suzvk58nwng2-1773228332.png" width="390" alt="Anthropic AI Fluency: Framework and Foundations certificate" />
   </a>
-  <br />
   <a href="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.pdf">
-    <img src="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.png" width="420" alt="Anthropic Building with the Claude API certificate" />
+    <img src="certifications/anthropic/certificate-2njdrsdeigc4-1783399597.png" width="390" alt="Anthropic Building with the Claude API certificate" />
   </a>
   <a href="certifications/anthropic/certificate-uubk52krkzap-1787045826.pdf">
-    <img src="certifications/anthropic/certificate-uubk52krkzap-1787045826.png" width="420" alt="Anthropic Claude Code 101 certificate" />
+    <img src="certifications/anthropic/certificate-uubk52krkzap-1787045826.png" width="390" alt="Anthropic Claude Code 101 certificate" />
   </a>
 </div>
 
@@ -497,7 +483,6 @@ I am building on professional experience and independent projects to learn forwa
 
 <details>
 <summary><b>Machine learning, deep learning, data science, and SQL certificates (9)</b></summary>
-<br />
 
 - [Machine Learning Specialization](https://coursera.org/verify/specialization/2T5GNSDSV29S): DeepLearning.AI / Stanford via Coursera
 - [Advanced Learning Algorithms](https://coursera.org/verify/P9GJ4PVXL9UW): DeepLearning.AI / Stanford via Coursera
@@ -514,7 +499,6 @@ I am building on professional experience and independent projects to learn forwa
 
 [View the complete education and credential portfolio](https://pypi-ahmad.github.io/education)
 
-
 <h2 id="activity">10 / Activity</h2>
 
 [View contribution activity on my portfolio](https://pypi-ahmad.github.io/github?tab=activity).
@@ -523,10 +507,9 @@ I am building on professional experience and independent projects to learn forwa
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" />
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" width="760" alt="GitHub contribution activity" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" width="820" alt="GitHub contribution activity" />
 </picture>
 </p>
-
 
 <h2 id="github-statistics">11 / GitHub statistics</h2>
 
@@ -535,22 +518,23 @@ I am building on professional experience and independent projects to learn forwa
 
 [Open the live GitHub dashboard](https://pypi-ahmad.github.io/github) for repository discovery, releases, collaboration, contribution, and traffic snapshots.
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/stats.svg" width="467" alt="Ahmad Mujtaba's GitHub statistics" />
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/top-langs.svg" width="300" alt="Ahmad Mujtaba's top languages" />
-  <br />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/stats.svg" width="467" align="top" alt="Ahmad Mujtaba's GitHub statistics" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/top-langs.svg" width="300" align="top" alt="Ahmad Mujtaba's top languages" />
+</p>
+
+<p align="center">
   <img src="https://github.com/pypi-ahmad/pypi-ahmad/raw/refs/heads/main/profile-stats/streak.svg" width="495" alt="Ahmad Mujtaba's GitHub contribution streak" />
-</div>
+</p>
 
 <details>
 <summary><b>Advanced GitHub dashboard</b></summary>
-<br />
 
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.light.svg" />
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.dark.svg" width="760" alt="GitHub reach and collaboration statistics" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/reach.dark.svg" width="820" alt="GitHub reach and collaboration statistics" />
 </picture>
 </p>
 
@@ -558,7 +542,7 @@ I am building on professional experience and independent projects to learn forwa
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.light.svg" />
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.dark.svg" width="760" alt="GitHub code and activity statistics" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/coding.dark.svg" width="820" alt="GitHub code and activity statistics" />
 </picture>
 </p>
 
@@ -566,13 +550,12 @@ I am building on professional experience and independent projects to learn forwa
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.light.svg" />
-  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.dark.svg" width="760" alt="GitHub distribution and repository traffic statistics" />
+  <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-stats/distribution.dark.svg" width="820" alt="GitHub distribution and repository traffic statistics" />
 </picture>
 </p>
 </details>
 
 </details>
-
 
 <h2 id="repository-showcase">12 / Repository showcase</h2>
 
@@ -584,93 +567,90 @@ I am building on professional experience and independent projects to learn forwa
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.dark.svg" />
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" width="420" alt="computer-use repository card" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/computer-use.light.svg" width="390" alt="computer-use repository card" />
     </picture>
   </a>
   <a href="https://github.com/pypi-ahmad/grounded-docparse">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.dark.svg" />
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" width="420" alt="grounded-docparse repository card" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/grounded-docparse.light.svg" width="390" alt="grounded-docparse repository card" />
     </picture>
   </a>
   <a href="https://github.com/pypi-ahmad/Agentic-Document-Extraction">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.dark.svg" />
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" width="420" alt="Agentic-Document-Extraction repository card" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/Agentic-Document-Extraction.light.svg" width="390" alt="Agentic-Document-Extraction repository card" />
     </picture>
   </a>
   <a href="https://github.com/pypi-ahmad/local-ai-chat-studio">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.dark.svg" />
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" />
-      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" width="420" alt="local-ai-chat-studio repository card" />
+      <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/cards/cards/local-ai-chat-studio.light.svg" width="390" alt="local-ai-chat-studio repository card" />
     </picture>
   </a>
 </div>
 
 </details>
 
-
 <details>
 <summary><b>Contribution arcade</b></summary>
-<br/>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake.svg" width="760" alt="Snake animation eating the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/github-contribution-grid-snake.svg" width="820" alt="Snake animation eating the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/pacman-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/pacman-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/pacman-contribution-graph.svg" width="760" alt="Pac-Man animation eating the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/pacman-contribution-graph.svg" width="820" alt="Pac-Man animation eating the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/breakout-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/breakout-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/breakout-contribution-graph.svg" width="760" alt="Breakout animation using the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/breakout-contribution-graph.svg" width="820" alt="Breakout animation using the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/galaga-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/galaga-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/galaga-contribution-graph.svg" width="760" alt="Galaga animation using the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/galaga-contribution-graph.svg" width="820" alt="Galaga animation using the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/bomberman-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/bomberman-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/bomberman-contribution-graph.svg" width="760" alt="Bomberman animation using the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/bomberman-contribution-graph.svg" width="820" alt="Bomberman animation using the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/puzzle-bobble-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/puzzle-bobble-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/puzzle-bobble-contribution-graph.svg" width="760" alt="Puzzle Bobble animation using the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/puzzle-bobble-contribution-graph.svg" width="820" alt="Puzzle Bobble animation using the GitHub contribution grid" />
   </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/minesweeper-contribution-graph-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/minesweeper-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/minesweeper-contribution-graph.svg" width="760" alt="Minesweeper animation using the GitHub contribution grid" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/output/minesweeper-contribution-graph.svg" width="820" alt="Minesweeper animation using the GitHub contribution grid" />
   </picture>
 </div>
 </details>
 
 <details>
 <summary><b>Contribution history</b></summary>
-<br/>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-green.svg" />
-    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" width="760" alt="3D contributions" />
+    <img src="https://raw.githubusercontent.com/pypi-ahmad/pypi-ahmad/main/profile-3d-contrib/profile-night-rainbow.svg" width="820" alt="3D contributions" />
   </picture>
 </div>
 </details>
@@ -687,7 +667,6 @@ The [`main`](https://github.com/pypi-ahmad/pypi-ahmad) branch is the source of r
 - Governance: [`CONTRIBUTING.md`](CONTRIBUTING.md), [`SECURITY.md`](SECURITY.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
 
 </details>
-
 
 <h2 id="contact--availability">14 / Contact &amp; availability</h2>
 
@@ -706,24 +685,16 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 </p>
 
 <p align="center">
-  Open to remote-first production AI and GenAI engineering roles, plus focused consulting in document intelligence, LLM extraction, RAG, agentic workflows, and evaluation.<br /><br />
-  <a href="mailto:ahmad.iiitk@gmail.com">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cta-email.dark.svg" /><img alt="Email Ahmad Mujtaba" src="assets/profile/cta-email.light.svg" width="136" height="56" /></picture>
-  </a>
-  <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/cta-linkedin.dark.svg" /><img alt="Connect with Ahmad Mujtaba on LinkedIn" src="assets/profile/cta-linkedin.light.svg" width="136" height="56" /></picture>
-  </a>
+  <sub><strong>DIRECT CHANNELS</strong></sub>
 </p>
 
 <p align="center">
-  <sub><strong>DIRECT CHANNELS</strong></sub><br /><br />
   <a href="mailto:ahmad.iiitk@gmail.com">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-email.dark.svg" /><img alt="Email Ahmad Mujtaba" title="Email Ahmad Mujtaba" src="assets/profile/contact-email.light.svg" width="136" height="72" /></picture>
   </a>
   <a href="https://www.linkedin.com/in/ahmad-mle/" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-linkedin.dark.svg" /><img alt="Connect with Ahmad Mujtaba on LinkedIn" title="Connect with Ahmad Mujtaba on LinkedIn" src="assets/profile/contact-linkedin.light.svg" width="136" height="72" /></picture>
   </a>
-  <br />
   <a href="https://wa.me/pypi_ahmad" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-whatsapp.dark.svg" /><img alt="Message Ahmad Mujtaba on WhatsApp" title="Message Ahmad Mujtaba on WhatsApp" src="assets/profile/contact-whatsapp.light.svg" width="136" height="72" /></picture>
   </a>
@@ -733,21 +704,22 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
 </p>
 
 <p align="center">
-  <sub><strong>ELSEWHERE</strong></sub><br /><br />
+  <sub><strong>ELSEWHERE</strong></sub>
+</p>
+
+<p align="center">
   <a href="https://pypi-ahmad.github.io/" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-portfolio.dark.svg" /><img alt="Open Ahmad Mujtaba’s portfolio" title="Open Ahmad Mujtaba’s portfolio" src="assets/profile/contact-portfolio.light.svg" width="136" height="72" /></picture>
   </a>
   <a href="https://github.com/pypi-ahmad" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-github.dark.svg" /><img alt="View Ahmad Mujtaba on GitHub" title="View Ahmad Mujtaba on GitHub" src="assets/profile/contact-github.light.svg" width="136" height="72" /></picture>
   </a>
-  <br />
   <a href="https://x.com/pypi_ahmad" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-twitter.dark.svg" /><img alt="View Ahmad Mujtaba on X" title="View Ahmad Mujtaba on X" src="assets/profile/contact-twitter.light.svg" width="136" height="72" /></picture>
   </a>
   <a href="https://www.instagram.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-instagram.dark.svg" /><img alt="View Ahmad Mujtaba on Instagram" title="View Ahmad Mujtaba on Instagram" src="assets/profile/contact-instagram.light.svg" width="136" height="72" /></picture>
   </a>
-  <br />
   <a href="https://www.facebook.com/dataintuitionist/" target="_blank" rel="noopener noreferrer">
     <picture><source media="(prefers-color-scheme: dark)" srcset="assets/profile/contact-facebook.dark.svg" /><img alt="View Ahmad Mujtaba on Facebook" title="View Ahmad Mujtaba on Facebook" src="assets/profile/contact-facebook.light.svg" width="136" height="72" /></picture>
   </a>
