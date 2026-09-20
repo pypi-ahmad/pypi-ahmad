@@ -575,18 +575,22 @@ Production AI · Document Intelligence · Agentic Systems · Evaluation
 
 ### Direct channels
 
-- [<img src="contacts-icons/email.svg" width="18" height="18" alt="" /> Email](mailto:ahmad.iiitk@gmail.com): ahmad.iiitk@gmail.com
-- [<img src="contacts-icons/linkedin.png" width="18" height="18" alt="" /> LinkedIn](https://www.linkedin.com/in/ahmad-mle/): ahmad-mle
-- [<img src="contacts-icons/whatsapp.png" width="18" height="18" alt="" /> WhatsApp](https://wa.me/pypi_ahmad): pypi_ahmad
-- [<img src="contacts-icons/telegram.png" width="18" height="18" alt="" /> Telegram](https://t.me/dataintuitionist): dataintuitionist
+<p>
+  <a href="mailto:ahmad.iiitk@gmail.com"><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> <strong>Email</strong> — ahmad.iiitk@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/ahmad-mle/"><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> <strong>LinkedIn</strong> — ahmad-mle</a> ·
+  <a href="https://wa.me/pypi_ahmad"><img src="contacts-icons/whatsapp.png" width="20" height="20" alt="" /> <strong>WhatsApp</strong> — pypi_ahmad</a> ·
+  <a href="https://t.me/dataintuitionist"><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> <strong>Telegram</strong> — dataintuitionist</a>
+</p>
 
 ### Elsewhere
 
-- [<img src="contacts-icons/portfolio.png" width="18" height="18" alt="" /> Portfolio](https://pypi-ahmad.github.io/): pypi-ahmad.github.io
-- [<img src="contacts-icons/github.png" width="18" height="18" alt="" /> GitHub](https://github.com/pypi-ahmad): pypi-ahmad
-- [<img src="contacts-icons/twitter.png" width="18" height="18" alt="" /> X / Twitter](https://x.com/pypi_ahmad): pypi_ahmad
-- [<img src="contacts-icons/instagram.png" width="18" height="18" alt="" /> Instagram](https://www.instagram.com/dataintuitionist/): dataintuitionist
-- [<img src="contacts-icons/facebook.png" width="18" height="18" alt="" /> Facebook](https://www.facebook.com/dataintuitionist/): dataintuitionist
+<p>
+  <a href="https://pypi-ahmad.github.io/"><img src="contacts-icons/portfolio.png" width="20" height="20" alt="" /> <strong>Portfolio</strong> — pypi-ahmad.github.io</a> ·
+  <a href="https://github.com/pypi-ahmad"><img src="contacts-icons/github.png" width="20" height="20" alt="" /> <strong>GitHub</strong> — pypi-ahmad</a> ·
+  <a href="https://x.com/pypi_ahmad"><img src="contacts-icons/twitter.png" width="20" height="20" alt="" /> <strong>X / Twitter</strong> — pypi_ahmad</a> ·
+  <a href="https://www.instagram.com/dataintuitionist/"><img src="contacts-icons/instagram.png" width="20" height="20" alt="" /> <strong>Instagram</strong> — dataintuitionist</a> ·
+  <a href="https://www.facebook.com/dataintuitionist/"><img src="contacts-icons/facebook.png" width="20" height="20" alt="" /> <strong>Facebook</strong> — dataintuitionist</a>
+</p>
 
 <a id="repository"></a>
 
