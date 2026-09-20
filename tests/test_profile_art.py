@@ -241,6 +241,19 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertEqual(root.get("viewBox"), "0 0 960 180")
                 self.assertEqual(mobile_root.get("viewBox"), "0 0 360 392")
                 self.assertEqual(root.find("{http://www.w3.org/2000/svg}title").text, title)
+                title_nodes = [
+                    node for node in root.findall("{http://www.w3.org/2000/svg}text")
+                    if node.get("font-size") == "22"
+                ]
+                # Preserve every title word while keeping it inside the narrow column.
+                self.assertEqual(" ".join(node.text for node in title_nodes), title)
+                self.assertLessEqual(len(title_nodes), 2)
+                self.assertTrue(all(len(node.text) <= 14 for node in title_nodes))
+                self.assertTrue(all(82 <= int(node.get("y")) <= 108 for node in title_nodes))
+                self.assertEqual(
+                    svg,
+                    (self.root / "assets" / "profile" / f"{repo}.{theme.suffix}.svg").read_text(encoding="utf-8"),
+                )
                 self.assertIn(category, svg)
                 self.assertIn("ARCHITECTURE FLOW", svg)
                 self.assertIn("OPEN REPOSITORY", svg)
@@ -302,12 +315,28 @@ class ProfileArtTests(unittest.TestCase):
         for repo in ("computer-use", "grounded-docparse", "Agentic-Document-Extraction", "local-ai-chat-studio"):
             self.assertRegex(
                 self.readme,
-                rf'<img[^>]+{repo}\.light\.svg[^>]+width="420"',
+                rf'<img[^>]+{repo}\.light\.svg[^>]+width="390"',
             )
 
-        self.assertEqual(self.readme.count('width="820"'), 7)
-        self.assertEqual(self.readme.count('width="760"'), 12)
-        self.assertEqual(self.readme.count('width="420"'), 8)
+        parser = ReadmeStructureParser()
+        parser.feed(self.readme)
+        full_width_assets = {
+            "telemetry.light.svg", "workshop.light.svg", "contact-aurora.light.svg",
+            *(f"{repo}.light.svg" for repo in FEATURED),
+        }
+        for attributes, _ in parser.images:
+            source = attributes.get("src", "")
+            if (
+                source.startswith("assets/profile/")
+                and source.rsplit("/", 1)[-1] in full_width_assets
+            ) or "profile-3d-contrib/" in source or "/output/" in source or any(
+                f"/profile-stats/{name}." in source
+                for name in ("reach", "coding", "distribution")
+            ):
+                self.assertEqual(attributes.get("width"), "820", source)
+            elif source.startswith("certifications/") and source.endswith(".png"):
+                expected_width = "300" if "claude-certified-associate-foundations" in source else "390"
+                self.assertEqual(attributes.get("width"), expected_width, source)
 
     def test_interface_links_name_their_destination(self):
         self.assertNotRegex(
