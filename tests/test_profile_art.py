@@ -195,7 +195,7 @@ class ProfileArtTests(unittest.TestCase):
             svg = telemetry(theme)
             ET.fromstring(svg)
             mobile = telemetry_mobile(theme)
-            self.assertEqual(ET.fromstring(mobile).get("viewBox"), "0 0 360 148")
+            self.assertEqual(ET.fromstring(mobile).get("viewBox"), "0 0 360 96")
             for value in ("FOCUS", "multimodal AI", "LOCATION", "Gurugram", "STATUS", "available", "MODE", "production"):
                 self.assertIn(value, svg)
             self.assertIn(theme.live, svg)
@@ -238,18 +238,17 @@ class ProfileArtTests(unittest.TestCase):
                 mobile = featured_row_mobile(theme, repo)
                 root = ET.fromstring(svg)
                 mobile_root = ET.fromstring(mobile)
-                self.assertEqual(root.get("viewBox"), "0 0 960 180")
-                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 392")
+                self.assertEqual(root.get("viewBox"), "0 0 600 160")
+                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 208")
                 self.assertEqual(root.find("{http://www.w3.org/2000/svg}title").text, title)
-                title_nodes = [
-                    node for node in root.findall("{http://www.w3.org/2000/svg}text")
-                    if node.get("font-size") == "22"
-                ]
-                # Preserve every title word while keeping it inside the narrow column.
-                self.assertEqual(" ".join(node.text for node in title_nodes), title)
-                self.assertLessEqual(len(title_nodes), 2)
-                self.assertTrue(all(len(node.text) <= 14 for node in title_nodes))
-                self.assertTrue(all(82 <= int(node.get("y")) <= 108 for node in title_nodes))
+                for variant, body_size in ((root, "16"), (mobile_root, "14")):
+                    texts = variant.findall("{http://www.w3.org/2000/svg}text")
+                    titles = [node.text for node in texts if node.get("font-size") == "22"]
+                    descriptions = [node.text for node in texts if node.get("font-size") == body_size]
+                    self.assertEqual(titles, [title])
+                    self.assertEqual(" ".join(descriptions), description)
+                    flow_text = next(node for node in texts if node.find("{http://www.w3.org/2000/svg}tspan") is not None)
+                    self.assertEqual("".join(flow_text.itertext()), " → ".join(flow))
                 self.assertEqual(
                     svg,
                     (self.root / "assets" / "profile" / f"{repo}.{theme.suffix}.svg").read_text(encoding="utf-8"),
@@ -260,7 +259,7 @@ class ProfileArtTests(unittest.TestCase):
                 for node in flow:
                     self.assertIn(node, svg)
                     self.assertIn(node, mobile)
-                self.assertIn(f'width="820" alt="{title if title != "Prompt optimizer" else "Self-Improving Prompt Optimizer"}', self.readme)
+                self.assertIn(f'width="600" alt="{title if title != "Prompt optimizer" else "Self-Improving Prompt Optimizer"}', self.readme)
                 self.assertIn(f"assets/profile/{repo}-mobile.{theme.suffix}.svg", self.readme)
             self.assertIn(f'href="https://github.com/pypi-ahmad/{repo}"', self.readme)
             self.assertIn(description, featured_row(THEMES[0], repo).replace("…", "…"))
@@ -298,7 +297,8 @@ class ProfileArtTests(unittest.TestCase):
 
     def test_readme_layout_supports_narrow_and_zoomed_views(self):
         self.assertNotIn("max-width: 600px", self.readme)
-        self.assertGreaterEqual(self.readme.count("max-width: 760px"), 10)
+        self.assertNotIn("max-width: 760px", self.readme)
+        self.assertEqual(self.readme.count("max-width: 480px"), 16)
         self.assertNotIn('width="49%"', self.readme)
         self.assertNotIn('width="32%"', self.readme)
         self.assertNotIn('width="100%"', self.readme)
@@ -329,7 +329,9 @@ class ProfileArtTests(unittest.TestCase):
             if (
                 source.startswith("assets/profile/")
                 and source.rsplit("/", 1)[-1] in full_width_assets
-            ) or "profile-3d-contrib/" in source or "/output/" in source or any(
+            ):
+                self.assertEqual(attributes.get("width"), "600", source)
+            elif "profile-3d-contrib/" in source or "/output/" in source or any(
                 f"/profile-stats/{name}." in source
                 for name in ("reach", "coding", "distribution")
             ):
@@ -371,11 +373,11 @@ class ProfileArtTests(unittest.TestCase):
                 mobile_svg = workshop_mobile(theme, animated=animated)
                 root = ET.fromstring(svg)
                 mobile_root = ET.fromstring(mobile_svg)
-                self.assertEqual(root.get("viewBox"), "0 0 960 260")
-                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 450")
+                self.assertEqual(root.get("viewBox"), "0 0 600 160")
+                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 240")
                 self.assertIn("DATAINTUITIONIST IN", svg)
                 self.assertIn("ILLUSTRATIVE TRACE", svg)
-                self.assertIn('<g transform="translate(72 78)"><g class="paper">', svg)
+                self.assertIn('<g class="paper">', svg)
                 for line in ("document received", "layout parsed", "fields extracted", "evaluation passed", "review required · 2 fields"):
                     self.assertIn(line, svg)
                 self.assertIn(theme.live, svg)
@@ -389,6 +391,32 @@ class ProfileArtTests(unittest.TestCase):
                 else:
                     self.assertNotIn("@keyframes", svg)
                     self.assertNotIn("@keyframes", mobile_svg)
+
+    def test_compact_artwork_dimensions_and_saved_variants(self):
+        renderers = (
+            ("telemetry", telemetry, (600, 52)),
+            ("telemetry-mobile", telemetry_mobile, (360, 96)),
+            ("contact-aurora", contact_aurora, (600, 88)),
+            ("contact-aurora-mobile", contact_aurora_mobile, (360, 120)),
+            ("workshop", lambda theme: workshop(theme, animated=True), (600, 160)),
+            ("workshop-static", lambda theme: workshop(theme, animated=False), (600, 160)),
+            ("workshop-mobile", lambda theme: workshop_mobile(theme, animated=True), (360, 240)),
+            ("workshop-static-mobile", lambda theme: workshop_mobile(theme, animated=False), (360, 240)),
+            *((repo, lambda theme, repo=repo: featured_row(theme, repo), (600, 160)) for repo in FEATURED),
+            *((f"{repo}-mobile", lambda theme, repo=repo: featured_row_mobile(theme, repo), (360, 208)) for repo in FEATURED),
+        )
+        for theme in THEMES:
+            for name, renderer, (width, height) in renderers:
+                with self.subTest(theme=theme.name, asset=name):
+                    svg = renderer(theme)
+                    root = ET.fromstring(svg)
+                    self.assertEqual(root.get("viewBox"), f"0 0 {width} {height}")
+                    self.assertEqual(root.get("width"), str(width))
+                    self.assertEqual(root.get("height"), str(height))
+                    self.assertEqual(
+                        svg,
+                        (self.root / "assets" / "profile" / f"{name}.{theme.suffix}.svg").read_text(encoding="utf-8"),
+                    )
 
     def test_live_repo_card_text_is_escaped_and_bounded(self):
         info = RepoInfo("someone", "a" * 140, 'Read <data> & compare "results" ' * 20, 12, 3, "Python", "2026-09-20T12:00:00Z", "https://example.com")
