@@ -380,7 +380,7 @@ I am building on professional experience and independent projects to learn forwa
 - **B.Tech in Computer Science Engineering**, Maulana Azad National Urdu University, August 2015 to June 2019.
 
 <details>
-<summary>Degree coursework</summary>
+<summary align="center">Degree coursework</summary>
 
 - M.Tech: machine learning, deep learning, NLP, computer vision, and statistics.
 - B.Tech: data structures and algorithms, engineering mathematics, and web development.
