@@ -247,7 +247,7 @@ class ProfileArtTests(unittest.TestCase):
                 for node in flow:
                     self.assertIn(node, svg)
                     self.assertIn(node, mobile)
-                self.assertIn(f'width="960" alt="{title if title != "Prompt optimizer" else "Self-Improving Prompt Optimizer"}', self.readme)
+                self.assertIn(f'width="820" alt="{title if title != "Prompt optimizer" else "Self-Improving Prompt Optimizer"}', self.readme)
                 self.assertIn(f"assets/profile/{repo}-mobile.{theme.suffix}.svg", self.readme)
             self.assertIn(f'href="https://github.com/pypi-ahmad/{repo}"', self.readme)
             self.assertIn(description, featured_row(THEMES[0], repo).replace("…", "…"))
@@ -288,20 +288,26 @@ class ProfileArtTests(unittest.TestCase):
         self.assertGreaterEqual(self.readme.count("max-width: 760px"), 10)
         self.assertNotIn('width="49%"', self.readme)
         self.assertNotIn('width="32%"', self.readme)
+        self.assertNotIn('width="100%"', self.readme)
         self.assertNotIn('height="170"', self.readme)
         self.assertLessEqual(2 * 136, 288)
 
-        for asset in ("stats.svg", "top-langs.svg", "streak.svg"):
+        compact_stats = {"stats.svg": "467", "top-langs.svg": "300", "streak.svg": "495"}
+        for asset, width in compact_stats.items():
             self.assertRegex(
                 self.readme,
-                rf'<img[^>]+{asset}[^>]+width="100%"',
+                rf'<img[^>]+{asset}[^>]+width="{width}"',
             )
 
         for repo in ("computer-use", "grounded-docparse", "Agentic-Document-Extraction", "local-ai-chat-studio"):
             self.assertRegex(
                 self.readme,
-                rf'<img[^>]+{repo}\.light\.svg[^>]+width="100%"',
+                rf'<img[^>]+{repo}\.light\.svg[^>]+width="420"',
             )
+
+        self.assertEqual(self.readme.count('width="820"'), 7)
+        self.assertEqual(self.readme.count('width="760"'), 12)
+        self.assertEqual(self.readme.count('width="420"'), 8)
 
     def test_interface_links_name_their_destination(self):
         self.assertNotRegex(
