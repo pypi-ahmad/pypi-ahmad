@@ -173,7 +173,7 @@ These are team and system results from internal employer evaluations. My contrib
 
 </details>
 
-[Read my professional experience](https://pypi-ahmad.github.io/experience) · [Review the sanitized outcome boundaries](docs/sanitized-outcomes.md)
+<p align="center"><a href="https://pypi-ahmad.github.io/experience">Read my professional experience</a> · <a href="docs/sanitized-outcomes.md">Review the sanitized outcome boundaries</a></p>
 
 </div>
 
