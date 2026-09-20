@@ -20,13 +20,13 @@ welcome when they are focused and easy to review.
   public audience.
 - `docs/sanitized-outcomes.md` records employer-internal results with explicit
   confidentiality boundaries.
-- `.github/pinned_repos.txt` is the source list for generated repository cards.
+- Maintain project descriptions and contact links directly in `README.md`.
 - `profile-3d-contrib/` and `profile-stats/` contain generated profile assets
-  published to `main` by GitHub Actions. Repository cards are published to
-  `cards`, and animations are published to `output`.
+  published to `main` by GitHub Actions. Contribution arcade animations are
+  published to `output`. The statistics workflow also refreshes dashboard exports.
 - Change the relevant source configuration or workflow instead of manually
-  editing generated assets. Do not merge the generator-managed `cards`,
-  `generated`, or `output` branches into `main`.
+  editing generated assets. Do not merge the generated `cards`, `generated`,
+  or `output` branches into `main`; `cards` is retained as historical output.
 - Do not add local analysis caches, dashboard output, credentials, tokens, or
   other sensitive workspace data unless a maintainer explicitly requests it.
 
