@@ -38,6 +38,7 @@ class Theme:
     accent: str
     system: str
     live: str
+    attention: str
 
 
 THEMES: list[Theme] = [
@@ -52,7 +53,8 @@ THEMES: list[Theme] = [
         muted="#96928A",
         accent="#FF5A5F",
         system="#B8BCC4",
-        live="#FF5A5F",
+        live="#5FD38D",
+        attention="#F2B84B",
     ),
     Theme(
         name="light",
@@ -65,7 +67,8 @@ THEMES: list[Theme] = [
         muted="#66635E",
         accent="#B4232F",
         system="#565A62",
-        live="#B4232F",
+        live="#18794E",
+        attention="#8A4F00",
     ),
 ]
 
@@ -201,7 +204,7 @@ def _esc(s: str) -> str:
 def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> str:
     featured = FEATURED.get(info.name) if info.owner == "pypi-ahmad" else None
     title, category, desc, kind, _ = featured or (
-        info.name, "PUBLIC REPOSITORY", info.description or "Explore the repository.", "document", ()
+        info.name, "PUBLIC REPOSITORY", info.description or "Repository details and source code.", "document", ()
     )
     title_lines = _wrap(title, max_chars=25, max_lines=2)
     desc_lines = _wrap(desc, max_chars=36, max_lines=3)
@@ -210,14 +213,14 @@ def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> s
         for i, line in enumerate(title_lines)
     )
     description_svg = "".join(
-        f'<text x="24" y="{167 + i * 23}" font-size="18" fill="{theme.text}">{_esc(line)}</text>'
+        f'<text x="24" y="{167 + i * 27}" font-size="18" fill="{theme.text}">{_esc(line)}</text>'
         for i, line in enumerate(desc_lines)
     )
     if show_metrics:
         meta = f"★ {info.stars}   ⑂ {info.forks}   {info.language}"
         updated = f"Updated {info.updated_at[:10]}" if info.updated_at else ""
     else:
-        meta, updated = "INDEPENDENT PROJECT", "VIEW CODE ↗"
+        meta, updated = "INDEPENDENT PROJECT", "OPEN REPOSITORY ↗"
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="280" viewBox="0 0 420 280" role="img" aria-label="{_esc(title)}">
   <title>{_esc(title)}</title>
@@ -228,11 +231,11 @@ def _render_svg(info: RepoInfo, theme: Theme, *, show_metrics: bool = True) -> s
     </linearGradient>
   </defs>
   <rect x="1" y="1" width="418" height="278" rx="9" fill="url(#bg)" stroke="{theme.border}"/>
-  <path d="M1 1h418" stroke="{theme.accent}" stroke-width="3"/>
+  <path d="M10 1H410" stroke="{theme.accent}" stroke-width="3" stroke-linecap="round"/>
   <path d="M24 66h270" stroke="{theme.border}"/>
   <g transform="translate(330 19) scale(.8)">{_motif(kind, theme.system)}</g>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <text x="24" y="40" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.3" fill="{theme.accent}">{_esc(category)}</text>
+    <text x="24" y="40" font-family="Cascadia Code,Cascadia Mono,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="1.1" fill="{theme.accent}">{_esc(category)}</text>
     {title_svg}
     {description_svg}
     <path d="M24 235h372" stroke="{theme.border}"/>

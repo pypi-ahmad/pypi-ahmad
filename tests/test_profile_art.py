@@ -3,6 +3,7 @@
 import sys
 import unittest
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -12,14 +13,47 @@ from generate_profile_art import (  # noqa: E402
     MONO,
     SECTIONS,
     contact_aurora,
+    contact_aurora_mobile,
     contact_cell,
     cta,
     featured_row,
+    featured_row_mobile,
     section_header,
     telemetry,
+    telemetry_mobile,
     workshop,
+    workshop_mobile,
 )
 from generate_repo_cards import FEATURED, THEMES, RepoInfo, _render_svg  # noqa: E402
+
+
+class ReadmeStructureParser(HTMLParser):
+    """Collect the native HTML semantics GitHub preserves in the profile README."""
+
+    def __init__(self):
+        super().__init__()
+        self.headings = []
+        self.details = 0
+        self.summaries = 0
+        self.images = []
+        self.anchor_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "a":
+            self.anchor_depth += 1
+        elif tag in {"h1", "h2"}:
+            self.headings.append(tag)
+        elif tag == "details":
+            self.details += 1
+        elif tag == "summary":
+            self.summaries += 1
+        elif tag == "img":
+            self.images.append((attributes, self.anchor_depth > 0))
+
+    def handle_endtag(self, tag):
+        if tag == "a":
+            self.anchor_depth -= 1
 
 
 class ProfileArtTests(unittest.TestCase):
@@ -32,11 +66,11 @@ class ProfileArtTests(unittest.TestCase):
         expected = {
             "dark": (
                 "#0C0C0D", "#151517", "#343438", "#F4F1EA", "#C9C5BD",
-                "#96928A", "#FF5A5F", "#B8BCC4", "#FF5A5F",
+                "#96928A", "#FF5A5F", "#B8BCC4", "#5FD38D", "#F2B84B",
             ),
             "light": (
                 "#F2EFE8", "#FFFEFA", "#D2CEC5", "#171719", "#3F3E42",
-                "#66635E", "#B4232F", "#565A62", "#B4232F",
+                "#66635E", "#B4232F", "#565A62", "#18794E", "#8A4F00",
             ),
         }
         legacy = (
@@ -46,9 +80,11 @@ class ProfileArtTests(unittest.TestCase):
         for theme in THEMES:
             self.assertEqual(
                 (theme.bg, theme.bg2, theme.border, theme.title, theme.text,
-                 theme.muted, theme.accent, theme.system, theme.live),
+                 theme.muted, theme.accent, theme.system, theme.live,
+                 theme.attention),
                 expected[theme.name],
             )
+            self.assertEqual(len({theme.accent, theme.live, theme.attention}), 3)
             for renderer in (telemetry, contact_aurora):
                 svg = renderer(theme)
                 self.assertIn(MONO, svg)
@@ -62,7 +98,10 @@ class ProfileArtTests(unittest.TestCase):
             return .2126 * channels[0] + .7152 * channels[1] + .0722 * channels[2]
 
         for theme in THEMES:
-            for foreground in (theme.title, theme.text, theme.muted, theme.accent, theme.system):
+            for foreground in (
+                theme.title, theme.text, theme.muted, theme.accent,
+                theme.system, theme.live, theme.attention,
+            ):
                 for background in (theme.bg, theme.bg2):
                     lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
                     self.assertGreaterEqual((lighter + .05) / (darker + .05), 4.5)
@@ -71,18 +110,58 @@ class ProfileArtTests(unittest.TestCase):
         legacy = ("#020A05", "#06120A", "#174D2A", "#E7FFEC", "#39FF14", "#00E676")
         asset_dir = self.root / "assets" / "profile"
         dark_assets = sorted(asset_dir.glob("*.dark.svg"))
-        self.assertEqual(len(dark_assets), 34)
+        self.assertEqual(len(dark_assets), 42)
         for dark_path in dark_assets:
             light_path = dark_path.with_name(dark_path.name.replace(".dark.svg", ".light.svg"))
             dark = dark_path.read_text(encoding="utf-8")
             light = light_path.read_text(encoding="utf-8")
-            ET.fromstring(dark)
-            ET.fromstring(light)
+            for svg in (dark, light):
+                root = ET.fromstring(svg)
+                self.assertEqual(root.get("role"), "img")
+                self.assertTrue(root.get("aria-label") or root.get("aria-labelledby"))
+                self.assertTrue(root.find("{http://www.w3.org/2000/svg}title").text.strip())
+                self.assertTrue(root.find("{http://www.w3.org/2000/svg}desc").text.strip())
             self.assertNotEqual(dark, light)
             self.assertFalse(any(color in dark or color in light for color in legacy))
 
         self.assertIn("color=0C0C0D", self.readme)
         self.assertIn("color=F2EFE8", self.readme)
+
+    def test_readme_uses_native_disclosures_and_descriptive_images(self):
+        parser = ReadmeStructureParser()
+        parser.feed(self.readme)
+
+        self.assertEqual(parser.headings.count("h1"), 1)
+        self.assertEqual(parser.headings.count("h2"), len(SECTIONS))
+        self.assertNotRegex(self.readme, r"<h2[^>]*>\s*<picture>")
+        self.assertEqual(parser.details, parser.summaries)
+        self.assertNotRegex(self.readme, r"\btabindex\s*=")
+        self.assertNotRegex(self.readme, r"\baria-hidden\s*=")
+
+        footer_src = "https://capsule-render.vercel.app/api?type=waving&color=F2EFE8&height=90&section=footer"
+        for attributes, is_functional in parser.images:
+            source = attributes.get("src", "")
+            alt = attributes.get("alt")
+            if source == footer_src:
+                self.assertEqual(alt, "")
+            else:
+                self.assertTrue(alt and alt.strip(), source)
+            if is_functional:
+                self.assertTrue(alt and alt.strip(), source)
+
+    def test_workshop_uses_static_sources_before_animated_sources(self):
+        dark_static = 'srcset="assets/profile/workshop-static.dark.svg"'
+        light_static = 'srcset="assets/profile/workshop-static.light.svg"'
+        dark_animated = 'srcset="assets/profile/workshop.dark.svg"'
+        light_animated = 'src="assets/profile/workshop.light.svg"'
+        mobile_dark_static = 'srcset="assets/profile/workshop-static-mobile.dark.svg"'
+        mobile_light_static = 'srcset="assets/profile/workshop-static-mobile.light.svg"'
+        mobile_dark_animated = 'srcset="assets/profile/workshop-mobile.dark.svg"'
+        mobile_light_animated = 'srcset="assets/profile/workshop-mobile.light.svg"'
+        self.assertLess(self.readme.index(dark_static), self.readme.index(dark_animated))
+        self.assertLess(self.readme.index(light_static), self.readme.index(light_animated))
+        self.assertLess(self.readme.index(mobile_dark_static), self.readme.index(mobile_dark_animated))
+        self.assertLess(self.readme.index(mobile_light_static), self.readme.index(mobile_light_animated))
 
     def test_every_major_section_has_a_numbered_semantic_header(self):
         self.assertEqual(len(SECTIONS), 14)
@@ -100,7 +179,7 @@ class ProfileArtTests(unittest.TestCase):
                 self.assertIn(DISPLAY, svg)
                 for color in (theme.bg, theme.bg2, theme.accent, theme.system, theme.title, theme.muted, theme.border):
                     self.assertIn(color, svg)
-                self.assertIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
+                self.assertNotIn(f"assets/profile/section-{name}.{theme.suffix}.svg", self.readme)
             self.assertNotEqual(themed[0], themed[1])
             heading_id = {
                 "skills": "skills-with-context",
@@ -108,19 +187,25 @@ class ProfileArtTests(unittest.TestCase):
                 "education": "education--credentials",
                 "contact": "contact--availability",
             }.get(name, name)
-            self.assertIn(f'<h2 id="{heading_id}">', self.readme)
+            heading_text = title.replace("&", "&amp;")
+            self.assertIn(f'<h2 id="{heading_id}">{index:02d} / {heading_text}</h2>', self.readme)
 
     def test_telemetry_is_adaptive_and_complete(self):
         for theme in THEMES:
             svg = telemetry(theme)
             ET.fromstring(svg)
+            mobile = telemetry_mobile(theme)
+            self.assertEqual(ET.fromstring(mobile).get("viewBox"), "0 0 360 148")
             for value in ("FOCUS", "multimodal AI", "LOCATION", "Gurugram", "STATUS", "available", "MODE", "production"):
                 self.assertIn(value, svg)
+            self.assertIn(theme.live, svg)
+            self.assertIn(theme.live, mobile)
+            self.assertIn(f"assets/profile/telemetry-mobile.{theme.suffix}.svg", self.readme)
             self.assertIn(f"assets/profile/telemetry.{theme.suffix}.svg", self.readme)
 
     def test_header_ctas_are_adaptive_accessible_and_keep_brand_art(self):
         expected = {
-            "portfolio": ("View portfolio", ("#EA4335", "#FBBC04", "#34A853", "#4285F4")),
+            "portfolio": ("Open Ahmad Mujtaba's portfolio", ("#EA4335", "#FBBC04", "#34A853", "#4285F4")),
             "email": ("Email Ahmad Mujtaba", ("#4285F4", "#34A853", "#EA4335", "#FBBC04", "#C5221F")),
             "linkedin": ("Connect on LinkedIn", ("#0A66C2", "M416 32H31.9")),
         }
@@ -128,7 +213,11 @@ class ProfileArtTests(unittest.TestCase):
             for theme in THEMES:
                 svg = cta(theme, kind)
                 node = ET.fromstring(svg)
-                self.assertEqual(node.get("viewBox"), "0 0 240 56")
+                self.assertEqual(node.get("viewBox"), "0 0 136 56")
+                sizes = {text.get("font-size") for text in node.findall("{http://www.w3.org/2000/svg}text")}
+                self.assertEqual(sizes, {"9", "12"})
+                self.assertIn('d="M8 1H128"', svg)
+                self.assertIn('stroke-width="2" stroke-linecap="round" stroke-linejoin="round"', svg)
                 self.assertEqual(node.find("{http://www.w3.org/2000/svg}title").text, title)
                 self.assertIn(MONO, svg)
                 self.assertIn(DISPLAY, svg)
@@ -146,15 +235,20 @@ class ProfileArtTests(unittest.TestCase):
         for repo, (title, category, description, _, flow) in FEATURED.items():
             for theme in THEMES:
                 svg = featured_row(theme, repo)
+                mobile = featured_row_mobile(theme, repo)
                 root = ET.fromstring(svg)
+                mobile_root = ET.fromstring(mobile)
                 self.assertEqual(root.get("viewBox"), "0 0 960 180")
+                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 392")
                 self.assertEqual(root.find("{http://www.w3.org/2000/svg}title").text, title)
                 self.assertIn(category, svg)
                 self.assertIn("ARCHITECTURE FLOW", svg)
-                self.assertIn("VIEW CODE", svg)
+                self.assertIn("OPEN REPOSITORY", svg)
                 for node in flow:
                     self.assertIn(node, svg)
+                    self.assertIn(node, mobile)
                 self.assertIn(f'width="960" alt="{title if title != "Prompt optimizer" else "Self-Improving Prompt Optimizer"}', self.readme)
+                self.assertIn(f"assets/profile/{repo}-mobile.{theme.suffix}.svg", self.readme)
             self.assertIn(f'href="https://github.com/pypi-ahmad/{repo}"', self.readme)
             self.assertIn(description, featured_row(THEMES[0], repo).replace("…", "…"))
 
@@ -177,32 +271,89 @@ class ProfileArtTests(unittest.TestCase):
         for key in CONTACTS:
             for theme in THEMES:
                 svg = contact_cell(theme, key)
-                ET.fromstring(svg)
+                node = ET.fromstring(svg)
+                self.assertEqual(node.get("viewBox"), "0 0 136 72")
+                sizes = {text.get("font-size") for text in node.findall("{http://www.w3.org/2000/svg}text")}
+                self.assertNotIn("8.5", sizes)
+                self.assertIn("10", sizes)
+                self.assertIn('stroke-width="2" stroke-linecap="round" stroke-linejoin="round"', svg)
                 self.assertIn(MONO, svg)
                 self.assertIn(DISPLAY, svg)
                 self.assertIn(f"assets/profile/contact-{key}.{theme.suffix}.svg", self.readme)
         for destination in destinations:
             self.assertIn(f'href="{destination}"', self.readme)
 
+    def test_readme_layout_supports_narrow_and_zoomed_views(self):
+        self.assertNotIn("max-width: 600px", self.readme)
+        self.assertGreaterEqual(self.readme.count("max-width: 760px"), 10)
+        self.assertNotIn('width="49%"', self.readme)
+        self.assertNotIn('width="32%"', self.readme)
+        self.assertNotIn('height="170"', self.readme)
+        self.assertLessEqual(2 * 136, 288)
+
+        for asset in ("stats.svg", "top-langs.svg", "streak.svg"):
+            self.assertRegex(
+                self.readme,
+                rf'<img[^>]+{asset}[^>]+width="100%"',
+            )
+
+        for repo in ("computer-use", "grounded-docparse", "Agentic-Document-Extraction", "local-ai-chat-studio"):
+            self.assertRegex(
+                self.readme,
+                rf'<img[^>]+{repo}\.light\.svg[^>]+width="100%"',
+            )
+
+    def test_interface_links_name_their_destination(self):
+        self.assertNotRegex(
+            self.readme,
+            r"\[(?:Repository|Portfolio study|Detailed experience|Demo)\]\(",
+        )
+        for label in (
+            "View the LoRA Fine-tune Studio repository",
+            "Read the Prompt Optimizer portfolio study",
+            "Try the Hinglish Turn Detection demo",
+            "Read about prior-authorization document processing",
+            "Read about warranty processing",
+        ):
+            self.assertIn(f"[{label}]", self.readme)
+        for alt in (
+            "Open Ahmad Mujtaba’s portfolio",
+            "View Ahmad Mujtaba on GitHub",
+            "View Ahmad Mujtaba on X",
+        ):
+            self.assertIn(f'alt="{alt}"', self.readme)
+
     def test_contact_banner_and_workshop_are_accessible(self):
         for theme in THEMES:
             banner = contact_aurora(theme)
+            mobile_banner = contact_aurora_mobile(theme)
             self.assertEqual(banner, (self.root / "assets" / "profile" / f"contact-aurora.{theme.suffix}.svg").read_text(encoding="utf-8"))
+            self.assertEqual(mobile_banner, (self.root / "assets" / "profile" / f"contact-aurora-mobile.{theme.suffix}.svg").read_text(encoding="utf-8"))
             self.assertIn("Let’s work together", banner)
+            self.assertIn("Let’s work together", mobile_banner)
             for animated in (True, False):
                 svg = workshop(theme, animated=animated)
+                mobile_svg = workshop_mobile(theme, animated=animated)
                 root = ET.fromstring(svg)
+                mobile_root = ET.fromstring(mobile_svg)
                 self.assertEqual(root.get("viewBox"), "0 0 960 260")
+                self.assertEqual(mobile_root.get("viewBox"), "0 0 360 450")
                 self.assertIn("DATAINTUITIONIST IN", svg)
                 self.assertIn("ILLUSTRATIVE TRACE", svg)
                 self.assertIn('<g transform="translate(72 78)"><g class="paper">', svg)
                 for line in ("document received", "layout parsed", "fields extracted", "evaluation passed", "review required · 2 fields"):
                     self.assertIn(line, svg)
+                self.assertIn(theme.live, svg)
+                self.assertIn(theme.attention, svg)
                 if animated:
                     self.assertIn("12s linear infinite", svg)
-                    self.assertIn("prefers-reduced-motion:reduce", svg)
+                    self.assertIn("prefers-reduced-motion:no-preference", svg)
+                    self.assertIn("prefers-reduced-motion:no-preference", mobile_svg)
+                    self.assertNotIn("animation:float", svg)
+                    self.assertNotIn("animation:float", mobile_svg)
                 else:
                     self.assertNotIn("@keyframes", svg)
+                    self.assertNotIn("@keyframes", mobile_svg)
 
     def test_live_repo_card_text_is_escaped_and_bounded(self):
         info = RepoInfo("someone", "a" * 140, 'Read <data> & compare "results" ' * 20, 12, 3, "Python", "2026-09-20T12:00:00Z", "https://example.com")
@@ -215,15 +366,22 @@ class ProfileArtTests(unittest.TestCase):
             self.assertTrue(all(len(line) <= 25 for line in titles))
             self.assertLessEqual(len(descriptions), 3)
             self.assertTrue(all(len(line) <= 36 for line in descriptions))
+            description_y = [int(text.get("y")) for text in texts if text.get("font-size") == "18"]
+            self.assertTrue(all(b - a == 27 for a, b in zip(description_y, description_y[1:])))
             serialized = ET.tostring(root, encoding="unicode")
             self.assertIn("★ 12", serialized)
             self.assertIn("Updated 2026-09-20", serialized)
+            self.assertIn('d="M10 1H410"', serialized)
 
     def test_curated_copy_is_scoped_to_profile_owner(self):
         info = RepoInfo("another-owner", "video-summarizer", "Another implementation.", 0, 0, "", "", "")
         svg = _render_svg(info, THEMES[0])
         self.assertIn("Another implementation.", svg)
         self.assertNotIn("04 / MULTIMODAL", svg)
+
+        independent = _render_svg(info, THEMES[0], show_metrics=False)
+        self.assertIn("OPEN REPOSITORY", independent)
+        self.assertNotIn("VIEW CODE", independent)
 
 
 if __name__ == "__main__":
