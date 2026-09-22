@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Ahmad Mujtaba&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 19, Total Commits  (last year) : 5733, Total PRs: 85, Total Issues: 4, Contributed to (last year): 7</desc>
+        <desc id="descId">Total Stars Earned: 19, Total Commits  (last year) : 5734, Total PRs: 85, Total Issues: 4, Contributed to (last year): 7</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 124.19135294094335;
+        stroke-dashoffset: 124.09851626411046;
       }
     }
   
