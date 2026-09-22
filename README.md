@@ -604,7 +604,7 @@ I’m based in Gurugram, India (IST, UTC+05:30), and open to remote-first produc
     <td align="center"><a href="mailto:ahmad.iiitk@gmail.com"><img src="contacts-icons/email.svg" width="20" height="20" alt="" /> <strong>Email</strong></a></td>
     <td align="center"><a href="https://www.linkedin.com/in/ahmad-mle/"><img src="contacts-icons/linkedin.png" width="20" height="20" alt="" /> <strong>LinkedIn</strong></a></td>
     <td align="center"><a href="https://t.me/dataintuitionist"><img src="contacts-icons/telegram.png" width="20" height="20" alt="" /> <strong>Telegram</strong></a></td>
-    <td align="center"><a href="https://signal.me/#eu/5hQ4yUft1AR5QQvBc-XjFL2mdhUpH25OcYuUAqBZt_7G0DcNFLFCALWX2s4wUi-e"><img src="contacts-icons/signal.png" width="70" height="20" alt="Signal" title="Signal" /></a></td>
+    <td align="center"><a href="https://signal.me/#eu/5hQ4yUft1AR5QQvBc-XjFL2mdhUpH25OcYuUAqBZt_7G0DcNFLFCALWX2s4wUi-e"><img src="contacts-icons/signal.png" width="20" height="20" alt="" /> <strong>Signal</strong></a></td>
   </tr>
 </table>
 
