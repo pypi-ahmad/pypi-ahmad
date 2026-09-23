@@ -30,6 +30,8 @@ Production AI Engineer focused on multimodal document intelligence, LLM extracti
 Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
 
 - **[Paperplane](https://github.com/pypi-ahmad/Agentic-Document-Extraction)** — Document AI. Parse documents into grounded Markdown, JSON, and review artifacts.
+- **[GroundMark](https://github.com/pypi-ahmad/GroundMark)** — Document AI · Extraction. A Streamlit and CLI app that turns scanned PDFs and images into Markdown, HTML, JSON, and annotated PDFs. It keeps page-level data for review and supports cited chat over parsed content.
+- **[DocLayout](https://github.com/pypi-ahmad/DocLayout)** — Document AI · Extraction. From scans and images to structured Markdown through a browser interface, CLI, multiple export formats, and API cost estimates.
 - **[LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app)** — Model training. Prepare datasets, train local adapters, and compare them with base models.
 - **[Self-Improving Prompt Optimizer](https://github.com/pypi-ahmad/self-improving-prompt-optimizer)** — Evaluation. Compare prompt candidates against a fixed benchmark with visible trade-offs.
 - **[Video Summarizer](https://github.com/pypi-ahmad/video-summarizer)** — Multimodal. Reuse video evidence for retrieval, answers, and generated documents.
@@ -37,9 +39,40 @@ Independent tools and research. Explore the code, or expand the case studies bel
 <a id="case-studies"></a>
 
 <details>
-<summary>Five case studies · decisions, evidence, and limitations</summary>
+<summary>Seven case studies · decisions, evidence, and limitations</summary>
 
-These five studies cover independent tools and research. The Document AI repositories compare different approaches and remain separate applications.
+These seven studies cover independent tools and research. The Document AI repositories compare different approaches and remain separate applications.
+
+#### GroundMark · Document AI, Extraction
+
+GroundMark parses PDFs and images page by page with GPT-6 Sol, then renders the result as Markdown, HTML, JSON, annotated PDFs, or annotated page images. Its Streamlit interface lets users preview source pages, review annotations, switch reading views, and ask questions about successfully parsed pages with inline page references.
+
+The parser keeps page, block, bounding-box, and reading-order data for review and programmatic inspection. Detailed layout extraction remains optional because source review found new transcription errors despite a small improvement in token overlap.
+
+![GroundMark architecture overview](project-diagrams/groundmark/groundmark.png)
+
+<details>
+<summary>GroundMark architecture and workflow diagrams</summary>
+
+![GroundMark document extraction data flow](project-diagrams/groundmark/groundmark-document-extraction-data-flow.png)
+
+![GroundMark document parsing workflow](project-diagrams/groundmark/groundmark-document-parsing-workflow.png)
+
+![GroundMark document execution lifecycle](project-diagrams/groundmark/groundmark-document-execution-lifecycle.png)
+
+![GroundMark parse and chat sequence](project-diagrams/groundmark/groundmark-parse-chat-sequence.png)
+
+</details>
+
+[View the GroundMark repository](https://github.com/pypi-ahmad/GroundMark)
+
+#### DocLayout · Document AI, Extraction
+
+DocLayout extracts structured Markdown from PDFs, scans, and images using GPT-6 Sol. Its browser app lets users select pages, compare rendered and raw output, and download Markdown, HTML, JSON, chunks, annotated page images, or annotated PDFs. The same extraction workflow is available through a CLI and local API, with API cost estimates.
+
+I built DocLayout on the Apache-licensed Marker project and added the document workbench, model-backed extraction, document chat, exports, and usage cost estimates. DocLayout is an independent application and does not imply upstream endorsement.
+
+[View the DocLayout repository and installation guide](https://github.com/pypi-ahmad/DocLayout)
 
 #### Document AI Engineering Lab · Document AI, Extraction, GraphRAG
 
@@ -117,6 +150,8 @@ The selected checkpoint achieved a **9.84% false-complete rate** and **83.26% re
 
 | Project | Focus | What it does |
 |---|---|---|
+| [GroundMark](https://github.com/pypi-ahmad/GroundMark) | Document AI · Extraction | Turns scanned PDFs and images into reviewable Markdown, HTML, JSON, annotations, and cited chat over parsed pages. |
+| [DocLayout](https://github.com/pypi-ahmad/DocLayout) | Document AI · Extraction | Extracts structured Markdown through a browser app, CLI, and local API with multiple exports and usage cost estimates. |
 | [LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app) | Model Training · Fine-Tuning | Prepares datasets, trains local LLM adapters, monitors jobs, and compares adapters with base models. |
 | [Tool-Using Browser Agent](https://github.com/pypi-ahmad/tool-using-browser-agent) | Agentic AI · Browser Automation | Plans and performs Playwright actions with memory and human approval before sensitive steps. |
 | [Self-Improving Prompt Optimizer](https://github.com/pypi-ahmad/self-improving-prompt-optimizer) | Evaluation · Prompt Optimization | Generates and compares prompt candidates with multi-objective LLM-as-judge scoring. |
