@@ -5,31 +5,31 @@
 <text x="28" y="62" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases; GitHub traffic covers the last 14 days</text>
 <rect x="28" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="42" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Published releases</text>
-<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">135</text>
+<text x="42" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">137</text>
 <rect x="234" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="248" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Asset downloads</text>
-<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">23</text>
+<text x="248" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">28</text>
 <rect x="440" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="454" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Repository views</text>
-<text x="454" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">369</text>
+<text x="454" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">373</text>
 <rect x="646" y="84" width="190" height="70" rx="9" fill="#161b22" stroke="#30363d"/>
 <text x="660" y="111" fill="#8b949e" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Repository clones</text>
-<text x="660" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">4,329</text>
+<text x="660" y="139" fill="#f0f6fc" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">4,900</text>
 <text x="28" y="190" fill="#f0f6fc" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Popular referrers</text>
 <svg x="28" y="213" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>github.com</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">github.com</text></svg>
 <rect x="133" y="212" width="520" height="14" rx="4" fill="#161b22"/>
 <rect x="133" y="212" width="520.0" height="14" rx="4" fill="#3fb950"/>
 <svg x="28" y="240" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Google</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Google</text></svg>
 <rect x="133" y="239" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="239" width="104.0" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="239" width="73.0" height="14" rx="4" fill="#3fb950"/>
 <svg x="28" y="267" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Bing</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Bing</text></svg>
 <rect x="133" y="266" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="266" width="69.3" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="266" width="63.9" height="14" rx="4" fill="#3fb950"/>
 <svg x="28" y="294" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>chatgpt.com</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">chatgpt.com</text></svg>
 <rect x="133" y="293" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="293" width="59.4" height="14" rx="4" fill="#3fb950"/>
+<rect x="133" y="293" width="50.2" height="14" rx="4" fill="#3fb950"/>
 <svg x="28" y="321" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>t.co</title><text x="0" y="12" fill="#c9d1d9" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">t.co</text></svg>
 <rect x="133" y="320" width="520" height="14" rx="4" fill="#161b22"/>
-<rect x="133" y="320" width="34.7" height="14" rx="4" fill="#3fb950"/>
-<text x="28" y="382" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-09-24 02:57 UTC · 146 public owned repositories · traffic coverage 146/146; release coverage 146/146</text>
+<rect x="133" y="320" width="31.9" height="14" rx="4" fill="#3fb950"/>
+<text x="28" y="382" fill="#8b949e" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-09-25 03:13 UTC · 146 public owned repositories · traffic coverage 146/146; release coverage 146/146</text>
 </svg>
