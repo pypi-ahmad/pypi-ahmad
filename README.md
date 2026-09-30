@@ -430,7 +430,19 @@ I am building on professional experience and independent projects to learn forwa
 
 </div>
 
-### Professional certification
+### Professional certifications
+
+<div align="center">
+  <a href="certifications/anthropic/claude-certified-architect-foundations.pdf">
+    <img src="certifications/anthropic/claude-certified-architect-foundations.png" width="300" alt="Anthropic Claude Certified Architect - Foundations badge" />
+  </a>
+  <p>
+    <b>Claude Certified Architect - Foundations</b><br />
+    Issued September 30, 2026<br />
+    Expires September 30, 2027<br />
+    <a href="https://www.credly.com/badges/d524da8d-1bb9-46b0-8844-c6f162a52dbd">Verify on Credly</a>
+  </p>
+</div>
 
 <div align="center">
   <a href="certifications/anthropic/claude-certified-associate-foundations.pdf">
