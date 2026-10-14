@@ -439,7 +439,6 @@ I am building on professional experience and independent projects to learn forwa
   <p>
     <b>Certified Partner Specialist Gemini Enterprise Deployment</b><br />
     Issued October 7, 2026<br />
-    Expires April 7, 2027<br />
     <a href="https://www.credly.com/go/M2oOGTmo">Verify on Credly</a>
   </p>
 </div>
@@ -451,7 +450,6 @@ I am building on professional experience and independent projects to learn forwa
   <p>
     <b>Claude Certified Architect - Professional</b><br />
     Issued October 14, 2026<br />
-    Expires October 14, 2027<br />
     <a href="https://www.credly.com/badges/1066c045-512c-4a32-b868-dfa7ac33ee6d">Verify on Credly</a>
   </p>
 </div>
@@ -463,7 +461,6 @@ I am building on professional experience and independent projects to learn forwa
   <p>
     <b>Claude Certified Developer - Foundations</b><br />
     Issued October 14, 2026<br />
-    Expires October 14, 2027<br />
     <a href="https://www.credly.com/badges/073148fd-db6b-40ac-9895-00de4e291cb3">Verify on Credly</a>
   </p>
 </div>
@@ -475,7 +472,6 @@ I am building on professional experience and independent projects to learn forwa
   <p>
     <b>Claude Certified Architect - Foundations</b><br />
     Issued September 30, 2026<br />
-    Expires September 30, 2027<br />
     <a href="https://www.credly.com/badges/d524da8d-1bb9-46b0-8844-c6f162a52dbd">Verify on Credly</a>
   </p>
 </div>
