@@ -433,6 +433,42 @@ I am building on professional experience and independent projects to learn forwa
 ### Professional certifications
 
 <div align="center">
+  <a href="certifications/google-cloud/certified-partner-specialist-gemini-enterprise-deployment.pdf">
+    <img src="certifications/google-cloud/certified-partner-specialist-gemini-enterprise-deployment.png" width="300" alt="Google Cloud Certified Partner Specialist Gemini Enterprise Deployment badge" />
+  </a>
+  <p>
+    <b>Certified Partner Specialist Gemini Enterprise Deployment</b><br />
+    Issued October 7, 2026<br />
+    Expires April 7, 2027<br />
+    <a href="https://www.credly.com/go/M2oOGTmo">Verify on Credly</a>
+  </p>
+</div>
+
+<div align="center">
+  <a href="certifications/anthropic/claude-certified-architect-professional.pdf">
+    <img src="certifications/anthropic/claude-certified-architect-professional.png" width="300" alt="Anthropic Claude Certified Architect - Professional badge" />
+  </a>
+  <p>
+    <b>Claude Certified Architect - Professional</b><br />
+    Issued October 14, 2026<br />
+    Expires October 14, 2027<br />
+    <a href="https://www.credly.com/badges/1066c045-512c-4a32-b868-dfa7ac33ee6d">Verify on Credly</a>
+  </p>
+</div>
+
+<div align="center">
+  <a href="certifications/anthropic/claude-certified-developer-foundations.pdf">
+    <img src="certifications/anthropic/claude-certified-developer-foundations.png" width="300" alt="Anthropic Claude Certified Developer - Foundations badge" />
+  </a>
+  <p>
+    <b>Claude Certified Developer - Foundations</b><br />
+    Issued October 14, 2026<br />
+    Expires October 14, 2027<br />
+    <a href="https://www.credly.com/badges/073148fd-db6b-40ac-9895-00de4e291cb3">Verify on Credly</a>
+  </p>
+</div>
+
+<div align="center">
   <a href="certifications/anthropic/claude-certified-architect-foundations.pdf">
     <img src="certifications/anthropic/claude-certified-architect-foundations.png" width="300" alt="Anthropic Claude Certified Architect - Foundations badge" />
   </a>
@@ -456,9 +492,31 @@ I am building on professional experience and independent projects to learn forwa
 </div>
 
 <details>
-<summary>Course certificates · 13 credentials</summary>
+<summary>Skill badges and course certificates · 17 credentials</summary>
 
-### Course certificates
+### Skill badges and course certificates
+
+#### Google Cloud skill badges (4)
+
+<div align="center">
+  <a href="certifications/google-cloud/accelerate-development-with-antigravity.pdf">
+    <img src="certifications/google-cloud/accelerate-development-with-antigravity.png" width="300" alt="Google Cloud Accelerate Development with Antigravity skill badge" />
+  </a>
+  <a href="certifications/google-cloud/add-agents-to-gemini-enterprise.pdf">
+    <img src="certifications/google-cloud/add-agents-to-gemini-enterprise.png" width="300" alt="Google Cloud Add Agents to Gemini Enterprise skill badge" />
+  </a>
+  <a href="certifications/google-cloud/deploy-gemini-enterprise-with-workspace-data-sources-and-model-armor.pdf">
+    <img src="certifications/google-cloud/deploy-gemini-enterprise-with-workspace-data-sources-and-model-armor.png" width="300" alt="Google Cloud Deploy Gemini Enterprise with Workspace Data Sources and Model Armor skill badge" />
+  </a>
+  <a href="certifications/google-cloud/govern-agent-access-with-gemini-enterprise-agent-platform.pdf">
+    <img src="certifications/google-cloud/govern-agent-access-with-gemini-enterprise-agent-platform.png" width="300" alt="Google Cloud Govern Agent Access with Gemini Enterprise Agent Platform skill badge" />
+  </a>
+</div>
+
+- [Accelerate Development with Antigravity](https://www.credly.com/go/YJPt5FVS): completed October 7, 2026
+- [Add Agents to Gemini Enterprise](https://www.credly.com/go/YXb6QduW): completed October 7, 2026
+- [Deploy Gemini Enterprise with Workspace Data Sources and Model Armor](https://www.credly.com/go/5gmsHXlG): completed October 7, 2026
+- [Govern Agent Access with Gemini Enterprise Agent Platform](https://www.credly.com/go/5pRqk9Wk): completed October 7, 2026
 
 #### Anthropic Education certificates (4)
 
