@@ -9,9 +9,9 @@ Release entries currently use calendar dates.
 
 ### Added
 
-- Added the Claude Certified Architect - Professional and Claude Certified Developer - Foundations certifications, with badges, certificate PDFs, validity dates, and Credly verification links.
-- Added the Google Cloud Certified Partner Specialist Gemini Enterprise Deployment certification, with its badge, certificate PDF, validity dates, and Credly verification link, plus four Google Cloud skill badges with certificate PDFs and Credly links.
-- Added the Claude Certified Architect - Foundations certification with its badge, certificate PDF, validity dates, and Credly verification link.
+- Added the Claude Certified Architect - Professional and Claude Certified Developer - Foundations certifications, with badges, certificate PDFs, issue dates, and Credly verification links.
+- Added the Google Cloud Certified Partner Specialist Gemini Enterprise Deployment certification, with its badge, certificate PDF, issue dates, and Credly verification link, plus four Google Cloud skill badges with certificate PDFs and Credly links.
+- Added the Claude Certified Architect - Foundations certification with its badge, certificate PDF, issue dates, and Credly verification link.
 - Added direct contact links and custom branding icons for Twitter/X, LinkedIn, GitHub, Portfolio, WhatsApp, Telegram, Instagram, and Facebook, along with the updated professional bio headline.
 - Added an advanced GitHub statistics dashboard for reach, collaboration, coding activity, releases, downloads, and repository traffic.
 
