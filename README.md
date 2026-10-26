@@ -9,9 +9,9 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&amp;size=16&amp;background=00000000&amp;center=false&amp;vCenter=true&amp;multiline=false&amp;repeat=false&amp;width=360&amp;height=32&amp;color=0969DA&amp;duration=3000&amp;pause=1200&amp;lines=Production+AI+Engineer;Multimodal+document+intelligence;Agentic+workflows+%26+LLM+evaluation" width="360" height="32" alt="Production AI Engineer · Multimodal document intelligence · Agentic workflows and LLM evaluation" />
 </picture>
 
-AI & Data Science Engineer · Deloitte US-India · Gurugram, India
+AI & Data Science Engineer · Deloitte US-India · ex-Cognizant · Gurugram, India
 
-Production AI Engineer focused on multimodal document intelligence, LLM extraction architectures, agentic workflows, and LLM evaluation.
+I build production AI systems for healthcare and complex documents, with a focus on extraction, agentic workflows, and evaluation.
 
 <table align="center">
   <tr>
@@ -27,14 +27,14 @@ Production AI Engineer focused on multimodal document intelligence, LLM extracti
 
 <div align="left">
 
-Independent tools and research. Explore the code, or expand the case studies below for decisions, evidence, and limits.
+Independent projects from my resume. Each case study explains what I built, the evidence, and its limits.
 
-- **[Paperplane](https://github.com/pypi-ahmad/Agentic-Document-Extraction)** — Document AI. Parse documents into grounded Markdown, JSON, and review artifacts.
-- **[DocLayout](https://github.com/pypi-ahmad/DocLayout)** — Document AI · Extraction. Document conversion with PP-DocLayoutV3 and Sol, plus a browser workbench for batch processing, authorization-field extraction, and saved source-linked review.
-- **[GroundMark](https://github.com/pypi-ahmad/GroundMark)** — Document AI · Extraction. A Streamlit and CLI app combining local PP-DocLayoutV3 layout analysis with Sol transcription, reviewable exports, page diagnostics, and cited document chat.
-- **[LoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app)** — Model training. Prepare datasets, train local adapters, and compare them with base models.
-- **[Self-Improving Prompt Optimizer](https://github.com/pypi-ahmad/self-improving-prompt-optimizer)** — Evaluation. Compare prompt candidates against a fixed benchmark with visible trade-offs.
-- **[Video Summarizer](https://github.com/pypi-ahmad/video-summarizer)** — Multimodal. Reuse video evidence for retrieval, answers, and generated documents.
+| Project | What I built | Explore |
+|---|---|---|
+| **[DocLayout](https://github.com/pypi-ahmad/DocLayout)** | Document conversion with layout-guided transcription, batch processing, and source-linked review. | [Case study](https://pypi-ahmad.github.io/projects#doclayout) |
+| **[Natural Language to SQL Agent](https://github.com/pypi-ahmad/natural-language-to-sql-agent)** | A LangGraph workflow with clarification, SQL validation, approval, and read-only SQLite/PostgreSQL execution. | [Case study](https://pypi-ahmad.github.io/projects#natural-language-to-sql-agent) |
+| **[LoRA QLoRA Fine-tune Studio](https://github.com/pypi-ahmad/lora-qlora-fine-tuning-app)** | Dataset preparation, local adapter training, job monitoring, and evaluation against base models. | [Case study](https://pypi-ahmad.github.io/projects#lora-fine-tune-studio) |
+| **[Hinglish Turn Detection](https://github.com/pypi-ahmad/hinglish-turn-detection)** | A 7.9M-parameter speech turn detector with a three-seed study and documented dataset limits. | [Case study](https://pypi-ahmad.github.io/projects#hinglish-turn-detection) · [Demo](https://huggingface.co/spaces/pypi-ahmad/hinglish-turn-detection) |
 
 <a id="case-studies"></a>
 
