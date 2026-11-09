@@ -5,12 +5,12 @@
 <text x="28" y="62" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lifetime code totals; recent metrics cover 30 days</text>
 <rect x="28" y="84" width="190" height="70" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="42" y="111" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lines added</text>
-<text x="42" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">41,453,974</text>
+<text x="42" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">41,454,030</text>
 <rect x="234" y="84" width="190" height="70" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="248" y="111" fill="#57606a" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Lines removed</text>
-<text x="248" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">15,644,558</text>
+<text x="248" y="139" fill="#1f2328" font-size="21" font-weight="700" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">15,644,614</text>
 <text x="28" y="190" fill="#1f2328" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Recently active repositories</text>
-<svg x="28" y="207" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>pypi-ahmad  2026-11-07</title><text x="0" y="13" fill="#24292f" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-11-07</text></svg>
+<svg x="28" y="207" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>pypi-ahmad  2026-11-08</title><text x="0" y="13" fill="#24292f" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">pypi-ahmad  2026-11-08</text></svg>
 <svg x="28" y="232" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>DocLayout  2026-11-05</title><text x="0" y="13" fill="#24292f" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">DocLayout  2026-11-05</text></svg>
 <svg x="28" y="257" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>DocFlow-Xiaomi-OCR-0  2026-10-31</title><text x="0" y="13" fill="#24292f" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">DocFlow-Xiaomi-OCR-0  2026-10-31</text></svg>
 <svg x="28" y="282" width="414" height="18" viewBox="0 0 414 18" overflow="hidden"><title>DocFlow-NIM  2026-10-28</title><text x="0" y="13" fill="#24292f" font-size="13" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">DocFlow-NIM  2026-10-28</text></svg>
@@ -34,25 +34,25 @@
 <text x="28" y="372" fill="#1f2328" font-size="16" font-weight="600" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Commit habits (Asia/Kolkata)</text>
 <svg x="28" y="397" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Mon</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Mon</text></svg>
 <rect x="133" y="396" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="396" width="90.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="396" width="93.8" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="424" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Tue</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Tue</text></svg>
 <rect x="133" y="423" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="423" width="40.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="423" width="41.7" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="451" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Wed</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Wed</text></svg>
 <rect x="133" y="450" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="450" width="140.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="450" width="145.8" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="478" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Thu</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Thu</text></svg>
 <rect x="133" y="477" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="477" width="230.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="477" width="239.6" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="505" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Fri</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Fri</text></svg>
 <rect x="133" y="504" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="504" width="100.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="504" width="93.8" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="532" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Sat</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sat</text></svg>
 <rect x="133" y="531" width="250" height="14" rx="4" fill="#f6f8fa"/>
 <rect x="133" y="531" width="250.0" height="14" rx="4" fill="#1a7f37"/>
 <svg x="28" y="559" width="97" height="17" viewBox="0 0 97 17" overflow="hidden"><title>Sun</title><text x="0" y="12" fill="#24292f" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Sun</text></svg>
 <rect x="133" y="558" width="250" height="14" rx="4" fill="#f6f8fa"/>
-<rect x="133" y="558" width="40.0" height="14" rx="4" fill="#1a7f37"/>
+<rect x="133" y="558" width="52.1" height="14" rx="4" fill="#1a7f37"/>
 <rect x="450" y="519.1" width="11" height="16.9" fill="#0969da"/>
 <text x="455" y="554" fill="#57606a" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">00</text>
 <rect x="467" y="536.0" width="11" height="0.0" fill="#0969da"/>
@@ -65,7 +65,7 @@
 <text x="557" y="554" fill="#57606a" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">06</text>
 <rect x="569" y="536.0" width="11" height="0.0" fill="#0969da"/>
 <rect x="586" y="426.0" width="11" height="110.0" fill="#0969da"/>
-<rect x="603" y="434.5" width="11" height="101.5" fill="#0969da"/>
+<rect x="603" y="442.9" width="11" height="93.1" fill="#0969da"/>
 <text x="608" y="554" fill="#57606a" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">09</text>
 <rect x="620" y="493.7" width="11" height="42.3" fill="#0969da"/>
 <rect x="637" y="527.5" width="11" height="8.5" fill="#0969da"/>
@@ -85,5 +85,5 @@
 <text x="812" y="554" fill="#57606a" font-size="9" font-weight="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">21</text>
 <rect x="824" y="527.5" width="11" height="8.5" fill="#0969da"/>
 <rect x="841" y="485.2" width="11" height="50.8" fill="#0969da"/>
-<text x="28" y="602" fill="#57606a" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-11-08 04:10 UTC · 149 public owned repositories · line coverage 149/149</text>
+<text x="28" y="602" fill="#57606a" font-size="12" font-weight="400" text-anchor="start" font-family="Segoe UI,Arial,sans-serif">Generated 2026-11-09 04:25 UTC · 149 public owned repositories · line coverage 149/149</text>
 </svg>
